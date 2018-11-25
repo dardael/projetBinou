@@ -33,9 +33,9 @@
             this.tabCtrlPrincipale = new System.Windows.Forms.TabControl();
             this.tabPgRenseignements = new System.Windows.Forms.TabPage();
             this.panRenseignements = new System.Windows.Forms.Panel();
-            this.mainMenu1 = new System.Windows.Forms.MainMenu(this.components);
-            this.menuItem1 = new System.Windows.Forms.MenuItem();
-            this.menuItem2 = new System.Windows.Forms.MenuItem();
+            this.menuPrincipal = new System.Windows.Forms.MainMenu(this.components);
+            this.itemFichier = new System.Windows.Forms.MenuItem();
+            this.itemOptions = new System.Windows.Forms.MenuItem();
             this.tabCtrlPrincipale.SuspendLayout();
             this.tabPgRenseignements.SuspendLayout();
             this.SuspendLayout();
@@ -70,21 +70,21 @@
             this.panRenseignements.Size = new System.Drawing.Size(786, 415);
             this.panRenseignements.TabIndex = 0;
             // 
-            // mainMenu1
+            // menuPrincipal
             // 
-            this.mainMenu1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-            this.menuItem1,
-            this.menuItem2});
+            this.menuPrincipal.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.itemFichier,
+            this.itemOptions});
             // 
-            // menuItem1
+            // itemFichier
             // 
-            this.menuItem1.Index = 0;
-            this.menuItem1.Text = "Fichier";
+            this.itemFichier.Index = 0;
+            this.itemFichier.Text = "Fichier";
             // 
-            // menuItem2
+            // itemOptions
             // 
-            this.menuItem2.Index = 1;
-            this.menuItem2.Text = "Options";
+            this.itemOptions.Index = 1;
+            this.itemOptions.Text = "Options";
             // 
             // frmPincipale
             // 
@@ -93,7 +93,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tabCtrlPrincipale);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Menu = this.mainMenu1;
+            this.Menu = this.menuPrincipal;
             this.Name = "frmPincipale";
             this.Text = "Projet Montagne";
             this.tabCtrlPrincipale.ResumeLayout(false);
@@ -107,9 +107,9 @@
         private System.Windows.Forms.TabControl tabCtrlPrincipale;
         private System.Windows.Forms.TabPage tabPgRenseignements;
         private System.Windows.Forms.Panel panRenseignements;
-        private System.Windows.Forms.MainMenu mainMenu1;
-        private System.Windows.Forms.MenuItem menuItem1;
-        private System.Windows.Forms.MenuItem menuItem2;
+        private System.Windows.Forms.MainMenu menuPrincipal;
+        private System.Windows.Forms.MenuItem itemFichier;
+        private System.Windows.Forms.MenuItem itemOptions;
     }
 }
 
