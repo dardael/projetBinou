@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Projet_binou
 {
-    public partial class Form1 : Form
+    public partial class frmPincipale : Form
     {
-        public Form1()
+        public frmPincipale()
         {
             InitializeComponent();
         }
