@@ -1,0 +1,9 @@
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\Projet binou\Projet binou\bin\Release\Projet binou.exe.config
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\Projet binou\Projet binou\bin\Release\Projet binou.exe
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\Projet binou\Projet binou\bin\Release\Projet binou.pdb
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\Projet binou\Projet binou\obj\Release\Projet binou.csprojAssemblyReference.cache
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\Projet binou\Projet binou\obj\Release\Projet_binou.Properties.Resources.resources
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\Projet binou\Projet binou\obj\Release\Projet binou.csproj.GenerateResource.cache
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\Projet binou\Projet binou\obj\Release\Projet binou.csproj.CoreCompileInputs.cache
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\Projet binou\Projet binou\obj\Release\Projet binou.exe
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\Projet binou\Projet binou\obj\Release\Projet binou.pdb
