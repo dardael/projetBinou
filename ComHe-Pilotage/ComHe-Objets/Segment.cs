@@ -1,7 +1,10 @@
-﻿namespace ComHe_Objets {
+﻿using System;
+
+namespace ComHe_Objets {
+
     /// <summary>
     /// Defines the <see cref="Segment" />
-    /// </summary>
+    /// </summary> [Serializable]
     public class Segment {
         public string nom { get; set; }
         public enumTypeSegment typeSegment { get; set; }

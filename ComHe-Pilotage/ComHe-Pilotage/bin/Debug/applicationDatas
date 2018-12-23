@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfFicheTravail xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<FicheTravail>
+		<nom>Fiche de travail 1</nom>
+		<segments />
+	</FicheTravail>
+	<FicheTravail>
+		<nom>Fiche de travail 2</nom>
+		<segments />
+	</FicheTravail>
+</ArrayOfFicheTravail>
