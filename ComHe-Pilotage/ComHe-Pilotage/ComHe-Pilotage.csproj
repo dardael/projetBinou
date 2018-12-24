@@ -82,6 +82,12 @@
     <Compile Include="pmcGestionFichesDeTravail.Designer.cs">
       <DependentUpon>pmcGestionFichesDeTravail.cs</DependentUpon>
     </Compile>
+    <Compile Include="pmcSegmentation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pmcSegmentation.Designer.cs">
+      <DependentUpon>pmcSegmentation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="pmcCreationFicheTravail.cs">
@@ -105,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pmcGestionFichesDeTravail.resx">
       <DependentUpon>pmcGestionFichesDeTravail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pmcSegmentation.resx">
+      <DependentUpon>pmcSegmentation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
