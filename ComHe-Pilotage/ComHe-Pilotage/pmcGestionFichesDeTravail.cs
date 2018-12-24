@@ -11,7 +11,7 @@ namespace ComHe_Pilotage {
             get;
             set;
         }
-        private string fileName { get; } = "fichesDeTravail";
+        private string fileName { get; } = "fichesDeTravailData";
         private frmSaisieFicheTravail frmSaisieFicheTravail;
         public event EventHandler ficheTravailCouranteChanged;
         public pmcGestionFichesDeTravail() {

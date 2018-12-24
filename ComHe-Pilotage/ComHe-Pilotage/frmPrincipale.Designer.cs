@@ -29,6 +29,8 @@
             this.pmcGestionFichesDeTravail = new ComHe_Pilotage.pmcGestionFichesDeTravail();
             this.tabPrincipal = new DevExpress.XtraTab.XtraTabControl();
             this.tabPgSegmentation = new DevExpress.XtraTab.XtraTabPage();
+            this.lcSegmentation = new DevExpress.XtraLayout.LayoutControl();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.tabPgTendances = new DevExpress.XtraTab.XtraTabPage();
             this.tabPgLoyaltyModel = new DevExpress.XtraTab.XtraTabPage();
             this.tabPgNPS = new DevExpress.XtraTab.XtraTabPage();
@@ -45,15 +47,22 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.pmcSegmentation1 = new ComHe_Pilotage.pmcSegmentation();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabPrincipal)).BeginInit();
             this.tabPrincipal.SuspendLayout();
+            this.tabPgSegmentation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lcSegmentation)).BeginInit();
+            this.lcSegmentation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnPrincipal)).BeginInit();
             this.pnPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciTabPanePrincipal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControlItem4
@@ -93,9 +102,34 @@
             // 
             // tabPgSegmentation
             // 
+            this.tabPgSegmentation.Controls.Add(this.lcSegmentation);
             this.tabPgSegmentation.Name = "tabPgSegmentation";
             this.tabPgSegmentation.Size = new System.Drawing.Size(1251, 628);
             this.tabPgSegmentation.Text = "Segmentation";
+            // 
+            // lcSegmentation
+            // 
+            this.lcSegmentation.Controls.Add(this.pmcSegmentation1);
+            this.lcSegmentation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lcSegmentation.Location = new System.Drawing.Point(0, 0);
+            this.lcSegmentation.Name = "lcSegmentation";
+            this.lcSegmentation.Root = this.layoutControlGroup1;
+            this.lcSegmentation.Size = new System.Drawing.Size(1251, 628);
+            this.lcSegmentation.TabIndex = 0;
+            this.lcSegmentation.Text = "layoutControl1";
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem1});
+            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup1.Name = "layoutControlGroup1";
+            this.layoutControlGroup1.OptionsItemText.TextToControlDistance = 4;
+            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1251, 628);
+            this.layoutControlGroup1.TextVisible = false;
             // 
             // tabPgTendances
             // 
@@ -228,6 +262,22 @@
             this.barDockControlRight.Location = new System.Drawing.Point(1290, 29);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 744);
             // 
+            // pmcSegmentation1
+            // 
+            this.pmcSegmentation1.Location = new System.Drawing.Point(3, 3);
+            this.pmcSegmentation1.Name = "pmcSegmentation1";
+            this.pmcSegmentation1.Size = new System.Drawing.Size(1245, 622);
+            this.pmcSegmentation1.TabIndex = 4;
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.Control = this.pmcSegmentation1;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(1251, 628);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem1.TextVisible = false;
+            // 
             // frmPrincipale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -249,11 +299,16 @@
             ((System.ComponentModel.ISupportInitialize)(layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabPrincipal)).EndInit();
             this.tabPrincipal.ResumeLayout(false);
+            this.tabPgSegmentation.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lcSegmentation)).EndInit();
+            this.lcSegmentation.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnPrincipal)).EndInit();
             this.pnPrincipal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciTabPanePrincipal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -280,6 +335,10 @@
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
         private pmcGestionFichesDeTravail pmcGestionFichesDeTravail;
+        private DevExpress.XtraLayout.LayoutControl lcSegmentation;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
+        private pmcSegmentation pmcSegmentation1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
     }
 }
 

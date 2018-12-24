@@ -14,6 +14,7 @@ namespace ComHe_Pilotage {
 
         private void pmcGestionFichesDeTravail_ficheTravailCouranteChanged(object sender, EventArgs e) {
             fiche = pmcGestionFichesDeTravail.ficheCourante;
+            pmcSegmentation1.fiche = fiche;
         }
 
 
