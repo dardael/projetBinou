@@ -23,6 +23,7 @@
         /// le contenu de cette méthode avec l'éditeur de code.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             this.lcPrincipal = new DevExpress.XtraLayout.LayoutControl();
             this.btSupprimerFicheTravail = new DevExpress.XtraEditors.SimpleButton();
             this.btDupliquerFicheTravail = new DevExpress.XtraEditors.SimpleButton();
@@ -39,6 +40,7 @@
             this.lciBtSupprimer = new DevExpress.XtraLayout.LayoutControlItem();
             this.lciBtCreerFicheTravail = new DevExpress.XtraLayout.LayoutControlItem();
             this.lciLbFicheDeTravail = new DevExpress.XtraLayout.LayoutControlItem();
+            this.alertControl1 = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.lcPrincipal)).BeginInit();
             this.lcPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
@@ -274,5 +276,6 @@
         private DevExpress.XtraLayout.LayoutControlItem lciBtSupprimer;
         private DevExpress.XtraEditors.SimpleButton btNouveauFicheDeTravail;
         private DevExpress.XtraLayout.LayoutControlItem lciBtCreerFicheTravail;
+        private DevExpress.XtraBars.Alerter.AlertControl alertControl1;
     }
 }

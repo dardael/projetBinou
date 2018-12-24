@@ -58,9 +58,11 @@ namespace ComHe_Pilotage {
                     fichesTravail.Add(ficheCourante);
                     populateCbFichesTravail();
                     cbChoixListeTravail.SelectedItem = frmSaisieFicheTravail.ficheTravail;
+                    alertControl1.Show(this.ParentForm, "Nouvelle fiche de travail créée", "La fiche de travail " + ficheCourante.nom + " a été correctement créée");
                 }
                 else {
                     populateCbFichesTravail();
+                    alertControl1.Show(this.ParentForm, "Fiche de travail renommée", "La fiche de travail " + ficheCourante.nom + " a été correctement renommée");
                 }
 
             }
@@ -72,11 +74,13 @@ namespace ComHe_Pilotage {
 
         private void btSaveFicheTravail_Click(object sender, EventArgs e) {
             GestionFichierXML.SaveToXml(this.fichesTravail, fichesTravail.GetType(), fileName);
+            alertControl1.Show(this.ParentForm, "Fichier sauvergardé", "Le fichier est correctement sauvegardé");
         }
 
         private void cbChoixListeTravail_SelectedIndexChanged(object sender, EventArgs e) {
             ficheCourante = (FicheTravail)cbChoixListeTravail.SelectedItem;
             this.ficheTravailCouranteChanged(sender, e);
+            alertControl1.Show(this.ParentForm, "Nouvelle fiche de travail chargée", "La fiche de travail " + ficheCourante.nom + " a été correctement chargée");
         }
 
         private void btDupliquerFicheTravail_Click(object sender, EventArgs e) {
@@ -85,6 +89,7 @@ namespace ComHe_Pilotage {
             fichesTravail.Add(ficheTemp);
             populateCbFichesTravail();
             cbChoixListeTravail.SelectedItem = ficheTemp;
+            alertControl1.Show(this.ParentForm, "Nouvelle fiche de travail créée", "La fiche de travail " + ficheCourante.nom + " a été correctement dupliquée");
         }
 
         private void btSupprimerFicheTravail_Click(object sender, EventArgs e) {
