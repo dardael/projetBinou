@@ -24,10 +24,11 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipale));
             DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
             DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipale));
-            this.bsSegment = new System.Windows.Forms.BindingSource(this.components);
+            this.pmcGestionFichesDeTravail = new ComHe_Pilotage.pmcGestionFichesDeTravail();
             this.tabPrincipal = new DevExpress.XtraTab.XtraTabControl();
             this.tabPgSegmentation = new DevExpress.XtraTab.XtraTabPage();
             this.pnTabPgSegmentation = new DevExpress.XtraLayout.LayoutControl();
@@ -46,24 +47,9 @@
             this.tabPgSatisfactionModel = new DevExpress.XtraTab.XtraTabPage();
             this.tabPgComplaintModel = new DevExpress.XtraTab.XtraTabPage();
             this.tabPgSynthese = new DevExpress.XtraTab.XtraTabPage();
-            this.cbChoixListeTravail = new System.Windows.Forms.ComboBox();
-            this.bsListeFichesTravail = new System.Windows.Forms.BindingSource(this.components);
             this.pnPrincipal = new DevExpress.XtraLayout.LayoutControl();
-            this.btSaveFicheTravail = new DevExpress.XtraEditors.SimpleButton();
-            this.btNouveauFicheDeTravail = new DevExpress.XtraEditors.SimpleButton();
-            this.btRenommerFicheTravail = new DevExpress.XtraEditors.SimpleButton();
-            this.btDupliquerFicheTravail = new DevExpress.XtraEditors.SimpleButton();
-            this.btSupprimerFicheTravail = new DevExpress.XtraEditors.SimpleButton();
-            this.lbChoixListeTravail = new DevExpress.XtraEditors.LabelControl();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.lciCbChoixFicheTravail = new DevExpress.XtraLayout.LayoutControlItem();
             this.lciTabPanePrincipal = new DevExpress.XtraLayout.LayoutControlItem();
-            this.lciLbChoixFicheTravail = new DevExpress.XtraLayout.LayoutControlItem();
-            this.lciBtSupprimerFicheTravail = new DevExpress.XtraLayout.LayoutControlItem();
-            this.lciBtDupliquerFicheTravail = new DevExpress.XtraLayout.LayoutControlItem();
-            this.lciBtRenommerFicheTravail = new DevExpress.XtraLayout.LayoutControlItem();
-            this.lciBtCreerFicheTravail = new DevExpress.XtraLayout.LayoutControlItem();
-            this.lciBtSaveFicheTravail = new DevExpress.XtraLayout.LayoutControlItem();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.skinBarSubItem1 = new DevExpress.XtraBars.SkinBarSubItem();
@@ -71,7 +57,8 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            ((System.ComponentModel.ISupportInitialize)(this.bsSegment)).BeginInit();
+            layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            ((System.ComponentModel.ISupportInitialize)(layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabPrincipal)).BeginInit();
             this.tabPrincipal.SuspendLayout();
             this.tabPgSegmentation.SuspendLayout();
@@ -87,32 +74,38 @@
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsListeFichesTravail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnPrincipal)).BeginInit();
             this.pnPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lciCbChoixFicheTravail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciTabPanePrincipal)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lciLbChoixFicheTravail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lciBtSupprimerFicheTravail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lciBtDupliquerFicheTravail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lciBtRenommerFicheTravail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lciBtCreerFicheTravail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lciBtSaveFicheTravail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             this.SuspendLayout();
             // 
-            // bsSegment
+            // layoutControlItem4
             // 
-            this.bsSegment.AllowNew = global::ComHe_Pilotage.Properties.Settings.Default.addNewTrue;
-            this.bsSegment.DataSource = typeof(ComHe_Objets.Segment);
+            layoutControlItem4.Control = this.pmcGestionFichesDeTravail;
+            layoutControlItem4.Location = new System.Drawing.Point(0, 0);
+            layoutControlItem4.Name = "layoutControlItem4";
+            layoutControlItem4.Size = new System.Drawing.Size(1264, 50);
+            layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
+            layoutControlItem4.TextVisible = false;
+            // 
+            // pmcGestionFichesDeTravail
+            // 
+            this.pmcGestionFichesDeTravail.ficheCourante = ((ComHe_Objets.FicheTravail)(resources.GetObject("pmcGestionFichesDeTravail.ficheCourante")));
+            this.pmcGestionFichesDeTravail.fichesTravail = ((System.Collections.Generic.List<ComHe_Objets.FicheTravail>)(resources.GetObject("pmcGestionFichesDeTravail.fichesTravail")));
+            this.pmcGestionFichesDeTravail.Location = new System.Drawing.Point(16, 16);
+            this.pmcGestionFichesDeTravail.Margin = new System.Windows.Forms.Padding(0);
+            this.pmcGestionFichesDeTravail.Name = "pmcGestionFichesDeTravail";
+            this.pmcGestionFichesDeTravail.Size = new System.Drawing.Size(1258, 44);
+            this.pmcGestionFichesDeTravail.TabIndex = 4;
             // 
             // tabPrincipal
             // 
-            this.tabPrincipal.Location = new System.Drawing.Point(16, 49);
+            this.tabPrincipal.Location = new System.Drawing.Point(16, 66);
             this.tabPrincipal.Name = "tabPrincipal";
             this.tabPrincipal.SelectedTabPage = this.tabPgSegmentation;
-            this.tabPrincipal.Size = new System.Drawing.Size(1258, 679);
+            this.tabPrincipal.Size = new System.Drawing.Size(1258, 662);
             this.tabPrincipal.TabIndex = 0;
             this.tabPrincipal.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tabPgSegmentation,
@@ -127,7 +120,7 @@
             // 
             this.tabPgSegmentation.Controls.Add(this.pnTabPgSegmentation);
             this.tabPgSegmentation.Name = "tabPgSegmentation";
-            this.tabPgSegmentation.Size = new System.Drawing.Size(1251, 645);
+            this.tabPgSegmentation.Size = new System.Drawing.Size(1251, 628);
             this.tabPgSegmentation.Text = "Segmentation";
             // 
             // pnTabPgSegmentation
@@ -140,7 +133,7 @@
             this.pnTabPgSegmentation.Name = "pnTabPgSegmentation";
             this.pnTabPgSegmentation.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1497, 147, 879, 437);
             this.pnTabPgSegmentation.Root = this.layoutControlGroup1;
-            this.pnTabPgSegmentation.Size = new System.Drawing.Size(1251, 645);
+            this.pnTabPgSegmentation.Size = new System.Drawing.Size(1251, 628);
             this.pnTabPgSegmentation.TabIndex = 7;
             this.pnTabPgSegmentation.Text = "layoutControl1";
             // 
@@ -167,14 +160,13 @@
             this.grdSegmentation.OptionsLayout.Columns.AddNewColumns = true;
             this.grdSegmentation.OptionsLayout.Columns.RemoveOldColumns = true;
             this.grdSegmentation.ShowButtonMode = DevExpress.XtraVerticalGrid.ShowButtonModeEnum.ShowAlways;
-            this.grdSegmentation.Size = new System.Drawing.Size(1219, 254);
+            this.grdSegmentation.Size = new System.Drawing.Size(1219, 246);
             this.grdSegmentation.TabIndex = 4;
             // 
             // chSegmentation
             // 
             this.chSegmentation.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.chSegmentation.AppearanceNameSerializable = "Light";
-            this.chSegmentation.DataSource = this.bsSegment;
             xyDiagram1.AxisX.Title.Text = "Segments";
             xyDiagram1.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
@@ -184,7 +176,7 @@
             this.chSegmentation.Diagram = xyDiagram1;
             this.chSegmentation.Legend.MarkerVisible = false;
             this.chSegmentation.Legend.TextVisible = false;
-            this.chSegmentation.Location = new System.Drawing.Point(16, 315);
+            this.chSegmentation.Location = new System.Drawing.Point(16, 307);
             this.chSegmentation.Name = "chSegmentation";
             this.chSegmentation.PaletteName = "Default";
             series1.ArgumentDataMember = "nom";
@@ -194,7 +186,7 @@
         series1};
             this.chSegmentation.SeriesTemplate.ArgumentDataMember = "nom";
             this.chSegmentation.SeriesTemplate.ValueDataMembersSerializable = "clv";
-            this.chSegmentation.Size = new System.Drawing.Size(1219, 314);
+            this.chSegmentation.Size = new System.Drawing.Size(1219, 305);
             this.chSegmentation.TabIndex = 6;
             // 
             // layoutControlGroup1
@@ -210,15 +202,15 @@
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.OptionsItemText.TextToControlDistance = 4;
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1251, 645);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1251, 628);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.chSegmentation;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 299);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 291);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(1225, 320);
+            this.layoutControlItem2.Size = new System.Drawing.Size(1225, 311);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
@@ -227,7 +219,7 @@
             this.layoutControlItem3.Control = this.grdSegmentation;
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 33);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(1225, 260);
+            this.layoutControlItem3.Size = new System.Drawing.Size(1225, 252);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
@@ -241,7 +233,7 @@
             // splitterItem2
             // 
             this.splitterItem2.AllowHotTrack = true;
-            this.splitterItem2.Location = new System.Drawing.Point(0, 293);
+            this.splitterItem2.Location = new System.Drawing.Point(0, 285);
             this.splitterItem2.Name = "splitterItem2";
             this.splitterItem2.Size = new System.Drawing.Size(1225, 6);
             // 
@@ -260,65 +252,42 @@
             // tabPgTendances
             // 
             this.tabPgTendances.Name = "tabPgTendances";
-            this.tabPgTendances.Size = new System.Drawing.Size(1251, 645);
+            this.tabPgTendances.Size = new System.Drawing.Size(1252, 630);
             this.tabPgTendances.Text = "Tendances";
             // 
             // tabPgLoyaltyModel
             // 
             this.tabPgLoyaltyModel.Name = "tabPgLoyaltyModel";
-            this.tabPgLoyaltyModel.Size = new System.Drawing.Size(1251, 645);
+            this.tabPgLoyaltyModel.Size = new System.Drawing.Size(1252, 630);
             this.tabPgLoyaltyModel.Text = "Loyalty model";
             // 
             // tabPgNPS
             // 
             this.tabPgNPS.Name = "tabPgNPS";
-            this.tabPgNPS.Size = new System.Drawing.Size(1251, 645);
+            this.tabPgNPS.Size = new System.Drawing.Size(1252, 630);
             this.tabPgNPS.Text = "NPS";
             // 
             // tabPgSatisfactionModel
             // 
             this.tabPgSatisfactionModel.Name = "tabPgSatisfactionModel";
-            this.tabPgSatisfactionModel.Size = new System.Drawing.Size(1251, 645);
+            this.tabPgSatisfactionModel.Size = new System.Drawing.Size(1252, 630);
             this.tabPgSatisfactionModel.Text = "SatisfactionModel";
             // 
             // tabPgComplaintModel
             // 
             this.tabPgComplaintModel.Name = "tabPgComplaintModel";
-            this.tabPgComplaintModel.Size = new System.Drawing.Size(1251, 645);
+            this.tabPgComplaintModel.Size = new System.Drawing.Size(1252, 630);
             this.tabPgComplaintModel.Text = "Complaint model";
             // 
             // tabPgSynthese
             // 
             this.tabPgSynthese.Name = "tabPgSynthese";
-            this.tabPgSynthese.Size = new System.Drawing.Size(1251, 645);
+            this.tabPgSynthese.Size = new System.Drawing.Size(1252, 630);
             this.tabPgSynthese.Text = "Synthèse";
-            // 
-            // cbChoixListeTravail
-            // 
-            this.cbChoixListeTravail.DataSource = this.bsListeFichesTravail;
-            this.cbChoixListeTravail.DisplayMember = "nom";
-            this.cbChoixListeTravail.FormattingEnabled = true;
-            this.cbChoixListeTravail.Location = new System.Drawing.Point(163, 16);
-            this.cbChoixListeTravail.Name = "cbChoixListeTravail";
-            this.cbChoixListeTravail.Size = new System.Drawing.Size(616, 24);
-            this.cbChoixListeTravail.TabIndex = 7;
-            this.cbChoixListeTravail.ValueMember = "nom";
-            this.cbChoixListeTravail.SelectedIndexChanged += new System.EventHandler(this.cbChoixListeTravail_SelectedIndexChanged);
-            // 
-            // bsListeFichesTravail
-            // 
-            this.bsListeFichesTravail.AllowNew = global::ComHe_Pilotage.Properties.Settings.Default.addNewTrue;
-            this.bsListeFichesTravail.DataSource = typeof(ComHe_Objets.FicheTravail);
             // 
             // pnPrincipal
             // 
-            this.pnPrincipal.Controls.Add(this.btSaveFicheTravail);
-            this.pnPrincipal.Controls.Add(this.btNouveauFicheDeTravail);
-            this.pnPrincipal.Controls.Add(this.btRenommerFicheTravail);
-            this.pnPrincipal.Controls.Add(this.btDupliquerFicheTravail);
-            this.pnPrincipal.Controls.Add(this.btSupprimerFicheTravail);
-            this.pnPrincipal.Controls.Add(this.lbChoixListeTravail);
-            this.pnPrincipal.Controls.Add(this.cbChoixListeTravail);
+            this.pnPrincipal.Controls.Add(this.pmcGestionFichesDeTravail);
             this.pnPrincipal.Controls.Add(this.tabPrincipal);
             this.pnPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnPrincipal.Location = new System.Drawing.Point(0, 29);
@@ -329,172 +298,27 @@
             this.pnPrincipal.TabIndex = 7;
             this.pnPrincipal.Text = "layoutControl2";
             // 
-            // btSaveFicheTravail
-            // 
-            this.btSaveFicheTravail.Location = new System.Drawing.Point(1181, 16);
-            this.btSaveFicheTravail.MaximumSize = new System.Drawing.Size(93, 24);
-            this.btSaveFicheTravail.MinimumSize = new System.Drawing.Size(93, 24);
-            this.btSaveFicheTravail.Name = "btSaveFicheTravail";
-            this.btSaveFicheTravail.Size = new System.Drawing.Size(93, 24);
-            this.btSaveFicheTravail.StyleController = this.pnPrincipal;
-            this.btSaveFicheTravail.TabIndex = 13;
-            this.btSaveFicheTravail.Text = "Sauvegarder";
-            this.btSaveFicheTravail.Click += new System.EventHandler(this.btSaveFicheTravail_Click);
-            // 
-            // btNouveauFicheDeTravail
-            // 
-            this.btNouveauFicheDeTravail.Location = new System.Drawing.Point(1082, 16);
-            this.btNouveauFicheDeTravail.MaximumSize = new System.Drawing.Size(93, 24);
-            this.btNouveauFicheDeTravail.MinimumSize = new System.Drawing.Size(93, 24);
-            this.btNouveauFicheDeTravail.Name = "btNouveauFicheDeTravail";
-            this.btNouveauFicheDeTravail.Size = new System.Drawing.Size(93, 24);
-            this.btNouveauFicheDeTravail.StyleController = this.pnPrincipal;
-            this.btNouveauFicheDeTravail.TabIndex = 12;
-            this.btNouveauFicheDeTravail.Text = "Créer";
-            this.btNouveauFicheDeTravail.Click += new System.EventHandler(this.btNouveauFicheDeTravail_Click);
-            // 
-            // btRenommerFicheTravail
-            // 
-            this.btRenommerFicheTravail.Location = new System.Drawing.Point(785, 16);
-            this.btRenommerFicheTravail.MaximumSize = new System.Drawing.Size(93, 24);
-            this.btRenommerFicheTravail.MinimumSize = new System.Drawing.Size(93, 24);
-            this.btRenommerFicheTravail.Name = "btRenommerFicheTravail";
-            this.btRenommerFicheTravail.Size = new System.Drawing.Size(93, 24);
-            this.btRenommerFicheTravail.StyleController = this.pnPrincipal;
-            this.btRenommerFicheTravail.TabIndex = 11;
-            this.btRenommerFicheTravail.Text = "Renommer";
-            this.btRenommerFicheTravail.Click += new System.EventHandler(this.btRenommerFicheTravail_Click);
-            // 
-            // btDupliquerFicheTravail
-            // 
-            this.btDupliquerFicheTravail.Location = new System.Drawing.Point(884, 16);
-            this.btDupliquerFicheTravail.MaximumSize = new System.Drawing.Size(93, 24);
-            this.btDupliquerFicheTravail.MinimumSize = new System.Drawing.Size(93, 24);
-            this.btDupliquerFicheTravail.Name = "btDupliquerFicheTravail";
-            this.btDupliquerFicheTravail.Size = new System.Drawing.Size(93, 24);
-            this.btDupliquerFicheTravail.StyleController = this.pnPrincipal;
-            this.btDupliquerFicheTravail.TabIndex = 10;
-            this.btDupliquerFicheTravail.Text = "Dupliquer";
-            this.btDupliquerFicheTravail.Click += new System.EventHandler(this.btDupliquerFicheTravail_Click);
-            // 
-            // btSupprimerFicheTravail
-            // 
-            this.btSupprimerFicheTravail.Location = new System.Drawing.Point(983, 16);
-            this.btSupprimerFicheTravail.MaximumSize = new System.Drawing.Size(93, 24);
-            this.btSupprimerFicheTravail.MinimumSize = new System.Drawing.Size(93, 24);
-            this.btSupprimerFicheTravail.Name = "btSupprimerFicheTravail";
-            this.btSupprimerFicheTravail.Size = new System.Drawing.Size(93, 24);
-            this.btSupprimerFicheTravail.StyleController = this.pnPrincipal;
-            this.btSupprimerFicheTravail.TabIndex = 9;
-            this.btSupprimerFicheTravail.Text = "Supprimer";
-            this.btSupprimerFicheTravail.Click += new System.EventHandler(this.btSupprimerFicheTravail_Click);
-            // 
-            // lbChoixListeTravail
-            // 
-            this.lbChoixListeTravail.Location = new System.Drawing.Point(16, 16);
-            this.lbChoixListeTravail.MaximumSize = new System.Drawing.Size(0, 24);
-            this.lbChoixListeTravail.MinimumSize = new System.Drawing.Size(0, 24);
-            this.lbChoixListeTravail.Name = "lbChoixListeTravail";
-            this.lbChoixListeTravail.Size = new System.Drawing.Size(141, 24);
-            this.lbChoixListeTravail.StyleController = this.pnPrincipal;
-            this.lbChoixListeTravail.TabIndex = 8;
-            this.lbChoixListeTravail.Text = "Fiche de travail courante";
-            // 
             // layoutControlGroup2
             // 
             this.layoutControlGroup2.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.layoutControlGroup2.GroupBordersVisible = false;
             this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.lciCbChoixFicheTravail,
             this.lciTabPanePrincipal,
-            this.lciLbChoixFicheTravail,
-            this.lciBtSupprimerFicheTravail,
-            this.lciBtDupliquerFicheTravail,
-            this.lciBtRenommerFicheTravail,
-            this.lciBtCreerFicheTravail,
-            this.lciBtSaveFicheTravail});
+            layoutControlItem4});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "Root";
             this.layoutControlGroup2.OptionsItemText.TextToControlDistance = 4;
             this.layoutControlGroup2.Size = new System.Drawing.Size(1290, 744);
             this.layoutControlGroup2.TextVisible = false;
             // 
-            // lciCbChoixFicheTravail
-            // 
-            this.lciCbChoixFicheTravail.Control = this.cbChoixListeTravail;
-            this.lciCbChoixFicheTravail.Location = new System.Drawing.Point(147, 0);
-            this.lciCbChoixFicheTravail.MinSize = new System.Drawing.Size(1, 1);
-            this.lciCbChoixFicheTravail.Name = "lciCbChoixFicheTravail";
-            this.lciCbChoixFicheTravail.Size = new System.Drawing.Size(622, 33);
-            this.lciCbChoixFicheTravail.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.lciCbChoixFicheTravail.TextSize = new System.Drawing.Size(0, 0);
-            this.lciCbChoixFicheTravail.TextVisible = false;
-            // 
             // lciTabPanePrincipal
             // 
             this.lciTabPanePrincipal.Control = this.tabPrincipal;
-            this.lciTabPanePrincipal.Location = new System.Drawing.Point(0, 33);
+            this.lciTabPanePrincipal.Location = new System.Drawing.Point(0, 50);
             this.lciTabPanePrincipal.Name = "lciTabPanePrincipal";
-            this.lciTabPanePrincipal.Size = new System.Drawing.Size(1264, 685);
+            this.lciTabPanePrincipal.Size = new System.Drawing.Size(1264, 668);
             this.lciTabPanePrincipal.TextSize = new System.Drawing.Size(0, 0);
             this.lciTabPanePrincipal.TextVisible = false;
-            // 
-            // lciLbChoixFicheTravail
-            // 
-            this.lciLbChoixFicheTravail.Control = this.lbChoixListeTravail;
-            this.lciLbChoixFicheTravail.Location = new System.Drawing.Point(0, 0);
-            this.lciLbChoixFicheTravail.MaxSize = new System.Drawing.Size(147, 33);
-            this.lciLbChoixFicheTravail.MinSize = new System.Drawing.Size(147, 33);
-            this.lciLbChoixFicheTravail.Name = "lciLbChoixFicheTravail";
-            this.lciLbChoixFicheTravail.Size = new System.Drawing.Size(147, 33);
-            this.lciLbChoixFicheTravail.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.lciLbChoixFicheTravail.TextSize = new System.Drawing.Size(0, 0);
-            this.lciLbChoixFicheTravail.TextVisible = false;
-            // 
-            // lciBtSupprimerFicheTravail
-            // 
-            this.lciBtSupprimerFicheTravail.Control = this.btSupprimerFicheTravail;
-            this.lciBtSupprimerFicheTravail.Location = new System.Drawing.Point(967, 0);
-            this.lciBtSupprimerFicheTravail.Name = "lciBtSupprimerFicheTravail";
-            this.lciBtSupprimerFicheTravail.Size = new System.Drawing.Size(99, 33);
-            this.lciBtSupprimerFicheTravail.TextSize = new System.Drawing.Size(0, 0);
-            this.lciBtSupprimerFicheTravail.TextVisible = false;
-            // 
-            // lciBtDupliquerFicheTravail
-            // 
-            this.lciBtDupliquerFicheTravail.Control = this.btDupliquerFicheTravail;
-            this.lciBtDupliquerFicheTravail.Location = new System.Drawing.Point(868, 0);
-            this.lciBtDupliquerFicheTravail.Name = "lciBtDupliquerFicheTravail";
-            this.lciBtDupliquerFicheTravail.Size = new System.Drawing.Size(99, 33);
-            this.lciBtDupliquerFicheTravail.TextSize = new System.Drawing.Size(0, 0);
-            this.lciBtDupliquerFicheTravail.TextVisible = false;
-            // 
-            // lciBtRenommerFicheTravail
-            // 
-            this.lciBtRenommerFicheTravail.Control = this.btRenommerFicheTravail;
-            this.lciBtRenommerFicheTravail.Location = new System.Drawing.Point(769, 0);
-            this.lciBtRenommerFicheTravail.Name = "lciBtRenommerFicheTravail";
-            this.lciBtRenommerFicheTravail.Size = new System.Drawing.Size(99, 33);
-            this.lciBtRenommerFicheTravail.TextSize = new System.Drawing.Size(0, 0);
-            this.lciBtRenommerFicheTravail.TextVisible = false;
-            // 
-            // lciBtCreerFicheTravail
-            // 
-            this.lciBtCreerFicheTravail.Control = this.btNouveauFicheDeTravail;
-            this.lciBtCreerFicheTravail.Location = new System.Drawing.Point(1066, 0);
-            this.lciBtCreerFicheTravail.Name = "lciBtCreerFicheTravail";
-            this.lciBtCreerFicheTravail.Size = new System.Drawing.Size(99, 33);
-            this.lciBtCreerFicheTravail.TextSize = new System.Drawing.Size(0, 0);
-            this.lciBtCreerFicheTravail.TextVisible = false;
-            // 
-            // lciBtSaveFicheTravail
-            // 
-            this.lciBtSaveFicheTravail.Control = this.btSaveFicheTravail;
-            this.lciBtSaveFicheTravail.Location = new System.Drawing.Point(1165, 0);
-            this.lciBtSaveFicheTravail.Name = "lciBtSaveFicheTravail";
-            this.lciBtSaveFicheTravail.Size = new System.Drawing.Size(99, 33);
-            this.lciBtSaveFicheTravail.TextSize = new System.Drawing.Size(0, 0);
-            this.lciBtSaveFicheTravail.TextVisible = false;
             // 
             // barManager1
             // 
@@ -567,13 +391,14 @@
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.LookAndFeel.SkinName = "Blue";
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmPrincipale";
             this.Text = "ComHe-Pilotage";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.bsSegment)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabPrincipal)).EndInit();
             this.tabPrincipal.ResumeLayout(false);
             this.tabPgSegmentation.ResumeLayout(false);
@@ -589,18 +414,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsListeFichesTravail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnPrincipal)).EndInit();
             this.pnPrincipal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lciCbChoixFicheTravail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciTabPanePrincipal)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lciLbChoixFicheTravail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lciBtSupprimerFicheTravail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lciBtDupliquerFicheTravail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lciBtRenommerFicheTravail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lciBtCreerFicheTravail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lciBtSaveFicheTravail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -618,7 +435,6 @@
         private DevExpress.XtraTab.XtraTabPage tabPgComplaintModel;
         private DevExpress.XtraTab.XtraTabPage tabPgSynthese;
         private DevExpress.XtraVerticalGrid.VGridControl grdSegmentation;
-        public System.Windows.Forms.BindingSource bsSegment;
         private DevExpress.XtraCharts.ChartControl chSegmentation;
         private DevExpress.XtraLayout.LayoutControl pnTabPgSegmentation;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
@@ -626,13 +442,9 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator1;
         private DevExpress.XtraLayout.SplitterItem splitterItem2;
-        private System.Windows.Forms.ComboBox cbChoixListeTravail;
         private DevExpress.XtraLayout.LayoutControl pnPrincipal;
-        private DevExpress.XtraEditors.LabelControl lbChoixListeTravail;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
-        private DevExpress.XtraLayout.LayoutControlItem lciCbChoixFicheTravail;
         private DevExpress.XtraLayout.LayoutControlItem lciTabPanePrincipal;
-        private DevExpress.XtraLayout.LayoutControlItem lciLbChoixFicheTravail;
         private DevExpress.XtraBars.BarManager barManager1;
         private DevExpress.XtraBars.Bar bar2;
         private DevExpress.XtraBars.SkinBarSubItem skinBarSubItem1;
@@ -640,19 +452,9 @@
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
-        private DevExpress.XtraEditors.SimpleButton btRenommerFicheTravail;
-        private DevExpress.XtraEditors.SimpleButton btDupliquerFicheTravail;
-        private DevExpress.XtraEditors.SimpleButton btSupprimerFicheTravail;
-        private DevExpress.XtraLayout.LayoutControlItem lciBtSupprimerFicheTravail;
-        private DevExpress.XtraLayout.LayoutControlItem lciBtDupliquerFicheTravail;
-        private DevExpress.XtraLayout.LayoutControlItem lciBtRenommerFicheTravail;
-        private DevExpress.XtraEditors.SimpleButton btNouveauFicheDeTravail;
-        private DevExpress.XtraLayout.LayoutControlItem lciBtCreerFicheTravail;
-        private DevExpress.XtraEditors.SimpleButton btSaveFicheTravail;
-        private DevExpress.XtraLayout.LayoutControlItem lciBtSaveFicheTravail;
-        public System.Windows.Forms.BindingSource bsListeFichesTravail;
         private DevExpress.XtraEditors.SimpleButton btAjouterSegment;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private pmcGestionFichesDeTravail pmcGestionFichesDeTravail;
     }
 }
 

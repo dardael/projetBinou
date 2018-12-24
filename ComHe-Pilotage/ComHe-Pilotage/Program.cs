@@ -18,7 +18,7 @@ namespace ComHe_Pilotage {
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
+            UserLookAndFeel.Default.SetSkinStyle("Blue");
             Application.Run(new frmPrincipale());
         }
     }

@@ -24,11 +24,10 @@ namespace ComHe_Outils {
         public static object LoadFromXML(System.Type type, string filename) {
             if (File.Exists(filename)) {
                 object result;
-                using (XmlReader r = XmlReader.Create(new StreamReader(filename))) {
-                    XmlSerializer s = new XmlSerializer(type);
-                    result = s.Deserialize(r);
-                    r.Close();
-                }
+                XmlReader r = XmlReader.Create(new StreamReader(filename));
+                XmlSerializer s = new XmlSerializer(type);
+                result = s.Deserialize(r);
+                r.Close();
                 return result;
             }
             return null;
