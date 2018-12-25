@@ -1,11 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfFicheTravail xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<FicheTravail>
-		<nom>Nouvelle fiche de travail</nom>
-		<segments />
-	</FicheTravail>
-	<FicheTravail>
-		<nom>Fiche de travail Fabien</nom>
-		<segments />
+		<nom>Fiche 1</nom>
+		<segments>
+			<Segment>
+				<_caFromLM>20000</_caFromLM>
+				<_txMarge>0.2</_txMarge>
+				<_txRetention>SOIXANTE</_txRetention>
+				<_marge>4000</_marge>
+				<_txActualisation>DIX</_txActualisation>
+				<nom>Segment A</nom>
+				<typeSegment>BNC</typeSegment>
+				<caFromLM>20000</caFromLM>
+				<txMarge>0.2</txMarge>
+				<txRetention>SOIXANTE</txRetention>
+				<txActualisation>DIX</txActualisation>
+			</Segment>
+			<Segment>
+				<_caFromLM>10000</_caFromLM>
+				<_txMarge>0.3</_txMarge>
+				<_txRetention>QUATREVINGT</_txRetention>
+				<_marge>3000</_marge>
+				<_txActualisation>QUATORZE</_txActualisation>
+				<nom>Segment B</nom>
+				<typeSegment>BNC</typeSegment>
+				<caFromLM>10000</caFromLM>
+				<txMarge>0.3</txMarge>
+				<txRetention>QUATREVINGT</txRetention>
+				<txActualisation>QUATORZE</txActualisation>
+			</Segment>
+		</segments>
 	</FicheTravail>
 </ArrayOfFicheTravail>

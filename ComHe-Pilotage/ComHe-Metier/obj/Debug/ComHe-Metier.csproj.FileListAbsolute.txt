@@ -1,0 +1,9 @@
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Metier\bin\Debug\ComHe-Metier.dll
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Metier\bin\Debug\ComHe-Metier.pdb
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Metier\bin\Debug\ComHe-Objets.dll
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Metier\bin\Debug\ComHe-Outils.dll
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Metier\bin\Debug\ComHe-Objets.pdb
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Metier\bin\Debug\ComHe-Outils.pdb
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Metier\obj\Debug\ComHe-Metier.csprojResolveAssemblyReference.cache
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Metier\obj\Debug\ComHe-Metier.dll
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Metier\obj\Debug\ComHe-Metier.pdb

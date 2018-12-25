@@ -12,7 +12,6 @@ namespace ComHe_Metier {
         public static Segment returnSegmentMoyen(List<Segment> segments) {
             Segment segmentMoyen = new Segment();
             segmentMoyen.nom = "Moyenne";
-
             return segmentMoyen;
         }
     }

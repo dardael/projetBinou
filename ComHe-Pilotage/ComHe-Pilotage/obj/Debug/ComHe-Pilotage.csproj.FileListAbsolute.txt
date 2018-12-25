@@ -1,6 +1,7 @@
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ComHe-Pilotage.exe.config
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ComHe-Pilotage.exe
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ComHe-Pilotage.pdb
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ComHe-Metier.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ComHe-Objets.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ComHe-Outils.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.BonusSkins.v15.2.dll
@@ -28,6 +29,7 @@ C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\C
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.Office.v15.2.Core.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.Pdf.v15.2.Core.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.Pdf.v15.2.Drawing.dll
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ComHe-Metier.pdb
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ComHe-Objets.pdb
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ComHe-Outils.pdb
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.Data.v15.2.xml
@@ -138,7 +140,6 @@ C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\C
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ja\DevExpress.Pdf.v15.2.Core.resources.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ru\DevExpress.Pdf.v15.2.Core.resources.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe-Pilotage.csprojResolveAssemblyReference.cache
-C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.frmPrincipale.resources
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.pmcCreationFicheTravail.resources
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.pmcGestionFichesDeTravail.resources
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.pmcSegmentation.resources
@@ -148,3 +149,4 @@ C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\C
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe-Pilotage.exe.licenses
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe-Pilotage.exe
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe-Pilotage.pdb
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.frmPrincipale.resources

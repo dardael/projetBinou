@@ -2,9 +2,12 @@
 using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace ComHe_Pilotage {
     public partial class frmPrincipale : XtraForm {
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [Browsable(false)]
         public FicheTravail fiche { get; set; }
         public frmPrincipale() {
             InitializeComponent();

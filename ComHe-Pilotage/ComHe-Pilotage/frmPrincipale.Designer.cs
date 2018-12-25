@@ -76,8 +76,6 @@
             // 
             // pmcGestionFichesDeTravail
             // 
-            this.pmcGestionFichesDeTravail.ficheCourante = ((ComHe_Objets.FicheTravail)(resources.GetObject("pmcGestionFichesDeTravail.ficheCourante")));
-            this.pmcGestionFichesDeTravail.fichesTravail = ((System.Collections.Generic.List<ComHe_Objets.FicheTravail>)(resources.GetObject("pmcGestionFichesDeTravail.fichesTravail")));
             this.pmcGestionFichesDeTravail.Location = new System.Drawing.Point(16, 16);
             this.pmcGestionFichesDeTravail.Margin = new System.Windows.Forms.Padding(0);
             this.pmcGestionFichesDeTravail.Name = "pmcGestionFichesDeTravail";

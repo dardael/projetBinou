@@ -6,7 +6,10 @@ using ComHe_Outils;
 
 namespace ComHe_Pilotage {
     public partial class pmcGestionFichesDeTravail : UserControl {
-        public List<FicheTravail> fichesTravail { get; set; }
+        public List<FicheTravail> fichesTravail {
+            get;
+            set;
+        }
         public FicheTravail ficheCourante {
             get;
             set;
