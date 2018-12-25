@@ -8,6 +8,8 @@ namespace ComHe_Objets {
 
     [Serializable]
     public class Segment {
+        private Guid _id = Guid.NewGuid();
+        public Guid id { get { return _id; } }
         public string nom { get; set; }
         public enumTypeSegment typeSegment { get; set; }
         public double caFromLM {
@@ -16,6 +18,9 @@ namespace ComHe_Objets {
                 _caFromLM = value;
                 calculDonneesPossibles();
             }
+        }
+        public void generateNewGuid() {
+            _id = Guid.NewGuid();
         }
         public double txMarge {
             get { return _txMarge; }

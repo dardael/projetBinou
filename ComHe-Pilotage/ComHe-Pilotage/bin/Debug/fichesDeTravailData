@@ -4,4 +4,8 @@
 		<nom>Nouvelle fiche de travail</nom>
 		<segments />
 	</FicheTravail>
+	<FicheTravail>
+		<nom>Fiche de travail Fabien</nom>
+		<segments />
+	</FicheTravail>
 </ArrayOfFicheTravail>

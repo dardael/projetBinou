@@ -24,8 +24,8 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.XYDiagram xyDiagram2 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
             this.pnTabPgSegmentation = new DevExpress.XtraLayout.LayoutControl();
             this.btAjouterSegment = new DevExpress.XtraEditors.SimpleButton();
             this.grdSegmentation = new DevExpress.XtraVerticalGrid.VGridControl();
@@ -35,6 +35,7 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.segmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btGrSegmentationSuppr = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.rowNom = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowtypeSegment = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowcaFromLM = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
@@ -44,17 +45,19 @@
             this.rowmarge = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowtxMultiplicateur = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowclv = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
+            this.rowId = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             ((System.ComponentModel.ISupportInitialize)(this.pnTabPgSegmentation)).BeginInit();
             this.pnTabPgSegmentation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdSegmentation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chSegmentation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.segmentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btGrSegmentationSuppr)).BeginInit();
             this.SuspendLayout();
             // 
             // pnTabPgSegmentation
@@ -87,14 +90,17 @@
             // 
             this.grdSegmentation.AllowDrop = true;
             this.grdSegmentation.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.grdSegmentation.Cursor = System.Windows.Forms.Cursors.SizeNS;
             this.grdSegmentation.DataSource = this.segmentBindingSource;
             this.grdSegmentation.Location = new System.Drawing.Point(16, 49);
             this.grdSegmentation.MaximumSize = new System.Drawing.Size(0, 300);
             this.grdSegmentation.Name = "grdSegmentation";
-            this.grdSegmentation.OptionsBehavior.ShowEditorOnMouseUp = true;
+            this.grdSegmentation.OptionsBehavior.AutoFocusNewRecord = true;
+            this.grdSegmentation.OptionsBehavior.AutoSelectAllInEditor = false;
+            this.grdSegmentation.OptionsFind.Visibility = DevExpress.XtraVerticalGrid.FindPanelVisibility.Never;
             this.grdSegmentation.OptionsLayout.Columns.AddNewColumns = true;
             this.grdSegmentation.OptionsLayout.Columns.RemoveOldColumns = true;
+            this.grdSegmentation.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.btGrSegmentationSuppr});
             this.grdSegmentation.RowHeaderWidth = 155;
             this.grdSegmentation.Rows.AddRange(new DevExpress.XtraVerticalGrid.Rows.BaseRow[] {
             this.rowNom,
@@ -105,35 +111,36 @@
             this.rowtxActualisation,
             this.rowmarge,
             this.rowtxMultiplicateur,
-            this.rowclv});
+            this.rowclv,
+            this.rowId});
             this.grdSegmentation.ShowButtonMode = DevExpress.XtraVerticalGrid.ShowButtonModeEnum.ShowAlways;
-            this.grdSegmentation.Size = new System.Drawing.Size(791, 149);
+            this.grdSegmentation.Size = new System.Drawing.Size(791, 154);
             this.grdSegmentation.TabIndex = 4;
             // 
             // chSegmentation
             // 
             this.chSegmentation.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.chSegmentation.AppearanceNameSerializable = "Light";
-            xyDiagram1.AxisX.Title.Text = "Segments";
-            xyDiagram1.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.Title.Text = "CLV";
-            xyDiagram1.AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            this.chSegmentation.Diagram = xyDiagram1;
+            xyDiagram2.AxisX.Title.Text = "Segments";
+            xyDiagram2.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            xyDiagram2.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram2.AxisY.Title.Text = "CLV";
+            xyDiagram2.AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
+            this.chSegmentation.Diagram = xyDiagram2;
             this.chSegmentation.Legend.MarkerVisible = false;
             this.chSegmentation.Legend.TextVisible = false;
-            this.chSegmentation.Location = new System.Drawing.Point(16, 204);
+            this.chSegmentation.Location = new System.Drawing.Point(16, 209);
             this.chSegmentation.Name = "chSegmentation";
             this.chSegmentation.PaletteName = "Default";
-            series1.ArgumentDataMember = "nom";
-            series1.Name = "Series 1";
-            series1.ValueDataMembersSerializable = "clv";
+            series2.ArgumentDataMember = "nom";
+            series2.Name = "Series 1";
+            series2.ValueDataMembersSerializable = "clv";
             this.chSegmentation.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1};
+        series2};
             this.chSegmentation.SeriesTemplate.ArgumentDataMember = "nom";
             this.chSegmentation.SeriesTemplate.ValueDataMembersSerializable = "clv";
-            this.chSegmentation.Size = new System.Drawing.Size(791, 345);
+            this.chSegmentation.Size = new System.Drawing.Size(791, 340);
             this.chSegmentation.TabIndex = 6;
             // 
             // layoutControlGroup1
@@ -153,9 +160,9 @@
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.chSegmentation;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 188);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 193);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(797, 351);
+            this.layoutControlItem2.Size = new System.Drawing.Size(797, 346);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
@@ -163,10 +170,10 @@
             // 
             this.layoutControlItem3.Control = this.grdSegmentation;
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 33);
-            this.layoutControlItem3.MaxSize = new System.Drawing.Size(0, 155);
-            this.layoutControlItem3.MinSize = new System.Drawing.Size(26, 155);
+            this.layoutControlItem3.MaxSize = new System.Drawing.Size(0, 160);
+            this.layoutControlItem3.MinSize = new System.Drawing.Size(26, 160);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(797, 155);
+            this.layoutControlItem3.Size = new System.Drawing.Size(797, 160);
             this.layoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
@@ -187,11 +194,21 @@
             // 
             this.segmentBindingSource.DataSource = typeof(ComHe_Objets.Segment);
             // 
+            // btGrSegmentationSuppr
+            // 
+            this.btGrSegmentationSuppr.AutoHeight = false;
+            this.btGrSegmentationSuppr.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete)});
+            this.btGrSegmentationSuppr.Name = "btGrSegmentationSuppr";
+            this.btGrSegmentationSuppr.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btGrSegmentationSuppr_ButtonClick);
+            // 
             // rowNom
             // 
             this.rowNom.Name = "rowNom";
             this.rowNom.Properties.Caption = "Nom";
             this.rowNom.Properties.FieldName = "nom";
+            this.rowNom.Properties.RowEdit = this.btGrSegmentationSuppr;
             // 
             // rowtypeSegment
             // 
@@ -202,6 +219,7 @@
             // 
             // rowcaFromLM
             // 
+            this.rowcaFromLM.Height = 18;
             this.rowcaFromLM.Name = "rowcaFromLM";
             this.rowcaFromLM.Properties.Caption = "CA selon LM";
             this.rowcaFromLM.Properties.FieldName = "caFromLM";
@@ -214,12 +232,16 @@
             // 
             // rowtxRetention
             // 
+            this.rowtxRetention.Appearance.Options.UseTextOptions = true;
+            this.rowtxRetention.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.rowtxRetention.Name = "rowtxRetention";
             this.rowtxRetention.Properties.Caption = "Tx de retention";
             this.rowtxRetention.Properties.FieldName = "txRetention";
             // 
             // rowtxActualisation
             // 
+            this.rowtxActualisation.Appearance.Options.UseTextOptions = true;
+            this.rowtxActualisation.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.rowtxActualisation.Name = "rowtxActualisation";
             this.rowtxActualisation.Properties.Caption = "Tx d\'actualisation";
             this.rowtxActualisation.Properties.FieldName = "txActualisation";
@@ -233,6 +255,8 @@
             // 
             // rowtxMultiplicateur
             // 
+            this.rowtxMultiplicateur.Appearance.Options.UseTextOptions = true;
+            this.rowtxMultiplicateur.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.rowtxMultiplicateur.Name = "rowtxMultiplicateur";
             this.rowtxMultiplicateur.Properties.Caption = "Tx multiplicateur";
             this.rowtxMultiplicateur.Properties.FieldName = "txMultiplicateur";
@@ -245,6 +269,13 @@
             this.rowclv.Properties.FieldName = "clv";
             this.rowclv.Properties.ReadOnly = true;
             // 
+            // rowId
+            // 
+            this.rowId.Name = "rowId";
+            this.rowId.Properties.FieldName = "id";
+            this.rowId.Properties.ReadOnly = true;
+            this.rowId.Visible = false;
+            // 
             // pmcSegmentation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -255,14 +286,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pnTabPgSegmentation)).EndInit();
             this.pnTabPgSegmentation.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdSegmentation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chSegmentation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.segmentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btGrSegmentationSuppr)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -278,6 +310,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private System.Windows.Forms.BindingSource segmentBindingSource;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btGrSegmentationSuppr;
         private DevExpress.XtraVerticalGrid.Rows.EditorRow rowNom;
         private DevExpress.XtraVerticalGrid.Rows.EditorRow rowtypeSegment;
         private DevExpress.XtraVerticalGrid.Rows.EditorRow rowcaFromLM;
@@ -287,5 +320,6 @@
         private DevExpress.XtraVerticalGrid.Rows.EditorRow rowmarge;
         private DevExpress.XtraVerticalGrid.Rows.EditorRow rowtxMultiplicateur;
         private DevExpress.XtraVerticalGrid.Rows.EditorRow rowclv;
+        private DevExpress.XtraVerticalGrid.Rows.EditorRow rowId;
     }
 }

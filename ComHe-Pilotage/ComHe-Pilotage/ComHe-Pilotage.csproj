@@ -141,6 +141,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ComHe-Metier\ComHe-Metier.csproj">
+      <Project>{78712C72-9CF3-4803-87F7-A9BDAEAEEA5F}</Project>
+      <Name>ComHe-Metier</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ComHe-Objets\ComHe-Objets.csproj">
       <Project>{7d1d1514-c77b-49c1-bcae-0a0577cd28ec}</Project>
       <Name>ComHe-Objets</Name>
