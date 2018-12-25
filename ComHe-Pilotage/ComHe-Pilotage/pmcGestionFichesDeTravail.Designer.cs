@@ -129,6 +129,7 @@
             this.cbChoixListeTravail.Size = new System.Drawing.Size(138, 24);
             this.cbChoixListeTravail.TabIndex = 15;
             this.cbChoixListeTravail.ValueMember = "nom";
+            this.cbChoixListeTravail.SelectedIndexChanged += new System.EventHandler(this.cbChoixListeTravail_SelectedIndexChanged_1);
             // 
             // btSaveFicheTravail
             // 

@@ -60,13 +60,13 @@ namespace ComHe_Pilotage {
                 if (frmSaisieFicheTravail.isNew) {
                     fichesTravail.Add(ficheCourante);
                     populateCbFichesTravail();
-                    cbChoixListeTravail.SelectedItem = frmSaisieFicheTravail.ficheTravail;
                     alertControl1.Show(this.ParentForm, "Nouvelle fiche de travail créée", "La fiche de travail " + ficheCourante.nom + " a été correctement créée");
                 }
                 else {
                     populateCbFichesTravail();
                     alertControl1.Show(this.ParentForm, "Fiche de travail renommée", "La fiche de travail " + ficheCourante.nom + " a été correctement renommée");
                 }
+                cbChoixListeTravail.SelectedItem = frmSaisieFicheTravail.ficheTravail;
 
             }
         }
@@ -89,9 +89,11 @@ namespace ComHe_Pilotage {
         private void btDupliquerFicheTravail_Click(object sender, EventArgs e) {
             FicheTravail ficheTemp = Cloneur.Clone(ficheCourante);
             ficheTemp.nom = ficheTemp.nom + "-copie";
+            ficheTemp.generateNewGuid();
             fichesTravail.Add(ficheTemp);
             populateCbFichesTravail();
             cbChoixListeTravail.SelectedItem = ficheTemp;
+            ficheCourante = ficheTemp;
             alertControl1.Show(this.ParentForm, "Nouvelle fiche de travail créée", "La fiche de travail " + ficheCourante.nom + " a été correctement dupliquée");
         }
 
@@ -100,6 +102,11 @@ namespace ComHe_Pilotage {
                 fichesTravail.Remove(ficheCourante);
                 populateCbFichesTravail();
             }
+        }
+
+        private void cbChoixListeTravail_SelectedIndexChanged_1(object sender, EventArgs e) {
+            ficheCourante = (FicheTravail)cbChoixListeTravail.SelectedItem;
+            ficheTravailCouranteChanged(sender, e);
         }
     }
 }

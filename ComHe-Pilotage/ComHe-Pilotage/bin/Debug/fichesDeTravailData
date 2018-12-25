@@ -29,6 +29,76 @@
 				<txRetention>QUATREVINGT</txRetention>
 				<txActualisation>QUATORZE</txActualisation>
 			</Segment>
+			<Segment>
+				<_caFromLM>5000</_caFromLM>
+				<_txMarge>0.4</_txMarge>
+				<_txRetention>SOIXANTEDIX</_txRetention>
+				<_marge>2000</_marge>
+				<_txActualisation>DOUZE</_txActualisation>
+				<nom>Segment C</nom>
+				<typeSegment>BNC</typeSegment>
+				<caFromLM>5000</caFromLM>
+				<txMarge>0.4</txMarge>
+				<txRetention>SOIXANTEDIX</txRetention>
+				<txActualisation>DOUZE</txActualisation>
+			</Segment>
+			<Segment>
+				<_caFromLM>5000</_caFromLM>
+				<_txMarge>0.4</_txMarge>
+				<_txRetention>SOIXANTEDIX</_txRetention>
+				<_marge>2000</_marge>
+				<_txActualisation>DOUZE</_txActualisation>
+				<nom>Segment D</nom>
+				<typeSegment>BNC</typeSegment>
+				<caFromLM>5000</caFromLM>
+				<txMarge>0.4</txMarge>
+				<txRetention>SOIXANTEDIX</txRetention>
+				<txActualisation>DOUZE</txActualisation>
+			</Segment>
+		</segments>
+	</FicheTravail>
+	<FicheTravail>
+		<nom>Fiche 2</nom>
+		<segments>
+			<Segment>
+				<_caFromLM>20000</_caFromLM>
+				<_txMarge>0.2</_txMarge>
+				<_txRetention>SOIXANTE</_txRetention>
+				<_marge>4000</_marge>
+				<_txActualisation>DIX</_txActualisation>
+				<nom>Segment A</nom>
+				<typeSegment>BNC</typeSegment>
+				<caFromLM>20000</caFromLM>
+				<txMarge>0.2</txMarge>
+				<txRetention>SOIXANTE</txRetention>
+				<txActualisation>DIX</txActualisation>
+			</Segment>
+			<Segment>
+				<_caFromLM>10000</_caFromLM>
+				<_txMarge>0.3</_txMarge>
+				<_txRetention>QUATREVINGT</_txRetention>
+				<_marge>3000</_marge>
+				<_txActualisation>QUATORZE</_txActualisation>
+				<nom>Segment B</nom>
+				<typeSegment>BNC</typeSegment>
+				<caFromLM>10000</caFromLM>
+				<txMarge>0.3</txMarge>
+				<txRetention>QUATREVINGT</txRetention>
+				<txActualisation>QUATORZE</txActualisation>
+			</Segment>
+			<Segment>
+				<_caFromLM>5000</_caFromLM>
+				<_txMarge>0.4</_txMarge>
+				<_txRetention>SOIXANTEDIX</_txRetention>
+				<_marge>2000</_marge>
+				<_txActualisation>DOUZE</_txActualisation>
+				<nom>Segment C</nom>
+				<typeSegment>BNC</typeSegment>
+				<caFromLM>5000</caFromLM>
+				<txMarge>0.4</txMarge>
+				<txRetention>SOIXANTEDIX</txRetention>
+				<txActualisation>DOUZE</txActualisation>
+			</Segment>
 		</segments>
 	</FicheTravail>
 </ArrayOfFicheTravail>
