@@ -362,7 +362,7 @@
             this.chSegmentation.Location = new System.Drawing.Point(16, 209);
             this.chSegmentation.Name = "chSegmentation";
             this.chSegmentation.PaletteName = "Default";
-            series1.ArgumentDataMember = "nom";
+            series1.ArgumentDataMember = "id";
             series1.ColorDataMember = "id";
             series1.Colorizer = colorObjectColorizer1;
             series1.Name = "Series 1";
@@ -380,6 +380,7 @@
             this.chSegmentation.SeriesTemplate.View = sideBySideBarSeriesView2;
             this.chSegmentation.Size = new System.Drawing.Size(791, 340);
             this.chSegmentation.TabIndex = 6;
+            this.chSegmentation.CustomDrawAxisLabel += new DevExpress.XtraCharts.CustomDrawAxisLabelEventHandler(this.chSegmentation_CustomDrawAxisLabel);
             // 
             // layoutControlGroup1
             // 

@@ -4,6 +4,8 @@ using System.Windows.Forms;
 using ComHe_Objets;
 using ComHe_Outils;
 using ComHe_Metier;
+using DevExpress.XtraCharts;
+using System.Linq;
 
 namespace ComHe_Pilotage {
     public partial class pmcSegmentation : UserControl {
@@ -54,6 +56,14 @@ namespace ComHe_Pilotage {
             else {
                 ficheCourante.segments.Add(SegmentBO.clonerSegment(segmentCourant));
                 gererChangementFicheCourante();
+            }
+        }
+
+        private void chSegmentation_CustomDrawAxisLabel(object sender, DevExpress.XtraCharts.CustomDrawAxisLabelEventArgs e) {
+            AxisBase axis = e.Item.Axis;
+            if (axis is AxisX) {
+                string value = (string)e.Item.AxisValue;
+                e.Item.Text = ficheCourante.segments.Where(fiche => fiche.id.ToString() == value).First().nom;
             }
         }
     }
