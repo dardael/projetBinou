@@ -25,11 +25,16 @@ namespace ComHe_Pilotage {
         }
         private void gererChangementFicheCourante() {
             populateGridSegmentation();
+            populateGridSegmentationMoyen();
             populateChSegmentationCLV();
         }
         private void populateGridSegmentation() {
             grdSegmentation.DataSource = new List<Segment>(ficheCourante.segments);
             grdSegmentation.Refresh();
+        }
+        private void populateGridSegmentationMoyen() {
+            grdSegmentationMoyen.DataSource = new List<Segment>(new List<Segment> { SegmentBO.returnSegmentMoyen(ficheCourante.segments) });
+            grdSegmentationMoyen.Refresh();
         }
         private void populateChSegmentationCLV() {
             chSegmentation.DataSource = new List<Segment>(ficheCourante.segments);

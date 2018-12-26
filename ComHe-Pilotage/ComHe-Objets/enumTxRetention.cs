@@ -39,6 +39,23 @@ namespace ComHe_Objets {
             }
 
         }
+        public static enumTxRetention getCodeFromDouble(double valeur) {
+            if (valeur <= 0) {
+                return enumTxRetention.NR;
+            }
+            else if (valeur < 0.7) {
+                return enumTxRetention.SOIXANTE;
+            }
+            else if (valeur < 0.8) {
+                return enumTxRetention.SOIXANTEDIX;
+            }
+            else if (valeur < 0.9) {
+                return enumTxRetention.QUATREVINGT;
+            }
+            else {
+                return enumTxRetention.QUATREVINGTDIX;
+            }
+        }
     }
 
 }

@@ -41,6 +41,23 @@ namespace ComHe_Objets {
             }
 
         }
+        public static enumTxActualisation getCodeFromDouble(double valeur) {
+            if (valeur <= 0) {
+                return enumTxActualisation.NR;
+            }
+            else if (valeur < 0.12) {
+                return enumTxActualisation.DIX;
+            }
+            else if (valeur < 0.14) {
+                return enumTxActualisation.DOUZE;
+            }
+            else if (valeur < 0.16) {
+                return enumTxActualisation.QUATORZE;
+            }
+            else {
+                return enumTxActualisation.SEIZE;
+            }
+        }
     }
 
 }
