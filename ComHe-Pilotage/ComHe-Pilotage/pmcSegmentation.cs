@@ -54,7 +54,9 @@ namespace ComHe_Pilotage {
                 gererChangementFicheCourante();
             }
             else {
-                ficheCourante.segments.Add(SegmentBO.clonerSegment(segmentCourant));
+                Segment segCopie = SegmentBO.clonerSegment(segmentCourant);
+                segCopie.nom += "(Copie " + ficheCourante.segments.Where(x => x.nom.StartsWith(segCopie.nom)).Count().ToString() + ")";
+                ficheCourante.segments.Add(segCopie);
                 gererChangementFicheCourante();
             }
         }
