@@ -25,23 +25,23 @@
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             this.lcPrincipal = new DevExpress.XtraLayout.LayoutControl();
-            this.lcGrQuatresChemins = new DevExpress.XtraLayout.LayoutControlGroup();
             this.grQuatresChemins = new DevExpress.XtraVerticalGrid.VGridControl();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.segmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cbEchelle = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.rownom = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rownoteBoucheAOreille = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rownoteReductionCouts = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rownoteAugmentationDepensesAchatsCroises = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rownotePricePremium = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
-            this.cbEchelle = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
+            this.lcGrQuatresChemins = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.lcPrincipal)).BeginInit();
             this.lcPrincipal.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lcGrQuatresChemins)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grQuatresChemins)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.segmentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbEchelle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcGrQuatresChemins)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // lcPrincipal
@@ -56,22 +56,9 @@
             this.lcPrincipal.TabIndex = 0;
             this.lcPrincipal.Text = "layoutControl1";
             // 
-            // lcGrQuatresChemins
-            // 
-            this.lcGrQuatresChemins.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.lcGrQuatresChemins.GroupBordersVisible = false;
-            this.lcGrQuatresChemins.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem1});
-            this.lcGrQuatresChemins.Location = new System.Drawing.Point(0, 0);
-            this.lcGrQuatresChemins.Name = "lcGrQuatresChemins";
-            this.lcGrQuatresChemins.OptionsItemText.TextToControlDistance = 4;
-            this.lcGrQuatresChemins.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.lcGrQuatresChemins.Size = new System.Drawing.Size(751, 393);
-            this.lcGrQuatresChemins.TextVisible = false;
-            // 
             // grQuatresChemins
             // 
-            this.grQuatresChemins.Cursor = System.Windows.Forms.Cursors.SizeNS;
+            this.grQuatresChemins.Cursor = System.Windows.Forms.Cursors.SizeWE;
             this.grQuatresChemins.DataSource = this.segmentBindingSource;
             this.grQuatresChemins.Location = new System.Drawing.Point(3, 3);
             this.grQuatresChemins.Margin = new System.Windows.Forms.Padding(0);
@@ -87,19 +74,32 @@
             this.rownotePricePremium});
             this.grQuatresChemins.Size = new System.Drawing.Size(745, 387);
             this.grQuatresChemins.TabIndex = 4;
-            // 
-            // layoutControlItem1
-            // 
-            this.layoutControlItem1.Control = this.grQuatresChemins;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(751, 393);
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem1.TextVisible = false;
+            this.grQuatresChemins.CustomDrawRowValueCell += new DevExpress.XtraVerticalGrid.Events.CustomDrawRowValueCellEventHandler(this.grQuatresChemins_CustomDrawRowValueCell);
             // 
             // segmentBindingSource
             // 
             this.segmentBindingSource.DataSource = typeof(ComHe_Objets.Segment);
+            // 
+            // cbEchelle
+            // 
+            this.cbEchelle.AutoHeight = false;
+            this.cbEchelle.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbEchelle.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.cbEchelle.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.cbEchelle.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cbEchelle.Name = "cbEchelle";
             // 
             // rownom
             // 
@@ -136,26 +136,27 @@
             this.rownotePricePremium.Properties.FieldName = "notePricePremium";
             this.rownotePricePremium.Properties.RowEdit = this.cbEchelle;
             // 
-            // cbEchelle
+            // lcGrQuatresChemins
             // 
-            this.cbEchelle.AutoHeight = false;
-            this.cbEchelle.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbEchelle.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.cbEchelle.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.cbEchelle.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.cbEchelle.Name = "cbEchelle";
+            this.lcGrQuatresChemins.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.lcGrQuatresChemins.GroupBordersVisible = false;
+            this.lcGrQuatresChemins.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem1});
+            this.lcGrQuatresChemins.Location = new System.Drawing.Point(0, 0);
+            this.lcGrQuatresChemins.Name = "lcGrQuatresChemins";
+            this.lcGrQuatresChemins.OptionsItemText.TextToControlDistance = 4;
+            this.lcGrQuatresChemins.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
+            this.lcGrQuatresChemins.Size = new System.Drawing.Size(751, 393);
+            this.lcGrQuatresChemins.TextVisible = false;
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.Control = this.grQuatresChemins;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(751, 393);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem1.TextVisible = false;
             // 
             // pmcQuatresChemins
             // 
@@ -167,11 +168,11 @@
             this.Size = new System.Drawing.Size(751, 393);
             ((System.ComponentModel.ISupportInitialize)(this.lcPrincipal)).EndInit();
             this.lcPrincipal.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.lcGrQuatresChemins)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grQuatresChemins)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.segmentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbEchelle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcGrQuatresChemins)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -39,6 +39,7 @@ namespace ComHe_Pilotage {
                 populateGridSegmentationMoyen();
                 populateChSegmentationCLV();
             }
+            labelConclusion();
         }
         private void populateGridSegmentation() {
             grdSegmentation.DataSource = new List<Segment>(ficheCourante.segments);
@@ -87,6 +88,20 @@ namespace ComHe_Pilotage {
         private void grdSegmentation_CellValueChanged(object sender, DevExpress.XtraVerticalGrid.Events.CellValueChangedEventArgs e) {
             populateGridSegmentationMoyen();
             dataChanged(sender, e);
+            labelConclusion();
+        }
+
+        private void labelConclusion() {
+            string text = "Conclusion de l'analyse: ";
+            if (fiche != null && fiche.segments != null && fiche.segments.Any(x => {
+                return x.clv > 0;
+            })) {
+                Segment segmentCLVMax = fiche.segments.OrderByDescending(x => {
+                    return x.clv;
+                }).First();
+                text += "Perdre définitivement " + segmentCLVMax.nom + " reviendrait non pas a perdre " + segmentCLVMax.caFromLM + "€ mais à perdre " + segmentCLVMax.clvSansTxMarge + "€. L'ensemble des collaborateurs devrait considérer que ce client vaut " + segmentCLVMax.clvSansTxMarge + "€ et non " + segmentCLVMax.caFromLM + "€. Par conséquent, les politiques d'expérience client doivent se concentrer sur " + segmentCLVMax.nom + " au détriment des autres";
+            }
+            lbConclusion.Text = text;
         }
 
         private void chSegmentation_CustomDrawCrosshair(object sender, CustomDrawCrosshairEventArgs e) {

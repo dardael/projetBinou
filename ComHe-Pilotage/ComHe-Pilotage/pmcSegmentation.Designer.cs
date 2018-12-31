@@ -33,20 +33,11 @@
             DevExpress.XtraCharts.KeyColorColorizer keyColorColorizer1 = new DevExpress.XtraCharts.KeyColorColorizer();
             DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView3 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
             this.pnTabPgSegmentation = new DevExpress.XtraLayout.LayoutControl();
+            this.lbConclusion = new DevExpress.XtraEditors.LabelControl();
             this.grdSegmentationMoyen = new DevExpress.XtraVerticalGrid.VGridControl();
-            this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
-            this.btAjouterSegment = new DevExpress.XtraEditors.SimpleButton();
-            this.grdSegmentation = new DevExpress.XtraVerticalGrid.VGridControl();
-            this.chSegmentation = new DevExpress.XtraCharts.ChartControl();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.editorRow1 = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
-            this.editorRow2 = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.segmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.rowNomMoyenne = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
+            this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.rowTypeSegmentMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowCaFromLMMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowTxMargeMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
@@ -57,6 +48,8 @@
             this.rowClvMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowIdMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowClvSansTxMargeMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
+            this.btAjouterSegment = new DevExpress.XtraEditors.SimpleButton();
+            this.grdSegmentation = new DevExpress.XtraVerticalGrid.VGridControl();
             this.btGrSegmentationSuppr = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.rowNom = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowtypeSegment = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
@@ -69,11 +62,22 @@
             this.rowclv = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowId = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowClvSansTxMArge = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
+            this.chSegmentation = new DevExpress.XtraCharts.ChartControl();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.editorRow1 = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
+            this.editorRow2 = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             ((System.ComponentModel.ISupportInitialize)(this.pnTabPgSegmentation)).BeginInit();
             this.pnTabPgSegmentation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdSegmentationMoyen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.segmentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdSegmentation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btGrSegmentationSuppr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chSegmentation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
@@ -86,12 +90,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.segmentBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btGrSegmentationSuppr)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             this.SuspendLayout();
             // 
             // pnTabPgSegmentation
             // 
+            this.pnTabPgSegmentation.Controls.Add(this.lbConclusion);
             this.pnTabPgSegmentation.Controls.Add(this.grdSegmentationMoyen);
             this.pnTabPgSegmentation.Controls.Add(this.btAjouterSegment);
             this.pnTabPgSegmentation.Controls.Add(this.grdSegmentation);
@@ -99,11 +103,22 @@
             this.pnTabPgSegmentation.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnTabPgSegmentation.Location = new System.Drawing.Point(0, 0);
             this.pnTabPgSegmentation.Name = "pnTabPgSegmentation";
-            this.pnTabPgSegmentation.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(932, 415, 879, 434);
+            this.pnTabPgSegmentation.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(932, 418, 879, 434);
             this.pnTabPgSegmentation.Root = this.layoutControlGroup1;
             this.pnTabPgSegmentation.Size = new System.Drawing.Size(823, 565);
             this.pnTabPgSegmentation.TabIndex = 8;
             this.pnTabPgSegmentation.Text = "layoutControl1";
+            // 
+            // lbConclusion
+            // 
+            this.lbConclusion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lbConclusion.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
+            this.lbConclusion.Location = new System.Drawing.Point(16, 533);
+            this.lbConclusion.Name = "lbConclusion";
+            this.lbConclusion.Size = new System.Drawing.Size(791, 16);
+            this.lbConclusion.StyleController = this.pnTabPgSegmentation;
+            this.lbConclusion.TabIndex = 9;
+            this.lbConclusion.Text = "Conclusion de l\'analyse:";
             // 
             // grdSegmentationMoyen
             // 
@@ -137,181 +152,6 @@
             this.grdSegmentationMoyen.Size = new System.Drawing.Size(106, 172);
             this.grdSegmentationMoyen.TabIndex = 8;
             // 
-            // repositoryItemButtonEdit1
-            // 
-            this.repositoryItemButtonEdit1.AutoHeight = false;
-            this.repositoryItemButtonEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete)});
-            this.repositoryItemButtonEdit1.Name = "repositoryItemButtonEdit1";
-            // 
-            // btAjouterSegment
-            // 
-            this.btAjouterSegment.Location = new System.Drawing.Point(16, 16);
-            this.btAjouterSegment.MaximumSize = new System.Drawing.Size(140, 24);
-            this.btAjouterSegment.MinimumSize = new System.Drawing.Size(140, 24);
-            this.btAjouterSegment.Name = "btAjouterSegment";
-            this.btAjouterSegment.Size = new System.Drawing.Size(140, 24);
-            this.btAjouterSegment.StyleController = this.pnTabPgSegmentation;
-            this.btAjouterSegment.TabIndex = 7;
-            this.btAjouterSegment.Text = "Ajouter un segment";
-            this.btAjouterSegment.Click += new System.EventHandler(this.btAjouterSegment_Click);
-            // 
-            // grdSegmentation
-            // 
-            this.grdSegmentation.AllowDrop = true;
-            this.grdSegmentation.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.grdSegmentation.Cursor = System.Windows.Forms.Cursors.SizeNS;
-            this.grdSegmentation.DataSource = this.segmentBindingSource;
-            this.grdSegmentation.Location = new System.Drawing.Point(16, 49);
-            this.grdSegmentation.MaximumSize = new System.Drawing.Size(0, 300);
-            this.grdSegmentation.Name = "grdSegmentation";
-            this.grdSegmentation.OptionsBehavior.AutoFocusNewRecord = true;
-            this.grdSegmentation.OptionsBehavior.AutoSelectAllInEditor = false;
-            this.grdSegmentation.OptionsFind.Visibility = DevExpress.XtraVerticalGrid.FindPanelVisibility.Never;
-            this.grdSegmentation.OptionsLayout.Columns.AddNewColumns = true;
-            this.grdSegmentation.OptionsLayout.Columns.RemoveOldColumns = true;
-            this.grdSegmentation.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.btGrSegmentationSuppr});
-            this.grdSegmentation.RowHeaderWidth = 250;
-            this.grdSegmentation.Rows.AddRange(new DevExpress.XtraVerticalGrid.Rows.BaseRow[] {
-            this.rowNom,
-            this.rowtypeSegment,
-            this.rowcaFromLM,
-            this.rowtxMarge,
-            this.rowtxRetention,
-            this.rowtxActualisation,
-            this.rowmarge,
-            this.rowtxMultiplicateur,
-            this.rowclv,
-            this.rowId,
-            this.rowClvSansTxMArge});
-            this.grdSegmentation.ShowButtonMode = DevExpress.XtraVerticalGrid.ShowButtonModeEnum.ShowAlways;
-            this.grdSegmentation.Size = new System.Drawing.Size(679, 172);
-            this.grdSegmentation.TabIndex = 4;
-            this.grdSegmentation.CellValueChanged += new DevExpress.XtraVerticalGrid.Events.CellValueChangedEventHandler(this.grdSegmentation_CellValueChanged);
-            // 
-            // chSegmentation
-            // 
-            this.chSegmentation.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.chSegmentation.AppearanceNameSerializable = "Light";
-            this.chSegmentation.DataSource = this.segmentBindingSource;
-            xyDiagram1.AxisX.NumericScaleOptions.ScaleMode = DevExpress.XtraCharts.ScaleMode.Automatic;
-            xyDiagram1.AxisX.Title.Text = "Segments";
-            xyDiagram1.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.Title.Text = "CLV";
-            xyDiagram1.AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            this.chSegmentation.Diagram = xyDiagram1;
-            this.chSegmentation.Legend.MarkerVisible = false;
-            this.chSegmentation.Legend.TextVisible = false;
-            this.chSegmentation.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            this.chSegmentation.Location = new System.Drawing.Point(16, 227);
-            this.chSegmentation.Name = "chSegmentation";
-            this.chSegmentation.PaletteName = "Default";
-            series1.ArgumentDataMember = "id";
-            series1.ColorDataMember = "id";
-            series1.Colorizer = colorObjectColorizer1;
-            series1.Name = "CLV";
-            series1.ValueDataMembersSerializable = "clv";
-            sideBySideBarSeriesView1.ColorEach = true;
-            series1.View = sideBySideBarSeriesView1;
-            series2.ArgumentDataMember = "id";
-            series2.ColorDataMember = "id";
-            series2.Name = "CLVChiffreAffaires";
-            series2.ValueDataMembersSerializable = "clvSansTxMarge";
-            sideBySideBarSeriesView2.ColorEach = true;
-            series2.View = sideBySideBarSeriesView2;
-            this.chSegmentation.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1,
-        series2};
-            this.chSegmentation.SeriesTemplate.ArgumentDataMember = "nom";
-            this.chSegmentation.SeriesTemplate.ColorDataMember = "id";
-            keyColorColorizer1.Keys.Add("nom");
-            this.chSegmentation.SeriesTemplate.Colorizer = keyColorColorizer1;
-            this.chSegmentation.SeriesTemplate.ValueDataMembersSerializable = "clv";
-            sideBySideBarSeriesView3.ColorEach = true;
-            this.chSegmentation.SeriesTemplate.View = sideBySideBarSeriesView3;
-            this.chSegmentation.Size = new System.Drawing.Size(791, 322);
-            this.chSegmentation.TabIndex = 6;
-            this.chSegmentation.CustomDrawCrosshair += new DevExpress.XtraCharts.CustomDrawCrosshairEventHandler(this.chSegmentation_CustomDrawCrosshair);
-            this.chSegmentation.CustomDrawAxisLabel += new DevExpress.XtraCharts.CustomDrawAxisLabelEventHandler(this.chSegmentation_CustomDrawAxisLabel);
-            // 
-            // layoutControlGroup1
-            // 
-            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup1.GroupBordersVisible = false;
-            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem2,
-            this.layoutControlItem3,
-            this.layoutControlItem1,
-            this.layoutControlItem4});
-            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.OptionsItemText.TextToControlDistance = 4;
-            this.layoutControlGroup1.Size = new System.Drawing.Size(823, 565);
-            this.layoutControlGroup1.TextVisible = false;
-            // 
-            // layoutControlItem2
-            // 
-            this.layoutControlItem2.Control = this.chSegmentation;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 211);
-            this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(797, 328);
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem2.TextVisible = false;
-            // 
-            // layoutControlItem3
-            // 
-            this.layoutControlItem3.Control = this.grdSegmentation;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 33);
-            this.layoutControlItem3.MaxSize = new System.Drawing.Size(0, 178);
-            this.layoutControlItem3.MinSize = new System.Drawing.Size(26, 178);
-            this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(685, 178);
-            this.layoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem3.TextVisible = false;
-            // 
-            // layoutControlItem1
-            // 
-            this.layoutControlItem1.Control = this.btAjouterSegment;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem1.MaxSize = new System.Drawing.Size(147, 33);
-            this.layoutControlItem1.MinSize = new System.Drawing.Size(147, 33);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(797, 33);
-            this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem1.TextVisible = false;
-            // 
-            // layoutControlItem4
-            // 
-            this.layoutControlItem4.Control = this.grdSegmentationMoyen;
-            this.layoutControlItem4.Location = new System.Drawing.Point(685, 33);
-            this.layoutControlItem4.MaxSize = new System.Drawing.Size(112, 178);
-            this.layoutControlItem4.MinSize = new System.Drawing.Size(112, 178);
-            this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(112, 178);
-            this.layoutControlItem4.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem4.TextVisible = false;
-            // 
-            // editorRow1
-            // 
-            this.editorRow1.Name = "editorRow1";
-            this.editorRow1.Properties.Caption = "CLV";
-            this.editorRow1.Properties.FieldName = "clv";
-            this.editorRow1.Properties.ReadOnly = true;
-            // 
-            // editorRow2
-            // 
-            this.editorRow2.Name = "editorRow2";
-            this.editorRow2.Properties.Caption = "CLV";
-            this.editorRow2.Properties.FieldName = "clv";
-            this.editorRow2.Properties.ReadOnly = true;
-            // 
             // segmentBindingSource
             // 
             this.segmentBindingSource.DataSource = typeof(ComHe_Objets.Segment);
@@ -323,6 +163,14 @@
             this.rowNomMoyenne.Properties.FieldName = "nom";
             this.rowNomMoyenne.Properties.ReadOnly = true;
             this.rowNomMoyenne.Properties.RowEdit = this.repositoryItemButtonEdit1;
+            // 
+            // repositoryItemButtonEdit1
+            // 
+            this.repositoryItemButtonEdit1.AutoHeight = false;
+            this.repositoryItemButtonEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete)});
+            this.repositoryItemButtonEdit1.Name = "repositoryItemButtonEdit1";
             // 
             // rowTypeSegmentMoyen
             // 
@@ -400,6 +248,52 @@
             this.rowClvSansTxMargeMoyen.Name = "rowClvSansTxMargeMoyen";
             this.rowClvSansTxMargeMoyen.Properties.Caption = "CLV chiffre d\'affaires";
             this.rowClvSansTxMargeMoyen.Properties.FieldName = "clvSansTxMarge";
+            // 
+            // btAjouterSegment
+            // 
+            this.btAjouterSegment.Location = new System.Drawing.Point(16, 16);
+            this.btAjouterSegment.MaximumSize = new System.Drawing.Size(140, 24);
+            this.btAjouterSegment.MinimumSize = new System.Drawing.Size(140, 24);
+            this.btAjouterSegment.Name = "btAjouterSegment";
+            this.btAjouterSegment.Size = new System.Drawing.Size(140, 24);
+            this.btAjouterSegment.StyleController = this.pnTabPgSegmentation;
+            this.btAjouterSegment.TabIndex = 7;
+            this.btAjouterSegment.Text = "Ajouter un segment";
+            this.btAjouterSegment.Click += new System.EventHandler(this.btAjouterSegment_Click);
+            // 
+            // grdSegmentation
+            // 
+            this.grdSegmentation.AllowDrop = true;
+            this.grdSegmentation.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.grdSegmentation.Cursor = System.Windows.Forms.Cursors.SizeNS;
+            this.grdSegmentation.DataSource = this.segmentBindingSource;
+            this.grdSegmentation.Location = new System.Drawing.Point(16, 49);
+            this.grdSegmentation.MaximumSize = new System.Drawing.Size(0, 300);
+            this.grdSegmentation.Name = "grdSegmentation";
+            this.grdSegmentation.OptionsBehavior.AutoFocusNewRecord = true;
+            this.grdSegmentation.OptionsBehavior.AutoSelectAllInEditor = false;
+            this.grdSegmentation.OptionsFind.Visibility = DevExpress.XtraVerticalGrid.FindPanelVisibility.Never;
+            this.grdSegmentation.OptionsLayout.Columns.AddNewColumns = true;
+            this.grdSegmentation.OptionsLayout.Columns.RemoveOldColumns = true;
+            this.grdSegmentation.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.btGrSegmentationSuppr});
+            this.grdSegmentation.RowHeaderWidth = 250;
+            this.grdSegmentation.Rows.AddRange(new DevExpress.XtraVerticalGrid.Rows.BaseRow[] {
+            this.rowNom,
+            this.rowtypeSegment,
+            this.rowcaFromLM,
+            this.rowtxMarge,
+            this.rowtxRetention,
+            this.rowtxActualisation,
+            this.rowmarge,
+            this.rowtxMultiplicateur,
+            this.rowclv,
+            this.rowId,
+            this.rowClvSansTxMArge});
+            this.grdSegmentation.ShowButtonMode = DevExpress.XtraVerticalGrid.ShowButtonModeEnum.ShowAlways;
+            this.grdSegmentation.Size = new System.Drawing.Size(679, 172);
+            this.grdSegmentation.TabIndex = 4;
+            this.grdSegmentation.CellValueChanged += new DevExpress.XtraVerticalGrid.Events.CellValueChangedEventHandler(this.grdSegmentation_CellValueChanged);
             // 
             // btGrSegmentationSuppr
             // 
@@ -490,6 +384,137 @@
             this.rowClvSansTxMArge.Properties.FieldName = "clvSansTxMarge";
             this.rowClvSansTxMArge.Properties.ReadOnly = true;
             // 
+            // chSegmentation
+            // 
+            this.chSegmentation.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.chSegmentation.AppearanceNameSerializable = "Light";
+            this.chSegmentation.DataSource = this.segmentBindingSource;
+            xyDiagram1.AxisX.NumericScaleOptions.ScaleMode = DevExpress.XtraCharts.ScaleMode.Automatic;
+            xyDiagram1.AxisX.Title.Text = "Segments";
+            xyDiagram1.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram1.AxisY.Title.Text = "CLV";
+            xyDiagram1.AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
+            this.chSegmentation.Diagram = xyDiagram1;
+            this.chSegmentation.Legend.MarkerVisible = false;
+            this.chSegmentation.Legend.TextVisible = false;
+            this.chSegmentation.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            this.chSegmentation.Location = new System.Drawing.Point(16, 227);
+            this.chSegmentation.Name = "chSegmentation";
+            this.chSegmentation.PaletteName = "Default";
+            series1.ArgumentDataMember = "id";
+            series1.ColorDataMember = "id";
+            series1.Colorizer = colorObjectColorizer1;
+            series1.Name = "CLV";
+            series1.ValueDataMembersSerializable = "clv";
+            sideBySideBarSeriesView1.ColorEach = true;
+            series1.View = sideBySideBarSeriesView1;
+            series2.ArgumentDataMember = "id";
+            series2.ColorDataMember = "id";
+            series2.Name = "CLVChiffreAffaires";
+            series2.ValueDataMembersSerializable = "clvSansTxMarge";
+            sideBySideBarSeriesView2.ColorEach = true;
+            series2.View = sideBySideBarSeriesView2;
+            this.chSegmentation.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+        series1,
+        series2};
+            this.chSegmentation.SeriesTemplate.ArgumentDataMember = "nom";
+            this.chSegmentation.SeriesTemplate.ColorDataMember = "id";
+            keyColorColorizer1.Keys.Add("nom");
+            this.chSegmentation.SeriesTemplate.Colorizer = keyColorColorizer1;
+            this.chSegmentation.SeriesTemplate.ValueDataMembersSerializable = "clv";
+            sideBySideBarSeriesView3.ColorEach = true;
+            this.chSegmentation.SeriesTemplate.View = sideBySideBarSeriesView3;
+            this.chSegmentation.Size = new System.Drawing.Size(791, 300);
+            this.chSegmentation.TabIndex = 6;
+            this.chSegmentation.CustomDrawCrosshair += new DevExpress.XtraCharts.CustomDrawCrosshairEventHandler(this.chSegmentation_CustomDrawCrosshair);
+            this.chSegmentation.CustomDrawAxisLabel += new DevExpress.XtraCharts.CustomDrawAxisLabelEventHandler(this.chSegmentation_CustomDrawAxisLabel);
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem2,
+            this.layoutControlItem3,
+            this.layoutControlItem1,
+            this.layoutControlItem4,
+            this.layoutControlItem5});
+            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup1.Name = "Root";
+            this.layoutControlGroup1.OptionsItemText.TextToControlDistance = 4;
+            this.layoutControlGroup1.Size = new System.Drawing.Size(823, 565);
+            this.layoutControlGroup1.TextVisible = false;
+            // 
+            // layoutControlItem2
+            // 
+            this.layoutControlItem2.Control = this.chSegmentation;
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 211);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(797, 306);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem2.TextVisible = false;
+            // 
+            // layoutControlItem3
+            // 
+            this.layoutControlItem3.Control = this.grdSegmentation;
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 33);
+            this.layoutControlItem3.MaxSize = new System.Drawing.Size(0, 178);
+            this.layoutControlItem3.MinSize = new System.Drawing.Size(26, 178);
+            this.layoutControlItem3.Name = "layoutControlItem3";
+            this.layoutControlItem3.Size = new System.Drawing.Size(685, 178);
+            this.layoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem3.TextVisible = false;
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.Control = this.btAjouterSegment;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.MaxSize = new System.Drawing.Size(147, 33);
+            this.layoutControlItem1.MinSize = new System.Drawing.Size(147, 33);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(797, 33);
+            this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem1.TextVisible = false;
+            // 
+            // layoutControlItem4
+            // 
+            this.layoutControlItem4.Control = this.grdSegmentationMoyen;
+            this.layoutControlItem4.Location = new System.Drawing.Point(685, 33);
+            this.layoutControlItem4.MaxSize = new System.Drawing.Size(112, 178);
+            this.layoutControlItem4.MinSize = new System.Drawing.Size(112, 178);
+            this.layoutControlItem4.Name = "layoutControlItem4";
+            this.layoutControlItem4.Size = new System.Drawing.Size(112, 178);
+            this.layoutControlItem4.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem4.TextVisible = false;
+            // 
+            // layoutControlItem5
+            // 
+            this.layoutControlItem5.Control = this.lbConclusion;
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 517);
+            this.layoutControlItem5.Name = "layoutControlItem5";
+            this.layoutControlItem5.Size = new System.Drawing.Size(797, 22);
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem5.TextVisible = false;
+            // 
+            // editorRow1
+            // 
+            this.editorRow1.Name = "editorRow1";
+            this.editorRow1.Properties.Caption = "CLV";
+            this.editorRow1.Properties.FieldName = "clv";
+            this.editorRow1.Properties.ReadOnly = true;
+            // 
+            // editorRow2
+            // 
+            this.editorRow2.Name = "editorRow2";
+            this.editorRow2.Properties.Caption = "CLV";
+            this.editorRow2.Properties.FieldName = "clv";
+            this.editorRow2.Properties.ReadOnly = true;
+            // 
             // pmcSegmentation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -500,8 +525,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pnTabPgSegmentation)).EndInit();
             this.pnTabPgSegmentation.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdSegmentationMoyen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.segmentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdSegmentation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btGrSegmentationSuppr)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
@@ -514,8 +541,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.segmentBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btGrSegmentationSuppr)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -559,5 +585,7 @@
         private DevExpress.XtraVerticalGrid.Rows.EditorRow rowClvSansTxMArge;
         private DevExpress.XtraVerticalGrid.Rows.EditorRow editorRow1;
         private DevExpress.XtraVerticalGrid.Rows.EditorRow editorRow2;
+        private DevExpress.XtraEditors.LabelControl lbConclusion;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
     }
 }

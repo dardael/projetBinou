@@ -34,7 +34,7 @@
 				<txActualisation>QUATORZE</txActualisation>
 				<noteBoucheAOreille>5</noteBoucheAOreille>
 				<noteReductionCouts>4</noteReductionCouts>
-				<noteAugmentationDepensesAchatsCroises>4</noteAugmentationDepensesAchatsCroises>
+				<noteAugmentationDepensesAchatsCroises>10</noteAugmentationDepensesAchatsCroises>
 				<notePricePremium>5</notePricePremium>
 			</Segment>
 			<Segment>
