@@ -57,6 +57,11 @@ namespace ComHe_Objets {
                 return _clv;
             }
         }
+        public double clvSansTxMarge {
+            get {
+                return _clvSansTxMarge;
+            }
+        }
 
         public double _caFromLM;
         public double _txMarge;
@@ -65,6 +70,11 @@ namespace ComHe_Objets {
         public enumTxActualisation _txActualisation = enumTxActualisation.NR;
         private enumTxMultiplicateur _txMuliplicateur;
         private double _clv;
+        private double _clvSansTxMarge;
+        public int noteBoucheAOreille { get; set; }
+        public int noteReductionCouts { get; set; }
+        public int noteAugmentationDepensesAchatsCroises { get; set; }
+        public int notePricePremium { get; set; }
         public Segment() {
 
         }
@@ -81,6 +91,7 @@ namespace ComHe_Objets {
             _marge = _caFromLM * txMarge;
             _txMuliplicateur = enumTxMultiplicateurMethods.getTxMargeFromTxRetentionEtTauxActualisation(_txActualisation, _txRetention);
             _clv = caFromLM * txMarge * enumTxMultiplicateurMethods.getDoubleFromCode(txMultiplicateur);
+            _clvSansTxMarge = caFromLM * enumTxMultiplicateurMethods.getDoubleFromCode(txMultiplicateur);
         }
     }
 }

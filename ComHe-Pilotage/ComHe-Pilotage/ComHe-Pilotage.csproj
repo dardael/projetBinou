@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Hopstarter-Rounded-Square-File-Presentation.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Accessibility" />
     <Reference Include="DevExpress.BonusSkins.v15.2" />
@@ -82,6 +85,12 @@
     <Compile Include="pmcGestionFichesDeTravail.Designer.cs">
       <DependentUpon>pmcGestionFichesDeTravail.cs</DependentUpon>
     </Compile>
+    <Compile Include="pmcQuatresChemins.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pmcQuatresChemins.Designer.cs">
+      <DependentUpon>pmcQuatresChemins.cs</DependentUpon>
+    </Compile>
     <Compile Include="pmcSegmentation.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -111,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pmcGestionFichesDeTravail.resx">
       <DependentUpon>pmcGestionFichesDeTravail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pmcQuatresChemins.resx">
+      <DependentUpon>pmcQuatresChemins.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pmcSegmentation.resx">
       <DependentUpon>pmcSegmentation.cs</DependentUpon>
@@ -153,6 +165,9 @@
       <Project>{0b92a07a-b9b8-4fa0-8cc9-8378f8ba2f97}</Project>
       <Name>ComHe-Outils</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Hopstarter-Rounded-Square-File-Presentation.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
