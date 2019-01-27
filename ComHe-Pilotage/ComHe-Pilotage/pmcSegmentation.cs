@@ -42,8 +42,10 @@ namespace ComHe_Pilotage {
             labelConclusion();
         }
         private void populateGridSegmentation() {
-            grdSegmentation.DataSource = new List<Segment>(ficheCourante.segments);
-            grdSegmentation.Refresh();
+            if (ficheCourante != null && ficheCourante.segments != null) {
+                grdSegmentation.DataSource = new List<Segment>(ficheCourante.segments);
+                grdSegmentation.Refresh();
+            }
         }
         private void populateGridSegmentationMoyen() {
             grdSegmentationMoyen.DataSource = new List<Segment>(new List<Segment> { SegmentBO.returnSegmentMoyen(ficheCourante.segments) });

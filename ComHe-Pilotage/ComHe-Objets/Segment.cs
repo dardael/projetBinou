@@ -75,6 +75,23 @@ namespace ComHe_Objets {
         public int noteReductionCouts { get; set; }
         public int noteAugmentationDepensesAchatsCroises { get; set; }
         public int notePricePremium { get; set; }
+        public int nbPersonne0NPS { get; set; }
+        public int nbPersonne1NPS { get; set; }
+        public int nbPersonne2NPS { get; set; }
+        public int nbPersonne3NPS { get; set; }
+        public int nbPersonne4NPS { get; set; }
+        public int nbPersonne5NPS { get; set; }
+        public int nbPersonne6NPS { get; set; }
+        public int nbPersonne7NPS { get; set; }
+        public int nbPersonne8NPS { get; set; }
+        public int nbPersonne9NPS { get; set; }
+        public int nbPersonne10NPS { get; set; }
+        public int nbPersonne0CES { get; set; }
+        public int nbPersonne1CES { get; set; }
+        public int nbPersonne2CES { get; set; }
+        public int nbPersonne3CES { get; set; }
+        public int nbPersonne4CES { get; set; }
+        public int nbPersonne5CES { get; set; }
         public Segment() {
 
         }

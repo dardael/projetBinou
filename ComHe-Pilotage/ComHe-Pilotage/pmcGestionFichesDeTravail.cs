@@ -29,6 +29,7 @@ namespace ComHe_Pilotage {
         [Browsable(false)]
         public event EventHandler ficheTravailCouranteChanged;
         public pmcGestionFichesDeTravail() {
+            InitializeComponent();
             fichesTravail = (List<FicheTravail>)GestionFichierXML.LoadFromXML(new List<FicheTravail>().GetType(), fileName);
             if (fichesTravail == null || fichesTravail.Count == 0) {
                 fichesTravail = new List<FicheTravail>();
@@ -40,7 +41,6 @@ namespace ComHe_Pilotage {
             else {
                 ficheCourante = fichesTravail[0];
             }
-            InitializeComponent();
             populateCbFichesTravail();
         }
         private void populateCbFichesTravail() {

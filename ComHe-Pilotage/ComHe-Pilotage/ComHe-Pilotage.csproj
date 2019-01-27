@@ -91,6 +91,12 @@
     <Compile Include="pmcQuatresChemins.Designer.cs">
       <DependentUpon>pmcQuatresChemins.cs</DependentUpon>
     </Compile>
+    <Compile Include="pmcQuestionnaireNoteSegment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pmcQuestionnaireNoteSegment.Designer.cs">
+      <DependentUpon>pmcQuestionnaireNoteSegment.cs</DependentUpon>
+    </Compile>
     <Compile Include="pmcSegmentation.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pmcQuatresChemins.resx">
       <DependentUpon>pmcQuatresChemins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pmcQuestionnaireNoteSegment.resx">
+      <DependentUpon>pmcQuestionnaireNoteSegment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pmcSegmentation.resx">
       <DependentUpon>pmcSegmentation.cs</DependentUpon>
