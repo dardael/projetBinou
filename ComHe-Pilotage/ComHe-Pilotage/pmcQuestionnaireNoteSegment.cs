@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComHe_Objets;
-using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid.Views.Base;
 
 namespace ComHe_Pilotage {
@@ -55,44 +48,49 @@ namespace ComHe_Pilotage {
         }
         private void gererAffichageColonnes() {
             foreach (DevExpress.XtraGrid.Columns.GridColumn col in ((ColumnView)gridControl1.Views[0]).Columns) {
-                if (!col.Name.Contains(_type) && col.Name != "colnom") {
+                if (!col.Name.Contains(_type) && col.Name != "colnom" && col.Caption != "Total") {
                     col.Visible = false;
                 }
-                else if (col.Name == "colnom") {
+                if (col.Name == "colnom") {
                     col.Caption = "Segment";
                 }
-                else if (col.Name.Contains("10")) {
-                    col.Caption = "10";
-                }
-                else if (col.Name.Contains("0")) {
-                    col.Caption = "0";
-                }
-                else if (col.Name.Contains("1")) {
-                    col.Caption = "1";
-                }
-                else if (col.Name.Contains("2")) {
-                    col.Caption = "2";
-                }
-                else if (col.Name.Contains("3")) {
-                    col.Caption = "3";
-                }
-                else if (col.Name.Contains("4")) {
-                    col.Caption = "4";
-                }
-                else if (col.Name.Contains("5")) {
-                    col.Caption = "5";
-                }
-                else if (col.Name.Contains("6")) {
-                    col.Caption = "6";
-                }
-                else if (col.Name.Contains("7")) {
-                    col.Caption = "7";
-                }
-                else if (col.Name.Contains("8")) {
-                    col.Caption = "8";
-                }
-                else if (col.Name.Contains("9")) {
-                    col.Caption = "9";
+                else {
+                    if (col.Name.Contains("10")) {
+                        col.Caption = "10";
+                    }
+                    else if (col.Name.Contains("0")) {
+                        col.Caption = "0";
+                    }
+                    else if (col.Name.Contains("1")) {
+                        col.Caption = "1";
+                    }
+                    else if (col.Name.Contains("2")) {
+                        col.Caption = "2";
+                    }
+                    else if (col.Name.Contains("3")) {
+                        col.Caption = "3";
+                    }
+                    else if (col.Name.Contains("4")) {
+                        col.Caption = "4";
+                    }
+                    else if (col.Name.Contains("5")) {
+                        col.Caption = "5";
+                    }
+                    else if (col.Name.Contains("6")) {
+                        col.Caption = "6";
+                    }
+                    else if (col.Name.Contains("7")) {
+                        col.Caption = "7";
+                    }
+                    else if (col.Name.Contains("8")) {
+                        col.Caption = "8";
+                    }
+                    else if (col.Name.Contains("9")) {
+                        col.Caption = "9";
+                    }
+                    col.SummaryItem.SummaryType = DevExpress.Data.SummaryItemType.Sum;
+                    col.SummaryItem.FieldName = col.FieldName;
+                    col.SummaryItem.DisplayFormat = "Total : {0:n3}";
                 }
             }
             gridControl1.Refresh();
@@ -117,6 +115,10 @@ namespace ComHe_Pilotage {
                 gridControl1.EndUpdate();
             }
             gererAffichageColonnes();
+        }
+
+        private void gridControl1_Click(object sender, EventArgs e) {
+
         }
     }
 }

@@ -82,6 +82,7 @@
             this.gridControl1.TabIndex = 5;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grNotation});
+            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // segmentBindingSource
             // 
@@ -110,6 +111,11 @@
             this.colnbPersonne5CES});
             this.grNotation.GridControl = this.gridControl1;
             this.grNotation.Name = "grNotation";
+            this.grNotation.OptionsMenu.ShowAddNewSummaryItem = DevExpress.Utils.DefaultBoolean.True;
+            this.grNotation.OptionsMenu.ShowConditionalFormattingItem = true;
+            this.grNotation.OptionsMenu.ShowGroupSummaryEditorItem = true;
+            this.grNotation.OptionsView.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.VisibleAlways;
+            this.grNotation.OptionsView.ShowFooter = true;
             this.grNotation.OptionsView.ShowGroupPanel = false;
             // 
             // colnom
@@ -127,6 +133,8 @@
             this.colnbPersonne0NPS.Caption = "0";
             this.colnbPersonne0NPS.FieldName = "nbPersonne0NPS";
             this.colnbPersonne0NPS.Name = "colnbPersonne0NPS";
+            this.colnbPersonne0NPS.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "nbPersonne0NPS", "SUM={0:0.##}")});
             this.colnbPersonne0NPS.Visible = true;
             this.colnbPersonne0NPS.VisibleIndex = 1;
             // 
@@ -135,6 +143,8 @@
             this.colnbPersonne1NPS.Caption = "1";
             this.colnbPersonne1NPS.FieldName = "nbPersonne1NPS";
             this.colnbPersonne1NPS.Name = "colnbPersonne1NPS";
+            this.colnbPersonne1NPS.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "nbPersonne1NPS", "SUM={0:0.##}")});
             this.colnbPersonne1NPS.Visible = true;
             this.colnbPersonne1NPS.VisibleIndex = 2;
             // 
@@ -143,6 +153,8 @@
             this.colnbPersonne2NPS.Caption = "2";
             this.colnbPersonne2NPS.FieldName = "nbPersonne2NPS";
             this.colnbPersonne2NPS.Name = "colnbPersonne2NPS";
+            this.colnbPersonne2NPS.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "nbPersonne2NPS", "SUM={0:0.##}")});
             this.colnbPersonne2NPS.Visible = true;
             this.colnbPersonne2NPS.VisibleIndex = 3;
             // 
@@ -151,6 +163,8 @@
             this.colnbPersonne3NPS.Caption = "3";
             this.colnbPersonne3NPS.FieldName = "nbPersonne3NPS";
             this.colnbPersonne3NPS.Name = "colnbPersonne3NPS";
+            this.colnbPersonne3NPS.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "nbPersonne3NPS", "SUM={0:0.##}")});
             this.colnbPersonne3NPS.Visible = true;
             this.colnbPersonne3NPS.VisibleIndex = 4;
             // 
@@ -159,6 +173,8 @@
             this.colnbPersonne4NPS.Caption = "4";
             this.colnbPersonne4NPS.FieldName = "nbPersonne4NPS";
             this.colnbPersonne4NPS.Name = "colnbPersonne4NPS";
+            this.colnbPersonne4NPS.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "nbPersonne4NPS", "SUM={0:0.##}")});
             this.colnbPersonne4NPS.Visible = true;
             this.colnbPersonne4NPS.VisibleIndex = 5;
             // 
@@ -167,6 +183,8 @@
             this.colnbPersonne5NPS.Caption = "5";
             this.colnbPersonne5NPS.FieldName = "nbPersonne5NPS";
             this.colnbPersonne5NPS.Name = "colnbPersonne5NPS";
+            this.colnbPersonne5NPS.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "nbPersonne5NPS", "SUM={0:0.##}")});
             this.colnbPersonne5NPS.Visible = true;
             this.colnbPersonne5NPS.VisibleIndex = 6;
             // 
@@ -175,6 +193,8 @@
             this.colnbPersonne6NPS.Caption = "6";
             this.colnbPersonne6NPS.FieldName = "nbPersonne6NPS";
             this.colnbPersonne6NPS.Name = "colnbPersonne6NPS";
+            this.colnbPersonne6NPS.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "nbPersonne6NPS", "SUM={0:0.##}")});
             this.colnbPersonne6NPS.Visible = true;
             this.colnbPersonne6NPS.VisibleIndex = 7;
             // 
@@ -183,6 +203,8 @@
             this.colnbPersonne7NPS.Caption = "7";
             this.colnbPersonne7NPS.FieldName = "nbPersonne7NPS";
             this.colnbPersonne7NPS.Name = "colnbPersonne7NPS";
+            this.colnbPersonne7NPS.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "nbPersonne7NPS", "SUM={0:0.##}")});
             this.colnbPersonne7NPS.Visible = true;
             this.colnbPersonne7NPS.VisibleIndex = 8;
             // 
@@ -191,6 +213,8 @@
             this.colnbPersonne8NPS.Caption = "8";
             this.colnbPersonne8NPS.FieldName = "nbPersonne8NPS";
             this.colnbPersonne8NPS.Name = "colnbPersonne8NPS";
+            this.colnbPersonne8NPS.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "nbPersonne8NPS", "SUM={0:0.##}")});
             this.colnbPersonne8NPS.Visible = true;
             this.colnbPersonne8NPS.VisibleIndex = 9;
             // 
@@ -199,6 +223,8 @@
             this.colnbPersonne9NPS.Caption = "9";
             this.colnbPersonne9NPS.FieldName = "nbPersonne9NPS";
             this.colnbPersonne9NPS.Name = "colnbPersonne9NPS";
+            this.colnbPersonne9NPS.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "nbPersonne9NPS", "SUM={0:0.##}")});
             this.colnbPersonne9NPS.Visible = true;
             this.colnbPersonne9NPS.VisibleIndex = 10;
             // 
@@ -207,6 +233,8 @@
             this.colnbPersonne10NPS.Caption = "10";
             this.colnbPersonne10NPS.FieldName = "nbPersonne10NPS";
             this.colnbPersonne10NPS.Name = "colnbPersonne10NPS";
+            this.colnbPersonne10NPS.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "nbPersonne10NPS", "SUM={0:0.##}")});
             this.colnbPersonne10NPS.Visible = true;
             this.colnbPersonne10NPS.VisibleIndex = 11;
             // 
@@ -215,6 +243,8 @@
             this.colnbPersonne0CES.Caption = "0";
             this.colnbPersonne0CES.FieldName = "nbPersonne0CES";
             this.colnbPersonne0CES.Name = "colnbPersonne0CES";
+            this.colnbPersonne0CES.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "nbPersonne0CES", "SUM={0:0.##}")});
             this.colnbPersonne0CES.Visible = true;
             this.colnbPersonne0CES.VisibleIndex = 12;
             // 
@@ -223,6 +253,8 @@
             this.colnbPersonne1CES.Caption = "1";
             this.colnbPersonne1CES.FieldName = "nbPersonne1CES";
             this.colnbPersonne1CES.Name = "colnbPersonne1CES";
+            this.colnbPersonne1CES.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "nbPersonne1CES", "SUM={0:0.##}")});
             this.colnbPersonne1CES.Visible = true;
             this.colnbPersonne1CES.VisibleIndex = 13;
             // 
@@ -231,6 +263,8 @@
             this.colnbPersonne2CES.Caption = "2";
             this.colnbPersonne2CES.FieldName = "nbPersonne2CES";
             this.colnbPersonne2CES.Name = "colnbPersonne2CES";
+            this.colnbPersonne2CES.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "nbPersonne2CES", "SUM={0:0.##}")});
             this.colnbPersonne2CES.Visible = true;
             this.colnbPersonne2CES.VisibleIndex = 14;
             // 
@@ -239,6 +273,8 @@
             this.colnbPersonne3CES.Caption = "3";
             this.colnbPersonne3CES.FieldName = "nbPersonne3CES";
             this.colnbPersonne3CES.Name = "colnbPersonne3CES";
+            this.colnbPersonne3CES.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "nbPersonne3CES", "SUM={0:0.##}")});
             this.colnbPersonne3CES.Visible = true;
             this.colnbPersonne3CES.VisibleIndex = 15;
             // 
@@ -247,6 +283,8 @@
             this.colnbPersonne4CES.Caption = "4";
             this.colnbPersonne4CES.FieldName = "nbPersonne4CES";
             this.colnbPersonne4CES.Name = "colnbPersonne4CES";
+            this.colnbPersonne4CES.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "nbPersonne4CES", "SUM={0:0.##}")});
             this.colnbPersonne4CES.Visible = true;
             this.colnbPersonne4CES.VisibleIndex = 16;
             // 
@@ -255,6 +293,8 @@
             this.colnbPersonne5CES.Caption = "5";
             this.colnbPersonne5CES.FieldName = "nbPersonne5CES";
             this.colnbPersonne5CES.Name = "colnbPersonne5CES";
+            this.colnbPersonne5CES.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "nbPersonne5CES", "SUM={0:0.##}")});
             this.colnbPersonne5CES.Visible = true;
             this.colnbPersonne5CES.VisibleIndex = 17;
             // 
