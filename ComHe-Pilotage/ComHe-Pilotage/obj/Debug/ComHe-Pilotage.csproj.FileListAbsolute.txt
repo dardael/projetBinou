@@ -152,3 +152,11 @@ C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\C
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe-Pilotage.exe
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe-Pilotage.pdb
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.pmcQuestionnaireNoteSegment.resources
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraGauges.v15.2.Core.dll
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraGauges.v15.2.Win.dll
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraGauges.v15.2.Core.xml
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraGauges.v15.2.Win.xml
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\de\DevExpress.XtraGauges.v15.2.Core.resources.dll
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\es\DevExpress.XtraGauges.v15.2.Core.resources.dll
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ja\DevExpress.XtraGauges.v15.2.Core.resources.dll
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ru\DevExpress.XtraGauges.v15.2.Core.resources.dll

@@ -22,7 +22,7 @@ namespace ComHe_Pilotage {
         }
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         [Browsable(false)]
-        private string _question;
+        private string _question = "";
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         [Browsable(false)]
         public string question {
