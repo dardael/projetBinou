@@ -33,15 +33,15 @@
             this.pmcSegmentation1 = new ComHe_Pilotage.pmcSegmentation();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.tabPgSatisfactionModel = new DevExpress.XtraTab.XtraTabPage();
-            this.layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
+            this.tabPgReclamations = new DevExpress.XtraTab.XtraTabPage();
+            this.lcReclamations = new DevExpress.XtraLayout.LayoutControl();
             this.layoutControlGroup7 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.tabPgComplaintModel = new DevExpress.XtraTab.XtraTabPage();
-            this.layoutControl3 = new DevExpress.XtraLayout.LayoutControl();
-            this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
-            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            this.layoutControl4 = new DevExpress.XtraLayout.LayoutControl();
-            this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
+            this.tabPgIndicateurs = new DevExpress.XtraTab.XtraTabPage();
+            this.lcIndicateurs = new DevExpress.XtraLayout.LayoutControl();
+            this.TabIndicateurs = new DevExpress.XtraTab.XtraTabControl();
+            this.tabPgManage = new DevExpress.XtraTab.XtraTabPage();
+            this.lcManage = new DevExpress.XtraLayout.LayoutControl();
+            this.tabManage = new DevExpress.XtraTab.XtraTabControl();
             this.tabPgCES = new DevExpress.XtraTab.XtraTabPage();
             this.lcCES = new DevExpress.XtraLayout.LayoutControl();
             this.pmcCES = new ComHe_Pilotage.pmcQuestionnaireNoteSegment();
@@ -49,10 +49,10 @@
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup9 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
-            this.layoutControl5 = new DevExpress.XtraLayout.LayoutControl();
-            this.xtraTabControl3 = new DevExpress.XtraTab.XtraTabControl();
-            this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
+            this.tabPgStrat = new DevExpress.XtraTab.XtraTabPage();
+            this.lcStrat = new DevExpress.XtraLayout.LayoutControl();
+            this.tabTrat = new DevExpress.XtraTab.XtraTabControl();
+            this.tabPgLoyaltyModel = new DevExpress.XtraTab.XtraTabPage();
             this.tabPgTendances = new DevExpress.XtraTab.XtraTabPage();
             this.lcTendances = new DevExpress.XtraLayout.LayoutControl();
             this.pmcQuatresChemins1 = new ComHe_Pilotage.pmcQuatresChemins();
@@ -63,7 +63,7 @@
             this.pmcNPS = new ComHe_Pilotage.pmcQuestionnaireNoteSegment();
             this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
+            this.tabPgSatisfactionModel = new DevExpress.XtraTab.XtraTabPage();
             this.layoutControlGroup10 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup8 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -87,19 +87,19 @@
             this.lcSegmentation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            this.tabPgSatisfactionModel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).BeginInit();
+            this.tabPgReclamations.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lcReclamations)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).BeginInit();
-            this.tabPgComplaintModel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl3)).BeginInit();
-            this.layoutControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
-            this.xtraTabControl1.SuspendLayout();
-            this.xtraTabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl4)).BeginInit();
-            this.layoutControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).BeginInit();
-            this.xtraTabControl2.SuspendLayout();
+            this.tabPgIndicateurs.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lcIndicateurs)).BeginInit();
+            this.lcIndicateurs.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TabIndicateurs)).BeginInit();
+            this.TabIndicateurs.SuspendLayout();
+            this.tabPgManage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lcManage)).BeginInit();
+            this.lcManage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tabManage)).BeginInit();
+            this.tabManage.SuspendLayout();
             this.tabPgCES.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lcCES)).BeginInit();
             this.lcCES.SuspendLayout();
@@ -107,11 +107,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
-            this.xtraTabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl5)).BeginInit();
-            this.layoutControl5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl3)).BeginInit();
-            this.xtraTabControl3.SuspendLayout();
+            this.tabPgStrat.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lcStrat)).BeginInit();
+            this.lcStrat.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tabTrat)).BeginInit();
+            this.tabTrat.SuspendLayout();
             this.tabPgTendances.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lcTendances)).BeginInit();
             this.lcTendances.SuspendLayout();
@@ -144,15 +144,6 @@
             // 
             // pmcGestionFichesDeTravail
             // 
-            this.pmcGestionFichesDeTravail.ficheCourante.nom = "Nouvelle fiche de travail";
-            this.pmcGestionFichesDeTravail.ficheCourante.segments = null;
-            this.pmcGestionFichesDeTravail.fichesTravail.Add(this.pmcGestionFichesDeTravail.ficheCourante);
-            this.pmcGestionFichesDeTravail.fichesTravail.Add(this.pmcGestionFichesDeTravail.ficheCourante);
-            this.pmcGestionFichesDeTravail.fichesTravail.Add(this.pmcGestionFichesDeTravail.ficheCourante);
-            this.pmcGestionFichesDeTravail.fichesTravail.Add(this.pmcGestionFichesDeTravail.ficheCourante);
-            this.pmcGestionFichesDeTravail.fichesTravail.Add(this.pmcGestionFichesDeTravail.ficheCourante);
-            this.pmcGestionFichesDeTravail.fichesTravail.Add(this.pmcGestionFichesDeTravail.ficheCourante);
-            this.pmcGestionFichesDeTravail.fichesTravail.Add(this.pmcGestionFichesDeTravail.ficheCourante);
             this.pmcGestionFichesDeTravail.Location = new System.Drawing.Point(16, 16);
             this.pmcGestionFichesDeTravail.Margin = new System.Windows.Forms.Padding(0);
             this.pmcGestionFichesDeTravail.Name = "pmcGestionFichesDeTravail";
@@ -168,8 +159,8 @@
             this.tabPrincipal.TabIndex = 0;
             this.tabPrincipal.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tabPgSegmentation,
-            this.tabPgSatisfactionModel,
-            this.tabPgComplaintModel});
+            this.tabPgReclamations,
+            this.tabPgIndicateurs});
             // 
             // tabPgSegmentation
             // 
@@ -218,22 +209,22 @@
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
-            // tabPgSatisfactionMode
+            // tabPgReclamations
             // 
-            this.tabPgSatisfactionModel.Controls.Add(this.layoutControl2);
-            this.tabPgSatisfactionModel.Name = "tabPgSatisfactionMode";
-            this.tabPgSatisfactionModel.Size = new System.Drawing.Size(1251, 628);
-            this.tabPgSatisfactionModel.Text = "Gestion des réclamations";
+            this.tabPgReclamations.Controls.Add(this.lcReclamations);
+            this.tabPgReclamations.Name = "tabPgReclamations";
+            this.tabPgReclamations.Size = new System.Drawing.Size(1251, 628);
+            this.tabPgReclamations.Text = "Gestion des réclamations";
             // 
-            // layoutControl2
+            // lcReclamations
             // 
-            this.layoutControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl2.Location = new System.Drawing.Point(0, 0);
-            this.layoutControl2.Name = "layoutControl2";
-            this.layoutControl2.Root = this.layoutControlGroup7;
-            this.layoutControl2.Size = new System.Drawing.Size(1251, 628);
-            this.layoutControl2.TabIndex = 0;
-            this.layoutControl2.Text = "layoutControl2";
+            this.lcReclamations.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lcReclamations.Location = new System.Drawing.Point(0, 0);
+            this.lcReclamations.Name = "lcReclamations";
+            this.lcReclamations.Root = this.layoutControlGroup7;
+            this.lcReclamations.Size = new System.Drawing.Size(1251, 628);
+            this.lcReclamations.TabIndex = 0;
+            this.lcReclamations.Text = "layoutControl2";
             // 
             // layoutControlGroup7
             // 
@@ -245,61 +236,61 @@
             this.layoutControlGroup7.Size = new System.Drawing.Size(1251, 628);
             this.layoutControlGroup7.TextVisible = false;
             // 
-            // tabPgComplaintModel
+            // tabPgIndicateurs
             // 
-            this.tabPgComplaintModel.Controls.Add(this.layoutControl3);
-            this.tabPgComplaintModel.Name = "tabPgComplaintModel";
-            this.tabPgComplaintModel.Size = new System.Drawing.Size(1251, 628);
-            this.tabPgComplaintModel.Text = "Indicateurs";
+            this.tabPgIndicateurs.Controls.Add(this.lcIndicateurs);
+            this.tabPgIndicateurs.Name = "tabPgIndicateurs";
+            this.tabPgIndicateurs.Size = new System.Drawing.Size(1251, 628);
+            this.tabPgIndicateurs.Text = "Indicateurs";
             // 
-            // layoutControl3
+            // lcIndicateurs
             // 
-            this.layoutControl3.Controls.Add(this.xtraTabControl1);
-            this.layoutControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl3.Location = new System.Drawing.Point(0, 0);
-            this.layoutControl3.Name = "layoutControl3";
-            this.layoutControl3.Root = this.layoutControlGroup8;
-            this.layoutControl3.Size = new System.Drawing.Size(1251, 628);
-            this.layoutControl3.TabIndex = 0;
-            this.layoutControl3.Text = "layoutControl3";
+            this.lcIndicateurs.Controls.Add(this.TabIndicateurs);
+            this.lcIndicateurs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lcIndicateurs.Location = new System.Drawing.Point(0, 0);
+            this.lcIndicateurs.Name = "lcIndicateurs";
+            this.lcIndicateurs.Root = this.layoutControlGroup8;
+            this.lcIndicateurs.Size = new System.Drawing.Size(1251, 628);
+            this.lcIndicateurs.TabIndex = 0;
+            this.lcIndicateurs.Text = "layoutControl3";
             // 
-            // xtraTabControl1
+            // TabIndicateurs
             // 
-            this.xtraTabControl1.Location = new System.Drawing.Point(16, 16);
-            this.xtraTabControl1.Name = "xtraTabControl1";
-            this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(1219, 596);
-            this.xtraTabControl1.TabIndex = 4;
-            this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.xtraTabPage1,
-            this.xtraTabPage2});
+            this.TabIndicateurs.Location = new System.Drawing.Point(16, 16);
+            this.TabIndicateurs.Name = "TabIndicateurs";
+            this.TabIndicateurs.SelectedTabPage = this.tabPgManage;
+            this.TabIndicateurs.Size = new System.Drawing.Size(1219, 596);
+            this.TabIndicateurs.TabIndex = 4;
+            this.TabIndicateurs.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.tabPgManage,
+            this.tabPgStrat});
             // 
-            // xtraTabPage1
+            // tabPgManage
             // 
-            this.xtraTabPage1.Controls.Add(this.layoutControl4);
-            this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1212, 562);
-            this.xtraTabPage1.Text = "Managériaux";
+            this.tabPgManage.Controls.Add(this.lcManage);
+            this.tabPgManage.Name = "tabPgManage";
+            this.tabPgManage.Size = new System.Drawing.Size(1212, 562);
+            this.tabPgManage.Text = "Managériaux";
             // 
-            // layoutControl4
+            // lcManage
             // 
-            this.layoutControl4.Controls.Add(this.xtraTabControl2);
-            this.layoutControl4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl4.Location = new System.Drawing.Point(0, 0);
-            this.layoutControl4.Name = "layoutControl4";
-            this.layoutControl4.Root = this.layoutControlGroup9;
-            this.layoutControl4.Size = new System.Drawing.Size(1212, 562);
-            this.layoutControl4.TabIndex = 0;
-            this.layoutControl4.Text = "layoutControl4";
+            this.lcManage.Controls.Add(this.tabManage);
+            this.lcManage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lcManage.Location = new System.Drawing.Point(0, 0);
+            this.lcManage.Name = "lcManage";
+            this.lcManage.Root = this.layoutControlGroup9;
+            this.lcManage.Size = new System.Drawing.Size(1212, 562);
+            this.lcManage.TabIndex = 0;
+            this.lcManage.Text = "layoutControl4";
             // 
-            // xtraTabControl2
+            // tabManage
             // 
-            this.xtraTabControl2.Location = new System.Drawing.Point(16, 16);
-            this.xtraTabControl2.Name = "xtraTabControl2";
-            this.xtraTabControl2.SelectedTabPage = this.tabPgCES;
-            this.xtraTabControl2.Size = new System.Drawing.Size(1180, 530);
-            this.xtraTabControl2.TabIndex = 4;
-            this.xtraTabControl2.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.tabManage.Location = new System.Drawing.Point(16, 16);
+            this.tabManage.Name = "tabManage";
+            this.tabManage.SelectedTabPage = this.tabPgCES;
+            this.tabManage.Size = new System.Drawing.Size(1180, 530);
+            this.tabManage.TabIndex = 4;
+            this.tabManage.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tabPgCES});
             // 
             // tabPgCES
@@ -365,49 +356,49 @@
             // 
             // layoutControlItem7
             // 
-            this.layoutControlItem7.Control = this.xtraTabControl2;
+            this.layoutControlItem7.Control = this.tabManage;
             this.layoutControlItem7.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.Size = new System.Drawing.Size(1186, 536);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
-            // xtraTabPage2
+            // tabPgStrat
             // 
-            this.xtraTabPage2.Controls.Add(this.layoutControl5);
-            this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(1212, 562);
-            this.xtraTabPage2.Text = "Stratégiques";
+            this.tabPgStrat.Controls.Add(this.lcStrat);
+            this.tabPgStrat.Name = "tabPgStrat";
+            this.tabPgStrat.Size = new System.Drawing.Size(1212, 562);
+            this.tabPgStrat.Text = "Stratégiques";
             // 
-            // layoutControl5
+            // lcStrat
             // 
-            this.layoutControl5.Controls.Add(this.xtraTabControl3);
-            this.layoutControl5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl5.Location = new System.Drawing.Point(0, 0);
-            this.layoutControl5.Name = "layoutControl5";
-            this.layoutControl5.Root = this.layoutControlGroup10;
-            this.layoutControl5.Size = new System.Drawing.Size(1212, 562);
-            this.layoutControl5.TabIndex = 0;
-            this.layoutControl5.Text = "layoutControl5";
+            this.lcStrat.Controls.Add(this.tabTrat);
+            this.lcStrat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lcStrat.Location = new System.Drawing.Point(0, 0);
+            this.lcStrat.Name = "lcStrat";
+            this.lcStrat.Root = this.layoutControlGroup10;
+            this.lcStrat.Size = new System.Drawing.Size(1212, 562);
+            this.lcStrat.TabIndex = 0;
+            this.lcStrat.Text = "layoutControl5";
             // 
-            // xtraTabControl3
+            // tabTrat
             // 
-            this.xtraTabControl3.Location = new System.Drawing.Point(16, 16);
-            this.xtraTabControl3.Name = "xtraTabControl3";
-            this.xtraTabControl3.SelectedTabPage = this.xtraTabPage4;
-            this.xtraTabControl3.Size = new System.Drawing.Size(1180, 530);
-            this.xtraTabControl3.TabIndex = 4;
-            this.xtraTabControl3.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.tabTrat.Location = new System.Drawing.Point(16, 16);
+            this.tabTrat.Name = "tabTrat";
+            this.tabTrat.SelectedTabPage = this.tabPgLoyaltyModel;
+            this.tabTrat.Size = new System.Drawing.Size(1180, 530);
+            this.tabTrat.TabIndex = 4;
+            this.tabTrat.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tabPgTendances,
-            this.xtraTabPage4,
+            this.tabPgLoyaltyModel,
             this.tabPgNPS,
-            this.xtraTabPage3});
+            this.tabPgSatisfactionModel});
             // 
-            // xtraTabPage4
+            // tabPgLoyaltyModel
             // 
-            this.xtraTabPage4.Name = "xtraTabPage4";
-            this.xtraTabPage4.Size = new System.Drawing.Size(1173, 496);
-            this.xtraTabPage4.Text = "Loyalty Model";
+            this.tabPgLoyaltyModel.Name = "tabPgLoyaltyModel";
+            this.tabPgLoyaltyModel.Size = new System.Drawing.Size(1173, 496);
+            this.tabPgLoyaltyModel.Text = "Loyalty Model";
             // 
             // tabPgTendances
             // 
@@ -505,11 +496,11 @@
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
-            // xtraTabPage3
+            // tabPgSatisfactionModel
             // 
-            this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(1173, 496);
-            this.xtraTabPage3.Text = "Satisfaction Model";
+            this.tabPgSatisfactionModel.Name = "tabPgSatisfactionModel";
+            this.tabPgSatisfactionModel.Size = new System.Drawing.Size(1173, 496);
+            this.tabPgSatisfactionModel.Text = "Satisfaction Model";
             // 
             // layoutControlGroup10
             // 
@@ -525,7 +516,7 @@
             // 
             // layoutControlItem8
             // 
-            this.layoutControlItem8.Control = this.xtraTabControl3;
+            this.layoutControlItem8.Control = this.tabTrat;
             this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem8.Name = "layoutControlItem8";
             this.layoutControlItem8.Size = new System.Drawing.Size(1186, 536);
@@ -546,7 +537,7 @@
             // 
             // layoutControlItem6
             // 
-            this.layoutControlItem6.Control = this.xtraTabControl1;
+            this.layoutControlItem6.Control = this.TabIndicateurs;
             this.layoutControlItem6.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.Size = new System.Drawing.Size(1225, 602);
@@ -674,19 +665,19 @@
             this.lcSegmentation.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            this.tabPgSatisfactionModel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).EndInit();
+            this.tabPgReclamations.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lcReclamations)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).EndInit();
-            this.tabPgComplaintModel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl3)).EndInit();
-            this.layoutControl3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
-            this.xtraTabControl1.ResumeLayout(false);
-            this.xtraTabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl4)).EndInit();
-            this.layoutControl4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).EndInit();
-            this.xtraTabControl2.ResumeLayout(false);
+            this.tabPgIndicateurs.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lcIndicateurs)).EndInit();
+            this.lcIndicateurs.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TabIndicateurs)).EndInit();
+            this.TabIndicateurs.ResumeLayout(false);
+            this.tabPgManage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lcManage)).EndInit();
+            this.lcManage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tabManage)).EndInit();
+            this.tabManage.ResumeLayout(false);
             this.tabPgCES.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lcCES)).EndInit();
             this.lcCES.ResumeLayout(false);
@@ -694,11 +685,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
-            this.xtraTabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl5)).EndInit();
-            this.layoutControl5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl3)).EndInit();
-            this.xtraTabControl3.ResumeLayout(false);
+            this.tabPgStrat.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lcStrat)).EndInit();
+            this.lcStrat.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tabTrat)).EndInit();
+            this.tabTrat.ResumeLayout(false);
             this.tabPgTendances.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lcTendances)).EndInit();
             this.lcTendances.ResumeLayout(false);
@@ -727,8 +718,8 @@
 
         private DevExpress.XtraTab.XtraTabControl tabPrincipal;
         private DevExpress.XtraTab.XtraTabPage tabPgSegmentation;
-        private DevExpress.XtraTab.XtraTabPage tabPgSatisfactionModel;
-        private DevExpress.XtraTab.XtraTabPage tabPgComplaintModel;
+        private DevExpress.XtraTab.XtraTabPage tabPgReclamations;
+        private DevExpress.XtraTab.XtraTabPage tabPgIndicateurs;
         private DevExpress.XtraLayout.LayoutControl pnPrincipal;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
         private DevExpress.XtraLayout.LayoutControlItem lciTabPanePrincipal;
@@ -744,27 +735,27 @@
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private pmcSegmentation pmcSegmentation1;
-        private DevExpress.XtraLayout.LayoutControl layoutControl2;
+        private DevExpress.XtraLayout.LayoutControl lcReclamations;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup7;
-        private DevExpress.XtraLayout.LayoutControl layoutControl3;
-        private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
-        private DevExpress.XtraLayout.LayoutControl layoutControl4;
+        private DevExpress.XtraLayout.LayoutControl lcIndicateurs;
+        private DevExpress.XtraTab.XtraTabControl TabIndicateurs;
+        private DevExpress.XtraTab.XtraTabPage tabPgManage;
+        private DevExpress.XtraLayout.LayoutControl lcManage;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup9;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
-        private DevExpress.XtraLayout.LayoutControl layoutControl5;
+        private DevExpress.XtraTab.XtraTabPage tabPgStrat;
+        private DevExpress.XtraLayout.LayoutControl lcStrat;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup10;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup8;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
-        private DevExpress.XtraTab.XtraTabControl xtraTabControl2;
+        private DevExpress.XtraTab.XtraTabControl tabManage;
         private DevExpress.XtraTab.XtraTabPage tabPgCES;
         private DevExpress.XtraLayout.LayoutControl lcCES;
         private pmcQuestionnaireNoteSegment pmcCES;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup5;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
-        private DevExpress.XtraTab.XtraTabControl xtraTabControl3;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage4;
+        private DevExpress.XtraTab.XtraTabControl tabTrat;
+        private DevExpress.XtraTab.XtraTabPage tabPgLoyaltyModel;
         private DevExpress.XtraTab.XtraTabPage tabPgNPS;
         private DevExpress.XtraLayout.LayoutControl lcNPS;
         private pmcQuestionnaireNoteSegment pmcNPS;
@@ -776,7 +767,7 @@
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
+        private DevExpress.XtraTab.XtraTabPage tabPgSatisfactionModel;
     }
 }
 
