@@ -42,11 +42,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="enumActionCorrective.cs" />
     <Compile Include="enumTxActualisation.cs" />
     <Compile Include="enumTxMultiplicateur.cs" />
     <Compile Include="enumTxRetention.cs" />
+    <Compile Include="enumMotifInsatisfactionLegitime.cs" />
     <Compile Include="enumTypeSegment.cs" />
     <Compile Include="FicheTravail.cs" />
+    <Compile Include="Reclamation.cs" />
     <Compile Include="Segment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
