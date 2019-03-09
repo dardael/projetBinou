@@ -13,13 +13,13 @@ using ComHe_Objets;
 
 namespace ComHe_Pilotage {
     public partial class frmSaisieFicheTravail : XtraForm {
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
         public Boolean isAjoutOk { get; set; }
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
         public Boolean isNew { get; }
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
         public FicheTravail ficheTravail { get; }
 

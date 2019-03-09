@@ -6,11 +6,13 @@ using DevExpress.XtraGrid.Views.Base;
 
 namespace ComHe_Pilotage {
     public partial class pmcQuestionnaireNoteSegment : UserControl {
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
+        [EditorBrowsable(EditorBrowsableState.Never)]
         private FicheTravail ficheCourante;
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
+        [EditorBrowsable(EditorBrowsableState.Never)]
         public FicheTravail fiche {
             set {
                 ficheCourante = value;
@@ -20,11 +22,13 @@ namespace ComHe_Pilotage {
                 return ficheCourante;
             }
         }
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
-        private string _question = "";
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [EditorBrowsable(EditorBrowsableState.Never)]
+        private string _question;
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
+        [EditorBrowsable(EditorBrowsableState.Never)]
         public string question {
             set {
                 _question = value;
@@ -34,8 +38,9 @@ namespace ComHe_Pilotage {
                 return _question;
             }
         }
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
+        [EditorBrowsable(EditorBrowsableState.Never)]
         private string _type;
         public pmcQuestionnaireNoteSegment() {
             InitializeComponent();

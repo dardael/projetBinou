@@ -12,13 +12,13 @@ using ComHe_Objets;
 
 namespace ComHe_Pilotage {
     public partial class pmcCreationFicheTravail : XtraUserControl {
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
         public event EventHandler btAnnulerClick;
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
         public event EventHandler btAjouterClick;
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
         public FicheTravail ficheTravailCourante { get; set; }
         public pmcCreationFicheTravail() {

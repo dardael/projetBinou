@@ -7,25 +7,25 @@ using System.ComponentModel;
 
 namespace ComHe_Pilotage {
     public partial class pmcGestionFichesDeTravail : UserControl {
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
         public List<FicheTravail> fichesTravail {
             get;
             set;
         }
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
         public FicheTravail ficheCourante {
             get;
             set;
         }
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
         private string fileName { get; } = "fichesDeTravailData";
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
         private frmSaisieFicheTravail frmSaisieFicheTravail;
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
         public event EventHandler ficheTravailCouranteChanged;
         public pmcGestionFichesDeTravail() {

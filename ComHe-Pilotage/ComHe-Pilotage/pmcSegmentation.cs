@@ -10,10 +10,10 @@ using System.Data;
 
 namespace ComHe_Pilotage {
     public partial class pmcSegmentation : UserControl {
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
         private FicheTravail ficheCourante;
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
         public FicheTravail fiche {
             set {
@@ -24,7 +24,7 @@ namespace ComHe_Pilotage {
                 return ficheCourante;
             }
         }
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
         public event EventHandler dataChanged;
         public pmcSegmentation() {

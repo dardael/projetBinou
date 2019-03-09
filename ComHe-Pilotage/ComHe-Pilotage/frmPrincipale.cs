@@ -6,7 +6,7 @@ using System.ComponentModel;
 
 namespace ComHe_Pilotage {
     public partial class frmPrincipale : XtraForm {
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
         public FicheTravail fiche { get; set; }
         public frmPrincipale() {
@@ -21,10 +21,12 @@ namespace ComHe_Pilotage {
 
         private void pmcGestionFichesDeTravail_ficheTravailCouranteChanged(object sender, EventArgs e) {
             fiche = pmcGestionFichesDeTravail.ficheCourante;
-            pmcSegmentation1.fiche = fiche;
-            pmcQuatresChemins1.fiche = fiche;
-            pmcNPS.fiche = fiche;
-            pmcCES.fiche = fiche;
+            if (fiche != null) {
+                pmcSegmentation1.fiche = fiche;
+                pmcQuatresChemins1.fiche = fiche;
+                pmcNPS.fiche = fiche;
+                pmcCES.fiche = fiche;
+            }
         }
         private void pmcSegmentation_dataChanged(object sender, EventArgs e) {
             fiche = pmcSegmentation1.fiche;

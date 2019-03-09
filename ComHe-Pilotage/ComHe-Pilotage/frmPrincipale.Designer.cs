@@ -151,6 +151,8 @@
             this.pmcGestionFichesDeTravail.fichesTravail.Add(this.pmcGestionFichesDeTravail.ficheCourante);
             this.pmcGestionFichesDeTravail.fichesTravail.Add(this.pmcGestionFichesDeTravail.ficheCourante);
             this.pmcGestionFichesDeTravail.fichesTravail.Add(this.pmcGestionFichesDeTravail.ficheCourante);
+            this.pmcGestionFichesDeTravail.fichesTravail.Add(this.pmcGestionFichesDeTravail.ficheCourante);
+            this.pmcGestionFichesDeTravail.fichesTravail.Add(this.pmcGestionFichesDeTravail.ficheCourante);
             this.pmcGestionFichesDeTravail.Location = new System.Drawing.Point(16, 16);
             this.pmcGestionFichesDeTravail.Margin = new System.Windows.Forms.Padding(0);
             this.pmcGestionFichesDeTravail.Name = "pmcGestionFichesDeTravail";
@@ -216,10 +218,10 @@
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
-            // tabPgSatisfactionModel
+            // tabPgSatisfactionMode
             // 
             this.tabPgSatisfactionModel.Controls.Add(this.layoutControl2);
-            this.tabPgSatisfactionModel.Name = "tabPgSatisfactionModel";
+            this.tabPgSatisfactionModel.Name = "tabPgSatisfactionMode";
             this.tabPgSatisfactionModel.Size = new System.Drawing.Size(1251, 628);
             this.tabPgSatisfactionModel.Text = "Gestion des réclamations";
             // 
