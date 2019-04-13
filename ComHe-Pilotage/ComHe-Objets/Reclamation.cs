@@ -14,8 +14,8 @@ namespace ComHe_Objets {
         public String numeroClient { get; set; }
         public String service { get; set; }
         public String motifInsatisfaction { get; set; }
-        public enumActionCorrective actionCorrective { get; set; }
-        public enumMotifInsatisfactionLegitime motifLegitime { get; set; }
+        public String actionCorrective { get; set; }
+        public String motifLegitime { get; set; }
         public double montantIndemnite { get; set; }
         public String verbatimClient { get; set; }
     }

@@ -92,6 +92,33 @@ namespace ComHe_Objets {
         public int nbPersonne3CES { get; set; }
         public int nbPersonne4CES { get; set; }
         public int nbPersonne5CES { get; set; }
+        public double scoreNPS {
+            get {
+                int nbTotal = nbPersonne0NPS + nbPersonne1NPS + nbPersonne10NPS + nbPersonne2NPS + nbPersonne3NPS + nbPersonne4NPS + nbPersonne5NPS + nbPersonne6NPS + nbPersonne7NPS + nbPersonne8NPS + nbPersonne9NPS;
+                if (nbTotal > 0) {
+                    int nbDetracteur = nbPersonne0NPS + nbPersonne1NPS + nbPersonne2NPS + nbPersonne3NPS + nbPersonne4NPS + nbPersonne5NPS + nbPersonne6NPS;
+                    int nbPromoteur = nbPersonne10NPS + nbPersonne9NPS;
+                    return ((double)nbPromoteur / (double)nbTotal) - ((double)nbDetracteur / (double)nbTotal);
+                }
+                else {
+                    return 0;
+                }
+            }
+        }
+        public double scoreCES {
+            get {
+                int nbTotal = nbPersonne0CES + nbPersonne1CES + nbPersonne2CES + nbPersonne3CES + nbPersonne4CES + nbPersonne5CES;
+                if (nbTotal > 0) {
+                    int nbDetracteur = nbPersonne0CES + nbPersonne1CES + nbPersonne2CES + nbPersonne3CES;
+                    int nbPromoteur = nbPersonne5CES;
+                    double value = ((double)nbPromoteur / (double)nbTotal) - ((double)nbDetracteur / (double)nbTotal);
+                    return value;
+                }
+                else {
+                    return 0;
+                }
+            }
+        }
         public Segment() {
 
         }

@@ -87,6 +87,12 @@
     <Compile Include="pmcGestionFichesDeTravail.Designer.cs">
       <DependentUpon>pmcGestionFichesDeTravail.cs</DependentUpon>
     </Compile>
+    <Compile Include="pmcGestionReclamation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pmcGestionReclamation.Designer.cs">
+      <DependentUpon>pmcGestionReclamation.cs</DependentUpon>
+    </Compile>
     <Compile Include="pmcQuatresChemins.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     <EmbeddedResource Include="pmcGestionFichesDeTravail.resx">
       <DependentUpon>pmcGestionFichesDeTravail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pmcGestionReclamation.resx">
+      <DependentUpon>pmcGestionReclamation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pmcQuatresChemins.resx">
       <DependentUpon>pmcQuatresChemins.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +161,8 @@
       <DependentUpon>frmSaisieFicheTravail.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="Properties\DataSources\ComHe_Objets.FicheTravail.datasource" />
+    <None Include="Properties\DataSources\ComHe_Objets.Reclamation.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

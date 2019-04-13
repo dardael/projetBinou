@@ -26,13 +26,15 @@ namespace ComHe_Pilotage {
                 pmcQuatresChemins1.fiche = fiche;
                 pmcNPS.fiche = fiche;
                 pmcCES.fiche = fiche;
+                pmcGestionReclamation1.fiche = fiche;
             }
         }
         private void pmcSegmentation_dataChanged(object sender, EventArgs e) {
             fiche = pmcSegmentation1.fiche;
             pmcQuatresChemins1.fiche = fiche;
-            //pmcNPS.fiche = fiche;
-            //pmcCES.fiche = fiche;
+            pmcNPS.fiche = fiche;
+            pmcCES.fiche = fiche;
+            pmcGestionReclamation1.fiche = fiche;
         }
 
 

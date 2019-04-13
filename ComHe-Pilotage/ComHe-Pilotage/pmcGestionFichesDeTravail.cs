@@ -34,7 +34,7 @@ namespace ComHe_Pilotage {
             if (fichesTravail == null || fichesTravail.Count == 0) {
                 fichesTravail = new List<FicheTravail>();
                 if (ficheCourante == null) {
-                    ficheCourante = new FicheTravail("Nouvelle fiche de travail", new List<Segment>());
+                    ficheCourante = new FicheTravail("Nouvelle fiche de travail", new List<Segment>(), new List<Reclamation>());
                 }
                 fichesTravail.Add(ficheCourante);
             }
@@ -56,7 +56,7 @@ namespace ComHe_Pilotage {
                 ficheTravailFonction = ficheTravail;
             }
             else {
-                ficheTravailFonction = new FicheTravail("Fiche de travail", new List<Segment>());
+                ficheTravailFonction = new FicheTravail("Fiche de travail", new List<Segment>(), new List<Reclamation>());
             }
             frmSaisieFicheTravail = new frmSaisieFicheTravail(ficheTravailFonction, ficheTravail == null);
             frmSaisieFicheTravail.FormClosing += frmSaisieFicheTravail_FormClosing;

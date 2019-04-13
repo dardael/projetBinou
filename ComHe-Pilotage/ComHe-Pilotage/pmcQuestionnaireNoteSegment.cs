@@ -103,6 +103,7 @@ namespace ComHe_Pilotage {
         private void gererChangementFicheCourante() {
             if (fiche != null) {
                 populateGridNotation();
+                populateGauge();
             }
         }
         private void gererChangementQuestion() {
@@ -121,9 +122,20 @@ namespace ComHe_Pilotage {
             }
             gererAffichageColonnes();
         }
+        private void populateGauge() {
+            double value = 0;
+            if (_type == "NPS") {
+                value = ficheCourante.scoreNPSMoyen;
+            }
+            else if (_type == "CES") {
+                value = ficheCourante.scoreCESMoyen;
+            }
+            arcScaleComponent1.Value = (float)value;
+            //this.arcScaleComponent1.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ficheTravailBindingSource, "score" + _type + "Moyen", true));
+        }
 
-        private void gridControl1_Click(object sender, EventArgs e) {
-
+        private void grNotation_CellValueChanged(object sender, CellValueChangedEventArgs e) {
+            populateGauge();
         }
     }
 }

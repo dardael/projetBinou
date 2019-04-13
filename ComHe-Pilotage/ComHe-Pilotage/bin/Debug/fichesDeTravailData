@@ -28,7 +28,7 @@
 				<nbPersonne6NPS>0</nbPersonne6NPS>
 				<nbPersonne7NPS>0</nbPersonne7NPS>
 				<nbPersonne8NPS>0</nbPersonne8NPS>
-				<nbPersonne9NPS>0</nbPersonne9NPS>
+				<nbPersonne9NPS>12</nbPersonne9NPS>
 				<nbPersonne10NPS>0</nbPersonne10NPS>
 				<nbPersonne0CES>0</nbPersonne0CES>
 				<nbPersonne1CES>0</nbPersonne1CES>
@@ -174,5 +174,31 @@
 				<nbPersonne5CES>0</nbPersonne5CES>
 			</Segment>
 		</segments>
+		<reclamations>
+			<Reclamation>
+				<dateLitige>0001-01-01T00:00:00</dateLitige>
+				<collaborateur>Fabien</collaborateur>
+				<client>Dupont</client>
+				<numeroClient>1</numeroClient>
+				<service>Client</service>
+				<motifInsatisfaction>Raleur</motifInsatisfaction>
+				<actionCorrective>NON PREVUE</actionCorrective>
+				<motifLegitime>NON</motifLegitime>
+				<montantIndemnite>0</montantIndemnite>
+				<verbatimClient>PAS CONTENT</verbatimClient>
+			</Reclamation>
+			<Reclamation>
+				<dateLitige>0001-01-01T00:00:00</dateLitige>
+				<collaborateur>Fabien</collaborateur>
+				<client>Tintin</client>
+				<numeroClient>2</numeroClient>
+				<service>Compta</service>
+				<motifInsatisfaction>Erreur</motifInsatisfaction>
+				<actionCorrective>AVOIR</actionCorrective>
+				<motifLegitime>OUI</motifLegitime>
+				<montantIndemnite>100</montantIndemnite>
+				<verbatimClient>Erreur traitement</verbatimClient>
+			</Reclamation>
+		</reclamations>
 	</FicheTravail>
 </ArrayOfFicheTravail>

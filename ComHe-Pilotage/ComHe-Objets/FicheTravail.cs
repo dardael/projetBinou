@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ComHe_Objets {
     [Serializable]
@@ -9,6 +10,26 @@ namespace ComHe_Objets {
         public string nom { get; set; }
         public List<Segment> segments { get; set; }
         public List<Reclamation> reclamations { get; set; }
+        public double scoreCESMoyen {
+            get {
+                if (segments != null && segments.Count > 0) {
+                    return segments.Average(x => x.scoreCES);
+                }
+                else {
+                    return 0;
+                }
+            }
+        }
+        public double scoreNPSMoyen {
+            get {
+                if (segments != null && segments.Count > 0) {
+                    return segments.Average(x => x.scoreNPS);
+                }
+                else {
+                    return 0;
+                }
+            }
+        }
         public FicheTravail(List<Segment> segments, List<Reclamation> reclamations) {
             this.segments = segments;
             this.reclamations = reclamations;
