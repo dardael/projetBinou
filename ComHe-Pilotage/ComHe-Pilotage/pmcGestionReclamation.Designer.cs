@@ -120,6 +120,7 @@
             this.colactions});
             this.gvReclamations.GridControl = this.grReclamation;
             this.gvReclamations.Name = "gvReclamations";
+            this.gvReclamations.CellValueChanged += new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(this.gvReclamations_CellValueChanged);
             // 
             // coldateLitige
             // 

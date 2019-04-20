@@ -32,7 +32,6 @@
             this.circularGauge1 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.arcScaleBackgroundLayerComponent1 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleBackgroundLayerComponent();
             this.arcScaleComponent1 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
-            this.ficheTravailBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.arcScaleNeedleComponent1 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleNeedleComponent();
             this.arcScaleSpindleCapComponent1 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleSpindleCapComponent();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
@@ -56,17 +55,19 @@
             this.colnbPersonne3CES = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colnbPersonne4CES = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colnbPersonne5CES = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colscoreCES = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colscoreNPS = new DevExpress.XtraGrid.Columns.GridColumn();
             this.lbQuestion = new DevExpress.XtraEditors.LabelControl();
             this.lcGridNotation = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ficheTravailBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pnPrincipal)).BeginInit();
             this.pnPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circularGauge1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleBackgroundLayerComponent1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ficheTravailBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleNeedleComponent1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleSpindleCapComponent1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -76,6 +77,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ficheTravailBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pnPrincipal
@@ -174,10 +176,6 @@
             this.arcScaleComponent1.RescalingThresholdMin = 0.005F;
             this.arcScaleComponent1.StartAngle = -180F;
             // 
-            // ficheTravailBindingSource
-            // 
-            this.ficheTravailBindingSource.DataSource = typeof(ComHe_Objets.FicheTravail);
-            // 
             // arcScaleNeedleComponent1
             // 
             this.arcScaleNeedleComponent1.ArcScale = this.arcScaleComponent1;
@@ -229,7 +227,9 @@
             this.colnbPersonne2CES,
             this.colnbPersonne3CES,
             this.colnbPersonne4CES,
-            this.colnbPersonne5CES});
+            this.colnbPersonne5CES,
+            this.colscoreCES,
+            this.colscoreNPS});
             this.grNotation.GridControl = this.gridControl1;
             this.grNotation.Name = "grNotation";
             this.grNotation.OptionsMenu.ShowAddNewSummaryItem = DevExpress.Utils.DefaultBoolean.True;
@@ -420,6 +420,28 @@
             this.colnbPersonne5CES.Visible = true;
             this.colnbPersonne5CES.VisibleIndex = 17;
             // 
+            // colscoreCES
+            // 
+            this.colscoreCES.Caption = "CES Moyen";
+            this.colscoreCES.FieldName = "scoreCES";
+            this.colscoreCES.Name = "colscoreCES";
+            this.colscoreCES.OptionsColumn.AllowEdit = false;
+            this.colscoreCES.OptionsColumn.AllowFocus = false;
+            this.colscoreCES.OptionsColumn.ReadOnly = true;
+            this.colscoreCES.Visible = true;
+            this.colscoreCES.VisibleIndex = 18;
+            // 
+            // colscoreNPS
+            // 
+            this.colscoreNPS.Caption = "NPS Moyen";
+            this.colscoreNPS.FieldName = "scoreNPS";
+            this.colscoreNPS.Name = "colscoreNPS";
+            this.colscoreNPS.OptionsColumn.AllowEdit = false;
+            this.colscoreNPS.OptionsColumn.AllowFocus = false;
+            this.colscoreNPS.OptionsColumn.ReadOnly = true;
+            this.colscoreNPS.Visible = true;
+            this.colscoreNPS.VisibleIndex = 19;
+            // 
             // lbQuestion
             // 
             this.lbQuestion.Location = new System.Drawing.Point(16, 16);
@@ -470,6 +492,10 @@
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
+            // ficheTravailBindingSource
+            // 
+            this.ficheTravailBindingSource.DataSource = typeof(ComHe_Objets.FicheTravail);
+            // 
             // pmcQuestionnaireNoteSegment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -482,7 +508,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.circularGauge1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleBackgroundLayerComponent1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ficheTravailBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleNeedleComponent1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleSpindleCapComponent1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
@@ -492,6 +517,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ficheTravailBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -532,5 +558,7 @@
         private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent arcScaleComponent1;
         private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleNeedleComponent arcScaleNeedleComponent1;
         private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleSpindleCapComponent arcScaleSpindleCapComponent1;
+        private DevExpress.XtraGrid.Columns.GridColumn colscoreCES;
+        private DevExpress.XtraGrid.Columns.GridColumn colscoreNPS;
     }
 }

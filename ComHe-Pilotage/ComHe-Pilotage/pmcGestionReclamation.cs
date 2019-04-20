@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComHe_Objets;
+using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 
 namespace ComHe_Pilotage {
     public partial class pmcGestionReclamation : UserControl {
@@ -52,6 +53,24 @@ namespace ComHe_Pilotage {
             Reclamation reclamationCourante = (Reclamation)gvReclamations.GetRow(gvReclamations.FocusedRowHandle);
             ficheCourante.reclamations.Remove(reclamationCourante);
             gererChangementFicheCourante();
+        }
+
+        private void gvReclamations_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e) {
+            if (e.Column.Name == colactionCorrective.Name) {
+                GridViewInfo viewInfo = gvReclamations.GetViewInfo() as GridViewInfo;
+                GridCellInfo cellInfo = viewInfo.GetGridCellInfo(e.RowHandle, e.Column);
+                cellInfo.Appearance.BeginUpdate();
+                if ((String)e.Value == "AVOIR") {
+                    cellInfo.Appearance.BackColor = Color.White;
+                    cellInfo.Appearance.BackColor2 = Color.White;
+                }
+                else {
+                    cellInfo.Appearance.BackColor = Color.Gray;
+                    cellInfo.Appearance.BackColor2 = Color.Gray;
+
+                }
+                cellInfo.Appearance.EndUpdate();
+            }
         }
     }
 }

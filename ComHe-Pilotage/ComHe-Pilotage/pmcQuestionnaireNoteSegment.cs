@@ -58,6 +58,16 @@ namespace ComHe_Pilotage {
                 }
                 if (col.Name == "colnom") {
                     col.Caption = "Segment";
+                    col.OptionsColumn.ReadOnly = true;
+                    col.OptionsColumn.AllowEdit = false;
+                }
+                else if (col.Name.Contains("score")) {
+                    col.Caption = "Score " + _type + " moyen";
+                    col.OptionsColumn.ReadOnly = true;
+                    col.OptionsColumn.AllowEdit = false;
+                    col.SummaryItem.SummaryType = DevExpress.Data.SummaryItemType.Average;
+                    col.SummaryItem.FieldName = col.FieldName;
+                    col.SummaryItem.DisplayFormat = "Moyenne : {0:n3}";
                 }
                 else {
                     if (col.Name.Contains("10")) {
