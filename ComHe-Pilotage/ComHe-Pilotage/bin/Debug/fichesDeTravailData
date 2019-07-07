@@ -199,6 +199,18 @@
 				<montantIndemnite>100</montantIndemnite>
 				<verbatimClient>Erreur traitement</verbatimClient>
 			</Reclamation>
+			<Reclamation>
+				<dateLitige>1993-01-01T00:00:00</dateLitige>
+				<collaborateur>George</collaborateur>
+				<client>Tintin</client>
+				<numeroClient>3</numeroClient>
+				<service>Manutention</service>
+				<motifInsatisfaction>CHiant</motifInsatisfaction>
+				<actionCorrective>NON PREVUE</actionCorrective>
+				<motifLegitime>NON</motifLegitime>
+				<montantIndemnite>0</montantIndemnite>
+				<verbatimClient>Pas content</verbatimClient>
+			</Reclamation>
 		</reclamations>
 	</FicheTravail>
 </ArrayOfFicheTravail>
