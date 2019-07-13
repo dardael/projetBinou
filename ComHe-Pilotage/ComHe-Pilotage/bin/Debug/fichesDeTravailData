@@ -10,6 +10,10 @@
 				<_marge>1275</_marge>
 				<_txActualisation>DOUZE</_txActualisation>
 				<nom>Segment A</nom>
+				<caRecommendation>0</caRecommendation>
+				<caAchatsCroises>0</caAchatsCroises>
+				<caSensibilitePricePremium>0</caSensibilitePricePremium>
+				<caWACC>0</caWACC>
 				<typeSegment>BNC</typeSegment>
 				<caFromLM>7500</caFromLM>
 				<txMarge>0.17</txMarge>
@@ -44,6 +48,10 @@
 				<_marge>900</_marge>
 				<_txActualisation>QUATORZE</_txActualisation>
 				<nom>Segment B</nom>
+				<caRecommendation>0</caRecommendation>
+				<caAchatsCroises>0</caAchatsCroises>
+				<caSensibilitePricePremium>0</caSensibilitePricePremium>
+				<caWACC>0</caWACC>
 				<typeSegment>BNC</typeSegment>
 				<caFromLM>5000</caFromLM>
 				<txMarge>0.18</txMarge>
@@ -78,6 +86,10 @@
 				<_marge>500</_marge>
 				<_txActualisation>DOUZE</_txActualisation>
 				<nom>Segment C</nom>
+				<caRecommendation>0</caRecommendation>
+				<caAchatsCroises>0</caAchatsCroises>
+				<caSensibilitePricePremium>0</caSensibilitePricePremium>
+				<caWACC>0</caWACC>
 				<typeSegment>BNC</typeSegment>
 				<caFromLM>2500</caFromLM>
 				<txMarge>0.2</txMarge>
@@ -112,6 +124,10 @@
 				<_marge>165</_marge>
 				<_txActualisation>DIX</_txActualisation>
 				<nom>Segment D</nom>
+				<caRecommendation>0</caRecommendation>
+				<caAchatsCroises>0</caAchatsCroises>
+				<caSensibilitePricePremium>0</caSensibilitePricePremium>
+				<caWACC>0</caWACC>
 				<typeSegment>BNC</typeSegment>
 				<caFromLM>1500</caFromLM>
 				<txMarge>0.11</txMarge>
@@ -146,6 +162,10 @@
 				<_marge>165</_marge>
 				<_txActualisation>DIX</_txActualisation>
 				<nom>Segment E</nom>
+				<caRecommendation>0</caRecommendation>
+				<caAchatsCroises>0</caAchatsCroises>
+				<caSensibilitePricePremium>0</caSensibilitePricePremium>
+				<caWACC>0</caWACC>
 				<typeSegment>BNC</typeSegment>
 				<caFromLM>1500</caFromLM>
 				<txMarge>0.11</txMarge>
@@ -180,7 +200,7 @@
 				<collaborateur>Fabien</collaborateur>
 				<client>Dupont</client>
 				<numeroClient>1</numeroClient>
-				<service>Client</service>
+				<service>COMPTA</service>
 				<motifInsatisfaction>Raleur</motifInsatisfaction>
 				<actionCorrective>NON PREVUE</actionCorrective>
 				<motifLegitime>NON</motifLegitime>
@@ -192,7 +212,7 @@
 				<collaborateur>Fabien</collaborateur>
 				<client>Tintin</client>
 				<numeroClient>2</numeroClient>
-				<service>Compta</service>
+				<service>JURIDIQUE</service>
 				<motifInsatisfaction>Erreur</motifInsatisfaction>
 				<actionCorrective>AVOIR</actionCorrective>
 				<motifLegitime>OUI</motifLegitime>
@@ -204,7 +224,7 @@
 				<collaborateur>George</collaborateur>
 				<client>Tintin</client>
 				<numeroClient>3</numeroClient>
-				<service>Manutention</service>
+				<service>SOCIALE</service>
 				<motifInsatisfaction>CHiant</motifInsatisfaction>
 				<actionCorrective>NON PREVUE</actionCorrective>
 				<motifLegitime>NON</motifLegitime>

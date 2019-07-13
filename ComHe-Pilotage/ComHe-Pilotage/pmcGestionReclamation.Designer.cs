@@ -49,6 +49,7 @@
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.repoCBService = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.lcPrincipal)).BeginInit();
             this.lcPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grReclamation)).BeginInit();
@@ -61,6 +62,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repoCBService)).BeginInit();
             this.SuspendLayout();
             // 
             // lcPrincipal
@@ -94,7 +96,8 @@
             this.grReclamation.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repoCbOuiNon,
             this.repoCbAvoirNonPrevu,
-            this.repoBtSupprimer});
+            this.repoBtSupprimer,
+            this.repoCBService});
             this.grReclamation.Size = new System.Drawing.Size(978, 365);
             this.grReclamation.TabIndex = 4;
             this.grReclamation.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -163,6 +166,7 @@
             // colservice
             // 
             this.colservice.Caption = "Service";
+            this.colservice.ColumnEdit = this.repoCBService;
             this.colservice.FieldName = "service";
             this.colservice.Name = "colservice";
             this.colservice.Visible = true;
@@ -301,6 +305,17 @@
             this.emptySpaceItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
+            // repoCBService
+            // 
+            this.repoCBService.AutoHeight = false;
+            this.repoCBService.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repoCBService.Items.AddRange(new object[] {
+            "COMPTA",
+            "JURIDIQUE",
+            "SOCIALE"});
+            this.repoCBService.Name = "repoCBService";
+            // 
             // pmcGestionReclamation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -320,6 +335,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repoCBService)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -349,5 +365,6 @@
         private DevExpress.XtraEditors.SimpleButton btAjouterReclamation;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repoCBService;
     }
 }
