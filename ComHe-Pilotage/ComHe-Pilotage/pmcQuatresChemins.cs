@@ -10,26 +10,12 @@ using System.Windows.Forms;
 using ComHe_Objets;
 
 namespace ComHe_Pilotage {
-    public partial class pmcQuatresChemins : UserControl {
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        [Browsable(false)]
-        private FicheTravail ficheCourante;
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        [Browsable(false)]
-        public FicheTravail fiche {
-            set {
-                ficheCourante = value;
-                gererChangementFicheCourante();
-            }
-            get {
-                return ficheCourante;
-            }
-        }
+    public partial class pmcQuatresChemins : pmcParentUtilisantFicheDeTravail {
         public pmcQuatresChemins() {
             InitializeComponent();
             grQuatresChemins.DataSource = new List<Segment>();
         }
-        private void gererChangementFicheCourante() {
+        protected override void gererChangementFicheCourante() {
             if (fiche != null) {
                 populateGridQuatresChemins();
             }

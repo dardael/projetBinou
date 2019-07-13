@@ -11,27 +11,11 @@ using ComHe_Objets;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 
 namespace ComHe_Pilotage {
-    public partial class pmcGestionReclamation : UserControl {
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        [Browsable(false)]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        private FicheTravail ficheCourante;
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        [Browsable(false)]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        public FicheTravail fiche {
-            set {
-                ficheCourante = value;
-                gererChangementFicheCourante();
-            }
-            get {
-                return ficheCourante;
-            }
-        }
+    public partial class pmcGestionReclamation : pmcParentUtilisantFicheDeTravail {
         public pmcGestionReclamation() {
             InitializeComponent();
         }
-        private void gererChangementFicheCourante() {
+        protected override void gererChangementFicheCourante() {
             populateGrid();
         }
         private void populateGrid() {

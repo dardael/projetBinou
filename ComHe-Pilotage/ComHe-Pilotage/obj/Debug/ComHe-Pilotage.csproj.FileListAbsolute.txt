@@ -166,3 +166,4 @@ C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\C
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe-Pilotage.exe.licenses
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe-Pilotage.exe
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe-Pilotage.pdb
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.pmcApprentissage.resources

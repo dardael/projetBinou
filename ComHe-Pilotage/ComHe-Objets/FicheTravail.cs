@@ -10,6 +10,7 @@ namespace ComHe_Objets {
         public string nom { get; set; }
         public List<Segment> segments { get; set; }
         public List<Reclamation> reclamations { get; set; }
+        public List<FormationCollaborateur> formations { get; set; }
         public double scoreCESMoyen {
             get {
                 if (segments != null && segments.Count > 0) {

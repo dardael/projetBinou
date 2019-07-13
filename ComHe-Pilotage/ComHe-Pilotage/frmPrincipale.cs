@@ -22,19 +22,20 @@ namespace ComHe_Pilotage {
         private void pmcGestionFichesDeTravail_ficheTravailCouranteChanged(object sender, EventArgs e) {
             fiche = pmcGestionFichesDeTravail.ficheCourante;
             if (fiche != null) {
-                pmcSegmentation1.fiche = fiche;
-                pmcQuatresChemins1.fiche = fiche;
-                pmcNPS.fiche = fiche;
-                pmcCES.fiche = fiche;
-                pmcGestionReclamation1.fiche = fiche;
+                propagerFiche(fiche);
             }
         }
         private void pmcSegmentation_dataChanged(object sender, EventArgs e) {
-            fiche = pmcSegmentation1.fiche;
+            propagerFiche(pmcSegmentation1.fiche);
+
+        }
+        private void propagerFiche(FicheTravail fiche) {
+            pmcSegmentation1.fiche = fiche;
             pmcQuatresChemins1.fiche = fiche;
             pmcNPS.fiche = fiche;
             pmcCES.fiche = fiche;
             pmcGestionReclamation1.fiche = fiche;
+            pmcApprentissage1.fiche = fiche;
         }
 
 

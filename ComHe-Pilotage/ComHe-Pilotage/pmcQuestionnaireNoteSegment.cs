@@ -5,23 +5,7 @@ using ComHe_Objets;
 using DevExpress.XtraGrid.Views.Base;
 
 namespace ComHe_Pilotage {
-    public partial class pmcQuestionnaireNoteSegment : UserControl {
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        [Browsable(false)]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        private FicheTravail ficheCourante;
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        [Browsable(false)]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        public FicheTravail fiche {
-            set {
-                ficheCourante = value;
-                gererChangementFicheCourante();
-            }
-            get {
-                return ficheCourante;
-            }
-        }
+    public partial class pmcQuestionnaireNoteSegment : pmcParentUtilisantFicheDeTravail {
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
         [EditorBrowsable(EditorBrowsableState.Never)]
@@ -110,7 +94,7 @@ namespace ComHe_Pilotage {
             }
             gridControl1.Refresh();
         }
-        private void gererChangementFicheCourante() {
+        protected override void gererChangementFicheCourante() {
             if (fiche != null) {
                 populateGridNotation();
                 populateGauge();

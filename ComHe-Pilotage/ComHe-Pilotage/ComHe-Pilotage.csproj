@@ -104,6 +104,9 @@
     <Compile Include="pmcGestionReclamation.Designer.cs">
       <DependentUpon>pmcGestionReclamation.cs</DependentUpon>
     </Compile>
+    <Compile Include="pmcParentUtilisantFicheDeTravail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="pmcQuatresChemins.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -135,6 +138,12 @@
     </Compile>
     <Compile Include="frmSaisieFicheTravail.Designer.cs">
       <DependentUpon>frmSaisieFicheTravail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pmcApprentissage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pmcApprentissage.Designer.cs">
+      <DependentUpon>pmcApprentissage.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmPrincipale.resx">
       <DependentUpon>frmPrincipale.cs</DependentUpon>
@@ -174,8 +183,12 @@
     <EmbeddedResource Include="frmSaisieFicheTravail.resx">
       <DependentUpon>frmSaisieFicheTravail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pmcApprentissage.resx">
+      <DependentUpon>pmcApprentissage.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\DataSources\ComHe_Objets.FicheTravail.datasource" />
+    <None Include="Properties\DataSources\ComHe_Objets.FormationCollaborateur.datasource" />
     <None Include="Properties\DataSources\ComHe_Objets.Reclamation.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

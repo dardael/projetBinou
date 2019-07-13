@@ -9,21 +9,8 @@ using System.ComponentModel;
 using System.Data;
 
 namespace ComHe_Pilotage {
-    public partial class pmcSegmentation : UserControl {
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        [Browsable(false)]
-        private FicheTravail ficheCourante;
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        [Browsable(false)]
-        public FicheTravail fiche {
-            set {
-                ficheCourante = value;
-                gererChangementFicheCourante();
-            }
-            get {
-                return ficheCourante;
-            }
-        }
+    public partial class pmcSegmentation : pmcParentUtilisantFicheDeTravail {
+
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
         public event EventHandler dataChanged;
@@ -33,7 +20,7 @@ namespace ComHe_Pilotage {
             chSegmentation.DataSource = new List<Segment>();
 
         }
-        private void gererChangementFicheCourante() {
+        protected override void gererChangementFicheCourante() {
             if (ficheCourante != null) {
                 populateGridSegmentation();
                 populateGridSegmentationMoyen();
