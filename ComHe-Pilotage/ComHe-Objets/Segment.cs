@@ -15,6 +15,9 @@ namespace ComHe_Objets {
         public double caAchatsCroises { get; set; }
         public double caSensibilitePricePremium { get; set; }
         public double caWACC { get; set; }
+        public String totalQuatreChemins {
+            get { return (noteBoucheAOreille + notePricePremium + noteReductionCouts + noteAugmentationDepensesAchatsCroises) + "/40"; }
+        }
         public enumTypeSegment typeSegment { get; set; }
         public double caFromLM {
             get { return _caFromLM; }
