@@ -11,6 +11,7 @@ namespace ComHe_Objets {
         public List<Segment> segments { get; set; }
         public List<Reclamation> reclamations { get; set; }
         public List<FormationCollaborateur> formations { get; set; }
+        public List<AttributDeSatisfaction> attibutsDeSatisfaction { get; set; }
         public double scoreCESMoyen {
             get {
                 if (segments != null && segments.Count > 0) {

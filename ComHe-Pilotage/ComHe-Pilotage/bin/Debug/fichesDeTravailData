@@ -232,5 +232,36 @@
 				<verbatimClient>Pas content</verbatimClient>
 			</Reclamation>
 		</reclamations>
+		<formations>
+			<FormationCollaborateur>
+				<nom>Fabien</nom>
+				<date>2019-07-04T00:00:00</date>
+				<competences>Compta</competences>
+				<coutsRattaches>1000</coutsRattaches>
+			</FormationCollaborateur>
+			<FormationCollaborateur>
+				<nom>Dupont</nom>
+				<date>2019-07-11T00:00:00</date>
+				<competences>Orthographe</competences>
+				<coutsRattaches>2000</coutsRattaches>
+			</FormationCollaborateur>
+		</formations>
+		<attibutsDeSatisfaction>
+			<AttributDeSatisfaction>
+				<nom>Satisfait</nom>
+				<impactSurSatisfaction>5</impactSurSatisfaction>
+				<impactSurInsatisfaction>1</impactSurInsatisfaction>
+			</AttributDeSatisfaction>
+			<AttributDeSatisfaction>
+				<nom>Insatisfait</nom>
+				<impactSurSatisfaction>1</impactSurSatisfaction>
+				<impactSurInsatisfaction>5</impactSurInsatisfaction>
+			</AttributDeSatisfaction>
+			<AttributDeSatisfaction>
+				<nom>Mitigé</nom>
+				<impactSurSatisfaction>3</impactSurSatisfaction>
+				<impactSurInsatisfaction>3</impactSurInsatisfaction>
+			</AttributDeSatisfaction>
+		</attibutsDeSatisfaction>
 	</FicheTravail>
 </ArrayOfFicheTravail>

@@ -78,6 +78,8 @@
             this.layoutControlGroup7 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabPgSatisfactionModel = new DevExpress.XtraTab.XtraTabPage();
+            this.lcSatisfactionModel = new DevExpress.XtraLayout.LayoutControl();
+            this.lcgSatisfactionModel = new DevExpress.XtraLayout.LayoutControlGroup();
             this.tabPgIndicateursGestionRecamationClient = new DevExpress.XtraTab.XtraTabPage();
             this.tabPgTraitementReclamation = new DevExpress.XtraTab.XtraTabPage();
             this.layoutControlGroup9 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -90,7 +92,9 @@
             this.tabApprentissage = new DevExpress.XtraTab.XtraTabControl();
             this.tabPgFormations = new DevExpress.XtraTab.XtraTabPage();
             this.lcFormations = new DevExpress.XtraLayout.LayoutControl();
+            this.pmcApprentissage1 = new ComHe_Pilotage.pmcApprentissage();
             this.lcgFormations = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
             this.lcgApprentissage = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabSynthese = new DevExpress.XtraTab.XtraTabPage();
@@ -104,8 +108,8 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.pmcApprentissage1 = new ComHe_Pilotage.pmcApprentissage();
-            this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.pmcAttributsDeSatisfaction1 = new ComHe_Pilotage.pmcAttributsDeSatisfaction();
+            this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabPrincipal)).BeginInit();
@@ -164,6 +168,10 @@
             this.lcReclamations.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
+            this.tabPgSatisfactionModel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lcSatisfactionModel)).BeginInit();
+            this.lcSatisfactionModel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lcgSatisfactionModel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup8)).BeginInit();
@@ -177,6 +185,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lcFormations)).BeginInit();
             this.lcFormations.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lcgFormations)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lcgApprentissage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnPrincipal)).BeginInit();
@@ -184,7 +193,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciTabPanePrincipal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControlItem4
@@ -688,9 +697,34 @@
             // 
             // tabPgSatisfactionModel
             // 
+            this.tabPgSatisfactionModel.Controls.Add(this.lcSatisfactionModel);
             this.tabPgSatisfactionModel.Name = "tabPgSatisfactionModel";
             this.tabPgSatisfactionModel.Size = new System.Drawing.Size(1173, 496);
             this.tabPgSatisfactionModel.Text = "Satisfaction Model";
+            // 
+            // lcSatisfactionModel
+            // 
+            this.lcSatisfactionModel.Controls.Add(this.pmcAttributsDeSatisfaction1);
+            this.lcSatisfactionModel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lcSatisfactionModel.Location = new System.Drawing.Point(0, 0);
+            this.lcSatisfactionModel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.lcSatisfactionModel.Name = "lcSatisfactionModel";
+            this.lcSatisfactionModel.Root = this.lcgSatisfactionModel;
+            this.lcSatisfactionModel.Size = new System.Drawing.Size(1173, 496);
+            this.lcSatisfactionModel.TabIndex = 0;
+            this.lcSatisfactionModel.Text = "layoutControl2";
+            // 
+            // lcgSatisfactionModel
+            // 
+            this.lcgSatisfactionModel.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.lcgSatisfactionModel.GroupBordersVisible = false;
+            this.lcgSatisfactionModel.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem14});
+            this.lcgSatisfactionModel.Location = new System.Drawing.Point(0, 0);
+            this.lcgSatisfactionModel.Name = "lcgSatisfactionModel";
+            this.lcgSatisfactionModel.OptionsItemText.TextToControlDistance = 4;
+            this.lcgSatisfactionModel.Size = new System.Drawing.Size(1173, 496);
+            this.lcgSatisfactionModel.TextVisible = false;
             // 
             // tabPgIndicateursGestionRecamationClient
             // 
@@ -792,12 +826,20 @@
             this.lcFormations.Controls.Add(this.pmcApprentissage1);
             this.lcFormations.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lcFormations.Location = new System.Drawing.Point(0, 0);
-            this.lcFormations.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.lcFormations.Margin = new System.Windows.Forms.Padding(0);
             this.lcFormations.Name = "lcFormations";
             this.lcFormations.Root = this.lcgFormations;
             this.lcFormations.Size = new System.Drawing.Size(1212, 562);
             this.lcFormations.TabIndex = 0;
             this.lcFormations.Text = "layoutControl2";
+            // 
+            // pmcApprentissage1
+            // 
+            this.pmcApprentissage1.Location = new System.Drawing.Point(13, 13);
+            this.pmcApprentissage1.Margin = new System.Windows.Forms.Padding(0);
+            this.pmcApprentissage1.Name = "pmcApprentissage1";
+            this.pmcApprentissage1.Size = new System.Drawing.Size(1186, 536);
+            this.pmcApprentissage1.TabIndex = 4;
             // 
             // lcgFormations
             // 
@@ -810,6 +852,16 @@
             this.lcgFormations.OptionsItemText.TextToControlDistance = 4;
             this.lcgFormations.Size = new System.Drawing.Size(1212, 562);
             this.lcgFormations.TextVisible = false;
+            // 
+            // layoutControlItem13
+            // 
+            this.layoutControlItem13.Control = this.pmcApprentissage1;
+            this.layoutControlItem13.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem13.Name = "layoutControlItem13";
+            this.layoutControlItem13.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
+            this.layoutControlItem13.Size = new System.Drawing.Size(1186, 536);
+            this.layoutControlItem13.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem13.TextVisible = false;
             // 
             // lcgApprentissage
             // 
@@ -933,22 +985,22 @@
             this.barDockControlRight.Location = new System.Drawing.Point(1290, 29);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 744);
             // 
-            // pmcApprentissage1
+            // pmcAttributsDeSatisfaction1
             // 
-            this.pmcApprentissage1.Location = new System.Drawing.Point(13, 13);
-            this.pmcApprentissage1.Name = "pmcApprentissage1";
-            this.pmcApprentissage1.Size = new System.Drawing.Size(1186, 536);
-            this.pmcApprentissage1.TabIndex = 4;
+            this.pmcAttributsDeSatisfaction1.Location = new System.Drawing.Point(13, 13);
+            this.pmcAttributsDeSatisfaction1.Name = "pmcAttributsDeSatisfaction1";
+            this.pmcAttributsDeSatisfaction1.Size = new System.Drawing.Size(1147, 470);
+            this.pmcAttributsDeSatisfaction1.TabIndex = 4;
             // 
-            // layoutControlItem13
+            // layoutControlItem14
             // 
-            this.layoutControlItem13.Control = this.pmcApprentissage1;
-            this.layoutControlItem13.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem13.Name = "layoutControlItem13";
-            this.layoutControlItem13.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem13.Size = new System.Drawing.Size(1186, 536);
-            this.layoutControlItem13.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem13.TextVisible = false;
+            this.layoutControlItem14.Control = this.pmcAttributsDeSatisfaction1;
+            this.layoutControlItem14.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem14.Name = "layoutControlItem14";
+            this.layoutControlItem14.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
+            this.layoutControlItem14.Size = new System.Drawing.Size(1147, 470);
+            this.layoutControlItem14.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem14.TextVisible = false;
             // 
             // frmPrincipale
             // 
@@ -1027,6 +1079,10 @@
             this.lcReclamations.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
+            this.tabPgSatisfactionModel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lcSatisfactionModel)).EndInit();
+            this.lcSatisfactionModel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lcgSatisfactionModel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup8)).EndInit();
@@ -1040,6 +1096,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lcFormations)).EndInit();
             this.lcFormations.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lcgFormations)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lcgApprentissage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnPrincipal)).EndInit();
@@ -1047,7 +1104,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciTabPanePrincipal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1135,6 +1192,10 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
         private pmcApprentissage pmcApprentissage1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
+        private DevExpress.XtraLayout.LayoutControl lcSatisfactionModel;
+        private DevExpress.XtraLayout.LayoutControlGroup lcgSatisfactionModel;
+        private pmcAttributsDeSatisfaction pmcAttributsDeSatisfaction1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem14;
     }
 }
 
