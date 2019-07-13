@@ -57,6 +57,7 @@
     <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPivotGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraVerticalGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -125,6 +126,12 @@
     <Compile Include="pmcQuestionnaireNoteSegment.Designer.cs">
       <DependentUpon>pmcQuestionnaireNoteSegment.cs</DependentUpon>
     </Compile>
+    <Compile Include="pmcSatisfactionModel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pmcSatisfactionModel.Designer.cs">
+      <DependentUpon>pmcSatisfactionModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="pmcSegmentation.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -176,6 +183,9 @@
     <EmbeddedResource Include="pmcQuestionnaireNoteSegment.resx">
       <DependentUpon>pmcQuestionnaireNoteSegment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pmcSatisfactionModel.resx">
+      <DependentUpon>pmcSatisfactionModel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pmcSegmentation.resx">
       <DependentUpon>pmcSegmentation.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,6 +207,7 @@
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\DataSources\ComHe_Objets.AttributDeSatisfaction.datasource" />
+    <None Include="Properties\DataSources\ComHe_Objets.DimensionSatisfactionModel.datasource" />
     <None Include="Properties\DataSources\ComHe_Objets.FicheTravail.datasource" />
     <None Include="Properties\DataSources\ComHe_Objets.FormationCollaborateur.datasource" />
     <None Include="Properties\DataSources\ComHe_Objets.Reclamation.datasource" />

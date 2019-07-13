@@ -37,6 +37,7 @@ namespace ComHe_Pilotage {
             pmcGestionReclamation1.fiche = fiche;
             pmcApprentissage1.fiche = fiche;
             pmcAttributsDeSatisfaction1.fiche = fiche;
+            pmcSatisfactionModel1.fiche = fiche;
         }
 
 

@@ -12,6 +12,17 @@ namespace ComHe_Objets {
         public List<Reclamation> reclamations { get; set; }
         public List<FormationCollaborateur> formations { get; set; }
         public List<AttributDeSatisfaction> attibutsDeSatisfaction { get; set; }
+        public List<DimensionSatisfactionModel> dimensionsSatisfactionModel {
+            get {
+                if (_dimensionsSatisfactionModel == null || _dimensionsSatisfactionModel.Count == 0) {
+                    _dimensionsSatisfactionModel = new List<DimensionSatisfactionModel>();
+                    _dimensionsSatisfactionModel.Add(new DimensionSatisfactionModel(Guid.Empty, "Satisfaction Globale", 1, false));
+                }
+                return _dimensionsSatisfactionModel;
+            }
+            set { _dimensionsSatisfactionModel = value; }
+        }
+        private List<DimensionSatisfactionModel> _dimensionsSatisfactionModel;
         public double scoreCESMoyen {
             get {
                 if (segments != null && segments.Count > 0) {
