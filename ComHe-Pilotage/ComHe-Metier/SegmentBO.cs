@@ -17,13 +17,25 @@ namespace ComHe_Metier {
                 double marge = 0;
                 double retention = 0;
                 double actualisation = 0;
+                double caPriceSensibility = 0;
+                double caAchatsCroises = 0;
+                double caWACC = 0;
+                double caRecommandation = 0;
                 foreach (Segment s in segments) {
+                    caAchatsCroises += s.caAchatsCroises;
+                    caPriceSensibility += s.caSensibilitePricePremium;
+                    caRecommandation += s.caRecommendation;
+                    caWACC += s.caWACC;
                     ca += s.caFromLM;
                     marge += s.txMarge;
                     retention += enumTxRetentionMethods.getDoubleFromCode(s.txRetention);
                     actualisation += enumTxActualisationMethods.getDoubleFromCode(s.txActualisation);
                 }
                 segmentMoyen.caFromLM = ca / segments.Count;
+                segmentMoyen.caAchatsCroises = caAchatsCroises / segments.Count;
+                segmentMoyen.caSensibilitePricePremium = caPriceSensibility / segments.Count;
+                segmentMoyen.caRecommendation = caRecommandation / segments.Count;
+                segmentMoyen.caWACC = caWACC / segments.Count;
                 segmentMoyen.txMarge = marge / segments.Count;
                 segmentMoyen.txActualisation = enumTxActualisationMethods.getCodeFromDouble(actualisation / segments.Count);
                 segmentMoyen.txRetention = enumTxRetentionMethods.getCodeFromDouble(retention / segments.Count);

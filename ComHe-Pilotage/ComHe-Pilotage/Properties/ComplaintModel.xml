@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraSerializer version="1.0">
+  <Items value="1">
+    <Item1 Size="800,600" ItemKind="DiagramRoot" Theme="Office" PageSize="800,600" CanvasSizeMode="None">
+      <Children value="17">
+        <Item1 Position="340,70" Size="100,75" Shape="BasicFlowchartShapes.Decision" ItemKind="DiagramShape" />
+        <Item2 Position="140,200" Size="100,75" Shape="BasicFlowchartShapes.Decision" ItemKind="DiagramShape" />
+        <Item3 Position="500,460" Size="100,37" Shape="BasicFlowchartShapes.StartEnd" ItemKind="DiagramShape" />
+        <Item4 Position="30,321" Size="100,75" Shape="BasicFlowchartShapes.Decision" ItemKind="DiagramShape" />
+        <Item5 Position="250,321" Size="100,75" Shape="BasicFlowchartShapes.Decision" ItemKind="DiagramShape" />
+        <Item6 EndArrow="Filled90" BeginItemPointIndex="3" EndItemPointIndex="0" Points="190,108" ItemKind="DiagramConnector" BeginItem="0" EndItem="1" BeginPoint="340,107.5" EndPoint="190,200" />
+        <Item7 EndArrow="Filled90" BeginItemPointIndex="1" EndItemPointIndex="0" Points="550,108" ItemKind="DiagramConnector" BeginItem="0" EndItem="2" BeginPoint="440,107.5" EndPoint="550,460" />
+        <Item8 EndArrow="Filled90" BeginItemPointIndex="3" EndItemPointIndex="0" Points="80,238" ItemKind="DiagramConnector" BeginItem="1" EndItem="3" BeginPoint="140,237.5" EndPoint="80,321" />
+        <Item9 EndArrow="Filled90" BeginItemPointIndex="1" EndItemPointIndex="0" Points="300,238" ItemKind="DiagramConnector" BeginItem="1" EndItem="4" BeginPoint="240,237.5" EndPoint="300,321" />
+        <Item10 Position="130,460" Size="60,37" Shape="BasicFlowchartShapes.StartEnd" ItemKind="DiagramShape" />
+        <Item11 Position="0,460" Size="60,37" Shape="BasicFlowchartShapes.StartEnd" ItemKind="DiagramShape" />
+        <Item12 Position="210,460" Size="60,37" Shape="BasicFlowchartShapes.StartEnd" ItemKind="DiagramShape" />
+        <Item13 Position="340,460" Size="60,37" Shape="BasicFlowchartShapes.StartEnd" ItemKind="DiagramShape" />
+        <Item14 EndArrow="Filled90" BeginItemPointIndex="3" EndItemPointIndex="0" Points="15,358 15,445 30,445" ItemKind="DiagramConnector" BeginItem="3" EndItem="10" BeginPoint="30,358.5" EndPoint="30,460" />
+        <Item15 EndArrow="Filled90" BeginItemPointIndex="1" EndItemPointIndex="0" Points="160,358" ItemKind="DiagramConnector" BeginItem="3" EndItem="9" BeginPoint="130,358.5" EndPoint="160,460" />
+        <Item16 EndArrow="Filled90" BeginItemPointIndex="3" Points="235,358 235,445 240,445" ItemKind="DiagramConnector" BeginItem="4" EndItem="11" BeginPoint="250,358.5" EndPoint="240,460" />
+        <Item17 EndArrow="Filled90" BeginItemPointIndex="1" EndItemPointIndex="0" Points="370,358" ItemKind="DiagramConnector" BeginItem="4" EndItem="12" BeginPoint="350,358.5" EndPoint="370,460" />
+      </Children>
+    </Item1>
+  </Items>
+</XtraSerializer>

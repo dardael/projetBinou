@@ -7,6 +7,7 @@ C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\C
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.BonusSkins.v15.2.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.Charts.v15.2.Core.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.Data.v15.2.dll
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.Diagram.v15.2.Core.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.PivotGrid.v15.2.Core.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.Printing.v15.2.Core.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.Sparkline.v15.2.Core.dll
@@ -15,7 +16,10 @@ C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\C
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraCharts.v15.2.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraCharts.v15.2.UI.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraCharts.v15.2.Wizard.dll
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraDiagram.v15.2.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraEditors.v15.2.dll
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraGauges.v15.2.Core.dll
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraGauges.v15.2.Win.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraGrid.v15.2.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraLayout.v15.2.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraPivotGrid.v15.2.dll
@@ -33,6 +37,7 @@ C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\C
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ComHe-Objets.pdb
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ComHe-Outils.pdb
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.Data.v15.2.xml
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.Diagram.v15.2.Core.xml
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.PivotGrid.v15.2.Core.xml
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.Printing.v15.2.Core.xml
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.Utils.v15.2.xml
@@ -41,7 +46,10 @@ C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\C
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraCharts.v15.2.xml
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraCharts.v15.2.UI.xml
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraCharts.v15.2.Wizard.xml
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraDiagram.v15.2.xml
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraEditors.v15.2.xml
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraGauges.v15.2.Core.xml
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraGauges.v15.2.Win.xml
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraGrid.v15.2.xml
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraLayout.v15.2.xml
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraPivotGrid.v15.2.xml
@@ -91,6 +99,10 @@ C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\C
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\es\DevExpress.XtraEditors.v15.2.resources.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ja\DevExpress.XtraEditors.v15.2.resources.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ru\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\de\DevExpress.XtraGauges.v15.2.Core.resources.dll
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\es\DevExpress.XtraGauges.v15.2.Core.resources.dll
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ja\DevExpress.XtraGauges.v15.2.Core.resources.dll
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ru\DevExpress.XtraGauges.v15.2.Core.resources.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\de\DevExpress.XtraGrid.v15.2.resources.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\es\DevExpress.XtraGrid.v15.2.resources.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ja\DevExpress.XtraGrid.v15.2.resources.dll
@@ -141,9 +153,12 @@ C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\C
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ru\DevExpress.Pdf.v15.2.Core.resources.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe-Pilotage.csprojResolveAssemblyReference.cache
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.frmPrincipale.resources
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.pmcComplaintModel.resources
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.pmcCreationFicheTravail.resources
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.pmcGestionFichesDeTravail.resources
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.pmcGestionReclamation.resources
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.pmcQuatresChemins.resources
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.pmcQuestionnaireNoteSegment.resources
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.pmcSegmentation.resources
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.Properties.Resources.resources
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.frmSaisieFicheTravail.resources
@@ -151,13 +166,3 @@ C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\C
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe-Pilotage.exe.licenses
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe-Pilotage.exe
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe-Pilotage.pdb
-C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.pmcQuestionnaireNoteSegment.resources
-C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraGauges.v15.2.Core.dll
-C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraGauges.v15.2.Win.dll
-C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraGauges.v15.2.Core.xml
-C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\DevExpress.XtraGauges.v15.2.Win.xml
-C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\de\DevExpress.XtraGauges.v15.2.Core.resources.dll
-C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\es\DevExpress.XtraGauges.v15.2.Core.resources.dll
-C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ja\DevExpress.XtraGauges.v15.2.Core.resources.dll
-C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\bin\Debug\ru\DevExpress.XtraGauges.v15.2.Core.resources.dll
-C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.pmcGestionReclamation.resources

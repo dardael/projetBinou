@@ -119,5 +119,16 @@ namespace ComHe_Pilotage {
                 }
             }
         }
+
+        private void chkModeExpert_CheckedChanged(object sender, EventArgs e) {
+            this.rowAchatsCroises.Visible = this.chkModeExpert.Checked;
+            this.rowAchatsCroisesMoyen.Visible = this.chkModeExpert.Checked;
+            this.rowCaRecommandation.Visible = this.chkModeExpert.Checked;
+            this.rowCaRecommandationMoyen.Visible = this.chkModeExpert.Checked;
+            this.rowCASensibilitePricePremium.Visible = this.chkModeExpert.Checked;
+            this.rowCaSensibilitePricePremiumMoyen.Visible = this.chkModeExpert.Checked;
+            this.rowWACC.Visible = this.chkModeExpert.Checked;
+            this.rowWACCMoyen.Visible = this.chkModeExpert.Checked;
+        }
     }
 }

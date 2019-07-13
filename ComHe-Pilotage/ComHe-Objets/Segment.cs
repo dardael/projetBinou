@@ -11,6 +11,10 @@ namespace ComHe_Objets {
         private Guid _id = Guid.NewGuid();
         public Guid id { get { return _id; } }
         public string nom { get; set; }
+        public double caRecommendation { get; set; }
+        public double caAchatsCroises { get; set; }
+        public double caSensibilitePricePremium { get; set; }
+        public double caWACC { get; set; }
         public enumTypeSegment typeSegment { get; set; }
         public double caFromLM {
             get { return _caFromLM; }
