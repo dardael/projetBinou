@@ -25,6 +25,14 @@
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Strip strip1 = new DevExpress.XtraCharts.Strip();
+            DevExpress.XtraCharts.HatchFillOptions hatchFillOptions1 = new DevExpress.XtraCharts.HatchFillOptions();
+            DevExpress.XtraCharts.Strip strip2 = new DevExpress.XtraCharts.Strip();
+            DevExpress.XtraCharts.HatchFillOptions hatchFillOptions2 = new DevExpress.XtraCharts.HatchFillOptions();
+            DevExpress.XtraCharts.Strip strip3 = new DevExpress.XtraCharts.Strip();
+            DevExpress.XtraCharts.HatchFillOptions hatchFillOptions3 = new DevExpress.XtraCharts.HatchFillOptions();
+            DevExpress.XtraCharts.Strip strip4 = new DevExpress.XtraCharts.Strip();
+            DevExpress.XtraCharts.HatchFillOptions hatchFillOptions4 = new DevExpress.XtraCharts.HatchFillOptions();
             DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.PointSeriesView pointSeriesView1 = new DevExpress.XtraCharts.PointSeriesView();
             DevExpress.XtraCharts.PointSeriesView pointSeriesView2 = new DevExpress.XtraCharts.PointSeriesView();
@@ -44,6 +52,10 @@
             this.lcSatisfactionModel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chSatisfactionModel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(strip1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(strip2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(strip3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(strip4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pointSeriesView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pointSeriesView2)).BeginInit();
@@ -72,17 +84,60 @@
             // chSatisfactionModel
             // 
             this.chSatisfactionModel.DataSource = this.dimensionSatisfactionModelBindingSource;
+            strip1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(185)))), ((int)(((byte)(183)))));
+            strip1.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Hatch;
+            hatchFillOptions1.HatchStyle = System.Drawing.Drawing2D.HatchStyle.SolidDiamond;
+            strip1.FillStyle.Options = hatchFillOptions1;
+            strip1.MaxLimit.AxisValueSerializable = "0.5";
+            strip1.MinLimit.AxisValueSerializable = "0";
+            strip1.Name = "Faiblesse";
+            strip1.Tag = "Faiblesse";
+            strip2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(214)))), ((int)(((byte)(155)))));
+            strip2.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Hatch;
+            hatchFillOptions2.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            hatchFillOptions2.HatchStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid;
+            strip2.FillStyle.Options = hatchFillOptions2;
+            strip2.MaxLimit.AxisValueSerializable = "1";
+            strip2.MinLimit.AxisValueSerializable = "0.5";
+            strip2.Name = "Force";
+            strip2.Tag = "Force";
+            xyDiagram1.AxisX.Strips.AddRange(new DevExpress.XtraCharts.Strip[] {
+            strip1,
+            strip2});
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
             xyDiagram1.AxisX.VisualRange.Auto = false;
+            xyDiagram1.AxisX.VisualRange.AutoSideMargins = false;
             xyDiagram1.AxisX.VisualRange.MaxValueSerializable = "1";
             xyDiagram1.AxisX.VisualRange.MinValueSerializable = "0";
+            xyDiagram1.AxisX.VisualRange.SideMarginsValue = 0D;
             xyDiagram1.AxisX.WholeRange.Auto = false;
             xyDiagram1.AxisX.WholeRange.MaxValueSerializable = "1";
             xyDiagram1.AxisX.WholeRange.MinValueSerializable = "0";
+            strip3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(150)))), ((int)(((byte)(148)))));
+            strip3.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Hatch;
+            hatchFillOptions3.HatchStyle = System.Drawing.Drawing2D.HatchStyle.Percent30;
+            strip3.FillStyle.Options = hatchFillOptions3;
+            strip3.MaxLimit.AxisValueSerializable = "1";
+            strip3.MinLimit.AxisValueSerializable = "0.5";
+            strip3.Name = "Prioritaire";
+            strip3.Tag = "Prioritaire";
+            strip4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(129)))), ((int)(((byte)(189)))));
+            strip4.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Hatch;
+            hatchFillOptions4.HatchStyle = System.Drawing.Drawing2D.HatchStyle.Percent30;
+            strip4.FillStyle.Options = hatchFillOptions4;
+            strip4.MaxLimit.AxisValueSerializable = "0.5";
+            strip4.MinLimit.AxisValueSerializable = "0";
+            strip4.Name = "Secondaire";
+            strip4.Tag = "Secondaire";
+            xyDiagram1.AxisY.Strips.AddRange(new DevExpress.XtraCharts.Strip[] {
+            strip3,
+            strip4});
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
             xyDiagram1.AxisY.VisualRange.Auto = false;
+            xyDiagram1.AxisY.VisualRange.AutoSideMargins = false;
             xyDiagram1.AxisY.VisualRange.MaxValueSerializable = "1";
             xyDiagram1.AxisY.VisualRange.MinValueSerializable = "0";
+            xyDiagram1.AxisY.VisualRange.SideMarginsValue = 0D;
             xyDiagram1.AxisY.WholeRange.Auto = false;
             xyDiagram1.AxisY.WholeRange.MaxValueSerializable = "1";
             xyDiagram1.AxisY.WholeRange.MinValueSerializable = "0";
@@ -214,6 +269,10 @@
             this.Size = new System.Drawing.Size(913, 542);
             ((System.ComponentModel.ISupportInitialize)(this.lcSatisfactionModel)).EndInit();
             this.lcSatisfactionModel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(strip1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(strip2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(strip3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(strip4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pointSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
