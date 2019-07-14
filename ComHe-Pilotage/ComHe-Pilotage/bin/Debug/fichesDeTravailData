@@ -263,5 +263,70 @@
 				<impactSurInsatisfaction>3</impactSurInsatisfaction>
 			</AttributDeSatisfaction>
 		</attibutsDeSatisfaction>
+		<dimensionsSatisfactionModel>
+			<DimensionSatisfactionModel>
+				<parent>00000000-0000-0000-0000-000000000000</parent>
+				<nom>Satisfaction Globale</nom>
+				<poids>1</poids>
+				<isSupprimable>false</isSupprimable>
+				<id>c45564b4-a292-4c65-be28-a96ba8554619</id>
+				<lvl>0</lvl>
+				<satisfaction>1</satisfaction>
+			</DimensionSatisfactionModel>
+			<DimensionSatisfactionModel>
+				<parent>c45564b4-a292-4c65-be28-a96ba8554619</parent>
+				<nom>Domaine01</nom>
+				<poids>1</poids>
+				<isSupprimable>true</isSupprimable>
+				<id>3c3399cd-f26a-4413-be55-c71cd3ea2426</id>
+				<lvl>1</lvl>
+				<satisfaction>1</satisfaction>
+			</DimensionSatisfactionModel>
+			<DimensionSatisfactionModel>
+				<parent>c45564b4-a292-4c65-be28-a96ba8554619</parent>
+				<nom>Domaine02</nom>
+				<poids>0</poids>
+				<isSupprimable>true</isSupprimable>
+				<id>a4e240e2-7549-43fd-b188-e1647e80966b</id>
+				<lvl>1</lvl>
+				<satisfaction>0</satisfaction>
+			</DimensionSatisfactionModel>
+			<DimensionSatisfactionModel>
+				<parent>3c3399cd-f26a-4413-be55-c71cd3ea2426</parent>
+				<nom>Domaine11</nom>
+				<poids>1</poids>
+				<isSupprimable>true</isSupprimable>
+				<id>45664258-1f05-45d5-84d9-96f5e836f6b4</id>
+				<lvl>2</lvl>
+				<satisfaction>1</satisfaction>
+			</DimensionSatisfactionModel>
+			<DimensionSatisfactionModel>
+				<parent>3c3399cd-f26a-4413-be55-c71cd3ea2426</parent>
+				<nom>Domaine12</nom>
+				<poids>0</poids>
+				<isSupprimable>true</isSupprimable>
+				<id>8b10f74a-0984-42af-b798-a50167ae441b</id>
+				<lvl>2</lvl>
+				<satisfaction>0</satisfaction>
+			</DimensionSatisfactionModel>
+			<DimensionSatisfactionModel>
+				<parent>a4e240e2-7549-43fd-b188-e1647e80966b</parent>
+				<nom>Domaine21</nom>
+				<poids>1</poids>
+				<isSupprimable>true</isSupprimable>
+				<id>3cf6d322-919e-45f8-b59b-d9797d8db7f6</id>
+				<lvl>2</lvl>
+				<satisfaction>1</satisfaction>
+			</DimensionSatisfactionModel>
+			<DimensionSatisfactionModel>
+				<parent>a4e240e2-7549-43fd-b188-e1647e80966b</parent>
+				<nom>Domaine22</nom>
+				<poids>0</poids>
+				<isSupprimable>true</isSupprimable>
+				<id>31e0ca20-c750-4fbe-944f-74bf836726ab</id>
+				<lvl>2</lvl>
+				<satisfaction>0</satisfaction>
+			</DimensionSatisfactionModel>
+		</dimensionsSatisfactionModel>
 	</FicheTravail>
 </ArrayOfFicheTravail>

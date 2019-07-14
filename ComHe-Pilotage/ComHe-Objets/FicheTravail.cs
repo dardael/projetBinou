@@ -14,10 +14,6 @@ namespace ComHe_Objets {
         public List<AttributDeSatisfaction> attibutsDeSatisfaction { get; set; }
         public List<DimensionSatisfactionModel> dimensionsSatisfactionModel {
             get {
-                if (_dimensionsSatisfactionModel == null || _dimensionsSatisfactionModel.Count == 0) {
-                    _dimensionsSatisfactionModel = new List<DimensionSatisfactionModel>();
-                    _dimensionsSatisfactionModel.Add(new DimensionSatisfactionModel(Guid.Empty, "Satisfaction Globale", 1, false));
-                }
                 return _dimensionsSatisfactionModel;
             }
             set { _dimensionsSatisfactionModel = value; }
