@@ -43,10 +43,14 @@ namespace ComHe_Objets {
             this.segments = segments;
             this.reclamations = reclamations;
         }
-        public FicheTravail(string nom, List<Segment> segments, List<Reclamation> reclamations) {
+        public FicheTravail(string nom, List<Segment> segments, List<Reclamation> reclamations, List<FormationCollaborateur> formations, List<AttributDeSatisfaction> attibutsDeSatisfaction, List<DimensionSatisfactionModel> dimensionsSatisfactionModel) {
             this.segments = segments;
             this.nom = nom;
             this.reclamations = reclamations;
+            this.attibutsDeSatisfaction = attibutsDeSatisfaction;
+            this.dimensionsSatisfactionModel = dimensionsSatisfactionModel;
+            this.formations = formations;
+
         }
         public FicheTravail() {
         }

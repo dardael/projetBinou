@@ -36,6 +36,5 @@ C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\C
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Objets\bin\Release\es\DevExpress.Sparkline.v15.2.Core.resources.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Objets\bin\Release\ja\DevExpress.Sparkline.v15.2.Core.resources.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Objets\bin\Release\ru\DevExpress.Sparkline.v15.2.Core.resources.dll
-C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Objets\obj\Release\ComHe-Objets.csprojResolveAssemblyReference.cache
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Objets\obj\Release\ComHe-Objets.dll
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Objets\obj\Release\ComHe-Objets.pdb

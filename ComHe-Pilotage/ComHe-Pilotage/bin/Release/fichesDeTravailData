@@ -196,7 +196,7 @@
 		</segments>
 		<reclamations>
 			<Reclamation>
-				<dateLitige>2017-01-01T00:00:00</dateLitige>
+				<dateLitige>0001-01-01T00:00:00</dateLitige>
 				<collaborateur>Fabien</collaborateur>
 				<client>Dupont</client>
 				<numeroClient>1</numeroClient>
@@ -208,7 +208,7 @@
 				<verbatimClient>PAS CONTENT</verbatimClient>
 			</Reclamation>
 			<Reclamation>
-				<dateLitige>2016-01-01T00:00:00</dateLitige>
+				<dateLitige>0001-01-01T00:00:00</dateLitige>
 				<collaborateur>Fabien</collaborateur>
 				<client>Tintin</client>
 				<numeroClient>2</numeroClient>
@@ -220,7 +220,7 @@
 				<verbatimClient>Erreur traitement</verbatimClient>
 			</Reclamation>
 			<Reclamation>
-				<dateLitige>2015-01-01T00:00:00</dateLitige>
+				<dateLitige>1993-01-01T00:00:00</dateLitige>
 				<collaborateur>George</collaborateur>
 				<client>Tintin</client>
 				<numeroClient>3</numeroClient>
@@ -230,18 +230,6 @@
 				<motifLegitime>NON</motifLegitime>
 				<montantIndemnite>0</montantIndemnite>
 				<verbatimClient>Pas content</verbatimClient>
-			</Reclamation>
-			<Reclamation>
-				<dateLitige>2017-02-01T00:00:00</dateLitige>
-				<collaborateur>Fabien</collaborateur>
-				<client>George</client>
-				<numeroClient>4</numeroClient>
-				<service>COMPTA</service>
-				<motifInsatisfaction>Relou</motifInsatisfaction>
-				<actionCorrective>AVOIR</actionCorrective>
-				<motifLegitime>OUI</motifLegitime>
-				<montantIndemnite>50</montantIndemnite>
-				<verbatimClient>Bof</verbatimClient>
 			</Reclamation>
 		</reclamations>
 		<formations>
