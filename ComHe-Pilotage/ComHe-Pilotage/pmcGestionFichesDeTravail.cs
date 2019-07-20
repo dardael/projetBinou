@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using ComHe_Objets;
 using ComHe_Outils;
 using System.ComponentModel;
+using ComHe_Metier;
 
 namespace ComHe_Pilotage {
     public partial class pmcGestionFichesDeTravail : UserControl {
@@ -34,7 +35,7 @@ namespace ComHe_Pilotage {
             if (fichesTravail == null || fichesTravail.Count == 0) {
                 fichesTravail = new List<FicheTravail>();
                 if (ficheCourante == null) {
-                    ficheCourante = new FicheTravail("Nouvelle fiche de travail", new List<Segment>(), new List<Reclamation>(), new List<FormationCollaborateur>(), new List<AttributDeSatisfaction>(), new List<DimensionSatisfactionModel>());
+                    ficheCourante = new FicheTravail("Nouvelle fiche de travail", new List<Segment>(), new List<Reclamation>(), new List<FormationCollaborateur>(), new List<AttributDeSatisfaction>(), new List<DimensionSatisfactionModel>(), LoyaltyModelBO.getLoyaltyModel(), ComplaintModelBO.getTreeComplaintModel());
                 }
                 fichesTravail.Add(ficheCourante);
             }
@@ -56,7 +57,7 @@ namespace ComHe_Pilotage {
                 ficheTravailFonction = ficheTravail;
             }
             else {
-                ficheTravailFonction = new FicheTravail("Fiche de travail", new List<Segment>(), new List<Reclamation>(), new List<FormationCollaborateur>(), new List<AttributDeSatisfaction>(), new List<DimensionSatisfactionModel>());
+                ficheTravailFonction = new FicheTravail("Fiche de travail", new List<Segment>(), new List<Reclamation>(), new List<FormationCollaborateur>(), new List<AttributDeSatisfaction>(), new List<DimensionSatisfactionModel>(), LoyaltyModelBO.getLoyaltyModel(), ComplaintModelBO.getTreeComplaintModel());
             }
             frmSaisieFicheTravail = new frmSaisieFicheTravail(ficheTravailFonction, ficheTravail == null);
             frmSaisieFicheTravail.FormClosing += frmSaisieFicheTravail_FormClosing;

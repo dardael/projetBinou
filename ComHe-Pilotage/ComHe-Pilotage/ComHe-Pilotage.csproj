@@ -111,6 +111,12 @@
     <Compile Include="pmcGestionReclamation.Designer.cs">
       <DependentUpon>pmcGestionReclamation.cs</DependentUpon>
     </Compile>
+    <Compile Include="pmcLoyatyModel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pmcLoyatyModel.Designer.cs">
+      <DependentUpon>pmcLoyatyModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="pmcParentUtilisantFicheDeTravail.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -177,6 +183,9 @@
     <EmbeddedResource Include="pmcGestionReclamation.resx">
       <DependentUpon>pmcGestionReclamation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pmcLoyatyModel.resx">
+      <DependentUpon>pmcLoyatyModel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pmcQuatresChemins.resx">
       <DependentUpon>pmcQuatresChemins.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,6 +219,7 @@
     <None Include="Properties\DataSources\ComHe_Objets.DimensionSatisfactionModel.datasource" />
     <None Include="Properties\DataSources\ComHe_Objets.FicheTravail.datasource" />
     <None Include="Properties\DataSources\ComHe_Objets.FormationCollaborateur.datasource" />
+    <None Include="Properties\DataSources\ComHe_Objets.ItemLoyaltyModel.datasource" />
     <None Include="Properties\DataSources\ComHe_Objets.Reclamation.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -91,6 +91,10 @@
             this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabPgIndicateursGestionRecamationClient = new DevExpress.XtraTab.XtraTabPage();
             this.tabPgTraitementReclamation = new DevExpress.XtraTab.XtraTabPage();
+            this.lcTraitementReclamation = new DevExpress.XtraLayout.LayoutControl();
+            this.pmcTraitementReclamationClient1 = new ComHe_Pilotage.pmcGestionReclamation();
+            this.lcgTraitementReclamation = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup9 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup8 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -117,10 +121,8 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.lcTraitementReclamation = new DevExpress.XtraLayout.LayoutControl();
-            this.lcgTraitementReclamation = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.pmcTraitementReclamationClient1 = new ComHe_Pilotage.pmcGestionReclamation();
-            this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.pmcLoyatyModel1 = new ComHe_Pilotage.pmcLoyatyModel();
+            this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabPrincipal)).BeginInit();
@@ -154,6 +156,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             this.tabPgLoyaltyModel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lcLoyaltyModel)).BeginInit();
+            this.lcLoyaltyModel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lcgLoyaltyModel)).BeginInit();
             this.tabPgNPS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lcNPS)).BeginInit();
@@ -193,6 +196,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.lcgSatisfactionModelAsymetrique)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
             this.tabPgTraitementReclamation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lcTraitementReclamation)).BeginInit();
+            this.lcTraitementReclamation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lcgTraitementReclamation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup8)).BeginInit();
@@ -214,10 +221,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciTabPanePrincipal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lcTraitementReclamation)).BeginInit();
-            this.lcTraitementReclamation.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lcgTraitementReclamation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControlItem4
@@ -478,6 +482,7 @@
             // 
             // lcLoyaltyModel
             // 
+            this.lcLoyaltyModel.Controls.Add(this.pmcLoyatyModel1);
             this.lcLoyaltyModel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lcLoyaltyModel.Location = new System.Drawing.Point(0, 0);
             this.lcLoyaltyModel.Name = "lcLoyaltyModel";
@@ -490,6 +495,8 @@
             // 
             this.lcgLoyaltyModel.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.lcgLoyaltyModel.GroupBordersVisible = false;
+            this.lcgLoyaltyModel.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem17});
             this.lcgLoyaltyModel.Location = new System.Drawing.Point(0, 0);
             this.lcgLoyaltyModel.Name = "lcgLoyaltyModel";
             this.lcgLoyaltyModel.OptionsItemText.TextToControlDistance = 4;
@@ -849,6 +856,45 @@
             this.tabPgTraitementReclamation.Size = new System.Drawing.Size(1173, 496);
             this.tabPgTraitementReclamation.Text = "Traitement réclamation client";
             // 
+            // lcTraitementReclamation
+            // 
+            this.lcTraitementReclamation.Controls.Add(this.pmcTraitementReclamationClient1);
+            this.lcTraitementReclamation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lcTraitementReclamation.Location = new System.Drawing.Point(0, 0);
+            this.lcTraitementReclamation.Name = "lcTraitementReclamation";
+            this.lcTraitementReclamation.Root = this.lcgTraitementReclamation;
+            this.lcTraitementReclamation.Size = new System.Drawing.Size(1173, 496);
+            this.lcTraitementReclamation.TabIndex = 0;
+            this.lcTraitementReclamation.Text = "layoutControl2";
+            // 
+            // pmcTraitementReclamationClient1
+            // 
+            this.pmcTraitementReclamationClient1.Location = new System.Drawing.Point(16, 16);
+            this.pmcTraitementReclamationClient1.Name = "pmcTraitementReclamationClient1";
+            this.pmcTraitementReclamationClient1.Size = new System.Drawing.Size(1141, 464);
+            this.pmcTraitementReclamationClient1.TabIndex = 4;
+            // 
+            // lcgTraitementReclamation
+            // 
+            this.lcgTraitementReclamation.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.lcgTraitementReclamation.GroupBordersVisible = false;
+            this.lcgTraitementReclamation.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem16});
+            this.lcgTraitementReclamation.Location = new System.Drawing.Point(0, 0);
+            this.lcgTraitementReclamation.Name = "lcgTraitementReclamation";
+            this.lcgTraitementReclamation.OptionsItemText.TextToControlDistance = 4;
+            this.lcgTraitementReclamation.Size = new System.Drawing.Size(1173, 496);
+            this.lcgTraitementReclamation.TextVisible = false;
+            // 
+            // layoutControlItem16
+            // 
+            this.layoutControlItem16.Control = this.pmcTraitementReclamationClient1;
+            this.layoutControlItem16.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem16.Name = "layoutControlItem16";
+            this.layoutControlItem16.Size = new System.Drawing.Size(1147, 470);
+            this.layoutControlItem16.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem16.TextVisible = false;
+            // 
             // layoutControlGroup9
             // 
             this.layoutControlGroup9.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -1096,44 +1142,21 @@
             this.barDockControlRight.Location = new System.Drawing.Point(1290, 29);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 744);
             // 
-            // lcTraitementReclamation
+            // pmcLoyatyModel1
             // 
-            this.lcTraitementReclamation.Controls.Add(this.pmcTraitementReclamationClient1);
-            this.lcTraitementReclamation.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lcTraitementReclamation.Location = new System.Drawing.Point(0, 0);
-            this.lcTraitementReclamation.Name = "lcTraitementReclamation";
-            this.lcTraitementReclamation.Root = this.lcgTraitementReclamation;
-            this.lcTraitementReclamation.Size = new System.Drawing.Size(1173, 496);
-            this.lcTraitementReclamation.TabIndex = 0;
-            this.lcTraitementReclamation.Text = "layoutControl2";
+            this.pmcLoyatyModel1.Location = new System.Drawing.Point(16, 16);
+            this.pmcLoyatyModel1.Name = "pmcLoyatyModel1";
+            this.pmcLoyatyModel1.Size = new System.Drawing.Size(1141, 464);
+            this.pmcLoyatyModel1.TabIndex = 4;
             // 
-            // lcgTraitementReclamation
+            // layoutControlItem17
             // 
-            this.lcgTraitementReclamation.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.lcgTraitementReclamation.GroupBordersVisible = false;
-            this.lcgTraitementReclamation.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem16});
-            this.lcgTraitementReclamation.Location = new System.Drawing.Point(0, 0);
-            this.lcgTraitementReclamation.Name = "lcgTraitementReclamation";
-            this.lcgTraitementReclamation.OptionsItemText.TextToControlDistance = 4;
-            this.lcgTraitementReclamation.Size = new System.Drawing.Size(1173, 496);
-            this.lcgTraitementReclamation.TextVisible = false;
-            // 
-            // pmcTraitementReclamationClient1
-            // 
-            this.pmcTraitementReclamationClient1.Location = new System.Drawing.Point(16, 16);
-            this.pmcTraitementReclamationClient1.Name = "pmcTraitementReclamationClient1";
-            this.pmcTraitementReclamationClient1.Size = new System.Drawing.Size(1141, 464);
-            this.pmcTraitementReclamationClient1.TabIndex = 4;
-            // 
-            // layoutControlItem16
-            // 
-            this.layoutControlItem16.Control = this.pmcTraitementReclamationClient1;
-            this.layoutControlItem16.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem16.Name = "layoutControlItem16";
-            this.layoutControlItem16.Size = new System.Drawing.Size(1147, 470);
-            this.layoutControlItem16.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem16.TextVisible = false;
+            this.layoutControlItem17.Control = this.pmcLoyatyModel1;
+            this.layoutControlItem17.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem17.Name = "layoutControlItem17";
+            this.layoutControlItem17.Size = new System.Drawing.Size(1147, 470);
+            this.layoutControlItem17.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem17.TextVisible = false;
             // 
             // frmPrincipale
             // 
@@ -1184,6 +1207,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             this.tabPgLoyaltyModel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lcLoyaltyModel)).EndInit();
+            this.lcLoyaltyModel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lcgLoyaltyModel)).EndInit();
             this.tabPgNPS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lcNPS)).EndInit();
@@ -1223,6 +1247,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.lcgSatisfactionModelAsymetrique)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
             this.tabPgTraitementReclamation.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lcTraitementReclamation)).EndInit();
+            this.lcTraitementReclamation.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lcgTraitementReclamation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup8)).EndInit();
@@ -1244,10 +1272,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciTabPanePrincipal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lcTraitementReclamation)).EndInit();
-            this.lcTraitementReclamation.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.lcgTraitementReclamation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1350,6 +1375,8 @@
         private pmcGestionReclamation pmcTraitementReclamationClient1;
         private DevExpress.XtraLayout.LayoutControlGroup lcgTraitementReclamation;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
+        private pmcLoyatyModel pmcLoyatyModel1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem17;
     }
 }
 

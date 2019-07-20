@@ -153,7 +153,6 @@
         series2};
             this.chReclamations.Size = new System.Drawing.Size(978, 201);
             this.chReclamations.TabIndex = 8;
-            this.chReclamations.ToolTipEnabled = DevExpress.Utils.DefaultBoolean.True;
             // 
             // reclamationBindingSource
             // 

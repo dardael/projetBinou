@@ -43,6 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AttributDeSatisfaction.cs" />
+    <Compile Include="ItemLoyaltyModel.cs" />
+    <Compile Include="ItemComplaintModel.cs" />
     <Compile Include="DimensionSatisfactionModel.cs" />
     <Compile Include="FormationCollaborateur.cs" />
     <Compile Include="enumActionCorrective.cs" />

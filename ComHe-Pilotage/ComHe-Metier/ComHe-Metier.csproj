@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LoyaltyModelBO.cs" />
+    <Compile Include="ComplaintModelBO.cs" />
     <Compile Include="SegmentBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
