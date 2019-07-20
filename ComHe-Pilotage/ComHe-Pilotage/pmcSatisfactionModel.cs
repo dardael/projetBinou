@@ -39,6 +39,7 @@ namespace ComHe_Pilotage {
             finally {
                 trSatisfactionModel.EndUpdate();
                 trSatisfactionModel.RefreshDataSource();
+                trSatisfactionModel.ExpandAll();
             }
         }
         private void populateChSatisfaction() {

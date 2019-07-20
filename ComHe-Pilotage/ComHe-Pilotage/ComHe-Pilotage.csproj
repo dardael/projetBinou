@@ -219,6 +219,7 @@
     <None Include="Properties\DataSources\ComHe_Objets.DimensionSatisfactionModel.datasource" />
     <None Include="Properties\DataSources\ComHe_Objets.FicheTravail.datasource" />
     <None Include="Properties\DataSources\ComHe_Objets.FormationCollaborateur.datasource" />
+    <None Include="Properties\DataSources\ComHe_Objets.ItemComplaintModel.datasource" />
     <None Include="Properties\DataSources\ComHe_Objets.ItemLoyaltyModel.datasource" />
     <None Include="Properties\DataSources\ComHe_Objets.Reclamation.datasource" />
     <None Include="Properties\Settings.settings">
