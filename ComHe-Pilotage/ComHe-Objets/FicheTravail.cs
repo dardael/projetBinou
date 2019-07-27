@@ -7,6 +7,7 @@ namespace ComHe_Objets {
     public class FicheTravail {
         private Guid _id = Guid.NewGuid();
         public Guid id { get { return _id; } }
+        public IndicateursFinanciers indicateursFinanciers { get; set; }
         public string nom { get; set; }
         public List<Segment> segments { get; set; }
         public List<Reclamation> reclamations { get; set; }

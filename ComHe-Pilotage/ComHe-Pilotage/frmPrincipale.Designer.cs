@@ -30,11 +30,7 @@
             this.tabPrincipal = new DevExpress.XtraTab.XtraTabControl();
             this.tabPgAxeFinancier = new DevExpress.XtraTab.XtraTabPage();
             this.lcAxeFinancier = new DevExpress.XtraLayout.LayoutControl();
-            this.tabAxeFinancier = new DevExpress.XtraTab.XtraTabControl();
-            this.tabPgCroissance = new DevExpress.XtraTab.XtraTabPage();
-            this.tabPgRecolte = new DevExpress.XtraTab.XtraTabPage();
             this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabPgAxeClient = new DevExpress.XtraTab.XtraTabPage();
             this.lcAxeClient = new DevExpress.XtraLayout.LayoutControl();
             this.TabAxeClient = new DevExpress.XtraTab.XtraTabControl();
@@ -53,7 +49,9 @@
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabPgLoyaltyModel = new DevExpress.XtraTab.XtraTabPage();
             this.lcLoyaltyModel = new DevExpress.XtraLayout.LayoutControl();
+            this.pmcLoyatyModel1 = new ComHe_Pilotage.pmcLoyatyModel();
             this.lcgLoyaltyModel = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabPgNPS = new DevExpress.XtraTab.XtraTabPage();
             this.lcNPS = new DevExpress.XtraLayout.LayoutControl();
             this.pmcNPS = new ComHe_Pilotage.pmcQuestionnaireNoteSegment();
@@ -121,8 +119,8 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.pmcLoyatyModel1 = new ComHe_Pilotage.pmcLoyatyModel();
-            this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.pmcIndicateursFinanciers1 = new ComHe_Pilotage.pmcIndicateursFinanciers();
+            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabPrincipal)).BeginInit();
@@ -130,10 +128,7 @@
             this.tabPgAxeFinancier.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lcAxeFinancier)).BeginInit();
             this.lcAxeFinancier.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tabAxeFinancier)).BeginInit();
-            this.tabAxeFinancier.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             this.tabPgAxeClient.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lcAxeClient)).BeginInit();
             this.lcAxeClient.SuspendLayout();
@@ -158,6 +153,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lcLoyaltyModel)).BeginInit();
             this.lcLoyaltyModel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lcgLoyaltyModel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
             this.tabPgNPS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lcNPS)).BeginInit();
             this.lcNPS.SuspendLayout();
@@ -221,7 +217,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciTabPanePrincipal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControlItem4
@@ -258,43 +254,22 @@
             // tabPgAxeFinancier
             // 
             this.tabPgAxeFinancier.Controls.Add(this.lcAxeFinancier);
+            this.tabPgAxeFinancier.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.tabPgAxeFinancier.Name = "tabPgAxeFinancier";
             this.tabPgAxeFinancier.Size = new System.Drawing.Size(1251, 628);
             this.tabPgAxeFinancier.Text = "Axe financier";
             // 
             // lcAxeFinancier
             // 
-            this.lcAxeFinancier.Controls.Add(this.tabAxeFinancier);
+            this.lcAxeFinancier.Controls.Add(this.pmcIndicateursFinanciers1);
             this.lcAxeFinancier.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lcAxeFinancier.Location = new System.Drawing.Point(0, 0);
+            this.lcAxeFinancier.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.lcAxeFinancier.Name = "lcAxeFinancier";
             this.lcAxeFinancier.Root = this.layoutControlGroup6;
             this.lcAxeFinancier.Size = new System.Drawing.Size(1251, 628);
             this.lcAxeFinancier.TabIndex = 0;
             this.lcAxeFinancier.Text = "layoutControl1";
-            // 
-            // tabAxeFinancier
-            // 
-            this.tabAxeFinancier.Location = new System.Drawing.Point(16, 16);
-            this.tabAxeFinancier.Name = "tabAxeFinancier";
-            this.tabAxeFinancier.SelectedTabPage = this.tabPgCroissance;
-            this.tabAxeFinancier.Size = new System.Drawing.Size(1219, 596);
-            this.tabAxeFinancier.TabIndex = 4;
-            this.tabAxeFinancier.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.tabPgCroissance,
-            this.tabPgRecolte});
-            // 
-            // tabPgCroissance
-            // 
-            this.tabPgCroissance.Name = "tabPgCroissance";
-            this.tabPgCroissance.Size = new System.Drawing.Size(1212, 562);
-            this.tabPgCroissance.Text = "Croissance";
-            // 
-            // tabPgRecolte
-            // 
-            this.tabPgRecolte.Name = "tabPgRecolte";
-            this.tabPgRecolte.Size = new System.Drawing.Size(1212, 562);
-            this.tabPgRecolte.Text = "Récolte";
             // 
             // layoutControlGroup6
             // 
@@ -307,15 +282,6 @@
             this.layoutControlGroup6.OptionsItemText.TextToControlDistance = 4;
             this.layoutControlGroup6.Size = new System.Drawing.Size(1251, 628);
             this.layoutControlGroup6.TextVisible = false;
-            // 
-            // layoutControlItem9
-            // 
-            this.layoutControlItem9.Control = this.tabAxeFinancier;
-            this.layoutControlItem9.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(1225, 602);
-            this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem9.TextVisible = false;
             // 
             // tabPgAxeClient
             // 
@@ -491,6 +457,13 @@
             this.lcLoyaltyModel.TabIndex = 0;
             this.lcLoyaltyModel.Text = "layoutControl2";
             // 
+            // pmcLoyatyModel1
+            // 
+            this.pmcLoyatyModel1.Location = new System.Drawing.Point(16, 16);
+            this.pmcLoyatyModel1.Name = "pmcLoyatyModel1";
+            this.pmcLoyatyModel1.Size = new System.Drawing.Size(1141, 464);
+            this.pmcLoyatyModel1.TabIndex = 4;
+            // 
             // lcgLoyaltyModel
             // 
             this.lcgLoyaltyModel.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -502,6 +475,15 @@
             this.lcgLoyaltyModel.OptionsItemText.TextToControlDistance = 4;
             this.lcgLoyaltyModel.Size = new System.Drawing.Size(1173, 496);
             this.lcgLoyaltyModel.TextVisible = false;
+            // 
+            // layoutControlItem17
+            // 
+            this.layoutControlItem17.Control = this.pmcLoyatyModel1;
+            this.layoutControlItem17.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem17.Name = "layoutControlItem17";
+            this.layoutControlItem17.Size = new System.Drawing.Size(1147, 470);
+            this.layoutControlItem17.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem17.TextVisible = false;
             // 
             // tabPgNPS
             // 
@@ -1142,21 +1124,22 @@
             this.barDockControlRight.Location = new System.Drawing.Point(1290, 29);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 744);
             // 
-            // pmcLoyatyModel1
+            // pmcIndicateursFinanciers1
             // 
-            this.pmcLoyatyModel1.Location = new System.Drawing.Point(16, 16);
-            this.pmcLoyatyModel1.Name = "pmcLoyatyModel1";
-            this.pmcLoyatyModel1.Size = new System.Drawing.Size(1141, 464);
-            this.pmcLoyatyModel1.TabIndex = 4;
+            this.pmcIndicateursFinanciers1.Location = new System.Drawing.Point(16, 16);
+            this.pmcIndicateursFinanciers1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.pmcIndicateursFinanciers1.Name = "pmcIndicateursFinanciers1";
+            this.pmcIndicateursFinanciers1.Size = new System.Drawing.Size(1219, 596);
+            this.pmcIndicateursFinanciers1.TabIndex = 4;
             // 
-            // layoutControlItem17
+            // layoutControlItem9
             // 
-            this.layoutControlItem17.Control = this.pmcLoyatyModel1;
-            this.layoutControlItem17.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem17.Name = "layoutControlItem17";
-            this.layoutControlItem17.Size = new System.Drawing.Size(1147, 470);
-            this.layoutControlItem17.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem17.TextVisible = false;
+            this.layoutControlItem9.Control = this.pmcIndicateursFinanciers1;
+            this.layoutControlItem9.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem9.Name = "layoutControlItem9";
+            this.layoutControlItem9.Size = new System.Drawing.Size(1225, 602);
+            this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem9.TextVisible = false;
             // 
             // frmPrincipale
             // 
@@ -1181,10 +1164,7 @@
             this.tabPgAxeFinancier.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lcAxeFinancier)).EndInit();
             this.lcAxeFinancier.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tabAxeFinancier)).EndInit();
-            this.tabAxeFinancier.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             this.tabPgAxeClient.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lcAxeClient)).EndInit();
             this.lcAxeClient.ResumeLayout(false);
@@ -1209,6 +1189,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lcLoyaltyModel)).EndInit();
             this.lcLoyaltyModel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lcgLoyaltyModel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
             this.tabPgNPS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lcNPS)).EndInit();
             this.lcNPS.ResumeLayout(false);
@@ -1272,7 +1253,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciTabPanePrincipal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1339,11 +1320,7 @@
         private DevExpress.XtraTab.XtraTabPage tabPgTraitementReclamation;
         private DevExpress.XtraTab.XtraTabPage tabPgComplaintModel;
         private DevExpress.XtraLayout.LayoutControl lcAxeFinancier;
-        private DevExpress.XtraTab.XtraTabControl tabAxeFinancier;
-        private DevExpress.XtraTab.XtraTabPage tabPgCroissance;
-        private DevExpress.XtraTab.XtraTabPage tabPgRecolte;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup6;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
         private DevExpress.XtraTab.XtraTabPage tabSynthese;
         private pmcGestionReclamation pmcGestionReclamation1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
@@ -1377,6 +1354,8 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
         private pmcLoyatyModel pmcLoyatyModel1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem17;
+        private pmcIndicateursFinanciers pmcIndicateursFinanciers1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
     }
 }
 

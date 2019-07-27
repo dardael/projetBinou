@@ -42,20 +42,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AttributDeSatisfaction.cs" />
-    <Compile Include="ItemLoyaltyModel.cs" />
-    <Compile Include="ItemComplaintModel.cs" />
-    <Compile Include="DimensionSatisfactionModel.cs" />
-    <Compile Include="FormationCollaborateur.cs" />
-    <Compile Include="enumActionCorrective.cs" />
-    <Compile Include="enumTxActualisation.cs" />
-    <Compile Include="enumTxMultiplicateur.cs" />
-    <Compile Include="enumTxRetention.cs" />
-    <Compile Include="enumMotifInsatisfactionLegitime.cs" />
-    <Compile Include="enumTypeSegment.cs" />
+    <Compile Include="Model\Satisfaction\AttributDeSatisfaction.cs" />
+    <Compile Include="Indicateurs\Financiers\CroissanceCA.cs" />
+    <Compile Include="Indicateurs\Financiers\EvaluationCabinet.cs" />
+    <Compile Include="Indicateurs\Financiers\IndicateursFinanciers.cs" />
+    <Compile Include="Model\Loyalty\ItemLoyaltyModel.cs" />
+    <Compile Include="Model\Complaint\ItemComplaintModel.cs" />
+    <Compile Include="Model\Satisfaction\DimensionSatisfactionModel.cs" />
+    <Compile Include="Formation\FormationCollaborateur.cs" />
+    <Compile Include="Reclamation\enumActionCorrective.cs" />
+    <Compile Include="CSV\enumTxActualisation.cs" />
+    <Compile Include="CSV\enumTxMultiplicateur.cs" />
+    <Compile Include="CSV\enumTxRetention.cs" />
+    <Compile Include="Reclamation\enumMotifInsatisfactionLegitime.cs" />
+    <Compile Include="CSV\enumTypeSegment.cs" />
     <Compile Include="FicheTravail.cs" />
-    <Compile Include="Reclamation.cs" />
-    <Compile Include="Segment.cs" />
+    <Compile Include="Indicateurs\Financiers\MesureAchatsCroises.cs" />
+    <Compile Include="Indicateurs\Financiers\MesureReductionCout.cs" />
+    <Compile Include="Indicateurs\Financiers\PerformanceActivite.cs" />
+    <Compile Include="Reclamation\Reclamation.cs" />
+    <Compile Include="CSV\Segment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

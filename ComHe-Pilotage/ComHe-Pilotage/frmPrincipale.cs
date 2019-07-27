@@ -42,6 +42,7 @@ namespace ComHe_Pilotage {
             pmcTraitementReclamationClient1.fiche = fiche;
             pmcLoyatyModel1.fiche = fiche;
             pmcComplaintModel1.fiche = fiche;
+            pmcIndicateursFinanciers1.fiche = fiche;
         }
 
 

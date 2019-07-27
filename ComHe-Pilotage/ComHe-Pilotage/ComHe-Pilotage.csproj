@@ -87,69 +87,75 @@
     <Compile Include="frmPrincipale.Designer.cs">
       <DependentUpon>frmPrincipale.cs</DependentUpon>
     </Compile>
-    <Compile Include="pmcAttributsDeSatisfaction.cs">
+    <Compile Include="Pmc\Model\Satisfaction\pmcAttributsDeSatisfaction.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pmcAttributsDeSatisfaction.Designer.cs">
+    <Compile Include="Pmc\Model\Satisfaction\pmcAttributsDeSatisfaction.Designer.cs">
       <DependentUpon>pmcAttributsDeSatisfaction.cs</DependentUpon>
     </Compile>
-    <Compile Include="pmcComplaintModel.cs">
+    <Compile Include="Pmc\Model\Complaint\pmcComplaintModel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pmcComplaintModel.Designer.cs">
+    <Compile Include="Pmc\Model\Complaint\pmcComplaintModel.Designer.cs">
       <DependentUpon>pmcComplaintModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="pmcGestionFichesDeTravail.cs">
+    <Compile Include="Pmc\FicheDeTravail\pmcGestionFichesDeTravail.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pmcGestionFichesDeTravail.Designer.cs">
+    <Compile Include="Pmc\FicheDeTravail\pmcGestionFichesDeTravail.Designer.cs">
       <DependentUpon>pmcGestionFichesDeTravail.cs</DependentUpon>
     </Compile>
-    <Compile Include="pmcGestionReclamation.cs">
+    <Compile Include="Pmc\Reclamation\pmcGestionReclamation.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pmcGestionReclamation.Designer.cs">
+    <Compile Include="Pmc\Reclamation\pmcGestionReclamation.Designer.cs">
       <DependentUpon>pmcGestionReclamation.cs</DependentUpon>
     </Compile>
-    <Compile Include="pmcLoyatyModel.cs">
+    <Compile Include="Pmc\Indicateurs\Financiers\pmcIndicateursFinanciers.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pmcLoyatyModel.Designer.cs">
+    <Compile Include="Pmc\Indicateurs\Financiers\pmcIndicateursFinanciers.Designer.cs">
+      <DependentUpon>pmcIndicateursFinanciers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pmc\Model\Loyalty\pmcLoyatyModel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pmc\Model\Loyalty\pmcLoyatyModel.Designer.cs">
       <DependentUpon>pmcLoyatyModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="pmcParentUtilisantFicheDeTravail.cs">
+    <Compile Include="Pmc\pmcParentUtilisantFicheDeTravail.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pmcQuatresChemins.cs">
+    <Compile Include="Pmc\CSV\pmcQuatresChemins.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pmcQuatresChemins.Designer.cs">
+    <Compile Include="Pmc\CSV\pmcQuatresChemins.Designer.cs">
       <DependentUpon>pmcQuatresChemins.cs</DependentUpon>
     </Compile>
-    <Compile Include="pmcQuestionnaireNoteSegment.cs">
+    <Compile Include="Pmc\CSV\pmcQuestionnaireNoteSegment.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pmcQuestionnaireNoteSegment.Designer.cs">
+    <Compile Include="Pmc\CSV\pmcQuestionnaireNoteSegment.Designer.cs">
       <DependentUpon>pmcQuestionnaireNoteSegment.cs</DependentUpon>
     </Compile>
-    <Compile Include="pmcSatisfactionModel.cs">
+    <Compile Include="Pmc\Model\Satisfaction\pmcSatisfactionModel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pmcSatisfactionModel.Designer.cs">
+    <Compile Include="Pmc\Model\Satisfaction\pmcSatisfactionModel.Designer.cs">
       <DependentUpon>pmcSatisfactionModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="pmcSegmentation.cs">
+    <Compile Include="Pmc\CSV\pmcSegmentation.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pmcSegmentation.Designer.cs">
+    <Compile Include="Pmc\CSV\pmcSegmentation.Designer.cs">
       <DependentUpon>pmcSegmentation.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="pmcCreationFicheTravail.cs">
+    <Compile Include="Pmc\FicheDeTravail\pmcCreationFicheTravail.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pmcCreationFicheTravail.Designer.cs">
+    <Compile Include="Pmc\FicheDeTravail\pmcCreationFicheTravail.Designer.cs">
       <DependentUpon>pmcCreationFicheTravail.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSaisieFicheTravail.cs">
@@ -158,44 +164,47 @@
     <Compile Include="frmSaisieFicheTravail.Designer.cs">
       <DependentUpon>frmSaisieFicheTravail.cs</DependentUpon>
     </Compile>
-    <Compile Include="pmcApprentissage.cs">
+    <Compile Include="Pmc\Formation\pmcApprentissage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pmcApprentissage.Designer.cs">
+    <Compile Include="Pmc\Formation\pmcApprentissage.Designer.cs">
       <DependentUpon>pmcApprentissage.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmPrincipale.resx">
       <DependentUpon>frmPrincipale.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="pmcAttributsDeSatisfaction.resx">
+    <EmbeddedResource Include="Pmc\Model\Satisfaction\pmcAttributsDeSatisfaction.resx">
       <DependentUpon>pmcAttributsDeSatisfaction.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pmcComplaintModel.resx">
+    <EmbeddedResource Include="Pmc\Model\Complaint\pmcComplaintModel.resx">
       <DependentUpon>pmcComplaintModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pmcCreationFicheTravail.resx">
+    <EmbeddedResource Include="Pmc\FicheDeTravail\pmcCreationFicheTravail.resx">
       <DependentUpon>pmcCreationFicheTravail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pmcGestionFichesDeTravail.resx">
+    <EmbeddedResource Include="Pmc\FicheDeTravail\pmcGestionFichesDeTravail.resx">
       <DependentUpon>pmcGestionFichesDeTravail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pmcGestionReclamation.resx">
+    <EmbeddedResource Include="Pmc\Reclamation\pmcGestionReclamation.resx">
       <DependentUpon>pmcGestionReclamation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pmcLoyatyModel.resx">
+    <EmbeddedResource Include="Pmc\Indicateurs\Financiers\pmcIndicateursFinanciers.resx">
+      <DependentUpon>pmcIndicateursFinanciers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pmc\Model\Loyalty\pmcLoyatyModel.resx">
       <DependentUpon>pmcLoyatyModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pmcQuatresChemins.resx">
+    <EmbeddedResource Include="Pmc\CSV\pmcQuatresChemins.resx">
       <DependentUpon>pmcQuatresChemins.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pmcQuestionnaireNoteSegment.resx">
+    <EmbeddedResource Include="Pmc\CSV\pmcQuestionnaireNoteSegment.resx">
       <DependentUpon>pmcQuestionnaireNoteSegment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pmcSatisfactionModel.resx">
+    <EmbeddedResource Include="Pmc\Model\Satisfaction\pmcSatisfactionModel.resx">
       <DependentUpon>pmcSatisfactionModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pmcSegmentation.resx">
+    <EmbeddedResource Include="Pmc\CSV\pmcSegmentation.resx">
       <DependentUpon>pmcSegmentation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -211,14 +220,16 @@
     <EmbeddedResource Include="frmSaisieFicheTravail.resx">
       <DependentUpon>frmSaisieFicheTravail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pmcApprentissage.resx">
+    <EmbeddedResource Include="Pmc\Formation\pmcApprentissage.resx">
       <DependentUpon>pmcApprentissage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\DataSources\ComHe_Objets.AttributDeSatisfaction.datasource" />
+    <None Include="Properties\DataSources\ComHe_Objets.CroissanceCA.datasource" />
     <None Include="Properties\DataSources\ComHe_Objets.DimensionSatisfactionModel.datasource" />
     <None Include="Properties\DataSources\ComHe_Objets.FicheTravail.datasource" />
     <None Include="Properties\DataSources\ComHe_Objets.FormationCollaborateur.datasource" />
+    <None Include="Properties\DataSources\ComHe_Objets.IndicateursFinanciers.datasource" />
     <None Include="Properties\DataSources\ComHe_Objets.ItemComplaintModel.datasource" />
     <None Include="Properties\DataSources\ComHe_Objets.ItemLoyaltyModel.datasource" />
     <None Include="Properties\DataSources\ComHe_Objets.Reclamation.datasource" />
@@ -249,6 +260,7 @@
   <ItemGroup>
     <Content Include="Hopstarter-Rounded-Square-File-Presentation.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
