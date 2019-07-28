@@ -25,8 +25,8 @@
 		</indicateursFinanciers>
 		<indicateursClient>
 			<tauxClientsInsatisfaits>
-				<nbClientsInsatisfaits>2</nbClientsInsatisfaits>
-				<nbClientsTotal>14</nbClientsTotal>
+				<nbClientsInsatisfaits>22</nbClientsInsatisfaits>
+				<nbClientsTotal>80</nbClientsTotal>
 			</tauxClientsInsatisfaits>
 			<tauxDeRecommandation>
 				<nbRecommandations>1000</nbRecommandations>
@@ -39,6 +39,39 @@
 			<montantIndemnitesFinancieres>150</montantIndemnitesFinancieres>
 			<nbReclamations>4</nbReclamations>
 		</indicateursClient>
+		<indicateursInternes>
+			<defaillanceCabinet>
+				<nbDossierTransmis>50</nbDossierTransmis>
+			</defaillanceCabinet>
+			<defaillanceControleFiscal>
+				<nbDossierRedressement>150</nbDossierRedressement>
+				<nbDossierOuverture>150</nbDossierOuverture>
+			</defaillanceControleFiscal>
+			<nbDossierParCollaborateur>
+				<nbDossier>1000</nbDossier>
+				<nbCollaborateurs>25</nbCollaborateurs>
+			</nbDossierParCollaborateur>
+			<reductionTempsProduction>
+				<nbDossier>1000</nbDossier>
+				<nbHeuresPayees>3600</nbHeuresPayees>
+			</reductionTempsProduction>
+			<tauxDossiersNonRentables>
+				<nbDossiers>1000</nbDossiers>
+				<nbDossiersInf>250</nbDossiersInf>
+			</tauxDossiersNonRentables>
+			<tauxRemonteesReclamation>
+				<nbDossier>1000</nbDossier>
+				<nbReclamation>100</nbReclamation>
+			</tauxRemonteesReclamation>
+			<tauxRetardDepotDossier>
+				<nbDossier>1000</nbDossier>
+				<nbDossierRetard>1000</nbDossierRetard>
+			</tauxRetardDepotDossier>
+			<tauxSatisfaction>
+				<nbClientsSatisfaits>25</nbClientsSatisfaits>
+				<nbClientsTotal>26</nbClientsTotal>
+			</tauxSatisfaction>
+		</indicateursInternes>
 		<nom>Fiche 1</nom>
 		<segments>
 			<Segment>

@@ -93,6 +93,12 @@
     <Compile Include="Pmc\Indicateurs\Clients\pmcIndicateursClients.Designer.cs">
       <DependentUpon>pmcIndicateursClients.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pmc\Indicateurs\Interne\pmcIndicateursInternes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pmc\Indicateurs\Interne\pmcIndicateursInternes.Designer.cs">
+      <DependentUpon>pmcIndicateursInternes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pmc\Model\Satisfaction\pmcAttributsDeSatisfaction.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     <EmbeddedResource Include="Pmc\Indicateurs\Clients\pmcIndicateursClients.resx">
       <DependentUpon>pmcIndicateursClients.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pmc\Indicateurs\Interne\pmcIndicateursInternes.resx">
+      <DependentUpon>pmcIndicateursInternes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pmc\Model\Satisfaction\pmcAttributsDeSatisfaction.resx">
       <DependentUpon>pmcAttributsDeSatisfaction.cs</DependentUpon>
     </EmbeddedResource>
@@ -269,7 +278,9 @@
   <ItemGroup>
     <Content Include="Hopstarter-Rounded-Square-File-Presentation.ico" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Pmc\Indicateurs\Apprentissage\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

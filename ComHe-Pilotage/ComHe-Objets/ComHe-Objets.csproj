@@ -46,6 +46,15 @@
     <Compile Include="Indicateurs\Client\TauxClientsInsatisfaits.cs" />
     <Compile Include="Indicateurs\Client\TauxDeRecommandation.cs" />
     <Compile Include="Indicateurs\Client\TauxDeRetentionClient.cs" />
+    <Compile Include="Indicateurs\Interne\DefaillanceCabinet.cs" />
+    <Compile Include="Indicateurs\Interne\DefaillanceControleFiscal.cs" />
+    <Compile Include="Indicateurs\Interne\IndicateursInternes.cs" />
+    <Compile Include="Indicateurs\Interne\NbDossierParCollaborateur.cs" />
+    <Compile Include="Indicateurs\Interne\ReductionTempsProduction.cs" />
+    <Compile Include="Indicateurs\Interne\TauxDossiersNonRentables.cs" />
+    <Compile Include="Indicateurs\Interne\TauxRemonteesReclamation.cs" />
+    <Compile Include="Indicateurs\Interne\TauxRetardDepotDossier.cs" />
+    <Compile Include="Indicateurs\Interne\TauxSatisfaction.cs" />
     <Compile Include="Model\Satisfaction\AttributDeSatisfaction.cs" />
     <Compile Include="Indicateurs\Financiers\CroissanceCA.cs" />
     <Compile Include="Indicateurs\Financiers\EvaluationCabinet.cs" />
@@ -67,6 +76,9 @@
     <Compile Include="Reclamation\Reclamation.cs" />
     <Compile Include="CSV\Segment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Indicateurs\Apprentissages\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
