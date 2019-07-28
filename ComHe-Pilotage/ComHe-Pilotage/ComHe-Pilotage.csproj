@@ -87,6 +87,12 @@
     <Compile Include="frmPrincipale.Designer.cs">
       <DependentUpon>frmPrincipale.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pmc\Indicateurs\Clients\pmcIndicateursClients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pmc\Indicateurs\Clients\pmcIndicateursClients.Designer.cs">
+      <DependentUpon>pmcIndicateursClients.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pmc\Model\Satisfaction\pmcAttributsDeSatisfaction.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     <EmbeddedResource Include="frmPrincipale.resx">
       <DependentUpon>frmPrincipale.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pmc\Indicateurs\Clients\pmcIndicateursClients.resx">
+      <DependentUpon>pmcIndicateursClients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pmc\Model\Satisfaction\pmcAttributsDeSatisfaction.resx">
       <DependentUpon>pmcAttributsDeSatisfaction.cs</DependentUpon>

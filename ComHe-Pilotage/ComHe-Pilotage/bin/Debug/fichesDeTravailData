@@ -23,6 +23,22 @@
 				<coef>0.8</coef>
 			</evaluationCabinet>
 		</indicateursFinanciers>
+		<indicateursClient>
+			<tauxClientsInsatisfaits>
+				<nbClientsInsatisfaits>2</nbClientsInsatisfaits>
+				<nbClientsTotal>14</nbClientsTotal>
+			</tauxClientsInsatisfaits>
+			<tauxDeRecommandation>
+				<nbRecommandations>1000</nbRecommandations>
+				<nbProspect>5000</nbProspect>
+			</tauxDeRecommandation>
+			<tauxDeRetentionClient>
+				<nbClientsFinPeriode>1000</nbClientsFinPeriode>
+				<nbNvxClients>5</nbNvxClients>
+			</tauxDeRetentionClient>
+			<montantIndemnitesFinancieres>150</montantIndemnitesFinancieres>
+			<nbReclamations>4</nbReclamations>
+		</indicateursClient>
 		<nom>Fiche 1</nom>
 		<segments>
 			<Segment>

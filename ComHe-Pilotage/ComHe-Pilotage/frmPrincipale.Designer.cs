@@ -30,7 +30,9 @@
             this.tabPrincipal = new DevExpress.XtraTab.XtraTabControl();
             this.tabPgAxeFinancier = new DevExpress.XtraTab.XtraTabPage();
             this.lcAxeFinancier = new DevExpress.XtraLayout.LayoutControl();
+            this.pmcIndicateursFinanciers1 = new ComHe_Pilotage.pmcIndicateursFinanciers();
             this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabPgAxeClient = new DevExpress.XtraTab.XtraTabPage();
             this.lcAxeClient = new DevExpress.XtraLayout.LayoutControl();
             this.TabAxeClient = new DevExpress.XtraTab.XtraTabControl();
@@ -119,8 +121,10 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.pmcIndicateursFinanciers1 = new ComHe_Pilotage.pmcIndicateursFinanciers();
-            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lcIndicateursClients = new DevExpress.XtraLayout.LayoutControl();
+            this.lcgIndicateursClients = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.pmcIndicateursClients1 = new ComHe_Pilotage.Pmc.Indicateurs.Clients.pmcIndicateursClients();
+            this.layoutControlItem18 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabPrincipal)).BeginInit();
@@ -129,6 +133,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lcAxeFinancier)).BeginInit();
             this.lcAxeFinancier.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             this.tabPgAxeClient.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lcAxeClient)).BeginInit();
             this.lcAxeClient.SuspendLayout();
@@ -191,6 +196,7 @@
             this.lcSatisfactionModelAsymetrique.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lcgSatisfactionModelAsymetrique)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
+            this.tabPgIndicateursGestionRecamationClient.SuspendLayout();
             this.tabPgTraitementReclamation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lcTraitementReclamation)).BeginInit();
             this.lcTraitementReclamation.SuspendLayout();
@@ -217,7 +223,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciTabPanePrincipal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcIndicateursClients)).BeginInit();
+            this.lcIndicateursClients.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lcgIndicateursClients)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControlItem4
@@ -254,7 +263,7 @@
             // tabPgAxeFinancier
             // 
             this.tabPgAxeFinancier.Controls.Add(this.lcAxeFinancier);
-            this.tabPgAxeFinancier.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.tabPgAxeFinancier.Margin = new System.Windows.Forms.Padding(0);
             this.tabPgAxeFinancier.Name = "tabPgAxeFinancier";
             this.tabPgAxeFinancier.Size = new System.Drawing.Size(1251, 628);
             this.tabPgAxeFinancier.Text = "Axe financier";
@@ -264,12 +273,20 @@
             this.lcAxeFinancier.Controls.Add(this.pmcIndicateursFinanciers1);
             this.lcAxeFinancier.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lcAxeFinancier.Location = new System.Drawing.Point(0, 0);
-            this.lcAxeFinancier.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.lcAxeFinancier.Margin = new System.Windows.Forms.Padding(0);
             this.lcAxeFinancier.Name = "lcAxeFinancier";
             this.lcAxeFinancier.Root = this.layoutControlGroup6;
             this.lcAxeFinancier.Size = new System.Drawing.Size(1251, 628);
             this.lcAxeFinancier.TabIndex = 0;
             this.lcAxeFinancier.Text = "layoutControl1";
+            // 
+            // pmcIndicateursFinanciers1
+            // 
+            this.pmcIndicateursFinanciers1.Location = new System.Drawing.Point(16, 16);
+            this.pmcIndicateursFinanciers1.Margin = new System.Windows.Forms.Padding(0);
+            this.pmcIndicateursFinanciers1.Name = "pmcIndicateursFinanciers1";
+            this.pmcIndicateursFinanciers1.Size = new System.Drawing.Size(1219, 596);
+            this.pmcIndicateursFinanciers1.TabIndex = 4;
             // 
             // layoutControlGroup6
             // 
@@ -282,6 +299,15 @@
             this.layoutControlGroup6.OptionsItemText.TextToControlDistance = 4;
             this.layoutControlGroup6.Size = new System.Drawing.Size(1251, 628);
             this.layoutControlGroup6.TextVisible = false;
+            // 
+            // layoutControlItem9
+            // 
+            this.layoutControlItem9.Control = this.pmcIndicateursFinanciers1;
+            this.layoutControlItem9.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem9.Name = "layoutControlItem9";
+            this.layoutControlItem9.Size = new System.Drawing.Size(1225, 602);
+            this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem9.TextVisible = false;
             // 
             // tabPgAxeClient
             // 
@@ -827,9 +853,10 @@
             // 
             // tabPgIndicateursGestionRecamationClient
             // 
+            this.tabPgIndicateursGestionRecamationClient.Controls.Add(this.lcIndicateursClients);
             this.tabPgIndicateursGestionRecamationClient.Name = "tabPgIndicateursGestionRecamationClient";
             this.tabPgIndicateursGestionRecamationClient.Size = new System.Drawing.Size(1173, 496);
-            this.tabPgIndicateursGestionRecamationClient.Text = "Indicateur gestion de la réclamation";
+            this.tabPgIndicateursGestionRecamationClient.Text = "Indicateurs axe clients";
             // 
             // tabPgTraitementReclamation
             // 
@@ -1124,22 +1151,45 @@
             this.barDockControlRight.Location = new System.Drawing.Point(1290, 29);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 744);
             // 
-            // pmcIndicateursFinanciers1
+            // lcIndicateursClients
             // 
-            this.pmcIndicateursFinanciers1.Location = new System.Drawing.Point(16, 16);
-            this.pmcIndicateursFinanciers1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            this.pmcIndicateursFinanciers1.Name = "pmcIndicateursFinanciers1";
-            this.pmcIndicateursFinanciers1.Size = new System.Drawing.Size(1219, 596);
-            this.pmcIndicateursFinanciers1.TabIndex = 4;
+            this.lcIndicateursClients.Controls.Add(this.pmcIndicateursClients1);
+            this.lcIndicateursClients.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lcIndicateursClients.Location = new System.Drawing.Point(0, 0);
+            this.lcIndicateursClients.Name = "lcIndicateursClients";
+            this.lcIndicateursClients.Root = this.lcgIndicateursClients;
+            this.lcIndicateursClients.Size = new System.Drawing.Size(1173, 496);
+            this.lcIndicateursClients.TabIndex = 0;
+            this.lcIndicateursClients.Text = "layoutControl2";
             // 
-            // layoutControlItem9
+            // lcgIndicateursClients
             // 
-            this.layoutControlItem9.Control = this.pmcIndicateursFinanciers1;
-            this.layoutControlItem9.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(1225, 602);
-            this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem9.TextVisible = false;
+            this.lcgIndicateursClients.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.lcgIndicateursClients.GroupBordersVisible = false;
+            this.lcgIndicateursClients.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem18});
+            this.lcgIndicateursClients.Location = new System.Drawing.Point(0, 0);
+            this.lcgIndicateursClients.Name = "lcgIndicateursClients";
+            this.lcgIndicateursClients.OptionsItemText.TextToControlDistance = 4;
+            this.lcgIndicateursClients.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
+            this.lcgIndicateursClients.Size = new System.Drawing.Size(1173, 496);
+            this.lcgIndicateursClients.TextVisible = false;
+            // 
+            // pmcIndicateursClients1
+            // 
+            this.pmcIndicateursClients1.Location = new System.Drawing.Point(3, 3);
+            this.pmcIndicateursClients1.Name = "pmcIndicateursClients1";
+            this.pmcIndicateursClients1.Size = new System.Drawing.Size(1167, 490);
+            this.pmcIndicateursClients1.TabIndex = 4;
+            // 
+            // layoutControlItem18
+            // 
+            this.layoutControlItem18.Control = this.pmcIndicateursClients1;
+            this.layoutControlItem18.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem18.Name = "layoutControlItem18";
+            this.layoutControlItem18.Size = new System.Drawing.Size(1173, 496);
+            this.layoutControlItem18.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem18.TextVisible = false;
             // 
             // frmPrincipale
             // 
@@ -1165,6 +1215,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lcAxeFinancier)).EndInit();
             this.lcAxeFinancier.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             this.tabPgAxeClient.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lcAxeClient)).EndInit();
             this.lcAxeClient.ResumeLayout(false);
@@ -1227,6 +1278,7 @@
             this.lcSatisfactionModelAsymetrique.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lcgSatisfactionModelAsymetrique)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
+            this.tabPgIndicateursGestionRecamationClient.ResumeLayout(false);
             this.tabPgTraitementReclamation.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lcTraitementReclamation)).EndInit();
             this.lcTraitementReclamation.ResumeLayout(false);
@@ -1253,7 +1305,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciTabPanePrincipal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcIndicateursClients)).EndInit();
+            this.lcIndicateursClients.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lcgIndicateursClients)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1356,6 +1411,10 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem17;
         private pmcIndicateursFinanciers pmcIndicateursFinanciers1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
+        private DevExpress.XtraLayout.LayoutControl lcIndicateursClients;
+        private Pmc.Indicateurs.Clients.pmcIndicateursClients pmcIndicateursClients1;
+        private DevExpress.XtraLayout.LayoutControlGroup lcgIndicateursClients;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem18;
     }
 }
 

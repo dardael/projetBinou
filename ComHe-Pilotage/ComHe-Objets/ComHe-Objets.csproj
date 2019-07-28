@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Indicateurs\Client\IndicateursClient.cs" />
+    <Compile Include="Indicateurs\Client\TauxClientsInsatisfaits.cs" />
+    <Compile Include="Indicateurs\Client\TauxDeRecommandation.cs" />
+    <Compile Include="Indicateurs\Client\TauxDeRetentionClient.cs" />
     <Compile Include="Model\Satisfaction\AttributDeSatisfaction.cs" />
     <Compile Include="Indicateurs\Financiers\CroissanceCA.cs" />
     <Compile Include="Indicateurs\Financiers\EvaluationCabinet.cs" />
