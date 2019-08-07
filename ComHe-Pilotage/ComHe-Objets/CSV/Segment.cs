@@ -15,6 +15,7 @@ namespace ComHe_Objets {
         public double caAchatsCroises { get; set; }
         public double caSensibilitePricePremium { get; set; }
         public double caWACC { get; set; }
+        public double coutAcquisition { get; set; }
         public String totalQuatreChemins {
             get { return (noteBoucheAOreille + notePricePremium + noteReductionCouts + noteAugmentationDepensesAchatsCroises) + "/40"; }
         }

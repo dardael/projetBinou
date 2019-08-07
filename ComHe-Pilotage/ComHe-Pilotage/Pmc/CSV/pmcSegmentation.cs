@@ -114,8 +114,8 @@ namespace ComHe_Pilotage {
             this.rowCaRecommandationMoyen.Visible = this.chkModeExpert.Checked;
             this.rowCASensibilitePricePremium.Visible = this.chkModeExpert.Checked;
             this.rowCaSensibilitePricePremiumMoyen.Visible = this.chkModeExpert.Checked;
-            this.rowWACC.Visible = this.chkModeExpert.Checked;
-            this.rowWACCMoyen.Visible = this.chkModeExpert.Checked;
+            this.rowcoutAcquisition.Visible = this.chkModeExpert.Checked;
+            this.rowcoutAcquisitionMoyen.Visible = this.chkModeExpert.Checked;
         }
 
         public void PassageModeTableauDebord() {

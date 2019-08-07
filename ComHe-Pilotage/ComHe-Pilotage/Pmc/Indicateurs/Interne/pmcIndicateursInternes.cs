@@ -117,5 +117,16 @@ namespace ComHe_Pilotage.Pmc.Indicateurs.Interne {
             txtSatisfactionNbClientsTotal.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxSatisfaction, "nbClientsTotal", true);
             txtSatisfactionRatio.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxSatisfaction, "ratio", true);
         }
+
+        private void txtRetardNbDossierTotal_EditValueChanged(object sender, EventArgs e) {
+            this.fiche.indicateursInternes.nbDossierParCollaborateur.nbDossier = Convert.ToInt32(txtRetardNbDossierTotal.EditValue);
+            this.fiche.indicateursInternes.tauxDossiersNonRentables.nbDossiers = Convert.ToInt32(txtRetardNbDossierTotal.EditValue);
+            this.fiche.indicateursInternes.tauxRemonteesReclamation.nbDossier = Convert.ToInt32(txtRetardNbDossierTotal.EditValue);
+            this.fiche.indicateursInternes.reductionTempsProduction.nbDossier = Convert.ToInt32(txtRetardNbDossierTotal.EditValue);
+            txtNbDossierNbDossier.EditValue = Convert.ToInt32(txtRetardNbDossierTotal.EditValue);
+            txtRemonteNbDossierTotal.EditValue = Convert.ToInt32(txtRetardNbDossierTotal.EditValue);
+            txtRentableNbDossierTotal.EditValue = Convert.ToInt32(txtRetardNbDossierTotal.EditValue);
+            txtReducNbDossierTotal.EditValue = Convert.ToInt32(txtRetardNbDossierTotal.EditValue);
+        }
     }
 }

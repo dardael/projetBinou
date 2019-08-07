@@ -34,6 +34,7 @@ namespace ComHe_Pilotage {
                 if (this.fiche.indicateursFinanciers.performanceActivite == null) {
                     this.fiche.indicateursFinanciers.performanceActivite = new PerformanceActivite();
                 }
+                this.fiche.indicateursFinanciers.evaluationCabinet.ca = this.fiche.indicateursFinanciers.croissanceCA.ca;
                 gererDataSourceTextEdit();
             }
         }
@@ -50,6 +51,8 @@ namespace ComHe_Pilotage {
             txtCa.DataBindings.Add("EditValue", this.fiche.indicateursFinanciers.croissanceCA, "ca", true);
             txtCaAvant.DataBindings.Clear();
             txtCaAvant.DataBindings.Add("EditValue", this.fiche.indicateursFinanciers.croissanceCA, "caAvant", true);
+            txtCaAvantAvant.DataBindings.Clear();
+            txtCaAvantAvant.DataBindings.Add("EditValue", this.fiche.indicateursFinanciers.croissanceCA, "caAvantAvant", true);
             txtEcart.DataBindings.Clear();
             txtEcart.DataBindings.Add("EditValue", this.fiche.indicateursFinanciers.croissanceCA, "ecart", true);
             txtVariation.DataBindings.Clear();
@@ -82,8 +85,18 @@ namespace ComHe_Pilotage {
         private void gererDataSourceTextEditEvaluation() {
             txtPortefeuilleClient.DataBindings.Clear();
             txtCoef.DataBindings.Clear();
+            txtCabinetValo.DataBindings.Clear();
             txtPortefeuilleClient.DataBindings.Add("EditValue", this.fiche.indicateursFinanciers.evaluationCabinet, "portefeuilleClient", true);
             txtCoef.DataBindings.Add("EditValue", this.fiche.indicateursFinanciers.evaluationCabinet, "coef", true);
+            txtCabinetValo.DataBindings.Add("EditValue", this.fiche.indicateursFinanciers.evaluationCabinet, "valoPotentielle", true);
+        }
+
+        private void txtCa_EditValueChanged(object sender, EventArgs e) {
+            this.fiche.indicateursFinanciers.performanceActivite.ca = Convert.ToDouble(txtCa.EditValue);
+            this.fiche.indicateursFinanciers.mesureReductionCout.ca = Convert.ToDouble(txtCa.EditValue);
+            this.fiche.indicateursFinanciers.evaluationCabinet.ca = Convert.ToDouble(txtCa.EditValue);
+            txtCaReduc.EditValue = this.fiche.indicateursFinanciers.mesureReductionCout.ca;
+            txtCaPerf.EditValue = this.fiche.indicateursFinanciers.performanceActivite.ca;
         }
     }
 }

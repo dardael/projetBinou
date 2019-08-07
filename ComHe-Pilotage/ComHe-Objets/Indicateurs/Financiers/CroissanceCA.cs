@@ -8,6 +8,7 @@ namespace ComHe_Objets {
     public class CroissanceCA {
         public double ca { get; set; }
         public double caAvant { get; set; }
+        public double caAvantAvant { get; set; }
         public double ecart {
             get {
                 return ca - caAvant;

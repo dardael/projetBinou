@@ -248,6 +248,7 @@
             // 
             this.txtNbDossierNbDossier.Location = new System.Drawing.Point(323, 259);
             this.txtNbDossierNbDossier.Name = "txtNbDossierNbDossier";
+            this.txtNbDossierNbDossier.Properties.ReadOnly = true;
             this.txtNbDossierNbDossier.Size = new System.Drawing.Size(111, 22);
             this.txtNbDossierNbDossier.StyleController = this.lcPrincipal;
             this.txtNbDossierNbDossier.TabIndex = 12;
@@ -324,11 +325,13 @@
             this.txtRetardNbDossierTotal.Size = new System.Drawing.Size(111, 22);
             this.txtRetardNbDossierTotal.StyleController = this.lcPrincipal;
             this.txtRetardNbDossierTotal.TabIndex = 12;
+            this.txtRetardNbDossierTotal.EditValueChanged += new System.EventHandler(this.txtRetardNbDossierTotal_EditValueChanged);
             // 
             // txtRentableNbDossierTotal
             // 
             this.txtRentableNbDossierTotal.Location = new System.Drawing.Point(323, 150);
             this.txtRentableNbDossierTotal.Name = "txtRentableNbDossierTotal";
+            this.txtRentableNbDossierTotal.Properties.ReadOnly = true;
             this.txtRentableNbDossierTotal.Size = new System.Drawing.Size(111, 22);
             this.txtRentableNbDossierTotal.StyleController = this.lcPrincipal;
             this.txtRentableNbDossierTotal.TabIndex = 12;
@@ -337,6 +340,7 @@
             // 
             this.txtRemonteNbDossierTotal.Location = new System.Drawing.Point(323, 558);
             this.txtRemonteNbDossierTotal.Name = "txtRemonteNbDossierTotal";
+            this.txtRemonteNbDossierTotal.Properties.ReadOnly = true;
             this.txtRemonteNbDossierTotal.Size = new System.Drawing.Size(109, 22);
             this.txtRemonteNbDossierTotal.StyleController = this.lcPrincipal;
             this.txtRemonteNbDossierTotal.TabIndex = 12;
@@ -345,6 +349,7 @@
             // 
             this.txtReducNbDossierTotal.Location = new System.Drawing.Point(323, 667);
             this.txtReducNbDossierTotal.Name = "txtReducNbDossierTotal";
+            this.txtReducNbDossierTotal.Properties.ReadOnly = true;
             this.txtReducNbDossierTotal.Size = new System.Drawing.Size(109, 22);
             this.txtReducNbDossierTotal.StyleController = this.lcPrincipal;
             this.txtReducNbDossierTotal.TabIndex = 12;
@@ -397,7 +402,7 @@
             this.layoutControlItem11.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem11.Name = "layoutControlItem11";
             this.layoutControlItem11.Size = new System.Drawing.Size(422, 28);
-            this.layoutControlItem11.Text = "Nombre de dossiers";
+            this.layoutControlItem11.Text = "Nombre de dossiers total";
             this.layoutControlItem11.TextSize = new System.Drawing.Size(301, 16);
             // 
             // layoutControlItem18
@@ -437,7 +442,7 @@
             this.layoutControlItem12.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem12.Name = "layoutControlItem12";
             this.layoutControlItem12.Size = new System.Drawing.Size(422, 28);
-            this.layoutControlItem12.Text = "Nombre de dossiers";
+            this.layoutControlItem12.Text = "Nombre de dossiers total";
             this.layoutControlItem12.TextSize = new System.Drawing.Size(301, 16);
             // 
             // layoutControlItem19
@@ -476,7 +481,7 @@
             this.layoutControlItem9.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem9.Name = "layoutControlItem9";
             this.layoutControlItem9.Size = new System.Drawing.Size(422, 28);
-            this.layoutControlItem9.Text = "Nombre de dossiers";
+            this.layoutControlItem9.Text = "Nombre de dossiers total";
             this.layoutControlItem9.TextSize = new System.Drawing.Size(301, 16);
             // 
             // layoutControlItem10
@@ -515,7 +520,7 @@
             this.layoutControlItem13.Location = new System.Drawing.Point(422, 0);
             this.layoutControlItem13.Name = "layoutControlItem13";
             this.layoutControlItem13.Size = new System.Drawing.Size(420, 28);
-            this.layoutControlItem13.Text = "Nombre de dossiers avec ouverture de ?";
+            this.layoutControlItem13.Text = "Nombre de dossiers soumis à un redressement";
             this.layoutControlItem13.TextSize = new System.Drawing.Size(301, 16);
             // 
             // layoutControlItem14
@@ -574,7 +579,7 @@
             this.layoutControlItem15.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem15.Name = "layoutControlItem15";
             this.layoutControlItem15.Size = new System.Drawing.Size(420, 28);
-            this.layoutControlItem15.Text = "Nombre de dossiers";
+            this.layoutControlItem15.Text = "Nombre de dossiers total";
             this.layoutControlItem15.TextSize = new System.Drawing.Size(301, 16);
             // 
             // layoutControlItem20
@@ -614,7 +619,7 @@
             this.layoutControlItem16.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem16.Name = "layoutControlItem16";
             this.layoutControlItem16.Size = new System.Drawing.Size(420, 28);
-            this.layoutControlItem16.Text = "Nombre de dossiers";
+            this.layoutControlItem16.Text = "Nombre de dossiers total";
             this.layoutControlItem16.TextSize = new System.Drawing.Size(301, 16);
             // 
             // layoutControlItem21

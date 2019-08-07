@@ -21,6 +21,7 @@ namespace ComHe_Metier {
                 double caAchatsCroises = 0;
                 double caWACC = 0;
                 double caRecommandation = 0;
+                double coutAcquisition = 0;
                 foreach (Segment s in segments) {
                     caAchatsCroises += s.caAchatsCroises;
                     caPriceSensibility += s.caSensibilitePricePremium;
@@ -30,6 +31,7 @@ namespace ComHe_Metier {
                     marge += s.txMarge;
                     retention += enumTxRetentionMethods.getDoubleFromCode(s.txRetention);
                     actualisation += enumTxActualisationMethods.getDoubleFromCode(s.txActualisation);
+                    coutAcquisition += s.coutAcquisition;
                 }
                 segmentMoyen.caFromLM = ca / segments.Count;
                 segmentMoyen.caAchatsCroises = caAchatsCroises / segments.Count;
@@ -39,6 +41,7 @@ namespace ComHe_Metier {
                 segmentMoyen.txMarge = marge / segments.Count;
                 segmentMoyen.txActualisation = enumTxActualisationMethods.getCodeFromDouble(actualisation / segments.Count);
                 segmentMoyen.txRetention = enumTxRetentionMethods.getCodeFromDouble(retention / segments.Count);
+                segmentMoyen.coutAcquisition = coutAcquisition / segments.Count;
             }
             return segmentMoyen;
         }

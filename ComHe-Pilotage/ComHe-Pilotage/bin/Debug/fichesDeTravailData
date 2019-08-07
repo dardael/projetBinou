@@ -5,6 +5,7 @@
 			<croissanceCA>
 				<ca>12000</ca>
 				<caAvant>11000</caAvant>
+				<caAvantAvant>0</caAvantAvant>
 			</croissanceCA>
 			<performanceActivite>
 				<ca>12000</ca>
@@ -19,8 +20,9 @@
 				<ca>12000</ca>
 			</mesureReductionCout>
 			<evaluationCabinet>
+				<ca>12000</ca>
 				<portefeuilleClient>150000</portefeuilleClient>
-				<coef>0.8</coef>
+				<coef>1.2</coef>
 			</evaluationCabinet>
 		</indicateursFinanciers>
 		<indicateursClient>
@@ -48,23 +50,23 @@
 				<nbDossierOuverture>150</nbDossierOuverture>
 			</defaillanceControleFiscal>
 			<nbDossierParCollaborateur>
-				<nbDossier>1000</nbDossier>
+				<nbDossier>10001</nbDossier>
 				<nbCollaborateurs>25</nbCollaborateurs>
 			</nbDossierParCollaborateur>
 			<reductionTempsProduction>
-				<nbDossier>1000</nbDossier>
+				<nbDossier>10001</nbDossier>
 				<nbHeuresPayees>3600</nbHeuresPayees>
 			</reductionTempsProduction>
 			<tauxDossiersNonRentables>
-				<nbDossiers>1000</nbDossiers>
+				<nbDossiers>10001</nbDossiers>
 				<nbDossiersInf>250</nbDossiersInf>
 			</tauxDossiersNonRentables>
 			<tauxRemonteesReclamation>
-				<nbDossier>1000</nbDossier>
+				<nbDossier>10001</nbDossier>
 				<nbReclamation>100</nbReclamation>
 			</tauxRemonteesReclamation>
 			<tauxRetardDepotDossier>
-				<nbDossier>1000</nbDossier>
+				<nbDossier>10001</nbDossier>
 				<nbDossierRetard>1000</nbDossierRetard>
 			</tauxRetardDepotDossier>
 			<tauxSatisfaction>
@@ -105,6 +107,7 @@
 				<caAchatsCroises>0</caAchatsCroises>
 				<caSensibilitePricePremium>0</caSensibilitePricePremium>
 				<caWACC>0</caWACC>
+				<coutAcquisition>1</coutAcquisition>
 				<typeSegment>BNC</typeSegment>
 				<caFromLM>7500</caFromLM>
 				<txMarge>0.17</txMarge>
@@ -143,6 +146,7 @@
 				<caAchatsCroises>0</caAchatsCroises>
 				<caSensibilitePricePremium>0</caSensibilitePricePremium>
 				<caWACC>0</caWACC>
+				<coutAcquisition>20</coutAcquisition>
 				<typeSegment>BNC</typeSegment>
 				<caFromLM>5000</caFromLM>
 				<txMarge>0.18</txMarge>
@@ -181,6 +185,7 @@
 				<caAchatsCroises>0</caAchatsCroises>
 				<caSensibilitePricePremium>0</caSensibilitePricePremium>
 				<caWACC>0</caWACC>
+				<coutAcquisition>30</coutAcquisition>
 				<typeSegment>BNC</typeSegment>
 				<caFromLM>2500</caFromLM>
 				<txMarge>0.2</txMarge>
@@ -219,6 +224,7 @@
 				<caAchatsCroises>0</caAchatsCroises>
 				<caSensibilitePricePremium>0</caSensibilitePricePremium>
 				<caWACC>0</caWACC>
+				<coutAcquisition>40</coutAcquisition>
 				<typeSegment>BNC</typeSegment>
 				<caFromLM>1500</caFromLM>
 				<txMarge>0.11</txMarge>
@@ -257,6 +263,7 @@
 				<caAchatsCroises>0</caAchatsCroises>
 				<caSensibilitePricePremium>0</caSensibilitePricePremium>
 				<caWACC>0</caWACC>
+				<coutAcquisition>50</coutAcquisition>
 				<typeSegment>BNC</typeSegment>
 				<caFromLM>1500</caFromLM>
 				<txMarge>0.11</txMarge>
@@ -368,7 +375,7 @@
 		</attibutsDeSatisfaction>
 		<complaintModel>
 			<ItemComplaintModel>
-				<id>e4c69b1b-79f1-4e60-8d21-a74eaf2968e7</id>
+				<id>cc33a60b-ea18-449c-9d69-f465b0f7c5a5</id>
 				<nom>lvl1</nom>
 				<idParent>00000000-0000-0000-0000-000000000000</idParent>
 				<libelle>100 clients insatisfaits</libelle>
@@ -376,73 +383,121 @@
 				<valeurModifiable>false</valeurModifiable>
 			</ItemComplaintModel>
 			<ItemComplaintModel>
-				<id>579cf607-e519-48dc-a163-ba34f21f8f50</id>
+				<id>6cddb5f6-332e-4d02-9258-6b42843da04b</id>
 				<nom>lvl11</nom>
-				<idParent>e4c69b1b-79f1-4e60-8d21-a74eaf2968e7</idParent>
+				<idParent>cc33a60b-ea18-449c-9d69-f465b0f7c5a5</idParent>
 				<libelle>Nombre de plaignant</libelle>
 				<valeur>0</valeur>
 				<valeurModifiable>true</valeurModifiable>
 			</ItemComplaintModel>
 			<ItemComplaintModel>
-				<id>41fd9870-8468-4345-ac17-eb30f1d39069</id>
+				<id>5a7e241b-dab3-4df0-a611-764b04def32e</id>
 				<nom>lvl111</nom>
-				<idParent>579cf607-e519-48dc-a163-ba34f21f8f50</idParent>
+				<idParent>6cddb5f6-332e-4d02-9258-6b42843da04b</idParent>
 				<libelle>Se plaignent</libelle>
 				<valeur>0</valeur>
 				<valeurModifiable>true</valeurModifiable>
 			</ItemComplaintModel>
 			<ItemComplaintModel>
-				<id>92dce666-924e-4400-bb45-73430ea62cb2</id>
+				<id>b1efdc0b-4f94-4aba-bc3c-563362d732e3</id>
 				<nom>lvl112</nom>
-				<idParent>579cf607-e519-48dc-a163-ba34f21f8f50</idParent>
+				<idParent>6cddb5f6-332e-4d02-9258-6b42843da04b</idParent>
 				<libelle>Ne ne plaignent pas</libelle>
 				<valeur>0</valeur>
 				<valeurModifiable>true</valeurModifiable>
 			</ItemComplaintModel>
 			<ItemComplaintModel>
-				<id>f27f6d8e-9ad0-4d8a-8d77-143bbffe1deb</id>
+				<id>fc923a82-af18-492e-92e0-f20558ebaf55</id>
 				<nom>lvl1111</nom>
-				<idParent>41fd9870-8468-4345-ac17-eb30f1d39069</idParent>
+				<idParent>5a7e241b-dab3-4df0-a611-764b04def32e</idParent>
 				<libelle>Cas réglés</libelle>
 				<valeur>0</valeur>
 				<valeurModifiable>true</valeurModifiable>
 			</ItemComplaintModel>
 			<ItemComplaintModel>
-				<id>be2fc41d-3554-4680-b4da-a7c1c2e7663f</id>
-				<nom>lvl1112</nom>
-				<idParent>41fd9870-8468-4345-ac17-eb30f1d39069</idParent>
-				<libelle>Cas non réglés</libelle>
-				<valeur>0</valeur>
-				<valeurModifiable>true</valeurModifiable>
-			</ItemComplaintModel>
-			<ItemComplaintModel>
-				<id>eda38fa6-bd77-4a15-bc63-2e93b37ae84c</id>
-				<nom>lvl1121</nom>
-				<idParent>92dce666-924e-4400-bb45-73430ea62cb2</idParent>
-				<libelle>Cas réglés</libelle>
-				<valeur>0</valeur>
-				<valeurModifiable>true</valeurModifiable>
-			</ItemComplaintModel>
-			<ItemComplaintModel>
-				<id>e0ec667b-8f0b-4123-a732-fb3f0ab08921</id>
-				<nom>lvl1122</nom>
-				<idParent>92dce666-924e-4400-bb45-73430ea62cb2</idParent>
-				<libelle>Cas non réglés</libelle>
-				<valeur>0</valeur>
-				<valeurModifiable>true</valeurModifiable>
-			</ItemComplaintModel>
-			<ItemComplaintModel>
-				<id>ba290f65-838f-4560-8c12-694b2cbf8e8f</id>
-				<nom>lvl11121</nom>
-				<idParent>be2fc41d-3554-4680-b4da-a7c1c2e7663f</idParent>
+				<id>86c8e75b-4fb6-4bad-96e3-9e0d4ab0d8c3</id>
+				<nom>lvl11111</nom>
+				<idParent>fc923a82-af18-492e-92e0-f20558ebaf55</idParent>
 				<libelle>Clients perdus</libelle>
 				<valeur>0</valeur>
 				<valeurModifiable>true</valeurModifiable>
 			</ItemComplaintModel>
 			<ItemComplaintModel>
-				<id>f4d0ea22-913c-4df9-861e-5ee282e0c8ac</id>
+				<id>e2df35ad-d17f-4c2a-bdfc-3eac8f96e215</id>
+				<nom>lvl11112</nom>
+				<idParent>fc923a82-af18-492e-92e0-f20558ebaf55</idParent>
+				<libelle>Clients récupérés</libelle>
+				<valeur>0</valeur>
+				<valeurModifiable>true</valeurModifiable>
+			</ItemComplaintModel>
+			<ItemComplaintModel>
+				<id>8f46938d-7230-4533-8e49-43368ded6bec</id>
+				<nom>lvl1112</nom>
+				<idParent>5a7e241b-dab3-4df0-a611-764b04def32e</idParent>
+				<libelle>Cas non réglés</libelle>
+				<valeur>0</valeur>
+				<valeurModifiable>true</valeurModifiable>
+			</ItemComplaintModel>
+			<ItemComplaintModel>
+				<id>48db5658-6bfe-4a5d-84c4-fd0441713a84</id>
+				<nom>lvl11121</nom>
+				<idParent>8f46938d-7230-4533-8e49-43368ded6bec</idParent>
+				<libelle>Clients perdus</libelle>
+				<valeur>0</valeur>
+				<valeurModifiable>true</valeurModifiable>
+			</ItemComplaintModel>
+			<ItemComplaintModel>
+				<id>74a4c16b-2201-43b2-afc8-c247e30c9070</id>
 				<nom>lvl11122</nom>
-				<idParent>be2fc41d-3554-4680-b4da-a7c1c2e7663f</idParent>
+				<idParent>8f46938d-7230-4533-8e49-43368ded6bec</idParent>
+				<libelle>Clients récupérés</libelle>
+				<valeur>0</valeur>
+				<valeurModifiable>true</valeurModifiable>
+			</ItemComplaintModel>
+			<ItemComplaintModel>
+				<id>d7a74638-5ec1-4aae-af18-7ff67082797e</id>
+				<nom>lvl1121</nom>
+				<idParent>b1efdc0b-4f94-4aba-bc3c-563362d732e3</idParent>
+				<libelle>Cas réglés</libelle>
+				<valeur>0</valeur>
+				<valeurModifiable>true</valeurModifiable>
+			</ItemComplaintModel>
+			<ItemComplaintModel>
+				<id>b910f7b5-63a4-42bd-b2b6-2f55489ef862</id>
+				<nom>lvl11211</nom>
+				<idParent>d7a74638-5ec1-4aae-af18-7ff67082797e</idParent>
+				<libelle>Clients perdus</libelle>
+				<valeur>0</valeur>
+				<valeurModifiable>true</valeurModifiable>
+			</ItemComplaintModel>
+			<ItemComplaintModel>
+				<id>bd35dd10-1697-4902-bda4-644d11ada526</id>
+				<nom>lvl11212</nom>
+				<idParent>d7a74638-5ec1-4aae-af18-7ff67082797e</idParent>
+				<libelle>Clients récupérés</libelle>
+				<valeur>0</valeur>
+				<valeurModifiable>true</valeurModifiable>
+			</ItemComplaintModel>
+			<ItemComplaintModel>
+				<id>41bcde23-77c8-4de2-9f5a-612cb2292e94</id>
+				<nom>lvl1122</nom>
+				<idParent>b1efdc0b-4f94-4aba-bc3c-563362d732e3</idParent>
+				<libelle>Cas non réglés</libelle>
+				<valeur>0</valeur>
+				<valeurModifiable>true</valeurModifiable>
+			</ItemComplaintModel>
+			<ItemComplaintModel>
+				<id>1bea5533-4cda-4547-be92-80592f7c3e5c</id>
+				<nom>lvl11221</nom>
+				<idParent>41bcde23-77c8-4de2-9f5a-612cb2292e94</idParent>
+				<libelle>Clients perdus</libelle>
+				<valeur>0</valeur>
+				<valeurModifiable>true</valeurModifiable>
+			</ItemComplaintModel>
+			<ItemComplaintModel>
+				<id>4a46b1a7-0df4-4a42-b8d0-eb0662d3e5ea</id>
+				<nom>lvl11222</nom>
+				<idParent>41bcde23-77c8-4de2-9f5a-612cb2292e94</idParent>
 				<libelle>Clients récupérés</libelle>
 				<valeur>0</valeur>
 				<valeurModifiable>true</valeurModifiable>
