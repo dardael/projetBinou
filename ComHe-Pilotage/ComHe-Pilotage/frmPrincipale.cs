@@ -12,7 +12,7 @@ namespace ComHe_Pilotage {
         public frmPrincipale() {
             InitializeComponent();
             pmcNPS.adapaterAffichage("NPS", "Si un proche avait besoin d'un professionnel de l'expertise comptable, lui recommanderiez vous votre cabinet ?", fiche);
-            pmcCES.adapaterAffichage("CES", "A combien évaluez vous l'effort que vous avez fournit pour disposer de vos comptes annuels ?", fiche);
+            pmcCES.adapaterAffichage("CES", "A combien évaluez vous l'effort que vous avez fourni pour disposer de vos comptes annuels ?", fiche);
             pmcGestionFichesDeTravail.ficheTravailCouranteChanged += new EventHandler(pmcGestionFichesDeTravail_ficheTravailCouranteChanged);
             pmcSegmentation1.dataChanged += new EventHandler(pmcSegmentation_dataChanged);
             pmcGestionFichesDeTravail.Load += pmcGestionFichesDeTravail_ficheTravailCouranteChanged;

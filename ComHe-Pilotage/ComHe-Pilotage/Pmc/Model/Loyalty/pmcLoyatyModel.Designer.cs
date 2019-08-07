@@ -26,9 +26,12 @@
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
             DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView1 = new DevExpress.XtraCharts.LineSeriesView();
             this.lcPrincipal = new DevExpress.XtraLayout.LayoutControl();
-            this.grLoyaltyModel = new DevExpress.XtraPivotGrid.PivotGridControl();
+            this.chLoyaltyModel = new DevExpress.XtraCharts.ChartControl();
             this.itemLoyaltyModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.grLoyaltyModel = new DevExpress.XtraPivotGrid.PivotGridControl();
             this.fieldnoteLoyaute = new DevExpress.XtraPivotGrid.PivotGridField();
             this.fieldnoteSatisfaction = new DevExpress.XtraPivotGrid.PivotGridField();
             this.fieldnbPersonnes = new DevExpress.XtraPivotGrid.PivotGridField();
@@ -36,20 +39,21 @@
             this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.lciGrLoyaltyModel = new DevExpress.XtraLayout.LayoutControlGroup();
             this.lciChLoyaltyModel = new DevExpress.XtraLayout.LayoutControlItem();
-            this.chLoyaltyModel = new DevExpress.XtraCharts.ChartControl();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.splitterItem1 = new DevExpress.XtraLayout.SplitterItem();
             ((System.ComponentModel.ISupportInitialize)(this.lcPrincipal)).BeginInit();
             this.lcPrincipal.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grLoyaltyModel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chLoyaltyModel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemLoyaltyModelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grLoyaltyModel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repoNbPersonneEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciGrLoyaltyModel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciChLoyaltyModel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chLoyaltyModel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem1)).BeginInit();
             this.SuspendLayout();
@@ -67,6 +71,43 @@
             this.lcPrincipal.TabIndex = 0;
             this.lcPrincipal.Text = "layoutControl1";
             // 
+            // chLoyaltyModel
+            // 
+            this.chLoyaltyModel.DataSource = this.itemLoyaltyModelBindingSource;
+            xyDiagram1.AxisX.AutoScaleBreaks.Enabled = true;
+            xyDiagram1.AxisX.AutoScaleBreaks.MaxCount = 1;
+            xyDiagram1.AxisX.MinorCount = 1;
+            xyDiagram1.AxisX.NumericScaleOptions.AutoGrid = false;
+            xyDiagram1.AxisX.Title.Text = "Echelle de satisfaction";
+            xyDiagram1.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram1.AxisY.Title.Text = "% de certainement";
+            xyDiagram1.AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
+            this.chLoyaltyModel.Diagram = xyDiagram1;
+            this.chLoyaltyModel.Location = new System.Drawing.Point(3, 269);
+            this.chLoyaltyModel.Name = "chLoyaltyModel";
+            series1.ArgumentDataMember = "noteSatisfaction";
+            series1.ColorDataMember = "id";
+            series1.CrosshairLabelPattern = "Satisfaction: {A}\n% de certainement: {V}";
+            series1.LegendText = "% De certainement";
+            series1.Name = "serieLoyaute";
+            series2.ArgumentDataMember = "noteSatisfaction";
+            series2.ColorDataMember = "id";
+            series2.CrosshairLabelPattern = "Satisfaction: {A}\n% de certainement: {V}";
+            series2.LegendText = "% De certainement";
+            series2.Name = "serieDroiteLoyaute";
+            series2.View = lineSeriesView1;
+            this.chLoyaltyModel.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+        series1,
+        series2};
+            this.chLoyaltyModel.Size = new System.Drawing.Size(1021, 257);
+            this.chLoyaltyModel.TabIndex = 5;
+            // 
+            // itemLoyaltyModelBindingSource
+            // 
+            this.itemLoyaltyModelBindingSource.DataSource = typeof(ComHe_Objets.ItemLoyaltyModel);
+            // 
             // grLoyaltyModel
             // 
             this.grLoyaltyModel.DataSource = this.itemLoyaltyModelBindingSource;
@@ -82,10 +123,6 @@
             this.grLoyaltyModel.Size = new System.Drawing.Size(1021, 254);
             this.grLoyaltyModel.TabIndex = 4;
             this.grLoyaltyModel.EditValueChanged += new DevExpress.XtraPivotGrid.EditValueChangedEventHandler(this.grLoyaltyModel_EditValueChanged);
-            // 
-            // itemLoyaltyModelBindingSource
-            // 
-            this.itemLoyaltyModelBindingSource.DataSource = typeof(ComHe_Objets.ItemLoyaltyModel);
             // 
             // fieldnoteLoyaute
             // 
@@ -154,32 +191,6 @@
             this.lciChLoyaltyModel.TextSize = new System.Drawing.Size(0, 0);
             this.lciChLoyaltyModel.TextVisible = false;
             // 
-            // chLoyaltyModel
-            // 
-            this.chLoyaltyModel.DataSource = this.itemLoyaltyModelBindingSource;
-            xyDiagram1.AxisX.AutoScaleBreaks.Enabled = true;
-            xyDiagram1.AxisX.AutoScaleBreaks.MaxCount = 1;
-            xyDiagram1.AxisX.MinorCount = 1;
-            xyDiagram1.AxisX.NumericScaleOptions.AutoGrid = false;
-            xyDiagram1.AxisX.Title.Text = "Echelle de satisfaction";
-            xyDiagram1.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.Title.Text = "% de certainement";
-            xyDiagram1.AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            this.chLoyaltyModel.Diagram = xyDiagram1;
-            this.chLoyaltyModel.Location = new System.Drawing.Point(3, 269);
-            this.chLoyaltyModel.Name = "chLoyaltyModel";
-            series1.ArgumentDataMember = "noteSatisfaction";
-            series1.ColorDataMember = "id";
-            series1.CrosshairLabelPattern = "Satisfaction: {A}\n% de certainement: {V}";
-            series1.LegendText = "% De certainement";
-            series1.Name = "serieLoyaute";
-            this.chLoyaltyModel.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1};
-            this.chLoyaltyModel.Size = new System.Drawing.Size(1021, 257);
-            this.chLoyaltyModel.TabIndex = 5;
-            // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.chLoyaltyModel;
@@ -205,15 +216,17 @@
             this.Size = new System.Drawing.Size(1027, 529);
             ((System.ComponentModel.ISupportInitialize)(this.lcPrincipal)).EndInit();
             this.lcPrincipal.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.grLoyaltyModel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chLoyaltyModel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemLoyaltyModelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grLoyaltyModel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repoNbPersonneEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciGrLoyaltyModel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciChLoyaltyModel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chLoyaltyModel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem1)).EndInit();
             this.ResumeLayout(false);

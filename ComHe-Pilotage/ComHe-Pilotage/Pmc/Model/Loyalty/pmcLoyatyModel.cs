@@ -23,6 +23,7 @@
             );
 
             chLoyaltyModel.Series[0].SummaryFunction = "CERTAINEMENT([noteSatisfaction])";
+            chLoyaltyModel.Series[1].SummaryFunction = "CERTAINEMENT([noteSatisfaction])";
         }
 
         protected override void gererChangementFicheCourante() {
