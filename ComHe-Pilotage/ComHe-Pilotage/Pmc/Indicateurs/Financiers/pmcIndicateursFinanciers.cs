@@ -92,11 +92,13 @@ namespace ComHe_Pilotage {
         }
 
         private void txtCa_EditValueChanged(object sender, EventArgs e) {
+            this.fiche.indicateursFinanciers.croissanceCA.ca = Convert.ToDouble(txtCa.EditValue);
             this.fiche.indicateursFinanciers.performanceActivite.ca = Convert.ToDouble(txtCa.EditValue);
             this.fiche.indicateursFinanciers.mesureReductionCout.ca = Convert.ToDouble(txtCa.EditValue);
             this.fiche.indicateursFinanciers.evaluationCabinet.ca = Convert.ToDouble(txtCa.EditValue);
             txtCaReduc.EditValue = this.fiche.indicateursFinanciers.mesureReductionCout.ca;
             txtCaPerf.EditValue = this.fiche.indicateursFinanciers.performanceActivite.ca;
+            this.fiche = fiche;
         }
     }
 }

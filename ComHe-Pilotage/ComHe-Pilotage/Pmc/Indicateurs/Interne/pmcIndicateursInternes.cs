@@ -43,6 +43,7 @@ namespace ComHe_Pilotage.Pmc.Indicateurs.Interne {
                 if (this.fiche.indicateursInternes.tauxSatisfaction == null) {
                     this.fiche.indicateursInternes.tauxSatisfaction = new TauxSatisfaction();
                 }
+                this.fiche.indicateursInternes.tauxRemonteesReclamation.nbReclamation = this.fiche.reclamations.Count;
                 gererDataSourceTextEdit();
             }
         }
@@ -59,15 +60,25 @@ namespace ComHe_Pilotage.Pmc.Indicateurs.Interne {
         }
         private void gererDataSourceTextEditRetard() {
             txtRetardNbDossierRetard.DataBindings.Clear();
-            txtRetardNbDossierTotal.DataBindings.Clear();
-            txtRetardRatio.DataBindings.Clear();
             txtRetardNbDossierRetard.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxRetardDepotDossier, "nbDossierRetard", true);
+            txtRetardNbDossierTotal.DataBindings.Clear();
             txtRetardNbDossierTotal.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxRetardDepotDossier, "nbDossier", true);
+            txtRetardRatio.DataBindings.Clear();
             txtRetardRatio.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxRetardDepotDossier, "NbDossierRetardMoyen", true);
         }
         private void gererDataSourceTextEditDefaillanceCabinet() {
             txtDefaillanceCabinetNbDossiersTransmis.DataBindings.Clear();
+            txtDefaillanceCabinetNbDossiersTransmisAvant.DataBindings.Clear();
+            txtDefaillanceCabinetNbDossiersTransmisAvantAvant.DataBindings.Clear();
+            txtDefaillanceCabinetPrejudice.DataBindings.Clear();
+            txtDefaillanceCabinetPrejudiceAvant.DataBindings.Clear();
+            txtDefaillanceCabinetPrejudiceAvantAvant.DataBindings.Clear();
             txtDefaillanceCabinetNbDossiersTransmis.DataBindings.Add("EditValue", this.fiche.indicateursInternes.defaillanceCabinet, "nbDossierTransmis", true);
+            txtDefaillanceCabinetNbDossiersTransmisAvant.DataBindings.Add("EditValue", this.fiche.indicateursInternes.defaillanceCabinet, "nbDossierTransmisAvant", true);
+            txtDefaillanceCabinetNbDossiersTransmisAvantAvant.DataBindings.Add("EditValue", this.fiche.indicateursInternes.defaillanceCabinet, "nbDossierTransmisAvantAvant", true);
+            txtDefaillanceCabinetPrejudice.DataBindings.Add("EditValue", this.fiche.indicateursInternes.defaillanceCabinet, "montantPrejudice", true);
+            txtDefaillanceCabinetPrejudiceAvant.DataBindings.Add("EditValue", this.fiche.indicateursInternes.defaillanceCabinet, "montantPrejudiceAvant", true);
+            txtDefaillanceCabinetPrejudiceAvantAvant.DataBindings.Add("EditValue", this.fiche.indicateursInternes.defaillanceCabinet, "montantPrejudiceAvantAvant", true);
         }
         private void gererDataSourceTextEditDefaillanceRedressement() {
             txtDefaillanceNbDossiersRedressement.DataBindings.Clear();
@@ -78,11 +89,15 @@ namespace ComHe_Pilotage.Pmc.Indicateurs.Interne {
             txtDefaillanceRatio.DataBindings.Add("EditValue", this.fiche.indicateursInternes.defaillanceControleFiscal, "ratio", true);
         }
         private void gererDataSourceTextEditRentable() {
+            txtRentableNbDossierTotal.DataBindings.Clear();
             txtDossierNonRentableRatio.DataBindings.Clear();
             txtRentableNbDossierInf.DataBindings.Clear();
-            txtRentableNbDossierTotal.DataBindings.Clear();
+            txtRentableNbDossierInfBudget.DataBindings.Clear();
+            txtDossierNonRentableRatioBudget.DataBindings.Clear();
             txtDossierNonRentableRatio.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxDossiersNonRentables, "ratio", true);
             txtRentableNbDossierInf.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxDossiersNonRentables, "nbDossiersInf", true);
+            txtDossierNonRentableRatioBudget.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxDossiersNonRentables, "ratioBudget", true);
+            txtRentableNbDossierInfBudget.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxDossiersNonRentables, "nbDossiersInfBudget", true);
             txtRentableNbDossierTotal.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxDossiersNonRentables, "nbDossiers", true);
         }
         private void gererDataSourceTextEditNbDossier() {
@@ -123,10 +138,12 @@ namespace ComHe_Pilotage.Pmc.Indicateurs.Interne {
             this.fiche.indicateursInternes.tauxDossiersNonRentables.nbDossiers = Convert.ToInt32(txtRetardNbDossierTotal.EditValue);
             this.fiche.indicateursInternes.tauxRemonteesReclamation.nbDossier = Convert.ToInt32(txtRetardNbDossierTotal.EditValue);
             this.fiche.indicateursInternes.reductionTempsProduction.nbDossier = Convert.ToInt32(txtRetardNbDossierTotal.EditValue);
+            this.fiche.indicateursInternes.tauxRetardDepotDossier.nbDossier = Convert.ToInt32(txtRetardNbDossierTotal.EditValue);
             txtNbDossierNbDossier.EditValue = Convert.ToInt32(txtRetardNbDossierTotal.EditValue);
             txtRemonteNbDossierTotal.EditValue = Convert.ToInt32(txtRetardNbDossierTotal.EditValue);
             txtRentableNbDossierTotal.EditValue = Convert.ToInt32(txtRetardNbDossierTotal.EditValue);
             txtReducNbDossierTotal.EditValue = Convert.ToInt32(txtRetardNbDossierTotal.EditValue);
+            this.fiche = fiche;
         }
     }
 }

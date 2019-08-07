@@ -44,6 +44,11 @@
 		<indicateursInternes>
 			<defaillanceCabinet>
 				<nbDossierTransmis>50</nbDossierTransmis>
+				<nbDossierTransmisAvant>65</nbDossierTransmisAvant>
+				<nbDossierTransmisAvantAvant>80</nbDossierTransmisAvantAvant>
+				<montantPrejudice>1000</montantPrejudice>
+				<montantPrejudiceAvant>2000</montantPrejudiceAvant>
+				<montantPrejudiceAvantAvant>3000</montantPrejudiceAvantAvant>
 			</defaillanceCabinet>
 			<defaillanceControleFiscal>
 				<nbDossierRedressement>150</nbDossierRedressement>

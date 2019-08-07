@@ -85,7 +85,7 @@
             xyDiagram1.AxisX.Title.Text = "Echelle de satisfaction";
             xyDiagram1.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.Title.Text = "% de certainement";
+            xyDiagram1.AxisY.Title.Text = "% De clients fidèles";
             xyDiagram1.AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
             this.chLoyaltyModel.Diagram = xyDiagram1;
@@ -94,12 +94,12 @@
             series1.ArgumentDataMember = "noteSatisfaction";
             series1.ColorDataMember = "id";
             series1.CrosshairLabelPattern = "Satisfaction: {A}\n% de certainement: {V}";
-            series1.LegendText = "% De certainement";
+            series1.LegendText = "% De clients fidèles";
             series1.Name = "serieLoyaute";
             series2.ArgumentDataMember = "noteSatisfaction";
             series2.ColorDataMember = "id";
             series2.CrosshairLabelPattern = "Satisfaction: {A}\n% de certainement: {V}";
-            series2.LegendText = "% De certainement";
+            series2.LegendText = "% De clients fidèles";
             series2.Name = "serieDroiteLoyaute";
             series2.View = lineSeriesView1;
             this.chLoyaltyModel.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
