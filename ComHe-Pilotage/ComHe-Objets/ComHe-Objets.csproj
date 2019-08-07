@@ -42,6 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Indicateurs\Apprentissages\Amarc.cs" />
+    <Compile Include="Indicateurs\Apprentissages\CAInsatisfactionRecupere.cs" />
+    <Compile Include="Indicateurs\Apprentissages\Defaillance.cs" />
+    <Compile Include="Indicateurs\Apprentissages\IndicateursFormations.cs" />
+    <Compile Include="Indicateurs\Apprentissages\Innovation.cs" />
+    <Compile Include="Indicateurs\Apprentissages\SuiviFormation.cs" />
     <Compile Include="Indicateurs\Client\IndicateursClient.cs" />
     <Compile Include="Indicateurs\Client\TauxClientsInsatisfaits.cs" />
     <Compile Include="Indicateurs\Client\TauxDeRecommandation.cs" />
@@ -77,9 +83,7 @@
     <Compile Include="CSV\Segment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Indicateurs\Apprentissages\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -72,6 +72,26 @@
 				<nbClientsTotal>26</nbClientsTotal>
 			</tauxSatisfaction>
 		</indicateursInternes>
+		<indicateursFormations>
+			<amarc>
+				<nbNonRepondant>20</nbNonRepondant>
+				<nbMailsSondes>100</nbMailsSondes>
+			</amarc>
+			<caInsatisfactionRecuperee>
+				<nbClientsInsatisfaitsConserves>20</nbClientsInsatisfaitsConserves>
+				<nbClientsInsatisfaitsDetectes>100</nbClientsInsatisfaitsDetectes>
+			</caInsatisfactionRecuperee>
+			<defaillance>
+				<nbReclamationNonRemontees>50</nbReclamationNonRemontees>
+			</defaillance>
+			<innovation>
+				<nbInitiativesCollaborateurs>12</nbInitiativesCollaborateurs>
+			</innovation>
+			<suiviFormation>
+				<nbFormationSuivi>119</nbFormationSuivi>
+				<budget>10000</budget>
+			</suiviFormation>
+		</indicateursFormations>
 		<nom>Fiche 1</nom>
 		<segments>
 			<Segment>
@@ -348,98 +368,82 @@
 		</attibutsDeSatisfaction>
 		<complaintModel>
 			<ItemComplaintModel>
-				<id>aa99e0b6-a2ce-4145-80a6-bb785e5d04c8</id>
+				<id>e4c69b1b-79f1-4e60-8d21-a74eaf2968e7</id>
 				<nom>lvl1</nom>
 				<idParent>00000000-0000-0000-0000-000000000000</idParent>
-				<libelle>Problème avec XXX</libelle>
+				<libelle>100 clients insatisfaits</libelle>
 				<valeur>100</valeur>
 				<valeurModifiable>false</valeurModifiable>
 			</ItemComplaintModel>
 			<ItemComplaintModel>
-				<id>87db272a-1463-459e-acd3-16564b4f1754</id>
+				<id>579cf607-e519-48dc-a163-ba34f21f8f50</id>
 				<nom>lvl11</nom>
-				<idParent>aa99e0b6-a2ce-4145-80a6-bb785e5d04c8</idParent>
-				<libelle>Non</libelle>
+				<idParent>e4c69b1b-79f1-4e60-8d21-a74eaf2968e7</idParent>
+				<libelle>Nombre de plaignant</libelle>
 				<valeur>0</valeur>
 				<valeurModifiable>true</valeurModifiable>
 			</ItemComplaintModel>
 			<ItemComplaintModel>
-				<id>0abfab3f-09fc-4f82-aec7-6d75a35eb4c4</id>
-				<nom>lvl12</nom>
-				<idParent>aa99e0b6-a2ce-4145-80a6-bb785e5d04c8</idParent>
-				<libelle>Oui</libelle>
+				<id>41fd9870-8468-4345-ac17-eb30f1d39069</id>
+				<nom>lvl111</nom>
+				<idParent>579cf607-e519-48dc-a163-ba34f21f8f50</idParent>
+				<libelle>Se plaignent</libelle>
 				<valeur>0</valeur>
 				<valeurModifiable>true</valeurModifiable>
 			</ItemComplaintModel>
 			<ItemComplaintModel>
-				<id>5f7a0009-a60a-4eda-bd19-d4d525c9e9ad</id>
-				<nom>lvl221</nom>
-				<idParent>0abfab3f-09fc-4f82-aec7-6d75a35eb4c4</idParent>
-				<libelle>Réclamation du client</libelle>
-				<valeur>100</valeur>
-				<valeurModifiable>false</valeurModifiable>
-			</ItemComplaintModel>
-			<ItemComplaintModel>
-				<id>8a4c3a3b-abe5-4de1-a3d3-fe794c2c9e96</id>
-				<nom>lvl2211</nom>
-				<idParent>5f7a0009-a60a-4eda-bd19-d4d525c9e9ad</idParent>
-				<libelle>Non</libelle>
+				<id>92dce666-924e-4400-bb45-73430ea62cb2</id>
+				<nom>lvl112</nom>
+				<idParent>579cf607-e519-48dc-a163-ba34f21f8f50</idParent>
+				<libelle>Ne ne plaignent pas</libelle>
 				<valeur>0</valeur>
 				<valeurModifiable>true</valeurModifiable>
 			</ItemComplaintModel>
 			<ItemComplaintModel>
-				<id>f43bd83d-87f9-413c-be33-0c86079d756c</id>
-				<nom>lvl2212</nom>
-				<idParent>5f7a0009-a60a-4eda-bd19-d4d525c9e9ad</idParent>
-				<libelle>Oui</libelle>
+				<id>f27f6d8e-9ad0-4d8a-8d77-143bbffe1deb</id>
+				<nom>lvl1111</nom>
+				<idParent>41fd9870-8468-4345-ac17-eb30f1d39069</idParent>
+				<libelle>Cas réglés</libelle>
 				<valeur>0</valeur>
 				<valeurModifiable>true</valeurModifiable>
 			</ItemComplaintModel>
 			<ItemComplaintModel>
-				<id>ba5f0c9c-4311-483a-b5e5-63bd8c22b000</id>
-				<nom>lvl22121</nom>
-				<idParent>f43bd83d-87f9-413c-be33-0c86079d756c</idParent>
-				<libelle>Réponse de XXX</libelle>
-				<valeur>100</valeur>
-				<valeurModifiable>false</valeurModifiable>
-			</ItemComplaintModel>
-			<ItemComplaintModel>
-				<id>a7a65562-6e6a-4909-b17e-bce3bf60217f</id>
-				<nom>lvl221211</nom>
-				<idParent>ba5f0c9c-4311-483a-b5e5-63bd8c22b000</idParent>
-				<libelle>Non</libelle>
+				<id>be2fc41d-3554-4680-b4da-a7c1c2e7663f</id>
+				<nom>lvl1112</nom>
+				<idParent>41fd9870-8468-4345-ac17-eb30f1d39069</idParent>
+				<libelle>Cas non réglés</libelle>
 				<valeur>0</valeur>
 				<valeurModifiable>true</valeurModifiable>
 			</ItemComplaintModel>
 			<ItemComplaintModel>
-				<id>c129fca9-28de-4ce1-94ef-e8ceb044a4e3</id>
-				<nom>lvl221212</nom>
-				<idParent>ba5f0c9c-4311-483a-b5e5-63bd8c22b000</idParent>
-				<libelle>Oui</libelle>
+				<id>eda38fa6-bd77-4a15-bc63-2e93b37ae84c</id>
+				<nom>lvl1121</nom>
+				<idParent>92dce666-924e-4400-bb45-73430ea62cb2</idParent>
+				<libelle>Cas réglés</libelle>
 				<valeur>0</valeur>
 				<valeurModifiable>true</valeurModifiable>
 			</ItemComplaintModel>
 			<ItemComplaintModel>
-				<id>24df9404-b760-4f4c-b3f6-f0ad3e8e4d1a</id>
-				<nom>lvl2212121</nom>
-				<idParent>c129fca9-28de-4ce1-94ef-e8ceb044a4e3</idParent>
-				<libelle>Satisfaction vis à vis de cette réclamation</libelle>
-				<valeur>100</valeur>
-				<valeurModifiable>false</valeurModifiable>
-			</ItemComplaintModel>
-			<ItemComplaintModel>
-				<id>a7f2a67b-8fc4-4d26-b0c1-77f36777cb3b</id>
-				<nom>lvl22121211</nom>
-				<idParent>24df9404-b760-4f4c-b3f6-f0ad3e8e4d1a</idParent>
-				<libelle>Non</libelle>
+				<id>e0ec667b-8f0b-4123-a732-fb3f0ab08921</id>
+				<nom>lvl1122</nom>
+				<idParent>92dce666-924e-4400-bb45-73430ea62cb2</idParent>
+				<libelle>Cas non réglés</libelle>
 				<valeur>0</valeur>
 				<valeurModifiable>true</valeurModifiable>
 			</ItemComplaintModel>
 			<ItemComplaintModel>
-				<id>9b2a3357-91d8-4eea-a1c7-011af3e1e2f5</id>
-				<nom>lvl22121212</nom>
-				<idParent>24df9404-b760-4f4c-b3f6-f0ad3e8e4d1a</idParent>
-				<libelle>Oui</libelle>
+				<id>ba290f65-838f-4560-8c12-694b2cbf8e8f</id>
+				<nom>lvl11121</nom>
+				<idParent>be2fc41d-3554-4680-b4da-a7c1c2e7663f</idParent>
+				<libelle>Clients perdus</libelle>
+				<valeur>0</valeur>
+				<valeurModifiable>true</valeurModifiable>
+			</ItemComplaintModel>
+			<ItemComplaintModel>
+				<id>f4d0ea22-913c-4df9-861e-5ee282e0c8ac</id>
+				<nom>lvl11122</nom>
+				<idParent>be2fc41d-3554-4680-b4da-a7c1c2e7663f</idParent>
+				<libelle>Clients récupérés</libelle>
 				<valeur>0</valeur>
 				<valeurModifiable>true</valeurModifiable>
 			</ItemComplaintModel>

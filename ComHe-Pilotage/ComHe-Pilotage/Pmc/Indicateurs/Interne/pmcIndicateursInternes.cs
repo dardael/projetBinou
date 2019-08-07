@@ -58,39 +58,61 @@ namespace ComHe_Pilotage.Pmc.Indicateurs.Interne {
             this.Refresh();
         }
         private void gererDataSourceTextEditRetard() {
+            txtRetardNbDossierRetard.DataBindings.Clear();
+            txtRetardNbDossierTotal.DataBindings.Clear();
+            txtRetardRatio.DataBindings.Clear();
             txtRetardNbDossierRetard.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxRetardDepotDossier, "nbDossierRetard", true);
             txtRetardNbDossierTotal.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxRetardDepotDossier, "nbDossier", true);
             txtRetardRatio.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxRetardDepotDossier, "NbDossierRetardMoyen", true);
         }
         private void gererDataSourceTextEditDefaillanceCabinet() {
+            txtDefaillanceCabinetNbDossiersTransmis.DataBindings.Clear();
             txtDefaillanceCabinetNbDossiersTransmis.DataBindings.Add("EditValue", this.fiche.indicateursInternes.defaillanceCabinet, "nbDossierTransmis", true);
         }
         private void gererDataSourceTextEditDefaillanceRedressement() {
+            txtDefaillanceNbDossiersRedressement.DataBindings.Clear();
+            txtDefaillanceNbOuverture.DataBindings.Clear();
+            txtDefaillanceRatio.DataBindings.Clear();
             txtDefaillanceNbDossiersRedressement.DataBindings.Add("EditValue", this.fiche.indicateursInternes.defaillanceControleFiscal, "nbDossierRedressement", true);
             txtDefaillanceNbOuverture.DataBindings.Add("EditValue", this.fiche.indicateursInternes.defaillanceControleFiscal, "nbDossierOuverture", true);
             txtDefaillanceRatio.DataBindings.Add("EditValue", this.fiche.indicateursInternes.defaillanceControleFiscal, "ratio", true);
         }
         private void gererDataSourceTextEditRentable() {
+            txtDossierNonRentableRatio.DataBindings.Clear();
+            txtRentableNbDossierInf.DataBindings.Clear();
+            txtRentableNbDossierTotal.DataBindings.Clear();
             txtDossierNonRentableRatio.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxDossiersNonRentables, "ratio", true);
             txtRentableNbDossierInf.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxDossiersNonRentables, "nbDossiersInf", true);
             txtRentableNbDossierTotal.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxDossiersNonRentables, "nbDossiers", true);
         }
         private void gererDataSourceTextEditNbDossier() {
+            txtNbDossierMoyenne.DataBindings.Clear();
+            txtNbDossierNbCollaborateur.DataBindings.Clear();
+            txtNbDossierNbDossier.DataBindings.Clear();
             txtNbDossierMoyenne.DataBindings.Add("EditValue", this.fiche.indicateursInternes.nbDossierParCollaborateur, "moyenne", true);
             txtNbDossierNbCollaborateur.DataBindings.Add("EditValue", this.fiche.indicateursInternes.nbDossierParCollaborateur, "nbCollaborateurs", true);
             txtNbDossierNbDossier.DataBindings.Add("EditValue", this.fiche.indicateursInternes.nbDossierParCollaborateur, "nbDossier", true);
         }
         private void gererDataSourceTextEditReduction() {
+            txtReducMoyen.DataBindings.Clear();
+            txtReducNbDossierTotal.DataBindings.Clear();
+            txtReducNbHeures.DataBindings.Clear();
             txtReducMoyen.DataBindings.Add("EditValue", this.fiche.indicateursInternes.reductionTempsProduction, "nbHeureMoyenneParDossier", true);
             txtReducNbDossierTotal.DataBindings.Add("EditValue", this.fiche.indicateursInternes.reductionTempsProduction, "nbDossier", true);
             txtReducNbHeures.DataBindings.Add("EditValue", this.fiche.indicateursInternes.reductionTempsProduction, "nbHeuresPayees", true);
         }
         private void gererDataSourceTextEditRemonte() {
+            txtRemonteMoyen.DataBindings.Clear();
+            txtRemonteNbDossierTotal.DataBindings.Clear();
+            txtRemonteNbReclamations.DataBindings.Clear();
             txtRemonteMoyen.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxRemonteesReclamation, "nbReclaParDossier", true);
             txtRemonteNbDossierTotal.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxRemonteesReclamation, "nbDossier", true);
             txtRemonteNbReclamations.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxRemonteesReclamation, "nbReclamation", true);
         }
         private void gererDataSourceTextEditSatisfaction() {
+            txtSatisfactionNbClientsSatisfait.DataBindings.Clear();
+            txtSatisfactionNbClientsTotal.DataBindings.Clear();
+            txtSatisfactionRatio.DataBindings.Clear();
             txtSatisfactionNbClientsSatisfait.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxSatisfaction, "nbClientsSatisfaits", true);
             txtSatisfactionNbClientsTotal.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxSatisfaction, "nbClientsTotal", true);
             txtSatisfactionRatio.DataBindings.Add("EditValue", this.fiche.indicateursInternes.tauxSatisfaction, "ratio", true);

@@ -49,22 +49,33 @@ namespace ComHe_Pilotage.Pmc.Indicateurs.Clients {
             this.Refresh();
         }
         private void gererDataSourceTextEditTxRecommandation() {
+            txtNbRecommandation.DataBindings.Clear();
+            txtNbProspect.DataBindings.Clear();
+            txtRatioRecommandation.DataBindings.Clear();
             txtNbRecommandation.DataBindings.Add("EditValue", this.fiche.indicateursClient.tauxDeRecommandation, "nbRecommandations", true);
             txtNbProspect.DataBindings.Add("EditValue", this.fiche.indicateursClient.tauxDeRecommandation, "nbProspect", true);
             txtRatioRecommandation.DataBindings.Add("EditValue", this.fiche.indicateursClient.tauxDeRecommandation, "ratio", true);
         }
         private void gererDataSourceTextEditTauxRetentionClient() {
+            txtNbClientFinPeriode.DataBindings.Clear();
+            txtNbNvxClients.DataBindings.Clear();
+            txtVariationRetentionClient.DataBindings.Clear();
             txtNbClientFinPeriode.DataBindings.Add("EditValue", this.fiche.indicateursClient.tauxDeRetentionClient, "nbClientsFinPeriode", true);
             txtNbNvxClients.DataBindings.Add("EditValue", this.fiche.indicateursClient.tauxDeRetentionClient, "nbNvxClients", true);
             txtVariationRetentionClient.DataBindings.Add("EditValue", this.fiche.indicateursClient.tauxDeRetentionClient, "variation", true);
         }
         private void gererDataSourceTextEditCoutsGestion() {
+            txtMontantIndemnitesFinancieres.DataBindings.Clear();
             txtMontantIndemnitesFinancieres.DataBindings.Add("EditValue", this.fiche.indicateursClient, "montantIndemnitesFinancieres", true);
         }
         private void gererDataSourceTextEditNbDossiersOuverts() {
+            txtNbReclamations.DataBindings.Clear();
             txtNbReclamations.DataBindings.Add("EditValue", this.fiche.indicateursClient, "nbReclamations", true);
         }
         private void gererDataSourceTextEditTauxClientsInsatisfaits() {
+            txtNbClientsInsatisfaits.DataBindings.Clear();
+            txtNbClientsTotal.DataBindings.Clear();
+            txtRatioClientsInsatisfaits.DataBindings.Clear();
             txtNbClientsInsatisfaits.DataBindings.Add("EditValue", this.fiche.indicateursClient.tauxClientsInsatisfaits, "nbClientsInsatisfaits", true);
             txtNbClientsTotal.DataBindings.Add("EditValue", this.fiche.indicateursClient.tauxClientsInsatisfaits, "nbClientsTotal", true);
             txtRatioClientsInsatisfaits.DataBindings.Add("EditValue", this.fiche.indicateursClient.tauxClientsInsatisfaits, "ratio", true);
