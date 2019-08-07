@@ -16,7 +16,7 @@ namespace ComHe_Pilotage {
             trComplaintModel.RootValue = Guid.Empty;
         }
         protected override void gererChangementFicheCourante() {
-            if (fiche != null && (fiche.complaintModel == null || fiche.complaintModel.Count != 10)) {
+            if (fiche != null && (fiche.complaintModel == null || fiche.complaintModel.Count != 16)) {
                 fiche.complaintModel = ComplaintModelBO.getTreeComplaintModel();
             }
             populateTreeList();
