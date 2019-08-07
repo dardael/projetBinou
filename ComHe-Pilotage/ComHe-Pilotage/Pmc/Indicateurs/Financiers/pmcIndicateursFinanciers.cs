@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComHe_Objets;
+using DevExpress.XtraCharts;
 
 namespace ComHe_Pilotage {
     public partial class pmcIndicateursFinanciers : pmcParentUtilisantFicheDeTravail {
@@ -36,6 +37,9 @@ namespace ComHe_Pilotage {
                 }
                 this.fiche.indicateursFinanciers.evaluationCabinet.ca = this.fiche.indicateursFinanciers.croissanceCA.ca;
                 gererDataSourceTextEdit();
+                populateMissionChart();
+                populateCaBudgetChart();
+                populateCaChart();
             }
         }
         private void gererDataSourceTextEdit() {
@@ -99,6 +103,63 @@ namespace ComHe_Pilotage {
             txtCaReduc.EditValue = this.fiche.indicateursFinanciers.mesureReductionCout.ca;
             txtCaPerf.EditValue = this.fiche.indicateursFinanciers.performanceActivite.ca;
             this.fiche = fiche;
+        }
+        private void populateMissionChart() {
+            chMission.Series.Clear();
+            Series s = new Series("Missions", ViewType.Pie);
+            s.Points.Add(new SeriesPoint("Missions traditionnelles", this.fiche.indicateursFinanciers.mesureAchatsCroises.caExeptionnel));
+            s.Points.Add(new SeriesPoint("Missions exceptionnelles", this.fiche.indicateursFinanciers.mesureAchatsCroises.caTrad));
+            chMission.Series.Add(s);
+        }
+        private void populateCaChart() {
+            chCa.Series.Clear();
+            Series s = new Series("Evolution du CA", ViewType.Bar);
+            s.Points.Add(new SeriesPoint("CA N-2", this.fiche.indicateursFinanciers.croissanceCA.caAvantAvant));
+            s.Points.Add(new SeriesPoint("CA N-1", this.fiche.indicateursFinanciers.croissanceCA.caAvant));
+            s.Points.Add(new SeriesPoint("CA N", fiche.indicateursFinanciers.croissanceCA.ca));
+            chCa.Series.Add(s);
+        }
+        private void populateCaBudgetChart() {
+            chCaBudget.Series.Clear();
+            Series s = new Series("CA réalisé / Budget", ViewType.Bar);
+            s.Points.Add(new SeriesPoint("Budget", this.fiche.indicateursFinanciers.performanceActivite.budget));
+            s.Points.Add(new SeriesPoint("CA", this.fiche.indicateursFinanciers.performanceActivite.ca));
+            chCaBudget.Series.Add(s);
+        }
+
+        private void txtCaExep_EditValueChanged(object sender, EventArgs e) {
+            this.fiche.indicateursFinanciers.mesureAchatsCroises.caExeptionnel = Convert.ToDouble(txtCaExep.EditValue);
+            populateMissionChart();
+        }
+
+        private void txtCaTrad_EditValueChanged(object sender, EventArgs e) {
+            this.fiche.indicateursFinanciers.mesureAchatsCroises.caTrad = Convert.ToDouble(txtCaTrad.EditValue);
+            populateMissionChart();
+        }
+
+        private void chMission_CustomDrawSeriesPoint(object sender, CustomDrawSeriesPointEventArgs e) {
+            e.LegendText = e.SeriesPoint.Argument;
+        }
+        private void chCa_CustomDrawSeriesPoint(object sender, CustomDrawSeriesPointEventArgs e) {
+            e.LegendText = e.SeriesPoint.Argument;
+        }
+        private void chCaBudget_CustomDrawSeriesPoint(object sender, CustomDrawSeriesPointEventArgs e) {
+            e.LegendText = e.SeriesPoint.Argument;
+        }
+
+        private void txtBudget_EditValueChanged(object sender, EventArgs e) {
+            this.fiche.indicateursFinanciers.performanceActivite.budget = Convert.ToDouble(txtBudget.EditValue);
+            populateCaBudgetChart();
+        }
+
+        private void txtCaAvant_EditValueChanged(object sender, EventArgs e) {
+            this.fiche.indicateursFinanciers.croissanceCA.caAvant = Convert.ToDouble(txtCaAvant.EditValue);
+            populateCaChart();
+        }
+
+        private void txtCaAvantAvant_EditValueChanged(object sender, EventArgs e) {
+            this.fiche.indicateursFinanciers.croissanceCA.caAvantAvant = Convert.ToDouble(txtCaAvantAvant.EditValue);
+            populateCaChart();
         }
     }
 }

@@ -5,7 +5,7 @@
 			<croissanceCA>
 				<ca>12000</ca>
 				<caAvant>11000</caAvant>
-				<caAvantAvant>0</caAvantAvant>
+				<caAvantAvant>10000</caAvantAvant>
 			</croissanceCA>
 			<performanceActivite>
 				<ca>12000</ca>
@@ -65,10 +65,11 @@
 			<tauxDossiersNonRentables>
 				<nbDossiers>10001</nbDossiers>
 				<nbDossiersInf>250</nbDossiersInf>
+				<nbDossiersInfBudget>0</nbDossiersInfBudget>
 			</tauxDossiersNonRentables>
 			<tauxRemonteesReclamation>
 				<nbDossier>10001</nbDossier>
-				<nbReclamation>100</nbReclamation>
+				<nbReclamation>4</nbReclamation>
 			</tauxRemonteesReclamation>
 			<tauxRetardDepotDossier>
 				<nbDossier>10001</nbDossier>
@@ -303,7 +304,7 @@
 				<collaborateur>Fabien</collaborateur>
 				<client>Dupont</client>
 				<numeroClient>1</numeroClient>
-				<service>COMPTA</service>
+				<service>COMPTABILITE</service>
 				<motifInsatisfaction>Raleur</motifInsatisfaction>
 				<actionCorrective>NON PREVUE</actionCorrective>
 				<motifLegitime>NON</motifLegitime>
@@ -339,7 +340,7 @@
 				<collaborateur>Fabien</collaborateur>
 				<client>George</client>
 				<numeroClient>4</numeroClient>
-				<service>COMPTA</service>
+				<service>COMPTABILITE</service>
 				<motifInsatisfaction>Relou</motifInsatisfaction>
 				<actionCorrective>AVOIR</actionCorrective>
 				<motifLegitime>OUI</motifLegitime>

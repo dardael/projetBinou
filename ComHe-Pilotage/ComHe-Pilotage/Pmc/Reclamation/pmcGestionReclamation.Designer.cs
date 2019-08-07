@@ -270,7 +270,7 @@
             this.repoCBService.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repoCBService.Items.AddRange(new object[] {
-            "COMPTA",
+            "COMPTABILITE",
             "JURIDIQUE",
             "SOCIALE"});
             this.repoCBService.Name = "repoCBService";

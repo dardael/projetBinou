@@ -102,6 +102,9 @@
             series1.ColorDataMember = "id";
             series1.Name = "Satisfaction";
             series1.ValueDataMembersSerializable = "impactSurSatisfaction";
+            stackedBarSeriesView1.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(187)))), ((int)(((byte)(89)))));
+            stackedBarSeriesView1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(187)))), ((int)(((byte)(89)))));
+            stackedBarSeriesView1.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Solid;
             series1.View = stackedBarSeriesView1;
             series2.ArgumentDataMember = "id";
             series2.ColorDataMember = "id";
