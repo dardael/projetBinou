@@ -55,10 +55,10 @@
             this.colactions = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repoBtSupprimer = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.lcgGrReclamations = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciGrReclamation = new DevExpress.XtraLayout.LayoutControlItem();
             this.lciBtAjouterReclamation = new DevExpress.XtraLayout.LayoutControlItem();
             this.lciEmptySpaceDroiteBtAjouterReclamation = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciChReclamation = new DevExpress.XtraLayout.LayoutControlItem();
             this.splitterItem1 = new DevExpress.XtraLayout.SplitterItem();
             ((System.ComponentModel.ISupportInitialize)(this.lcPrincipal)).BeginInit();
             this.lcPrincipal.SuspendLayout();
@@ -77,10 +77,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.repoCbAvoirNonPrevu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repoBtSupprimer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lcgGrReclamations)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciGrReclamation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciBtAjouterReclamation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciEmptySpaceDroiteBtAjouterReclamation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciChReclamation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -367,10 +367,10 @@
             this.lcgGrReclamations.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.lcgGrReclamations.GroupBordersVisible = false;
             this.lcgGrReclamations.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem1,
+            this.lciGrReclamation,
             this.lciBtAjouterReclamation,
             this.lciEmptySpaceDroiteBtAjouterReclamation,
-            this.layoutControlItem2,
+            this.lciChReclamation,
             this.splitterItem1});
             this.lcgGrReclamations.Location = new System.Drawing.Point(0, 0);
             this.lcgGrReclamations.Name = "Root";
@@ -378,14 +378,14 @@
             this.lcgGrReclamations.Size = new System.Drawing.Size(1010, 430);
             this.lcgGrReclamations.TextVisible = false;
             // 
-            // layoutControlItem1
+            // lciGrReclamation
             // 
-            this.layoutControlItem1.Control = this.grReclamation;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 33);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(984, 158);
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem1.TextVisible = false;
+            this.lciGrReclamation.Control = this.grReclamation;
+            this.lciGrReclamation.Location = new System.Drawing.Point(0, 33);
+            this.lciGrReclamation.Name = "lciGrReclamation";
+            this.lciGrReclamation.Size = new System.Drawing.Size(984, 158);
+            this.lciGrReclamation.TextSize = new System.Drawing.Size(0, 0);
+            this.lciGrReclamation.TextVisible = false;
             // 
             // lciBtAjouterReclamation
             // 
@@ -409,14 +409,14 @@
             this.lciEmptySpaceDroiteBtAjouterReclamation.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.lciEmptySpaceDroiteBtAjouterReclamation.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // layoutControlItem2
+            // lciChReclamation
             // 
-            this.layoutControlItem2.Control = this.chReclamations;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 197);
-            this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(984, 207);
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem2.TextVisible = false;
+            this.lciChReclamation.Control = this.chReclamations;
+            this.lciChReclamation.Location = new System.Drawing.Point(0, 197);
+            this.lciChReclamation.Name = "lciChReclamation";
+            this.lciChReclamation.Size = new System.Drawing.Size(984, 207);
+            this.lciChReclamation.TextSize = new System.Drawing.Size(0, 0);
+            this.lciChReclamation.TextVisible = false;
             // 
             // splitterItem1
             // 
@@ -449,10 +449,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.repoCbAvoirNonPrevu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repoBtSupprimer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lcgGrReclamations)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciGrReclamation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciBtAjouterReclamation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciEmptySpaceDroiteBtAjouterReclamation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciChReclamation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem1)).EndInit();
             this.ResumeLayout(false);
 
@@ -464,7 +464,7 @@
         private DevExpress.XtraLayout.LayoutControlGroup lcgGrReclamations;
         private DevExpress.XtraGrid.GridControl grReclamation;
         private DevExpress.XtraGrid.Views.Grid.GridView gvReclamations;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private DevExpress.XtraLayout.LayoutControlItem lciGrReclamation;
         private System.Windows.Forms.BindingSource reclamationBindingSource;
         private DevExpress.XtraGrid.Columns.GridColumn coldateLitige;
         private DevExpress.XtraGrid.Columns.GridColumn colcollaborateur;
@@ -486,7 +486,7 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repoCBService;
         private DevExpress.XtraGrid.Columns.GridColumn colannee;
         private DevExpress.XtraCharts.ChartControl chReclamations;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
+        private DevExpress.XtraLayout.LayoutControlItem lciChReclamation;
         private DevExpress.XtraLayout.SplitterItem splitterItem1;
     }
 }

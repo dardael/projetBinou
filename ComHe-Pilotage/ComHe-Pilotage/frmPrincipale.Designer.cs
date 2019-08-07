@@ -116,9 +116,16 @@
             this.pmcApprentissage1 = new ComHe_Pilotage.pmcApprentissage();
             this.lcgFormations = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.tabPgIndicateursApprentissage = new DevExpress.XtraTab.XtraTabPage();
+            this.lcIndicateursApprentissage = new DevExpress.XtraLayout.LayoutControl();
+            this.pmcIndicateursApprentissage1 = new ComHe_Pilotage.Pmc.Indicateurs.Apprentissage.pmcIndicateursApprentissage();
+            this.layoutControlGroup13 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
             this.lcgApprentissage = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabSynthese = new DevExpress.XtraTab.XtraTabPage();
+            this.lcTableauDeBord = new DevExpress.XtraLayout.LayoutControl();
+            this.lcgTableauDeBord = new DevExpress.XtraLayout.LayoutControlGroup();
             this.pnPrincipal = new DevExpress.XtraLayout.LayoutControl();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.lciTabPanePrincipal = new DevExpress.XtraLayout.LayoutControlItem();
@@ -129,11 +136,8 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.tabPgIndicateursApprentissage = new DevExpress.XtraTab.XtraTabPage();
-            this.lcIndicateursApprentissage = new DevExpress.XtraLayout.LayoutControl();
-            this.layoutControlGroup13 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.pmcIndicateursApprentissage1 = new ComHe_Pilotage.Pmc.Indicateurs.Apprentissage.pmcIndicateursApprentissage();
-            this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.pmcTableauDeBord1 = new ComHe_Pilotage.Pmc.TableauDeBord.pmcTableauDeBord();
+            this.layoutControlItem21 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabPrincipal)).BeginInit();
@@ -234,18 +238,23 @@
             this.lcFormations.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lcgFormations)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lcgApprentissage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pnPrincipal)).BeginInit();
-            this.pnPrincipal.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lciTabPanePrincipal)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             this.tabPgIndicateursApprentissage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lcIndicateursApprentissage)).BeginInit();
             this.lcIndicateursApprentissage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcgApprentissage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
+            this.tabSynthese.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lcTableauDeBord)).BeginInit();
+            this.lcTableauDeBord.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lcgTableauDeBord)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pnPrincipal)).BeginInit();
+            this.pnPrincipal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciTabPanePrincipal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem21)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControlItem4
@@ -1130,6 +1139,53 @@
             this.layoutControlItem13.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem13.TextVisible = false;
             // 
+            // tabPgIndicateursApprentissage
+            // 
+            this.tabPgIndicateursApprentissage.Controls.Add(this.lcIndicateursApprentissage);
+            this.tabPgIndicateursApprentissage.Name = "tabPgIndicateursApprentissage";
+            this.tabPgIndicateursApprentissage.Size = new System.Drawing.Size(1212, 562);
+            this.tabPgIndicateursApprentissage.Text = "Indicateurs apprentissage";
+            // 
+            // lcIndicateursApprentissage
+            // 
+            this.lcIndicateursApprentissage.Controls.Add(this.pmcIndicateursApprentissage1);
+            this.lcIndicateursApprentissage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lcIndicateursApprentissage.Location = new System.Drawing.Point(0, 0);
+            this.lcIndicateursApprentissage.Name = "lcIndicateursApprentissage";
+            this.lcIndicateursApprentissage.Root = this.layoutControlGroup13;
+            this.lcIndicateursApprentissage.Size = new System.Drawing.Size(1212, 562);
+            this.lcIndicateursApprentissage.TabIndex = 0;
+            this.lcIndicateursApprentissage.Text = "layoutControl2";
+            // 
+            // pmcIndicateursApprentissage1
+            // 
+            this.pmcIndicateursApprentissage1.Location = new System.Drawing.Point(3, 3);
+            this.pmcIndicateursApprentissage1.Name = "pmcIndicateursApprentissage1";
+            this.pmcIndicateursApprentissage1.Size = new System.Drawing.Size(1206, 556);
+            this.pmcIndicateursApprentissage1.TabIndex = 4;
+            // 
+            // layoutControlGroup13
+            // 
+            this.layoutControlGroup13.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup13.GroupBordersVisible = false;
+            this.layoutControlGroup13.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem20});
+            this.layoutControlGroup13.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup13.Name = "layoutControlGroup13";
+            this.layoutControlGroup13.OptionsItemText.TextToControlDistance = 4;
+            this.layoutControlGroup13.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
+            this.layoutControlGroup13.Size = new System.Drawing.Size(1212, 562);
+            this.layoutControlGroup13.TextVisible = false;
+            // 
+            // layoutControlItem20
+            // 
+            this.layoutControlItem20.Control = this.pmcIndicateursApprentissage1;
+            this.layoutControlItem20.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem20.Name = "layoutControlItem20";
+            this.layoutControlItem20.Size = new System.Drawing.Size(1212, 562);
+            this.layoutControlItem20.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem20.TextVisible = false;
+            // 
             // lcgApprentissage
             // 
             this.lcgApprentissage.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -1153,9 +1209,34 @@
             // 
             // tabSynthese
             // 
+            this.tabSynthese.Controls.Add(this.lcTableauDeBord);
             this.tabSynthese.Name = "tabSynthese";
             this.tabSynthese.Size = new System.Drawing.Size(1251, 628);
             this.tabSynthese.Text = "Synthèse tableau de bord prospectif";
+            // 
+            // lcTableauDeBord
+            // 
+            this.lcTableauDeBord.Controls.Add(this.pmcTableauDeBord1);
+            this.lcTableauDeBord.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lcTableauDeBord.Location = new System.Drawing.Point(0, 0);
+            this.lcTableauDeBord.Name = "lcTableauDeBord";
+            this.lcTableauDeBord.Root = this.lcgTableauDeBord;
+            this.lcTableauDeBord.Size = new System.Drawing.Size(1251, 628);
+            this.lcTableauDeBord.TabIndex = 0;
+            this.lcTableauDeBord.Text = "layoutControl2";
+            // 
+            // lcgTableauDeBord
+            // 
+            this.lcgTableauDeBord.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.lcgTableauDeBord.GroupBordersVisible = false;
+            this.lcgTableauDeBord.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem21});
+            this.lcgTableauDeBord.Location = new System.Drawing.Point(0, 0);
+            this.lcgTableauDeBord.Name = "lcgTableauDeBord";
+            this.lcgTableauDeBord.OptionsItemText.TextToControlDistance = 4;
+            this.lcgTableauDeBord.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
+            this.lcgTableauDeBord.Size = new System.Drawing.Size(1251, 628);
+            this.lcgTableauDeBord.TextVisible = false;
             // 
             // pnPrincipal
             // 
@@ -1252,52 +1333,21 @@
             this.barDockControlRight.Location = new System.Drawing.Point(1290, 29);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 744);
             // 
-            // tabPgIndicateursApprentissage
+            // pmcTableauDeBord1
             // 
-            this.tabPgIndicateursApprentissage.Controls.Add(this.lcIndicateursApprentissage);
-            this.tabPgIndicateursApprentissage.Name = "tabPgIndicateursApprentissage";
-            this.tabPgIndicateursApprentissage.Size = new System.Drawing.Size(1212, 562);
-            this.tabPgIndicateursApprentissage.Text = "Indicateurs apprentissage";
+            this.pmcTableauDeBord1.Location = new System.Drawing.Point(3, 3);
+            this.pmcTableauDeBord1.Name = "pmcTableauDeBord1";
+            this.pmcTableauDeBord1.Size = new System.Drawing.Size(1245, 622);
+            this.pmcTableauDeBord1.TabIndex = 4;
             // 
-            // lcIndicateursApprentissage
+            // layoutControlItem21
             // 
-            this.lcIndicateursApprentissage.Controls.Add(this.pmcIndicateursApprentissage1);
-            this.lcIndicateursApprentissage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lcIndicateursApprentissage.Location = new System.Drawing.Point(0, 0);
-            this.lcIndicateursApprentissage.Name = "lcIndicateursApprentissage";
-            this.lcIndicateursApprentissage.Root = this.layoutControlGroup13;
-            this.lcIndicateursApprentissage.Size = new System.Drawing.Size(1212, 562);
-            this.lcIndicateursApprentissage.TabIndex = 0;
-            this.lcIndicateursApprentissage.Text = "layoutControl2";
-            // 
-            // layoutControlGroup13
-            // 
-            this.layoutControlGroup13.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup13.GroupBordersVisible = false;
-            this.layoutControlGroup13.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem20});
-            this.layoutControlGroup13.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup13.Name = "layoutControlGroup13";
-            this.layoutControlGroup13.OptionsItemText.TextToControlDistance = 4;
-            this.layoutControlGroup13.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup13.Size = new System.Drawing.Size(1212, 562);
-            this.layoutControlGroup13.TextVisible = false;
-            // 
-            // pmcIndicateursApprentissage1
-            // 
-            this.pmcIndicateursApprentissage1.Location = new System.Drawing.Point(3, 3);
-            this.pmcIndicateursApprentissage1.Name = "pmcIndicateursApprentissage1";
-            this.pmcIndicateursApprentissage1.Size = new System.Drawing.Size(1206, 556);
-            this.pmcIndicateursApprentissage1.TabIndex = 4;
-            // 
-            // layoutControlItem20
-            // 
-            this.layoutControlItem20.Control = this.pmcIndicateursApprentissage1;
-            this.layoutControlItem20.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem20.Name = "layoutControlItem20";
-            this.layoutControlItem20.Size = new System.Drawing.Size(1212, 562);
-            this.layoutControlItem20.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem20.TextVisible = false;
+            this.layoutControlItem21.Control = this.pmcTableauDeBord1;
+            this.layoutControlItem21.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem21.Name = "layoutControlItem21";
+            this.layoutControlItem21.Size = new System.Drawing.Size(1251, 628);
+            this.layoutControlItem21.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem21.TextVisible = false;
             // 
             // frmPrincipale
             // 
@@ -1415,18 +1465,23 @@
             this.lcFormations.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lcgFormations)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lcgApprentissage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pnPrincipal)).EndInit();
-            this.pnPrincipal.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lciTabPanePrincipal)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             this.tabPgIndicateursApprentissage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lcIndicateursApprentissage)).EndInit();
             this.lcIndicateursApprentissage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcgApprentissage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
+            this.tabSynthese.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lcTableauDeBord)).EndInit();
+            this.lcTableauDeBord.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lcgTableauDeBord)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pnPrincipal)).EndInit();
+            this.pnPrincipal.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciTabPanePrincipal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem21)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1542,6 +1597,10 @@
         private Pmc.Indicateurs.Apprentissage.pmcIndicateursApprentissage pmcIndicateursApprentissage1;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup13;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem20;
+        private DevExpress.XtraLayout.LayoutControl lcTableauDeBord;
+        private DevExpress.XtraLayout.LayoutControlGroup lcgTableauDeBord;
+        private Pmc.TableauDeBord.pmcTableauDeBord pmcTableauDeBord1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem21;
     }
 }
 

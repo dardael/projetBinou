@@ -131,5 +131,10 @@ namespace ComHe_Pilotage {
         private void grNotation_CellValueChanged(object sender, CellValueChangedEventArgs e) {
             populateGauge();
         }
+        public void PassageModeTableauDebord() {
+            lciGrQuestion.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+            lciLblQuestion.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+
+        }
     }
 }

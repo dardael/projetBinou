@@ -117,5 +117,14 @@ namespace ComHe_Pilotage {
             this.rowWACC.Visible = this.chkModeExpert.Checked;
             this.rowWACCMoyen.Visible = this.chkModeExpert.Checked;
         }
+
+        public void PassageModeTableauDebord() {
+            lciBtAjouterSegment.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+            lciChkModeExpert.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+            lciGrMoyenneSegmentation.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+            lciGrSegmentation.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+            splitterItem1.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+            splitterItem2.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+        }
     }
 }

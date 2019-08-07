@@ -168,6 +168,12 @@
     <Compile Include="Pmc\CSV\pmcSegmentation.Designer.cs">
       <DependentUpon>pmcSegmentation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pmc\TableauDeBord\pmcTableauDeBord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pmc\TableauDeBord\pmcTableauDeBord.Designer.cs">
+      <DependentUpon>pmcTableauDeBord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Pmc\FicheDeTravail\pmcCreationFicheTravail.cs">
@@ -233,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pmc\CSV\pmcSegmentation.resx">
       <DependentUpon>pmcSegmentation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pmc\TableauDeBord\pmcTableauDeBord.resx">
+      <DependentUpon>pmcTableauDeBord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

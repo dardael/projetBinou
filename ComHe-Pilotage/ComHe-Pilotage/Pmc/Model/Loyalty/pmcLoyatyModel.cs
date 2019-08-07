@@ -54,6 +54,7 @@
             fiche.loyaltyModel.Where(delegate (ItemLoyaltyModel x) {
                 return x.noteLoyaute == e.RowFieldIndex && x.noteSatisfaction == e.ColumnIndex;
             }).First().nbPersonnes = (Decimal.ToInt32((decimal)e.Editor.EditValue));
+            this.fiche = fiche;
             grLoyaltyModel.RefreshData();
         }
 
@@ -77,6 +78,10 @@
             return new SeriesPoint[] {
         new SeriesPoint(argument, valeur)
     };
+        }
+        public void PassageModeTableauDebord() {
+            lciGrLoyaltyModel.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+            splitterItem1.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
         }
     }
 }

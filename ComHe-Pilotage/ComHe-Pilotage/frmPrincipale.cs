@@ -46,6 +46,7 @@ namespace ComHe_Pilotage {
             pmcIndicateursClients1.fiche = fiche;
             pmcIndicateursInternes1.fiche = fiche;
             pmcIndicateursApprentissage1.fiche = fiche;
+            pmcTableauDeBord1.fiche = fiche;
         }
 
 

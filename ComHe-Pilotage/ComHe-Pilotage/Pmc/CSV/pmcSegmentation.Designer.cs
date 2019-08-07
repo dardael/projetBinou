@@ -73,12 +73,12 @@
             this.rowClvSansTxMArge = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.chSegmentation = new DevExpress.XtraCharts.ChartControl();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciChSegmentation = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciGrSegmentation = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciBtAjouterSegment = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciGrMoyenneSegmentation = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciLblConclusion = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciChkModeExpert = new DevExpress.XtraLayout.LayoutControlItem();
             this.splitterItem1 = new DevExpress.XtraLayout.SplitterItem();
             this.splitterItem2 = new DevExpress.XtraLayout.SplitterItem();
             this.editorRow1 = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
@@ -101,12 +101,12 @@
             ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciChSegmentation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciGrSegmentation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciBtAjouterSegment)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciGrMoyenneSegmentation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciLblConclusion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciChkModeExpert)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).BeginInit();
             this.SuspendLayout();
@@ -531,12 +531,12 @@
             this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.layoutControlGroup1.GroupBordersVisible = false;
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem2,
-            this.layoutControlItem3,
-            this.layoutControlItem1,
-            this.layoutControlItem4,
-            this.layoutControlItem5,
-            this.layoutControlItem6,
+            this.lciChSegmentation,
+            this.lciGrSegmentation,
+            this.lciBtAjouterSegment,
+            this.lciGrMoyenneSegmentation,
+            this.lciLblConclusion,
+            this.lciChkModeExpert,
             this.splitterItem1,
             this.splitterItem2});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
@@ -545,68 +545,68 @@
             this.layoutControlGroup1.Size = new System.Drawing.Size(823, 565);
             this.layoutControlGroup1.TextVisible = false;
             // 
-            // layoutControlItem2
+            // lciChSegmentation
             // 
-            this.layoutControlItem2.Control = this.chSegmentation;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 217);
-            this.layoutControlItem2.MinSize = new System.Drawing.Size(1, 1);
-            this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(797, 300);
-            this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem2.TextVisible = false;
+            this.lciChSegmentation.Control = this.chSegmentation;
+            this.lciChSegmentation.Location = new System.Drawing.Point(0, 217);
+            this.lciChSegmentation.MinSize = new System.Drawing.Size(1, 1);
+            this.lciChSegmentation.Name = "lciChSegmentation";
+            this.lciChSegmentation.Size = new System.Drawing.Size(797, 300);
+            this.lciChSegmentation.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.lciChSegmentation.TextSize = new System.Drawing.Size(0, 0);
+            this.lciChSegmentation.TextVisible = false;
             // 
-            // layoutControlItem3
+            // lciGrSegmentation
             // 
-            this.layoutControlItem3.Control = this.grdSegmentation;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 33);
-            this.layoutControlItem3.MinSize = new System.Drawing.Size(1, 1);
-            this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(679, 178);
-            this.layoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem3.TextVisible = false;
+            this.lciGrSegmentation.Control = this.grdSegmentation;
+            this.lciGrSegmentation.Location = new System.Drawing.Point(0, 33);
+            this.lciGrSegmentation.MinSize = new System.Drawing.Size(1, 1);
+            this.lciGrSegmentation.Name = "lciGrSegmentation";
+            this.lciGrSegmentation.Size = new System.Drawing.Size(679, 178);
+            this.lciGrSegmentation.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.lciGrSegmentation.TextSize = new System.Drawing.Size(0, 0);
+            this.lciGrSegmentation.TextVisible = false;
             // 
-            // layoutControlItem1
+            // lciBtAjouterSegment
             // 
-            this.layoutControlItem1.Control = this.btAjouterSegment;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem1.MaxSize = new System.Drawing.Size(147, 33);
-            this.layoutControlItem1.MinSize = new System.Drawing.Size(147, 33);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(147, 33);
-            this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem1.TextVisible = false;
+            this.lciBtAjouterSegment.Control = this.btAjouterSegment;
+            this.lciBtAjouterSegment.Location = new System.Drawing.Point(0, 0);
+            this.lciBtAjouterSegment.MaxSize = new System.Drawing.Size(147, 33);
+            this.lciBtAjouterSegment.MinSize = new System.Drawing.Size(147, 33);
+            this.lciBtAjouterSegment.Name = "lciBtAjouterSegment";
+            this.lciBtAjouterSegment.Size = new System.Drawing.Size(147, 33);
+            this.lciBtAjouterSegment.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.lciBtAjouterSegment.TextSize = new System.Drawing.Size(0, 0);
+            this.lciBtAjouterSegment.TextVisible = false;
             // 
-            // layoutControlItem4
+            // lciGrMoyenneSegmentation
             // 
-            this.layoutControlItem4.Control = this.grdSegmentationMoyen;
-            this.layoutControlItem4.Location = new System.Drawing.Point(685, 33);
-            this.layoutControlItem4.MinSize = new System.Drawing.Size(1, 1);
-            this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(112, 178);
-            this.layoutControlItem4.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem4.TextVisible = false;
+            this.lciGrMoyenneSegmentation.Control = this.grdSegmentationMoyen;
+            this.lciGrMoyenneSegmentation.Location = new System.Drawing.Point(685, 33);
+            this.lciGrMoyenneSegmentation.MinSize = new System.Drawing.Size(1, 1);
+            this.lciGrMoyenneSegmentation.Name = "lciGrMoyenneSegmentation";
+            this.lciGrMoyenneSegmentation.Size = new System.Drawing.Size(112, 178);
+            this.lciGrMoyenneSegmentation.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.lciGrMoyenneSegmentation.TextSize = new System.Drawing.Size(0, 0);
+            this.lciGrMoyenneSegmentation.TextVisible = false;
             // 
-            // layoutControlItem5
+            // lciLblConclusion
             // 
-            this.layoutControlItem5.Control = this.lbConclusion;
-            this.layoutControlItem5.Location = new System.Drawing.Point(0, 517);
-            this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(797, 22);
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem5.TextVisible = false;
+            this.lciLblConclusion.Control = this.lbConclusion;
+            this.lciLblConclusion.Location = new System.Drawing.Point(0, 517);
+            this.lciLblConclusion.Name = "lciLblConclusion";
+            this.lciLblConclusion.Size = new System.Drawing.Size(797, 22);
+            this.lciLblConclusion.TextSize = new System.Drawing.Size(0, 0);
+            this.lciLblConclusion.TextVisible = false;
             // 
-            // layoutControlItem6
+            // lciChkModeExpert
             // 
-            this.layoutControlItem6.Control = this.chkModeExpert;
-            this.layoutControlItem6.Location = new System.Drawing.Point(147, 0);
-            this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(650, 33);
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem6.TextVisible = false;
+            this.lciChkModeExpert.Control = this.chkModeExpert;
+            this.lciChkModeExpert.Location = new System.Drawing.Point(147, 0);
+            this.lciChkModeExpert.Name = "lciChkModeExpert";
+            this.lciChkModeExpert.Size = new System.Drawing.Size(650, 33);
+            this.lciChkModeExpert.TextSize = new System.Drawing.Size(0, 0);
+            this.lciChkModeExpert.TextVisible = false;
             // 
             // splitterItem1
             // 
@@ -675,12 +675,12 @@
             ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chSegmentation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciChSegmentation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciGrSegmentation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciBtAjouterSegment)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciGrMoyenneSegmentation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciLblConclusion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciChkModeExpert)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).EndInit();
             this.ResumeLayout(false);
@@ -694,9 +694,9 @@
         private DevExpress.XtraVerticalGrid.VGridControl grdSegmentation;
         private DevExpress.XtraCharts.ChartControl chSegmentation;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private DevExpress.XtraLayout.LayoutControlItem lciChSegmentation;
+        private DevExpress.XtraLayout.LayoutControlItem lciGrSegmentation;
+        private DevExpress.XtraLayout.LayoutControlItem lciBtAjouterSegment;
         private System.Windows.Forms.BindingSource segmentBindingSource;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btGrSegmentationSuppr;
         private DevExpress.XtraVerticalGrid.Rows.EditorRow rowNom;
@@ -720,16 +720,16 @@
         private DevExpress.XtraVerticalGrid.Rows.EditorRow rowTxMultiplicateurMoyen;
         private DevExpress.XtraVerticalGrid.Rows.EditorRow rowClvMoyen;
         private DevExpress.XtraVerticalGrid.Rows.EditorRow rowIdMoyen;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
+        private DevExpress.XtraLayout.LayoutControlItem lciGrMoyenneSegmentation;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit1;
         private DevExpress.XtraVerticalGrid.Rows.EditorRow rowClvSansTxMargeMoyen;
         private DevExpress.XtraVerticalGrid.Rows.EditorRow rowClvSansTxMArge;
         private DevExpress.XtraVerticalGrid.Rows.EditorRow editorRow1;
         private DevExpress.XtraVerticalGrid.Rows.EditorRow editorRow2;
         private DevExpress.XtraEditors.LabelControl lbConclusion;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
+        private DevExpress.XtraLayout.LayoutControlItem lciLblConclusion;
         private DevExpress.XtraEditors.CheckEdit chkModeExpert;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
+        private DevExpress.XtraLayout.LayoutControlItem lciChkModeExpert;
         private DevExpress.XtraVerticalGrid.Rows.EditorRow rowCaRecommandation;
         private DevExpress.XtraVerticalGrid.Rows.EditorRow rowAchatsCroises;
         private DevExpress.XtraVerticalGrid.Rows.EditorRow rowCASensibilitePricePremium;

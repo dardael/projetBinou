@@ -85,5 +85,23 @@ namespace ComHe_Pilotage {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.colcollaborateur, DevExpress.Data.ColumnSortOrder.Ascending)});
             grReclamation.Refresh();
         }
+        public void PassageModeTableauDebord() {
+            btAjouterReclamation.Hide();
+            lciBtAjouterReclamation.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+            lciEmptySpaceDroiteBtAjouterReclamation.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+            colannee.Visible = false;
+            colactions.Visible = false;
+            coldateLitige.Visible = false;
+            colactionCorrective.Visible = false;
+            colmotifInsatisfaction.Visible = false;
+            colmotifLegitime.Visible = false;
+            colnumeroClient.Visible = false;
+            colservice.Visible = false;
+            colverbatimClient.OptionsColumn.ReadOnly = true;
+            colmontantIndemnite.OptionsColumn.ReadOnly = true;
+            colclient.OptionsColumn.ReadOnly = true;
+            colcollaborateur.OptionsColumn.ReadOnly = true;
+            grReclamation.Refresh();
+        }
     }
 }

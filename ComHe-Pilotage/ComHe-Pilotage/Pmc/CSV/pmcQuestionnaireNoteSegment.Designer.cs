@@ -59,9 +59,9 @@
             this.colscoreNPS = new DevExpress.XtraGrid.Columns.GridColumn();
             this.lbQuestion = new DevExpress.XtraEditors.LabelControl();
             this.lcGridNotation = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciLblQuestion = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciGrQuestion = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciGcQuestion = new DevExpress.XtraLayout.LayoutControlItem();
             this.ficheTravailBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pnPrincipal)).BeginInit();
             this.pnPrincipal.SuspendLayout();
@@ -74,9 +74,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.segmentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grNotation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lcGridNotation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciLblQuestion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciGrQuestion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciGcQuestion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ficheTravailBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -456,41 +456,41 @@
             this.lcGridNotation.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.lcGridNotation.GroupBordersVisible = false;
             this.lcGridNotation.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem1,
-            this.layoutControlItem3,
-            this.layoutControlItem2});
+            this.lciLblQuestion,
+            this.lciGrQuestion,
+            this.lciGcQuestion});
             this.lcGridNotation.Location = new System.Drawing.Point(0, 0);
             this.lcGridNotation.Name = "lcGridNotation";
             this.lcGridNotation.OptionsItemText.TextToControlDistance = 4;
             this.lcGridNotation.Size = new System.Drawing.Size(957, 376);
             this.lcGridNotation.TextVisible = false;
             // 
-            // layoutControlItem1
+            // lciLblQuestion
             // 
-            this.layoutControlItem1.Control = this.lbQuestion;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(931, 22);
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem1.TextVisible = false;
+            this.lciLblQuestion.Control = this.lbQuestion;
+            this.lciLblQuestion.Location = new System.Drawing.Point(0, 0);
+            this.lciLblQuestion.Name = "lciLblQuestion";
+            this.lciLblQuestion.Size = new System.Drawing.Size(931, 22);
+            this.lciLblQuestion.TextSize = new System.Drawing.Size(0, 0);
+            this.lciLblQuestion.TextVisible = false;
             // 
-            // layoutControlItem3
+            // lciGrQuestion
             // 
-            this.layoutControlItem3.Control = this.gridControl1;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 22);
-            this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(931, 152);
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem3.TextVisible = false;
+            this.lciGrQuestion.Control = this.gridControl1;
+            this.lciGrQuestion.Location = new System.Drawing.Point(0, 22);
+            this.lciGrQuestion.Name = "lciGrQuestion";
+            this.lciGrQuestion.Size = new System.Drawing.Size(931, 152);
+            this.lciGrQuestion.TextSize = new System.Drawing.Size(0, 0);
+            this.lciGrQuestion.TextVisible = false;
             // 
-            // layoutControlItem2
+            // lciGcQuestion
             // 
-            this.layoutControlItem2.Control = this.gcQuestionnaire;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 174);
-            this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(931, 176);
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem2.TextVisible = false;
+            this.lciGcQuestion.Control = this.gcQuestionnaire;
+            this.lciGcQuestion.Location = new System.Drawing.Point(0, 174);
+            this.lciGcQuestion.Name = "lciGcQuestion";
+            this.lciGcQuestion.Size = new System.Drawing.Size(931, 176);
+            this.lciGcQuestion.TextSize = new System.Drawing.Size(0, 0);
+            this.lciGcQuestion.TextVisible = false;
             // 
             // ficheTravailBindingSource
             // 
@@ -514,9 +514,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.segmentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grNotation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lcGridNotation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciLblQuestion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciGrQuestion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciGcQuestion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ficheTravailBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -527,7 +527,7 @@
         private DevExpress.XtraLayout.LayoutControl pnPrincipal;
         private DevExpress.XtraLayout.LayoutControlGroup lcGridNotation;
         private DevExpress.XtraEditors.LabelControl lbQuestion;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private DevExpress.XtraLayout.LayoutControlItem lciLblQuestion;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView grNotation;
         private DevExpress.XtraGrid.Columns.GridColumn colnom;
@@ -549,9 +549,9 @@
         private DevExpress.XtraGrid.Columns.GridColumn colnbPersonne4CES;
         private DevExpress.XtraGrid.Columns.GridColumn colnbPersonne5CES;
         private System.Windows.Forms.BindingSource segmentBindingSource;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
+        private DevExpress.XtraLayout.LayoutControlItem lciGrQuestion;
         private DevExpress.XtraGauges.Win.GaugeControl gcQuestionnaire;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
+        private DevExpress.XtraLayout.LayoutControlItem lciGcQuestion;
         private System.Windows.Forms.BindingSource ficheTravailBindingSource;
         private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge1;
         private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleBackgroundLayerComponent arcScaleBackgroundLayerComponent1;
