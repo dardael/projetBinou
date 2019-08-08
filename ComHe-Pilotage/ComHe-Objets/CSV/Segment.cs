@@ -16,6 +16,11 @@ namespace ComHe_Objets {
         public double caSensibilitePricePremium { get; set; }
         public double caWACC { get; set; }
         public double coutAcquisition { get; set; }
+        public double totalCaModeExpert {
+            get {
+                return caFromLM - coutAcquisition;
+            }
+        }
         public String totalQuatreChemins {
             get { return (noteBoucheAOreille + notePricePremium + noteReductionCouts + noteAugmentationDepensesAchatsCroises) + "/40"; }
         }
@@ -70,6 +75,7 @@ namespace ComHe_Objets {
                 return _clvSansTxMarge;
             }
         }
+        public Boolean modeExpert { get; set; }
 
         public double _caFromLM;
         public double _txMarge;
