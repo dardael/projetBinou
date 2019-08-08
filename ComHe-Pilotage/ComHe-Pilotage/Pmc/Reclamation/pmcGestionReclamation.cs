@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComHe_Objets;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
+using ComHe_Objets.Reclamations;
 
 namespace ComHe_Pilotage {
     public partial class pmcGestionReclamation : pmcParentUtilisantFicheDeTravail {

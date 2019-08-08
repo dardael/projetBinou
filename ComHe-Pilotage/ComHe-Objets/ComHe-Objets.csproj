@@ -69,19 +69,23 @@
     <Compile Include="Model\Complaint\ItemComplaintModel.cs" />
     <Compile Include="Model\Satisfaction\DimensionSatisfactionModel.cs" />
     <Compile Include="Formation\FormationCollaborateur.cs" />
-    <Compile Include="Reclamation\enumActionCorrective.cs" />
+    <Compile Include="NotesQuestion\Note.cs" />
+    <Compile Include="NotesQuestion\QuestionNotee.cs" />
+    <Compile Include="NotesQuestion\Valeur.cs" />
+    <Compile Include="Reclamations\enumActionCorrective.cs" />
     <Compile Include="CSV\enumTxActualisation.cs" />
     <Compile Include="CSV\enumTxMultiplicateur.cs" />
     <Compile Include="CSV\enumTxRetention.cs" />
-    <Compile Include="Reclamation\enumMotifInsatisfactionLegitime.cs" />
+    <Compile Include="Reclamations\enumMotifInsatisfactionLegitime.cs" />
     <Compile Include="CSV\enumTypeSegment.cs" />
     <Compile Include="FicheTravail.cs" />
     <Compile Include="Indicateurs\Financiers\MesureAchatsCroises.cs" />
     <Compile Include="Indicateurs\Financiers\MesureReductionCout.cs" />
     <Compile Include="Indicateurs\Financiers\PerformanceActivite.cs" />
-    <Compile Include="Reclamation\Reclamation.cs" />
+    <Compile Include="Reclamations\Reclamation.cs" />
     <Compile Include="CSV\Segment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reclamations\ReclamationParService.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

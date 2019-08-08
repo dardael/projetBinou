@@ -47,8 +47,19 @@ namespace ComHe_Pilotage {
             pmcIndicateursInternes1.fiche = fiche;
             pmcIndicateursApprentissage1.fiche = fiche;
             pmcTableauDeBord1.fiche = fiche;
+            pmcIncidenceService1.fiche = fiche;
+            fiche.initialiserToutesQuestions();
+            pmcEnsemblePrestation.questionNotee = fiche.ensemblePrestation;
+            pmcQualitePrestation.questionNotee = fiche.qualitePrestation;
+            pmcHonoraires.questionNotee = fiche.montantHonoraires;
+            pmcMesureEngagmentClient.questionNotee = fiche.engagementClient;
+            pmcMesureEcouteClient.questionNotee = fiche.mesureEcoute;
+            pmcMesureSelling.questionNotee = fiche.mesureSelling;
+            pmcMesureQualite.questionNotee = fiche.mesureSelling;
         }
 
-
+        private void tabPgIncidenceParService_Enter(object sender, EventArgs e) {
+            pmcIncidenceService1.fiche = this.fiche;
+        }
     }
 }

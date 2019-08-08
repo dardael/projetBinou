@@ -31,7 +31,7 @@ namespace ComHe_Pilotage.Pmc.Indicateurs.Clients {
                     this.fiche.indicateursClient.tauxDeRetentionClient = new TauxDeRetentionClient();
                 }
                 this.fiche.indicateursClient.nbReclamations = fiche.reclamations != null ? fiche.reclamations.Count : 0;
-                this.fiche.indicateursClient.montantIndemnitesFinancieres = fiche.reclamations != null ? fiche.reclamations.Sum(delegate (Reclamation x) { return x.montantIndemnite; }) : 0;
+                this.fiche.indicateursClient.montantIndemnitesFinancieres = fiche.reclamations != null ? fiche.reclamations.Sum(delegate (ComHe_Objets.Reclamations.Reclamation x) { return x.montantIndemnite; }) : 0;
                 this.fiche.indicateursClient.tauxClientsInsatisfaits.nbClientsInsatisfaits = fiche.loyaltyModel.Sum(delegate (ItemLoyaltyModel x) {
                     return x != null && x.noteSatisfaction < 8 ? x.nbPersonnes : 0;
                 });

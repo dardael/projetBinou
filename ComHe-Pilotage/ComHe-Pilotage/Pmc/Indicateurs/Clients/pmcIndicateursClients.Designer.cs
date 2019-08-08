@@ -122,7 +122,7 @@
             // 
             // chInsatisfaits
             // 
-            this.chInsatisfaits.Location = new System.Drawing.Point(496, 511);
+            this.chInsatisfaits.Location = new System.Drawing.Point(496, 506);
             this.chInsatisfaits.Name = "chInsatisfaits";
             this.chInsatisfaits.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
             this.chInsatisfaits.Size = new System.Drawing.Size(463, 20);
@@ -131,7 +131,7 @@
             // 
             // chRecommandation
             // 
-            this.chRecommandation.Location = new System.Drawing.Point(16, 511);
+            this.chRecommandation.Location = new System.Drawing.Point(16, 506);
             this.chRecommandation.Name = "chRecommandation";
             this.chRecommandation.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
             this.chRecommandation.Size = new System.Drawing.Size(468, 20);
@@ -140,7 +140,7 @@
             // 
             // txtRatioRecommandation
             // 
-            this.txtRatioRecommandation.Location = new System.Drawing.Point(338, 82);
+            this.txtRatioRecommandation.Location = new System.Drawing.Point(338, 77);
             this.txtRatioRecommandation.Name = "txtRatioRecommandation";
             this.txtRatioRecommandation.Properties.ReadOnly = true;
             this.txtRatioRecommandation.Size = new System.Drawing.Size(147, 22);
@@ -149,7 +149,7 @@
             // 
             // txtRatioClientsInsatisfaits
             // 
-            this.txtRatioClientsInsatisfaits.Location = new System.Drawing.Point(338, 462);
+            this.txtRatioClientsInsatisfaits.Location = new System.Drawing.Point(338, 457);
             this.txtRatioClientsInsatisfaits.Name = "txtRatioClientsInsatisfaits";
             this.txtRatioClientsInsatisfaits.Properties.ReadOnly = true;
             this.txtRatioClientsInsatisfaits.Size = new System.Drawing.Size(147, 22);
@@ -158,7 +158,7 @@
             // 
             // txtVariationRetentionClient
             // 
-            this.txtVariationRetentionClient.Location = new System.Drawing.Point(338, 191);
+            this.txtVariationRetentionClient.Location = new System.Drawing.Point(338, 186);
             this.txtVariationRetentionClient.Name = "txtVariationRetentionClient";
             this.txtVariationRetentionClient.Properties.ReadOnly = true;
             this.txtVariationRetentionClient.Size = new System.Drawing.Size(147, 22);
@@ -167,7 +167,7 @@
             // 
             // txtNbClientsTotal
             // 
-            this.txtNbClientsTotal.Location = new System.Drawing.Point(798, 434);
+            this.txtNbClientsTotal.Location = new System.Drawing.Point(798, 429);
             this.txtNbClientsTotal.Name = "txtNbClientsTotal";
             this.txtNbClientsTotal.Properties.ReadOnly = true;
             this.txtNbClientsTotal.Size = new System.Drawing.Size(146, 22);
@@ -177,7 +177,7 @@
             // 
             // txtNbNvxClients
             // 
-            this.txtNbNvxClients.Location = new System.Drawing.Point(798, 163);
+            this.txtNbNvxClients.Location = new System.Drawing.Point(798, 158);
             this.txtNbNvxClients.Name = "txtNbNvxClients";
             this.txtNbNvxClients.Size = new System.Drawing.Size(146, 22);
             this.txtNbNvxClients.StyleController = this.lcPrincipal;
@@ -185,7 +185,7 @@
             // 
             // txtNbProspect
             // 
-            this.txtNbProspect.Location = new System.Drawing.Point(798, 54);
+            this.txtNbProspect.Location = new System.Drawing.Point(798, 49);
             this.txtNbProspect.Name = "txtNbProspect";
             this.txtNbProspect.Size = new System.Drawing.Size(146, 22);
             this.txtNbProspect.StyleController = this.lcPrincipal;
@@ -194,7 +194,7 @@
             // 
             // txtNbClientsInsatisfaits
             // 
-            this.txtNbClientsInsatisfaits.Location = new System.Drawing.Point(338, 434);
+            this.txtNbClientsInsatisfaits.Location = new System.Drawing.Point(338, 429);
             this.txtNbClientsInsatisfaits.Name = "txtNbClientsInsatisfaits";
             this.txtNbClientsInsatisfaits.Properties.ReadOnly = true;
             this.txtNbClientsInsatisfaits.Size = new System.Drawing.Size(147, 22);
@@ -204,7 +204,7 @@
             // 
             // txtNbReclamations
             // 
-            this.txtNbReclamations.Location = new System.Drawing.Point(338, 353);
+            this.txtNbReclamations.Location = new System.Drawing.Point(338, 348);
             this.txtNbReclamations.Name = "txtNbReclamations";
             this.txtNbReclamations.Properties.ReadOnly = true;
             this.txtNbReclamations.Size = new System.Drawing.Size(606, 22);
@@ -213,7 +213,7 @@
             // 
             // txtMontantIndemnitesFinancieres
             // 
-            this.txtMontantIndemnitesFinancieres.Location = new System.Drawing.Point(338, 272);
+            this.txtMontantIndemnitesFinancieres.Location = new System.Drawing.Point(338, 267);
             this.txtMontantIndemnitesFinancieres.Name = "txtMontantIndemnitesFinancieres";
             this.txtMontantIndemnitesFinancieres.Properties.ReadOnly = true;
             this.txtMontantIndemnitesFinancieres.Size = new System.Drawing.Size(606, 22);
@@ -222,7 +222,7 @@
             // 
             // txtNbClientFinPeriode
             // 
-            this.txtNbClientFinPeriode.Location = new System.Drawing.Point(338, 163);
+            this.txtNbClientFinPeriode.Location = new System.Drawing.Point(338, 158);
             this.txtNbClientFinPeriode.Name = "txtNbClientFinPeriode";
             this.txtNbClientFinPeriode.Size = new System.Drawing.Size(147, 22);
             this.txtNbClientFinPeriode.StyleController = this.lcPrincipal;
@@ -230,7 +230,7 @@
             // 
             // txtNbRecommandation
             // 
-            this.txtNbRecommandation.Location = new System.Drawing.Point(338, 54);
+            this.txtNbRecommandation.Location = new System.Drawing.Point(338, 49);
             this.txtNbRecommandation.Name = "txtNbRecommandation";
             this.txtNbRecommandation.Size = new System.Drawing.Size(147, 22);
             this.txtNbRecommandation.StyleController = this.lcPrincipal;
@@ -251,7 +251,7 @@
             this.layoutControlItem13,
             this.splitterItem1,
             this.splitterItem2});
-            this.lcgPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.lcgPrincipal.Location = new System.Drawing.Point(0, -5);
             this.lcgPrincipal.Name = "Root";
             this.lcgPrincipal.OptionsItemText.TextToControlDistance = 4;
             this.lcgPrincipal.Size = new System.Drawing.Size(975, 547);

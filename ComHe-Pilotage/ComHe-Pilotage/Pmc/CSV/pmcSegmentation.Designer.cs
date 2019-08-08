@@ -24,14 +24,14 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraCharts.XYDiagram xyDiagram3 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series5 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.ColorObjectColorizer colorObjectColorizer3 = new DevExpress.XtraCharts.ColorObjectColorizer();
-            DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView7 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
-            DevExpress.XtraCharts.Series series6 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView8 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
-            DevExpress.XtraCharts.KeyColorColorizer keyColorColorizer3 = new DevExpress.XtraCharts.KeyColorColorizer();
-            DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView9 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
+            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.ColorObjectColorizer colorObjectColorizer1 = new DevExpress.XtraCharts.ColorObjectColorizer();
+            DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView1 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
+            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView2 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
+            DevExpress.XtraCharts.KeyColorColorizer keyColorColorizer1 = new DevExpress.XtraCharts.KeyColorColorizer();
+            DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView3 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
             this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.editorRow1 = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.editorRow2 = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
@@ -41,18 +41,6 @@
             this.chkModeExpert = new DevExpress.XtraEditors.CheckEdit();
             this.lbConclusion = new DevExpress.XtraEditors.LabelControl();
             this.grdSegmentationMoyen = new DevExpress.XtraVerticalGrid.VGridControl();
-            this.btAjouterSegment = new DevExpress.XtraEditors.SimpleButton();
-            this.grdSegmentation = new DevExpress.XtraVerticalGrid.VGridControl();
-            this.chSegmentation = new DevExpress.XtraCharts.ChartControl();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.lciChSegmentation = new DevExpress.XtraLayout.LayoutControlItem();
-            this.lciGrSegmentation = new DevExpress.XtraLayout.LayoutControlItem();
-            this.lciBtAjouterSegment = new DevExpress.XtraLayout.LayoutControlItem();
-            this.lciGrMoyenneSegmentation = new DevExpress.XtraLayout.LayoutControlItem();
-            this.lciLblConclusion = new DevExpress.XtraLayout.LayoutControlItem();
-            this.lciChkModeExpert = new DevExpress.XtraLayout.LayoutControlItem();
-            this.splitterItem1 = new DevExpress.XtraLayout.SplitterItem();
-            this.splitterItem2 = new DevExpress.XtraLayout.SplitterItem();
             this.segmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.rowNomMoyenne = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowTypeSegmentMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
@@ -63,11 +51,14 @@
             this.rowTxMargeMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowTxRetentionMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowTxActualisationMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
-            this.rowMargeMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
+            this.rowcoutAcquisitionMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowTxMultiplicateurMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
+            this.rowMargeMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowClvMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowIdMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowClvSansTxMargeMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
+            this.btAjouterSegment = new DevExpress.XtraEditors.SimpleButton();
+            this.grdSegmentation = new DevExpress.XtraVerticalGrid.VGridControl();
             this.btGrSegmentationSuppr = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.rowNom = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowtypeSegment = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
@@ -78,26 +69,37 @@
             this.rowtxMarge = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowtxRetention = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowtxActualisation = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
-            this.rowmarge = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
-            this.rowtxMultiplicateur = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
-            this.rowclv = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
-            this.rowId = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
-            this.rowClvSansTxMArge = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowcoutAcquisition = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
-            this.rowcoutAcquisitionMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
+            this.rowId = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
+            this.rowtxMultiplicateur = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
+            this.rowmarge = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
+            this.rowclv = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
+            this.rowClvSansTxMArge = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
+            this.chSegmentation = new DevExpress.XtraCharts.ChartControl();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.lciChSegmentation = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciGrSegmentation = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciBtAjouterSegment = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciGrMoyenneSegmentation = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciLblConclusion = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciChkModeExpert = new DevExpress.XtraLayout.LayoutControlItem();
+            this.splitterItem1 = new DevExpress.XtraLayout.SplitterItem();
+            this.splitterItem2 = new DevExpress.XtraLayout.SplitterItem();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnTabPgSegmentation)).BeginInit();
             this.pnTabPgSegmentation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chkModeExpert.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdSegmentationMoyen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.segmentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdSegmentation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btGrSegmentationSuppr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chSegmentation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciChSegmentation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciGrSegmentation)).BeginInit();
@@ -107,8 +109,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.lciChkModeExpert)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.segmentBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btGrSegmentationSuppr)).BeginInit();
             this.SuspendLayout();
             // 
             // repositoryItemButtonEdit1
@@ -222,6 +222,127 @@
             this.grdSegmentationMoyen.Size = new System.Drawing.Size(106, 172);
             this.grdSegmentationMoyen.TabIndex = 8;
             // 
+            // segmentBindingSource
+            // 
+            this.segmentBindingSource.DataSource = typeof(ComHe_Objets.Segment);
+            // 
+            // rowNomMoyenne
+            // 
+            this.rowNomMoyenne.Name = "rowNomMoyenne";
+            this.rowNomMoyenne.Properties.Caption = "Nom";
+            this.rowNomMoyenne.Properties.FieldName = "nom";
+            this.rowNomMoyenne.Properties.ReadOnly = true;
+            this.rowNomMoyenne.Properties.RowEdit = this.repositoryItemButtonEdit1;
+            // 
+            // rowTypeSegmentMoyen
+            // 
+            this.rowTypeSegmentMoyen.Name = "rowTypeSegmentMoyen";
+            this.rowTypeSegmentMoyen.Properties.Caption = "type Segment";
+            this.rowTypeSegmentMoyen.Properties.FieldName = "typeSegment";
+            this.rowTypeSegmentMoyen.Properties.ReadOnly = true;
+            this.rowTypeSegmentMoyen.Visible = false;
+            // 
+            // rowCaFromLMMoyen
+            // 
+            this.rowCaFromLMMoyen.Height = 18;
+            this.rowCaFromLMMoyen.Name = "rowCaFromLMMoyen";
+            this.rowCaFromLMMoyen.Properties.Caption = "CA selon LM";
+            this.rowCaFromLMMoyen.Properties.FieldName = "caFromLM";
+            this.rowCaFromLMMoyen.Properties.ReadOnly = true;
+            // 
+            // rowAchatsCroisesMoyen
+            // 
+            this.rowAchatsCroisesMoyen.Name = "rowAchatsCroisesMoyen";
+            this.rowAchatsCroisesMoyen.Properties.Caption = "Moyennne";
+            this.rowAchatsCroisesMoyen.Properties.FieldName = "caAchatsCroises";
+            this.rowAchatsCroisesMoyen.Properties.ReadOnly = true;
+            this.rowAchatsCroisesMoyen.Visible = false;
+            // 
+            // rowCaSensibilitePricePremiumMoyen
+            // 
+            this.rowCaSensibilitePricePremiumMoyen.Name = "rowCaSensibilitePricePremiumMoyen";
+            this.rowCaSensibilitePricePremiumMoyen.Properties.Caption = "Moyen";
+            this.rowCaSensibilitePricePremiumMoyen.Properties.FieldName = "caSensibilitePricePremium";
+            this.rowCaSensibilitePricePremiumMoyen.Properties.ReadOnly = true;
+            this.rowCaSensibilitePricePremiumMoyen.Visible = false;
+            // 
+            // rowCaRecommandationMoyen
+            // 
+            this.rowCaRecommandationMoyen.Name = "rowCaRecommandationMoyen";
+            this.rowCaRecommandationMoyen.Properties.Caption = "Moyen";
+            this.rowCaRecommandationMoyen.Properties.FieldName = "caRecommendation";
+            this.rowCaRecommandationMoyen.Properties.ReadOnly = true;
+            this.rowCaRecommandationMoyen.Visible = false;
+            // 
+            // rowTxMargeMoyen
+            // 
+            this.rowTxMargeMoyen.Name = "rowTxMargeMoyen";
+            this.rowTxMargeMoyen.Properties.Caption = "Tx de marge retenu";
+            this.rowTxMargeMoyen.Properties.FieldName = "txMarge";
+            this.rowTxMargeMoyen.Properties.ReadOnly = true;
+            // 
+            // rowTxRetentionMoyen
+            // 
+            this.rowTxRetentionMoyen.Appearance.Options.UseTextOptions = true;
+            this.rowTxRetentionMoyen.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.rowTxRetentionMoyen.Name = "rowTxRetentionMoyen";
+            this.rowTxRetentionMoyen.Properties.Caption = "Tx de retention";
+            this.rowTxRetentionMoyen.Properties.FieldName = "txRetention";
+            this.rowTxRetentionMoyen.Properties.ReadOnly = true;
+            // 
+            // rowTxActualisationMoyen
+            // 
+            this.rowTxActualisationMoyen.Appearance.Options.UseTextOptions = true;
+            this.rowTxActualisationMoyen.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.rowTxActualisationMoyen.Name = "rowTxActualisationMoyen";
+            this.rowTxActualisationMoyen.Properties.Caption = "Tx d\'actualisation";
+            this.rowTxActualisationMoyen.Properties.FieldName = "txActualisation";
+            this.rowTxActualisationMoyen.Properties.ReadOnly = true;
+            // 
+            // rowcoutAcquisitionMoyen
+            // 
+            this.rowcoutAcquisitionMoyen.Name = "rowcoutAcquisitionMoyen";
+            this.rowcoutAcquisitionMoyen.Properties.Caption = "- Coût d\'acquisition moyen";
+            this.rowcoutAcquisitionMoyen.Properties.FieldName = "coutAcquisition";
+            this.rowcoutAcquisitionMoyen.Properties.ReadOnly = true;
+            this.rowcoutAcquisitionMoyen.Visible = false;
+            // 
+            // rowTxMultiplicateurMoyen
+            // 
+            this.rowTxMultiplicateurMoyen.Appearance.Options.UseTextOptions = true;
+            this.rowTxMultiplicateurMoyen.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.rowTxMultiplicateurMoyen.Name = "rowTxMultiplicateurMoyen";
+            this.rowTxMultiplicateurMoyen.Properties.Caption = "Tx multiplicateur";
+            this.rowTxMultiplicateurMoyen.Properties.FieldName = "txMultiplicateur";
+            this.rowTxMultiplicateurMoyen.Properties.ReadOnly = true;
+            // 
+            // rowMargeMoyen
+            // 
+            this.rowMargeMoyen.Name = "rowMargeMoyen";
+            this.rowMargeMoyen.Properties.Caption = "Marge";
+            this.rowMargeMoyen.Properties.FieldName = "marge";
+            this.rowMargeMoyen.Properties.ReadOnly = true;
+            // 
+            // rowClvMoyen
+            // 
+            this.rowClvMoyen.Name = "rowClvMoyen";
+            this.rowClvMoyen.Properties.Caption = "CLV";
+            this.rowClvMoyen.Properties.FieldName = "clv";
+            this.rowClvMoyen.Properties.ReadOnly = true;
+            // 
+            // rowIdMoyen
+            // 
+            this.rowIdMoyen.Name = "rowIdMoyen";
+            this.rowIdMoyen.Properties.FieldName = "id";
+            this.rowIdMoyen.Properties.ReadOnly = true;
+            this.rowIdMoyen.Visible = false;
+            // 
+            // rowClvSansTxMargeMoyen
+            // 
+            this.rowClvSansTxMargeMoyen.Name = "rowClvSansTxMargeMoyen";
+            this.rowClvSansTxMargeMoyen.Properties.Caption = "CLV chiffre d\'affaires";
+            this.rowClvSansTxMargeMoyen.Properties.FieldName = "clvSansTxMarge";
+            // 
             // btAjouterSegment
             // 
             this.btAjouterSegment.Location = new System.Drawing.Point(16, 16);
@@ -271,48 +392,166 @@
             this.grdSegmentation.TabIndex = 4;
             this.grdSegmentation.CellValueChanged += new DevExpress.XtraVerticalGrid.Events.CellValueChangedEventHandler(this.grdSegmentation_CellValueChanged);
             // 
+            // btGrSegmentationSuppr
+            // 
+            this.btGrSegmentationSuppr.AutoHeight = false;
+            this.btGrSegmentationSuppr.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete)});
+            this.btGrSegmentationSuppr.Name = "btGrSegmentationSuppr";
+            this.btGrSegmentationSuppr.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btGrSegmentationSuppr_ButtonClick);
+            // 
+            // rowNom
+            // 
+            this.rowNom.Name = "rowNom";
+            this.rowNom.Properties.Caption = "Nom";
+            this.rowNom.Properties.FieldName = "nom";
+            this.rowNom.Properties.RowEdit = this.btGrSegmentationSuppr;
+            // 
+            // rowtypeSegment
+            // 
+            this.rowtypeSegment.Name = "rowtypeSegment";
+            this.rowtypeSegment.Properties.Caption = "type Segment";
+            this.rowtypeSegment.Properties.FieldName = "typeSegment";
+            this.rowtypeSegment.Visible = false;
+            // 
+            // rowcaFromLM
+            // 
+            this.rowcaFromLM.Height = 18;
+            this.rowcaFromLM.Name = "rowcaFromLM";
+            this.rowcaFromLM.Properties.Caption = "Chiffre d\'affaires selon lettre de mission";
+            this.rowcaFromLM.Properties.FieldName = "caFromLM";
+            // 
+            // rowAchatsCroises
+            // 
+            this.rowAchatsCroises.Name = "rowAchatsCroises";
+            this.rowAchatsCroises.Properties.Caption = "Coefficient Achats croisés";
+            this.rowAchatsCroises.Properties.FieldName = "caAchatsCroises";
+            this.rowAchatsCroises.Visible = false;
+            // 
+            // rowCASensibilitePricePremium
+            // 
+            this.rowCASensibilitePricePremium.Name = "rowCASensibilitePricePremium";
+            this.rowCASensibilitePricePremium.Properties.Caption = "Coefficient Sensibilité Price Premium";
+            this.rowCASensibilitePricePremium.Properties.FieldName = "caSensibilitePricePremium";
+            this.rowCASensibilitePricePremium.Visible = false;
+            // 
+            // rowCaRecommandation
+            // 
+            this.rowCaRecommandation.Name = "rowCaRecommandation";
+            this.rowCaRecommandation.Properties.Caption = "Coefficient Supplémentaire pour ma recommandation";
+            this.rowCaRecommandation.Properties.FieldName = "caRecommendation";
+            this.rowCaRecommandation.Visible = false;
+            // 
+            // rowtxMarge
+            // 
+            this.rowtxMarge.Name = "rowtxMarge";
+            this.rowtxMarge.Properties.Caption = "Taux de marge retenu";
+            this.rowtxMarge.Properties.FieldName = "txMarge";
+            // 
+            // rowtxRetention
+            // 
+            this.rowtxRetention.Appearance.Options.UseTextOptions = true;
+            this.rowtxRetention.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.rowtxRetention.Name = "rowtxRetention";
+            this.rowtxRetention.Properties.Caption = "Taux de retention";
+            this.rowtxRetention.Properties.FieldName = "txRetention";
+            // 
+            // rowtxActualisation
+            // 
+            this.rowtxActualisation.Appearance.Options.UseTextOptions = true;
+            this.rowtxActualisation.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.rowtxActualisation.Name = "rowtxActualisation";
+            this.rowtxActualisation.Properties.Caption = "Taux d\'actualisation (WACC)";
+            this.rowtxActualisation.Properties.FieldName = "txActualisation";
+            // 
+            // rowcoutAcquisition
+            // 
+            this.rowcoutAcquisition.Name = "rowcoutAcquisition";
+            this.rowcoutAcquisition.Properties.Caption = "- Coût d\'acquisition";
+            this.rowcoutAcquisition.Properties.FieldName = "coutAcquisition";
+            this.rowcoutAcquisition.Properties.Format.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.rowcoutAcquisition.Visible = false;
+            // 
+            // rowId
+            // 
+            this.rowId.Name = "rowId";
+            this.rowId.Properties.FieldName = "id";
+            this.rowId.Properties.ReadOnly = true;
+            this.rowId.Visible = false;
+            // 
+            // rowtxMultiplicateur
+            // 
+            this.rowtxMultiplicateur.Appearance.Options.UseTextOptions = true;
+            this.rowtxMultiplicateur.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.rowtxMultiplicateur.Name = "rowtxMultiplicateur";
+            this.rowtxMultiplicateur.Properties.Caption = "Taux multiplicateur";
+            this.rowtxMultiplicateur.Properties.FieldName = "txMultiplicateur";
+            this.rowtxMultiplicateur.Properties.ReadOnly = true;
+            // 
+            // rowmarge
+            // 
+            this.rowmarge.Name = "rowmarge";
+            this.rowmarge.Properties.Caption = "Marge";
+            this.rowmarge.Properties.FieldName = "marge";
+            this.rowmarge.Properties.ReadOnly = true;
+            // 
+            // rowclv
+            // 
+            this.rowclv.Name = "rowclv";
+            this.rowclv.Properties.Caption = "CLV";
+            this.rowclv.Properties.FieldName = "clv";
+            this.rowclv.Properties.ReadOnly = true;
+            // 
+            // rowClvSansTxMArge
+            // 
+            this.rowClvSansTxMArge.Name = "rowClvSansTxMArge";
+            this.rowClvSansTxMArge.Properties.Caption = "CLV chiffre d\'affaires";
+            this.rowClvSansTxMArge.Properties.FieldName = "clvSansTxMarge";
+            this.rowClvSansTxMArge.Properties.ReadOnly = true;
+            // 
             // chSegmentation
             // 
             this.chSegmentation.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.chSegmentation.AppearanceNameSerializable = "Light";
             this.chSegmentation.DataSource = this.segmentBindingSource;
-            xyDiagram3.AxisX.NumericScaleOptions.ScaleMode = DevExpress.XtraCharts.ScaleMode.Automatic;
-            xyDiagram3.AxisX.Title.Text = "Segments";
-            xyDiagram3.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            xyDiagram3.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram3.AxisY.Title.Text = "CLV";
-            xyDiagram3.AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            xyDiagram3.AxisY.VisibleInPanesSerializable = "-1";
-            this.chSegmentation.Diagram = xyDiagram3;
+            xyDiagram1.AxisX.NumericScaleOptions.ScaleMode = DevExpress.XtraCharts.ScaleMode.Automatic;
+            xyDiagram1.AxisX.Title.Text = "Segments";
+            xyDiagram1.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram1.AxisY.Title.Text = "CLV";
+            xyDiagram1.AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
+            this.chSegmentation.Diagram = xyDiagram1;
             this.chSegmentation.Legend.MarkerVisible = false;
             this.chSegmentation.Legend.TextVisible = false;
             this.chSegmentation.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
             this.chSegmentation.Location = new System.Drawing.Point(16, 233);
             this.chSegmentation.Name = "chSegmentation";
             this.chSegmentation.PaletteName = "Default";
-            series5.ArgumentDataMember = "id";
-            series5.ColorDataMember = "id";
-            series5.Colorizer = colorObjectColorizer3;
-            series5.Name = "CLV";
-            series5.ValueDataMembersSerializable = "clv";
-            sideBySideBarSeriesView7.ColorEach = true;
-            series5.View = sideBySideBarSeriesView7;
-            series6.ArgumentDataMember = "id";
-            series6.ColorDataMember = "id";
-            series6.Name = "CLVChiffreAffaires";
-            series6.ValueDataMembersSerializable = "clvSansTxMarge";
-            sideBySideBarSeriesView8.ColorEach = true;
-            series6.View = sideBySideBarSeriesView8;
+            series1.ArgumentDataMember = "id";
+            series1.ColorDataMember = "id";
+            series1.Colorizer = colorObjectColorizer1;
+            series1.Name = "CLV";
+            series1.ValueDataMembersSerializable = "clv";
+            sideBySideBarSeriesView1.ColorEach = true;
+            series1.View = sideBySideBarSeriesView1;
+            series2.ArgumentDataMember = "id";
+            series2.ColorDataMember = "id";
+            series2.Name = "CLVChiffreAffaires";
+            series2.ValueDataMembersSerializable = "clvSansTxMarge";
+            sideBySideBarSeriesView2.ColorEach = true;
+            series2.View = sideBySideBarSeriesView2;
             this.chSegmentation.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series5,
-        series6};
+        series1,
+        series2};
             this.chSegmentation.SeriesTemplate.ArgumentDataMember = "nom";
             this.chSegmentation.SeriesTemplate.ColorDataMember = "id";
-            keyColorColorizer3.Keys.Add("nom");
-            this.chSegmentation.SeriesTemplate.Colorizer = keyColorColorizer3;
+            keyColorColorizer1.Keys.Add("nom");
+            this.chSegmentation.SeriesTemplate.Colorizer = keyColorColorizer1;
             this.chSegmentation.SeriesTemplate.ValueDataMembersSerializable = "clv";
-            sideBySideBarSeriesView9.ColorEach = true;
-            this.chSegmentation.SeriesTemplate.View = sideBySideBarSeriesView9;
+            sideBySideBarSeriesView3.ColorEach = true;
+            this.chSegmentation.SeriesTemplate.View = sideBySideBarSeriesView3;
             this.chSegmentation.Size = new System.Drawing.Size(791, 294);
             this.chSegmentation.TabIndex = 6;
             this.chSegmentation.CustomDrawCrosshair += new DevExpress.XtraCharts.CustomDrawCrosshairEventHandler(this.chSegmentation_CustomDrawCrosshair);
@@ -414,245 +653,6 @@
             this.splitterItem2.Name = "splitterItem2";
             this.splitterItem2.Size = new System.Drawing.Size(6, 178);
             // 
-            // segmentBindingSource
-            // 
-            this.segmentBindingSource.DataSource = typeof(ComHe_Objets.Segment);
-            // 
-            // rowNomMoyenne
-            // 
-            this.rowNomMoyenne.Name = "rowNomMoyenne";
-            this.rowNomMoyenne.Properties.Caption = "Nom";
-            this.rowNomMoyenne.Properties.FieldName = "nom";
-            this.rowNomMoyenne.Properties.ReadOnly = true;
-            this.rowNomMoyenne.Properties.RowEdit = this.repositoryItemButtonEdit1;
-            // 
-            // rowTypeSegmentMoyen
-            // 
-            this.rowTypeSegmentMoyen.Name = "rowTypeSegmentMoyen";
-            this.rowTypeSegmentMoyen.Properties.Caption = "type Segment";
-            this.rowTypeSegmentMoyen.Properties.FieldName = "typeSegment";
-            this.rowTypeSegmentMoyen.Properties.ReadOnly = true;
-            this.rowTypeSegmentMoyen.Visible = false;
-            // 
-            // rowCaFromLMMoyen
-            // 
-            this.rowCaFromLMMoyen.Height = 18;
-            this.rowCaFromLMMoyen.Name = "rowCaFromLMMoyen";
-            this.rowCaFromLMMoyen.Properties.Caption = "CA selon LM";
-            this.rowCaFromLMMoyen.Properties.FieldName = "caFromLM";
-            this.rowCaFromLMMoyen.Properties.ReadOnly = true;
-            // 
-            // rowAchatsCroisesMoyen
-            // 
-            this.rowAchatsCroisesMoyen.Name = "rowAchatsCroisesMoyen";
-            this.rowAchatsCroisesMoyen.Properties.Caption = "Moyennne";
-            this.rowAchatsCroisesMoyen.Properties.FieldName = "caAchatsCroises";
-            this.rowAchatsCroisesMoyen.Properties.ReadOnly = true;
-            this.rowAchatsCroisesMoyen.Visible = false;
-            // 
-            // rowCaSensibilitePricePremiumMoyen
-            // 
-            this.rowCaSensibilitePricePremiumMoyen.Name = "rowCaSensibilitePricePremiumMoyen";
-            this.rowCaSensibilitePricePremiumMoyen.Properties.Caption = "Moyen";
-            this.rowCaSensibilitePricePremiumMoyen.Properties.FieldName = "caSensibilitePricePremium";
-            this.rowCaSensibilitePricePremiumMoyen.Properties.ReadOnly = true;
-            this.rowCaSensibilitePricePremiumMoyen.Visible = false;
-            // 
-            // rowCaRecommandationMoyen
-            // 
-            this.rowCaRecommandationMoyen.Name = "rowCaRecommandationMoyen";
-            this.rowCaRecommandationMoyen.Properties.Caption = "Moyen";
-            this.rowCaRecommandationMoyen.Properties.FieldName = "caRecommendation";
-            this.rowCaRecommandationMoyen.Properties.ReadOnly = true;
-            this.rowCaRecommandationMoyen.Visible = false;
-            // 
-            // rowTxMargeMoyen
-            // 
-            this.rowTxMargeMoyen.Name = "rowTxMargeMoyen";
-            this.rowTxMargeMoyen.Properties.Caption = "Tx de marge retenu";
-            this.rowTxMargeMoyen.Properties.FieldName = "txMarge";
-            this.rowTxMargeMoyen.Properties.ReadOnly = true;
-            // 
-            // rowTxRetentionMoyen
-            // 
-            this.rowTxRetentionMoyen.Appearance.Options.UseTextOptions = true;
-            this.rowTxRetentionMoyen.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.rowTxRetentionMoyen.Name = "rowTxRetentionMoyen";
-            this.rowTxRetentionMoyen.Properties.Caption = "Tx de retention";
-            this.rowTxRetentionMoyen.Properties.FieldName = "txRetention";
-            this.rowTxRetentionMoyen.Properties.ReadOnly = true;
-            // 
-            // rowTxActualisationMoyen
-            // 
-            this.rowTxActualisationMoyen.Appearance.Options.UseTextOptions = true;
-            this.rowTxActualisationMoyen.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.rowTxActualisationMoyen.Name = "rowTxActualisationMoyen";
-            this.rowTxActualisationMoyen.Properties.Caption = "Tx d\'actualisation";
-            this.rowTxActualisationMoyen.Properties.FieldName = "txActualisation";
-            this.rowTxActualisationMoyen.Properties.ReadOnly = true;
-            // 
-            // rowMargeMoyen
-            // 
-            this.rowMargeMoyen.Name = "rowMargeMoyen";
-            this.rowMargeMoyen.Properties.Caption = "Marge";
-            this.rowMargeMoyen.Properties.FieldName = "marge";
-            this.rowMargeMoyen.Properties.ReadOnly = true;
-            // 
-            // rowTxMultiplicateurMoyen
-            // 
-            this.rowTxMultiplicateurMoyen.Appearance.Options.UseTextOptions = true;
-            this.rowTxMultiplicateurMoyen.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.rowTxMultiplicateurMoyen.Name = "rowTxMultiplicateurMoyen";
-            this.rowTxMultiplicateurMoyen.Properties.Caption = "Tx multiplicateur";
-            this.rowTxMultiplicateurMoyen.Properties.FieldName = "txMultiplicateur";
-            this.rowTxMultiplicateurMoyen.Properties.ReadOnly = true;
-            // 
-            // rowClvMoyen
-            // 
-            this.rowClvMoyen.Name = "rowClvMoyen";
-            this.rowClvMoyen.Properties.Caption = "CLV";
-            this.rowClvMoyen.Properties.FieldName = "clv";
-            this.rowClvMoyen.Properties.ReadOnly = true;
-            // 
-            // rowIdMoyen
-            // 
-            this.rowIdMoyen.Name = "rowIdMoyen";
-            this.rowIdMoyen.Properties.FieldName = "id";
-            this.rowIdMoyen.Properties.ReadOnly = true;
-            this.rowIdMoyen.Visible = false;
-            // 
-            // rowClvSansTxMargeMoyen
-            // 
-            this.rowClvSansTxMargeMoyen.Name = "rowClvSansTxMargeMoyen";
-            this.rowClvSansTxMargeMoyen.Properties.Caption = "CLV chiffre d\'affaires";
-            this.rowClvSansTxMargeMoyen.Properties.FieldName = "clvSansTxMarge";
-            // 
-            // btGrSegmentationSuppr
-            // 
-            this.btGrSegmentationSuppr.AutoHeight = false;
-            this.btGrSegmentationSuppr.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete)});
-            this.btGrSegmentationSuppr.Name = "btGrSegmentationSuppr";
-            this.btGrSegmentationSuppr.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btGrSegmentationSuppr_ButtonClick);
-            // 
-            // rowNom
-            // 
-            this.rowNom.Name = "rowNom";
-            this.rowNom.Properties.Caption = "Nom";
-            this.rowNom.Properties.FieldName = "nom";
-            this.rowNom.Properties.RowEdit = this.btGrSegmentationSuppr;
-            // 
-            // rowtypeSegment
-            // 
-            this.rowtypeSegment.Name = "rowtypeSegment";
-            this.rowtypeSegment.Properties.Caption = "type Segment";
-            this.rowtypeSegment.Properties.FieldName = "typeSegment";
-            this.rowtypeSegment.Visible = false;
-            // 
-            // rowcaFromLM
-            // 
-            this.rowcaFromLM.Height = 18;
-            this.rowcaFromLM.Name = "rowcaFromLM";
-            this.rowcaFromLM.Properties.Caption = "Chiffre d\'affaires selon lettre de mission";
-            this.rowcaFromLM.Properties.FieldName = "caFromLM";
-            // 
-            // rowAchatsCroises
-            // 
-            this.rowAchatsCroises.Name = "rowAchatsCroises";
-            this.rowAchatsCroises.Properties.Caption = "Coefficient Achats croisés";
-            this.rowAchatsCroises.Properties.FieldName = "caAchatsCroises";
-            this.rowAchatsCroises.Visible = false;
-            // 
-            // rowCASensibilitePricePremium
-            // 
-            this.rowCASensibilitePricePremium.Name = "rowCASensibilitePricePremium";
-            this.rowCASensibilitePricePremium.Properties.Caption = "Coefficient Sensibilité Price Premium";
-            this.rowCASensibilitePricePremium.Properties.FieldName = "caSensibilitePricePremium";
-            this.rowCASensibilitePricePremium.Visible = false;
-            // 
-            // rowCaRecommandation
-            // 
-            this.rowCaRecommandation.Name = "rowCaRecommandation";
-            this.rowCaRecommandation.Properties.Caption = "Coefficient Supplémentaire pour ma recommandation";
-            this.rowCaRecommandation.Properties.FieldName = "caRecommendation";
-            this.rowCaRecommandation.Visible = false;
-            // 
-            // rowtxMarge
-            // 
-            this.rowtxMarge.Name = "rowtxMarge";
-            this.rowtxMarge.Properties.Caption = "Taux de marge retenu";
-            this.rowtxMarge.Properties.FieldName = "txMarge";
-            // 
-            // rowtxRetention
-            // 
-            this.rowtxRetention.Appearance.Options.UseTextOptions = true;
-            this.rowtxRetention.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.rowtxRetention.Name = "rowtxRetention";
-            this.rowtxRetention.Properties.Caption = "Taux de retention";
-            this.rowtxRetention.Properties.FieldName = "txRetention";
-            // 
-            // rowtxActualisation
-            // 
-            this.rowtxActualisation.Appearance.Options.UseTextOptions = true;
-            this.rowtxActualisation.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.rowtxActualisation.Name = "rowtxActualisation";
-            this.rowtxActualisation.Properties.Caption = "Taux d\'actualisation (WACC)";
-            this.rowtxActualisation.Properties.FieldName = "txActualisation";
-            // 
-            // rowmarge
-            // 
-            this.rowmarge.Name = "rowmarge";
-            this.rowmarge.Properties.Caption = "Marge";
-            this.rowmarge.Properties.FieldName = "marge";
-            this.rowmarge.Properties.ReadOnly = true;
-            // 
-            // rowtxMultiplicateur
-            // 
-            this.rowtxMultiplicateur.Appearance.Options.UseTextOptions = true;
-            this.rowtxMultiplicateur.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.rowtxMultiplicateur.Name = "rowtxMultiplicateur";
-            this.rowtxMultiplicateur.Properties.Caption = "Taux multiplicateur";
-            this.rowtxMultiplicateur.Properties.FieldName = "txMultiplicateur";
-            this.rowtxMultiplicateur.Properties.ReadOnly = true;
-            // 
-            // rowclv
-            // 
-            this.rowclv.Name = "rowclv";
-            this.rowclv.Properties.Caption = "CLV";
-            this.rowclv.Properties.FieldName = "clv";
-            this.rowclv.Properties.ReadOnly = true;
-            // 
-            // rowId
-            // 
-            this.rowId.Name = "rowId";
-            this.rowId.Properties.FieldName = "id";
-            this.rowId.Properties.ReadOnly = true;
-            this.rowId.Visible = false;
-            // 
-            // rowClvSansTxMArge
-            // 
-            this.rowClvSansTxMArge.Name = "rowClvSansTxMArge";
-            this.rowClvSansTxMArge.Properties.Caption = "CLV chiffre d\'affaires";
-            this.rowClvSansTxMArge.Properties.FieldName = "clvSansTxMarge";
-            this.rowClvSansTxMArge.Properties.ReadOnly = true;
-            // 
-            // rowcoutAcquisition
-            // 
-            this.rowcoutAcquisition.Name = "rowcoutAcquisition";
-            this.rowcoutAcquisition.Properties.Caption = "- Coût d\'acquisition";
-            this.rowcoutAcquisition.Properties.FieldName = "coutAcquisition";
-            this.rowcoutAcquisition.Properties.Format.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.rowcoutAcquisition.Visible = false;
-            // 
-            // rowcoutAcquisitionMoyen
-            // 
-            this.rowcoutAcquisitionMoyen.Name = "rowcoutAcquisitionMoyen";
-            this.rowcoutAcquisitionMoyen.Properties.Caption = "- Coût d\'acquisition moyen";
-            this.rowcoutAcquisitionMoyen.Properties.FieldName = "coutAcquisition";
-            this.rowcoutAcquisitionMoyen.Properties.ReadOnly = true;
-            this.rowcoutAcquisitionMoyen.Visible = false;
-            // 
             // pmcSegmentation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -665,13 +665,15 @@
             this.pnTabPgSegmentation.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chkModeExpert.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdSegmentationMoyen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.segmentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdSegmentation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btGrSegmentationSuppr)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chSegmentation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciChSegmentation)).EndInit();
@@ -682,8 +684,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.lciChkModeExpert)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.segmentBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btGrSegmentationSuppr)).EndInit();
             this.ResumeLayout(false);
 
         }

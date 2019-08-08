@@ -5,6 +5,7 @@ using ComHe_Objets;
 using ComHe_Outils;
 using System.ComponentModel;
 using ComHe_Metier;
+using ComHe_Objets.Reclamations;
 
 namespace ComHe_Pilotage {
     public partial class pmcGestionFichesDeTravail : UserControl {

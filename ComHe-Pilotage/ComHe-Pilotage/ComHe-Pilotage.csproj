@@ -123,6 +123,12 @@
     <Compile Include="Pmc\FicheDeTravail\pmcGestionFichesDeTravail.Designer.cs">
       <DependentUpon>pmcGestionFichesDeTravail.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pmc\NotesQuestion\pmcNoteQuestion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pmc\NotesQuestion\pmcNoteQuestion.Designer.cs">
+      <DependentUpon>pmcNoteQuestion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pmc\Reclamation\pmcGestionReclamation.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -167,6 +173,12 @@
     </Compile>
     <Compile Include="Pmc\CSV\pmcSegmentation.Designer.cs">
       <DependentUpon>pmcSegmentation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pmc\Reclamation\pmcIncidenceService.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pmc\Reclamation\pmcIncidenceService.Designer.cs">
+      <DependentUpon>pmcIncidenceService.cs</DependentUpon>
     </Compile>
     <Compile Include="Pmc\TableauDeBord\pmcTableauDeBord.cs">
       <SubType>UserControl</SubType>
@@ -219,6 +231,9 @@
     <EmbeddedResource Include="Pmc\FicheDeTravail\pmcGestionFichesDeTravail.resx">
       <DependentUpon>pmcGestionFichesDeTravail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pmc\NotesQuestion\pmcNoteQuestion.resx">
+      <DependentUpon>pmcNoteQuestion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pmc\Reclamation\pmcGestionReclamation.resx">
       <DependentUpon>pmcGestionReclamation.cs</DependentUpon>
     </EmbeddedResource>
@@ -239,6 +254,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pmc\CSV\pmcSegmentation.resx">
       <DependentUpon>pmcSegmentation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pmc\Reclamation\pmcIncidenceService.resx">
+      <DependentUpon>pmcIncidenceService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pmc\TableauDeBord\pmcTableauDeBord.resx">
       <DependentUpon>pmcTableauDeBord.cs</DependentUpon>
@@ -269,7 +287,9 @@
     <None Include="Properties\DataSources\ComHe_Objets.ItemComplaintModel.datasource" />
     <None Include="Properties\DataSources\ComHe_Objets.ItemLoyaltyModel.datasource" />
     <None Include="Properties\DataSources\ComHe_Objets.MesureAchatsCroises.datasource" />
+    <None Include="Properties\DataSources\ComHe_Objets.NotesQuestion.Valeur.datasource" />
     <None Include="Properties\DataSources\ComHe_Objets.Reclamation.datasource" />
+    <None Include="Properties\DataSources\ComHe_Objets.Reclamations.ReclamationParService.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

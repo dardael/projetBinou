@@ -24,10 +24,15 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PieSeriesView pieSeriesView3 = new DevExpress.XtraCharts.PieSeriesView();
-            DevExpress.XtraCharts.PieSeriesView pieSeriesView4 = new DevExpress.XtraCharts.PieSeriesView();
+            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PieSeriesView pieSeriesView1 = new DevExpress.XtraCharts.PieSeriesView();
+            DevExpress.XtraCharts.PieSeriesView pieSeriesView2 = new DevExpress.XtraCharts.PieSeriesView();
             this.lcPrincipal = new DevExpress.XtraLayout.LayoutControl();
+            this.chMission = new DevExpress.XtraCharts.ChartControl();
+            this.chCaBudget = new DevExpress.XtraCharts.ChartControl();
+            this.chCa = new DevExpress.XtraCharts.ChartControl();
+            this.txtCaAvantAvant = new DevExpress.XtraEditors.TextEdit();
+            this.txtCabinetValo = new DevExpress.XtraEditors.TextEdit();
             this.txtCaReduc = new DevExpress.XtraEditors.TextEdit();
             this.txtCoef = new DevExpress.XtraEditors.TextEdit();
             this.txtPortefeuilleClient = new DevExpress.XtraEditors.TextEdit();
@@ -49,6 +54,7 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -61,18 +67,12 @@
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem18 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtCabinetValo = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtCaAvantAvant = new DevExpress.XtraEditors.TextEdit();
-            this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.chCa = new DevExpress.XtraCharts.ChartControl();
-            this.layoutControlItem18 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.chCaBudget = new DevExpress.XtraCharts.ChartControl();
             this.layoutControlItem19 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.chMission = new DevExpress.XtraCharts.ChartControl();
             this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
             this.splitterItem1 = new DevExpress.XtraLayout.SplitterItem();
             this.splitterItem2 = new DevExpress.XtraLayout.SplitterItem();
@@ -80,6 +80,14 @@
             this.mesureAchatsCroisesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.lcPrincipal)).BeginInit();
             this.lcPrincipal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chMission)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chCaBudget)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chCa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCaAvantAvant.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCabinetValo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCaReduc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCoef.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPortefeuilleClient.Properties)).BeginInit();
@@ -101,6 +109,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
@@ -113,21 +122,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCabinetValo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCaAvantAvant.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chCa)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chCaBudget)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chMission)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).BeginInit();
@@ -166,9 +166,59 @@
             this.lcPrincipal.TabIndex = 0;
             this.lcPrincipal.Text = "layoutControl1";
             // 
+            // chMission
+            // 
+            this.chMission.DataSource = this.mesureAchatsCroisesBindingSource;
+            this.chMission.Location = new System.Drawing.Point(740, 522);
+            this.chMission.Name = "chMission";
+            series1.Name = "serieMissions";
+            series1.View = pieSeriesView1;
+            this.chMission.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+        series1};
+            this.chMission.SeriesTemplate.View = pieSeriesView2;
+            this.chMission.Size = new System.Drawing.Size(229, 20);
+            this.chMission.TabIndex = 24;
+            this.chMission.CustomDrawSeriesPoint += new DevExpress.XtraCharts.CustomDrawSeriesPointEventHandler(this.chMission_CustomDrawSeriesPoint);
+            // 
+            // chCaBudget
+            // 
+            this.chCaBudget.Location = new System.Drawing.Point(495, 522);
+            this.chCaBudget.Name = "chCaBudget";
+            this.chCaBudget.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
+            this.chCaBudget.Size = new System.Drawing.Size(233, 20);
+            this.chCaBudget.TabIndex = 23;
+            this.chCaBudget.CustomDrawSeriesPoint += new DevExpress.XtraCharts.CustomDrawSeriesPointEventHandler(this.chCaBudget_CustomDrawSeriesPoint);
+            // 
+            // chCa
+            // 
+            this.chCa.Location = new System.Drawing.Point(3, 522);
+            this.chCa.Name = "chCa";
+            this.chCa.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
+            this.chCa.Size = new System.Drawing.Size(480, 20);
+            this.chCa.TabIndex = 22;
+            this.chCa.CustomDrawSeriesPoint += new DevExpress.XtraCharts.CustomDrawSeriesPointEventHandler(this.chCa_CustomDrawSeriesPoint);
+            // 
+            // txtCaAvantAvant
+            // 
+            this.txtCaAvantAvant.Location = new System.Drawing.Point(261, 9);
+            this.txtCaAvantAvant.Name = "txtCaAvantAvant";
+            this.txtCaAvantAvant.Size = new System.Drawing.Size(222, 22);
+            this.txtCaAvantAvant.StyleController = this.lcPrincipal;
+            this.txtCaAvantAvant.TabIndex = 21;
+            this.txtCaAvantAvant.EditValueChanged += new System.EventHandler(this.txtCaAvantAvant_EditValueChanged);
+            // 
+            // txtCabinetValo
+            // 
+            this.txtCabinetValo.Location = new System.Drawing.Point(261, 473);
+            this.txtCabinetValo.Name = "txtCabinetValo";
+            this.txtCabinetValo.Properties.ReadOnly = true;
+            this.txtCabinetValo.Size = new System.Drawing.Size(222, 22);
+            this.txtCabinetValo.StyleController = this.lcPrincipal;
+            this.txtCabinetValo.TabIndex = 20;
+            // 
             // txtCaReduc
             // 
-            this.txtCaReduc.Location = new System.Drawing.Point(261, 334);
+            this.txtCaReduc.Location = new System.Drawing.Point(261, 336);
             this.txtCaReduc.Name = "txtCaReduc";
             this.txtCaReduc.Properties.ReadOnly = true;
             this.txtCaReduc.Size = new System.Drawing.Size(222, 22);
@@ -177,7 +227,7 @@
             // 
             // txtCoef
             // 
-            this.txtCoef.Location = new System.Drawing.Point(732, 443);
+            this.txtCoef.Location = new System.Drawing.Point(732, 445);
             this.txtCoef.Name = "txtCoef";
             this.txtCoef.Size = new System.Drawing.Size(222, 22);
             this.txtCoef.StyleController = this.lcPrincipal;
@@ -185,7 +235,7 @@
             // 
             // txtPortefeuilleClient
             // 
-            this.txtPortefeuilleClient.Location = new System.Drawing.Point(261, 443);
+            this.txtPortefeuilleClient.Location = new System.Drawing.Point(261, 445);
             this.txtPortefeuilleClient.Name = "txtPortefeuilleClient";
             this.txtPortefeuilleClient.Size = new System.Drawing.Size(222, 22);
             this.txtPortefeuilleClient.StyleController = this.lcPrincipal;
@@ -193,7 +243,7 @@
             // 
             // txtSurCa
             // 
-            this.txtSurCa.Location = new System.Drawing.Point(261, 362);
+            this.txtSurCa.Location = new System.Drawing.Point(261, 364);
             this.txtSurCa.Name = "txtSurCa";
             this.txtSurCa.Properties.ReadOnly = true;
             this.txtSurCa.Size = new System.Drawing.Size(222, 22);
@@ -202,7 +252,7 @@
             // 
             // txtNbHeuresPayes
             // 
-            this.txtNbHeuresPayes.Location = new System.Drawing.Point(732, 334);
+            this.txtNbHeuresPayes.Location = new System.Drawing.Point(732, 336);
             this.txtNbHeuresPayes.Name = "txtNbHeuresPayes";
             this.txtNbHeuresPayes.Size = new System.Drawing.Size(222, 22);
             this.txtNbHeuresPayes.StyleController = this.lcPrincipal;
@@ -210,7 +260,7 @@
             // 
             // txtRatio
             // 
-            this.txtRatio.Location = new System.Drawing.Point(261, 253);
+            this.txtRatio.Location = new System.Drawing.Point(261, 255);
             this.txtRatio.Name = "txtRatio";
             this.txtRatio.Properties.ReadOnly = true;
             this.txtRatio.Size = new System.Drawing.Size(222, 22);
@@ -219,7 +269,7 @@
             // 
             // txtCaTrad
             // 
-            this.txtCaTrad.Location = new System.Drawing.Point(732, 225);
+            this.txtCaTrad.Location = new System.Drawing.Point(732, 227);
             this.txtCaTrad.Name = "txtCaTrad";
             this.txtCaTrad.Size = new System.Drawing.Size(222, 22);
             this.txtCaTrad.StyleController = this.lcPrincipal;
@@ -228,7 +278,7 @@
             // 
             // txtCaExep
             // 
-            this.txtCaExep.Location = new System.Drawing.Point(261, 225);
+            this.txtCaExep.Location = new System.Drawing.Point(261, 227);
             this.txtCaExep.Name = "txtCaExep";
             this.txtCaExep.Size = new System.Drawing.Size(222, 22);
             this.txtCaExep.StyleController = this.lcPrincipal;
@@ -237,7 +287,7 @@
             // 
             // txtEcartPerf
             // 
-            this.txtEcartPerf.Location = new System.Drawing.Point(261, 144);
+            this.txtEcartPerf.Location = new System.Drawing.Point(261, 146);
             this.txtEcartPerf.Name = "txtEcartPerf";
             this.txtEcartPerf.Properties.ReadOnly = true;
             this.txtEcartPerf.Size = new System.Drawing.Size(222, 22);
@@ -246,7 +296,7 @@
             // 
             // txtBudget
             // 
-            this.txtBudget.Location = new System.Drawing.Point(732, 116);
+            this.txtBudget.Location = new System.Drawing.Point(732, 118);
             this.txtBudget.Name = "txtBudget";
             this.txtBudget.Size = new System.Drawing.Size(222, 22);
             this.txtBudget.StyleController = this.lcPrincipal;
@@ -255,7 +305,7 @@
             // 
             // txtCaPerf
             // 
-            this.txtCaPerf.Location = new System.Drawing.Point(261, 116);
+            this.txtCaPerf.Location = new System.Drawing.Point(261, 118);
             this.txtCaPerf.Name = "txtCaPerf";
             this.txtCaPerf.Properties.ReadOnly = true;
             this.txtCaPerf.Size = new System.Drawing.Size(222, 22);
@@ -264,7 +314,7 @@
             // 
             // txtVariation
             // 
-            this.txtVariation.Location = new System.Drawing.Point(732, 35);
+            this.txtVariation.Location = new System.Drawing.Point(732, 37);
             this.txtVariation.Name = "txtVariation";
             this.txtVariation.Properties.ReadOnly = true;
             this.txtVariation.Size = new System.Drawing.Size(222, 22);
@@ -273,7 +323,7 @@
             // 
             // txtEcart
             // 
-            this.txtEcart.Location = new System.Drawing.Point(261, 35);
+            this.txtEcart.Location = new System.Drawing.Point(261, 37);
             this.txtEcart.Name = "txtEcart";
             this.txtEcart.Properties.ReadOnly = true;
             this.txtEcart.Size = new System.Drawing.Size(222, 22);
@@ -282,7 +332,7 @@
             // 
             // txtCaAvant
             // 
-            this.txtCaAvant.Location = new System.Drawing.Point(732, -21);
+            this.txtCaAvant.Location = new System.Drawing.Point(732, -19);
             this.txtCaAvant.Name = "txtCaAvant";
             this.txtCaAvant.Size = new System.Drawing.Size(222, 22);
             this.txtCaAvant.StyleController = this.lcPrincipal;
@@ -291,7 +341,7 @@
             // 
             // txtCa
             // 
-            this.txtCa.Location = new System.Drawing.Point(261, -21);
+            this.txtCa.Location = new System.Drawing.Point(261, -19);
             this.txtCa.Name = "txtCa";
             this.txtCa.Size = new System.Drawing.Size(222, 22);
             this.txtCa.StyleController = this.lcPrincipal;
@@ -314,7 +364,7 @@
             this.splitterItem1,
             this.splitterItem2,
             this.splitterItem3});
-            this.layoutControlGroup1.Location = new System.Drawing.Point(0, -62);
+            this.layoutControlGroup1.Location = new System.Drawing.Point(0, -60);
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.OptionsItemText.TextToControlDistance = 4;
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
@@ -370,6 +420,15 @@
             this.layoutControlItem5.Size = new System.Drawing.Size(471, 28);
             this.layoutControlItem5.Text = "Variation";
             this.layoutControlItem5.TextSize = new System.Drawing.Size(239, 16);
+            // 
+            // layoutControlItem17
+            // 
+            this.layoutControlItem17.Control = this.txtCaAvantAvant;
+            this.layoutControlItem17.Location = new System.Drawing.Point(0, 28);
+            this.layoutControlItem17.Name = "layoutControlItem17";
+            this.layoutControlItem17.Size = new System.Drawing.Size(471, 28);
+            this.layoutControlItem17.Text = "Chiffre d\'affaires réalisé en N-2";
+            this.layoutControlItem17.TextSize = new System.Drawing.Size(239, 16);
             // 
             // layoutControlGroup3
             // 
@@ -488,6 +547,15 @@
             this.layoutControlItem12.Text = "Ratio";
             this.layoutControlItem12.TextSize = new System.Drawing.Size(239, 16);
             // 
+            // layoutControlItem18
+            // 
+            this.layoutControlItem18.Control = this.chCa;
+            this.layoutControlItem18.Location = new System.Drawing.Point(0, 579);
+            this.layoutControlItem18.Name = "layoutControlItem18";
+            this.layoutControlItem18.Size = new System.Drawing.Size(486, 26);
+            this.layoutControlItem18.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem18.TextVisible = false;
+            // 
             // layoutControlGroup6
             // 
             this.layoutControlGroup6.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
@@ -518,15 +586,6 @@
             this.layoutControlItem14.Text = "coefficient (0,8 à 1,2)";
             this.layoutControlItem14.TextSize = new System.Drawing.Size(239, 16);
             // 
-            // txtCabinetValo
-            // 
-            this.txtCabinetValo.Location = new System.Drawing.Point(261, 471);
-            this.txtCabinetValo.Name = "txtCabinetValo";
-            this.txtCabinetValo.Properties.ReadOnly = true;
-            this.txtCabinetValo.Size = new System.Drawing.Size(222, 22);
-            this.txtCabinetValo.StyleController = this.lcPrincipal;
-            this.txtCabinetValo.TabIndex = 20;
-            // 
             // layoutControlItem16
             // 
             this.layoutControlItem16.Control = this.txtCabinetValo;
@@ -536,51 +595,6 @@
             this.layoutControlItem16.Text = "Valorisation potentielle du cabinet";
             this.layoutControlItem16.TextSize = new System.Drawing.Size(239, 16);
             // 
-            // txtCaAvantAvant
-            // 
-            this.txtCaAvantAvant.Location = new System.Drawing.Point(261, 7);
-            this.txtCaAvantAvant.Name = "txtCaAvantAvant";
-            this.txtCaAvantAvant.Size = new System.Drawing.Size(222, 22);
-            this.txtCaAvantAvant.StyleController = this.lcPrincipal;
-            this.txtCaAvantAvant.TabIndex = 21;
-            this.txtCaAvantAvant.EditValueChanged += new System.EventHandler(this.txtCaAvantAvant_EditValueChanged);
-            // 
-            // layoutControlItem17
-            // 
-            this.layoutControlItem17.Control = this.txtCaAvantAvant;
-            this.layoutControlItem17.Location = new System.Drawing.Point(0, 28);
-            this.layoutControlItem17.Name = "layoutControlItem17";
-            this.layoutControlItem17.Size = new System.Drawing.Size(471, 28);
-            this.layoutControlItem17.Text = "Chiffre d\'affaires réalisé en N-2";
-            this.layoutControlItem17.TextSize = new System.Drawing.Size(239, 16);
-            // 
-            // chCa
-            // 
-            this.chCa.Location = new System.Drawing.Point(3, 520);
-            this.chCa.Name = "chCa";
-            this.chCa.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chCa.Size = new System.Drawing.Size(480, 20);
-            this.chCa.TabIndex = 22;
-            this.chCa.CustomDrawSeriesPoint += new DevExpress.XtraCharts.CustomDrawSeriesPointEventHandler(this.chCa_CustomDrawSeriesPoint);
-            // 
-            // layoutControlItem18
-            // 
-            this.layoutControlItem18.Control = this.chCa;
-            this.layoutControlItem18.Location = new System.Drawing.Point(0, 579);
-            this.layoutControlItem18.Name = "layoutControlItem18";
-            this.layoutControlItem18.Size = new System.Drawing.Size(486, 26);
-            this.layoutControlItem18.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem18.TextVisible = false;
-            // 
-            // chCaBudget
-            // 
-            this.chCaBudget.Location = new System.Drawing.Point(495, 520);
-            this.chCaBudget.Name = "chCaBudget";
-            this.chCaBudget.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chCaBudget.Size = new System.Drawing.Size(233, 20);
-            this.chCaBudget.TabIndex = 23;
-            this.chCaBudget.CustomDrawSeriesPoint += new DevExpress.XtraCharts.CustomDrawSeriesPointEventHandler(this.chCaBudget_CustomDrawSeriesPoint);
-            // 
             // layoutControlItem19
             // 
             this.layoutControlItem19.Control = this.chCaBudget;
@@ -589,20 +603,6 @@
             this.layoutControlItem19.Size = new System.Drawing.Size(239, 26);
             this.layoutControlItem19.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem19.TextVisible = false;
-            // 
-            // chMission
-            // 
-            this.chMission.DataSource = this.mesureAchatsCroisesBindingSource;
-            this.chMission.Location = new System.Drawing.Point(740, 520);
-            this.chMission.Name = "chMission";
-            series2.Name = "serieMissions";
-            series2.View = pieSeriesView3;
-            this.chMission.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series2};
-            this.chMission.SeriesTemplate.View = pieSeriesView4;
-            this.chMission.Size = new System.Drawing.Size(229, 20);
-            this.chMission.TabIndex = 24;
-            this.chMission.CustomDrawSeriesPoint += new DevExpress.XtraCharts.CustomDrawSeriesPointEventHandler(this.chMission_CustomDrawSeriesPoint);
             // 
             // layoutControlItem20
             // 
@@ -647,6 +647,14 @@
             this.Size = new System.Drawing.Size(993, 543);
             ((System.ComponentModel.ISupportInitialize)(this.lcPrincipal)).EndInit();
             this.lcPrincipal.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chMission)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chCaBudget)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chCa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCaAvantAvant.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCabinetValo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCaReduc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCoef.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPortefeuilleClient.Properties)).EndInit();
@@ -668,6 +676,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
@@ -680,21 +689,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCabinetValo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCaAvantAvant.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chCa)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chCaBudget)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chMission)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).EndInit();

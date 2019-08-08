@@ -156,7 +156,7 @@
             // 
             // reclamationBindingSource
             // 
-            this.reclamationBindingSource.DataSource = typeof(ComHe_Objets.Reclamation);
+            this.reclamationBindingSource.DataSource = typeof(ComHe_Objets.Reclamations.Reclamation);
             // 
             // btAjouterReclamation
             // 
