@@ -118,6 +118,11 @@ namespace ComHe_Pilotage {
             s.Points.Add(new SeriesPoint("CA N-1", this.fiche.indicateursFinanciers.croissanceCA.caAvant));
             s.Points.Add(new SeriesPoint("CA N", fiche.indicateursFinanciers.croissanceCA.ca));
             chCa.Series.Add(s);
+            Series s2 = new Series("Evolution du CA", ViewType.Line);
+            s2.Points.Add(new SeriesPoint("CA N-2", this.fiche.indicateursFinanciers.croissanceCA.caAvantAvant));
+            s2.Points.Add(new SeriesPoint("CA N-1", this.fiche.indicateursFinanciers.croissanceCA.caAvant));
+            s2.Points.Add(new SeriesPoint("CA N", fiche.indicateursFinanciers.croissanceCA.ca));
+            chCa.Series.Add(s2);
         }
         private void populateCaBudgetChart() {
             chCaBudget.Series.Clear();

@@ -122,7 +122,7 @@
             // 
             // chInsatisfaits
             // 
-            this.chInsatisfaits.Location = new System.Drawing.Point(496, 506);
+            this.chInsatisfaits.Location = new System.Drawing.Point(496, 511);
             this.chInsatisfaits.Name = "chInsatisfaits";
             this.chInsatisfaits.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
             this.chInsatisfaits.Size = new System.Drawing.Size(463, 20);
@@ -131,7 +131,7 @@
             // 
             // chRecommandation
             // 
-            this.chRecommandation.Location = new System.Drawing.Point(16, 506);
+            this.chRecommandation.Location = new System.Drawing.Point(16, 511);
             this.chRecommandation.Name = "chRecommandation";
             this.chRecommandation.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
             this.chRecommandation.Size = new System.Drawing.Size(468, 20);
@@ -140,99 +140,99 @@
             // 
             // txtRatioRecommandation
             // 
-            this.txtRatioRecommandation.Location = new System.Drawing.Point(338, 77);
+            this.txtRatioRecommandation.Location = new System.Drawing.Point(343, 82);
             this.txtRatioRecommandation.Name = "txtRatioRecommandation";
             this.txtRatioRecommandation.Properties.ReadOnly = true;
-            this.txtRatioRecommandation.Size = new System.Drawing.Size(147, 22);
+            this.txtRatioRecommandation.Size = new System.Drawing.Size(142, 22);
             this.txtRatioRecommandation.StyleController = this.lcPrincipal;
             this.txtRatioRecommandation.TabIndex = 14;
             // 
             // txtRatioClientsInsatisfaits
             // 
-            this.txtRatioClientsInsatisfaits.Location = new System.Drawing.Point(338, 457);
+            this.txtRatioClientsInsatisfaits.Location = new System.Drawing.Point(343, 462);
             this.txtRatioClientsInsatisfaits.Name = "txtRatioClientsInsatisfaits";
             this.txtRatioClientsInsatisfaits.Properties.ReadOnly = true;
-            this.txtRatioClientsInsatisfaits.Size = new System.Drawing.Size(147, 22);
+            this.txtRatioClientsInsatisfaits.Size = new System.Drawing.Size(142, 22);
             this.txtRatioClientsInsatisfaits.StyleController = this.lcPrincipal;
             this.txtRatioClientsInsatisfaits.TabIndex = 13;
             // 
             // txtVariationRetentionClient
             // 
-            this.txtVariationRetentionClient.Location = new System.Drawing.Point(338, 186);
+            this.txtVariationRetentionClient.Location = new System.Drawing.Point(343, 191);
             this.txtVariationRetentionClient.Name = "txtVariationRetentionClient";
             this.txtVariationRetentionClient.Properties.ReadOnly = true;
-            this.txtVariationRetentionClient.Size = new System.Drawing.Size(147, 22);
+            this.txtVariationRetentionClient.Size = new System.Drawing.Size(142, 22);
             this.txtVariationRetentionClient.StyleController = this.lcPrincipal;
             this.txtVariationRetentionClient.TabIndex = 12;
             // 
             // txtNbClientsTotal
             // 
-            this.txtNbClientsTotal.Location = new System.Drawing.Point(798, 429);
+            this.txtNbClientsTotal.Location = new System.Drawing.Point(803, 434);
             this.txtNbClientsTotal.Name = "txtNbClientsTotal";
             this.txtNbClientsTotal.Properties.ReadOnly = true;
-            this.txtNbClientsTotal.Size = new System.Drawing.Size(146, 22);
+            this.txtNbClientsTotal.Size = new System.Drawing.Size(141, 22);
             this.txtNbClientsTotal.StyleController = this.lcPrincipal;
             this.txtNbClientsTotal.TabIndex = 11;
             this.txtNbClientsTotal.EditValueChanged += new System.EventHandler(this.txtNbClientsTotal_EditValueChanged);
             // 
             // txtNbNvxClients
             // 
-            this.txtNbNvxClients.Location = new System.Drawing.Point(798, 158);
+            this.txtNbNvxClients.Location = new System.Drawing.Point(803, 163);
             this.txtNbNvxClients.Name = "txtNbNvxClients";
-            this.txtNbNvxClients.Size = new System.Drawing.Size(146, 22);
+            this.txtNbNvxClients.Size = new System.Drawing.Size(141, 22);
             this.txtNbNvxClients.StyleController = this.lcPrincipal;
             this.txtNbNvxClients.TabIndex = 10;
             // 
             // txtNbProspect
             // 
-            this.txtNbProspect.Location = new System.Drawing.Point(798, 49);
+            this.txtNbProspect.Location = new System.Drawing.Point(803, 54);
             this.txtNbProspect.Name = "txtNbProspect";
-            this.txtNbProspect.Size = new System.Drawing.Size(146, 22);
+            this.txtNbProspect.Size = new System.Drawing.Size(141, 22);
             this.txtNbProspect.StyleController = this.lcPrincipal;
             this.txtNbProspect.TabIndex = 9;
             this.txtNbProspect.EditValueChanged += new System.EventHandler(this.txtNbProspect_EditValueChanged);
             // 
             // txtNbClientsInsatisfaits
             // 
-            this.txtNbClientsInsatisfaits.Location = new System.Drawing.Point(338, 429);
+            this.txtNbClientsInsatisfaits.Location = new System.Drawing.Point(343, 434);
             this.txtNbClientsInsatisfaits.Name = "txtNbClientsInsatisfaits";
             this.txtNbClientsInsatisfaits.Properties.ReadOnly = true;
-            this.txtNbClientsInsatisfaits.Size = new System.Drawing.Size(147, 22);
+            this.txtNbClientsInsatisfaits.Size = new System.Drawing.Size(142, 22);
             this.txtNbClientsInsatisfaits.StyleController = this.lcPrincipal;
             this.txtNbClientsInsatisfaits.TabIndex = 8;
             this.txtNbClientsInsatisfaits.EditValueChanged += new System.EventHandler(this.txtNbClientsInsatisfaits_EditValueChanged);
             // 
             // txtNbReclamations
             // 
-            this.txtNbReclamations.Location = new System.Drawing.Point(338, 348);
+            this.txtNbReclamations.Location = new System.Drawing.Point(343, 353);
             this.txtNbReclamations.Name = "txtNbReclamations";
             this.txtNbReclamations.Properties.ReadOnly = true;
-            this.txtNbReclamations.Size = new System.Drawing.Size(606, 22);
+            this.txtNbReclamations.Size = new System.Drawing.Size(601, 22);
             this.txtNbReclamations.StyleController = this.lcPrincipal;
             this.txtNbReclamations.TabIndex = 7;
             // 
             // txtMontantIndemnitesFinancieres
             // 
-            this.txtMontantIndemnitesFinancieres.Location = new System.Drawing.Point(338, 267);
+            this.txtMontantIndemnitesFinancieres.Location = new System.Drawing.Point(343, 272);
             this.txtMontantIndemnitesFinancieres.Name = "txtMontantIndemnitesFinancieres";
             this.txtMontantIndemnitesFinancieres.Properties.ReadOnly = true;
-            this.txtMontantIndemnitesFinancieres.Size = new System.Drawing.Size(606, 22);
+            this.txtMontantIndemnitesFinancieres.Size = new System.Drawing.Size(601, 22);
             this.txtMontantIndemnitesFinancieres.StyleController = this.lcPrincipal;
             this.txtMontantIndemnitesFinancieres.TabIndex = 6;
             // 
             // txtNbClientFinPeriode
             // 
-            this.txtNbClientFinPeriode.Location = new System.Drawing.Point(338, 158);
+            this.txtNbClientFinPeriode.Location = new System.Drawing.Point(343, 163);
             this.txtNbClientFinPeriode.Name = "txtNbClientFinPeriode";
-            this.txtNbClientFinPeriode.Size = new System.Drawing.Size(147, 22);
+            this.txtNbClientFinPeriode.Size = new System.Drawing.Size(142, 22);
             this.txtNbClientFinPeriode.StyleController = this.lcPrincipal;
             this.txtNbClientFinPeriode.TabIndex = 5;
             // 
             // txtNbRecommandation
             // 
-            this.txtNbRecommandation.Location = new System.Drawing.Point(338, 49);
+            this.txtNbRecommandation.Location = new System.Drawing.Point(343, 54);
             this.txtNbRecommandation.Name = "txtNbRecommandation";
-            this.txtNbRecommandation.Size = new System.Drawing.Size(147, 22);
+            this.txtNbRecommandation.Size = new System.Drawing.Size(142, 22);
             this.txtNbRecommandation.StyleController = this.lcPrincipal;
             this.txtNbRecommandation.TabIndex = 4;
             this.txtNbRecommandation.EditValueChanged += new System.EventHandler(this.txtNbRecommandation_EditValueChanged);
@@ -251,7 +251,7 @@
             this.layoutControlItem13,
             this.splitterItem1,
             this.splitterItem2});
-            this.lcgPrincipal.Location = new System.Drawing.Point(0, -5);
+            this.lcgPrincipal.Location = new System.Drawing.Point(0, 0);
             this.lcgPrincipal.Name = "Root";
             this.lcgPrincipal.OptionsItemText.TextToControlDistance = 4;
             this.lcgPrincipal.Size = new System.Drawing.Size(975, 547);
@@ -275,8 +275,8 @@
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(460, 28);
-            this.layoutControlItem1.Text = "Nombre de prospects venues par la recommandation";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(303, 16);
+            this.layoutControlItem1.Text = "Nombre de prospects venu par la recommandation";
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(308, 16);
             // 
             // layoutControlItem6
             // 
@@ -285,7 +285,7 @@
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.Size = new System.Drawing.Size(459, 56);
             this.layoutControlItem6.Text = "Nombre de prospects";
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(303, 16);
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(308, 16);
             // 
             // layoutControlItem11
             // 
@@ -294,7 +294,7 @@
             this.layoutControlItem11.Name = "layoutControlItem11";
             this.layoutControlItem11.Size = new System.Drawing.Size(460, 28);
             this.layoutControlItem11.Text = "Ratio";
-            this.layoutControlItem11.TextSize = new System.Drawing.Size(303, 16);
+            this.layoutControlItem11.TextSize = new System.Drawing.Size(308, 16);
             // 
             // layoutControlGroup3
             // 
@@ -315,7 +315,7 @@
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(460, 28);
             this.layoutControlItem2.Text = "Nombre de clients fin de période";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(303, 16);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(308, 16);
             // 
             // layoutControlItem7
             // 
@@ -324,7 +324,7 @@
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.Size = new System.Drawing.Size(459, 56);
             this.layoutControlItem7.Text = "Nombre de nouveaux clients";
-            this.layoutControlItem7.TextSize = new System.Drawing.Size(303, 16);
+            this.layoutControlItem7.TextSize = new System.Drawing.Size(308, 16);
             // 
             // layoutControlItem9
             // 
@@ -333,7 +333,7 @@
             this.layoutControlItem9.Name = "layoutControlItem9";
             this.layoutControlItem9.Size = new System.Drawing.Size(460, 28);
             this.layoutControlItem9.Text = "Variation";
-            this.layoutControlItem9.TextSize = new System.Drawing.Size(303, 16);
+            this.layoutControlItem9.TextSize = new System.Drawing.Size(308, 16);
             // 
             // layoutControlGroup4
             // 
@@ -352,7 +352,7 @@
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(919, 28);
             this.layoutControlItem3.Text = "Montant des indemnités financieres";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(303, 16);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(308, 16);
             // 
             // layoutControlGroup5
             // 
@@ -371,7 +371,7 @@
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(919, 28);
             this.layoutControlItem4.Text = "Nombre de réclamations";
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(303, 16);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(308, 16);
             // 
             // layoutControlGroup6
             // 
@@ -391,8 +391,8 @@
             this.layoutControlItem5.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem5.Name = "layoutControlItem5";
             this.layoutControlItem5.Size = new System.Drawing.Size(460, 28);
-            this.layoutControlItem5.Text = "Nombre de clients insatisfaits";
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(303, 16);
+            this.layoutControlItem5.Text = "Nombre de clients insatisfaits (Loyalty model note <7)";
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(308, 16);
             // 
             // layoutControlItem8
             // 
@@ -401,7 +401,7 @@
             this.layoutControlItem8.Name = "layoutControlItem8";
             this.layoutControlItem8.Size = new System.Drawing.Size(459, 56);
             this.layoutControlItem8.Text = "Nombre de clients total";
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(303, 16);
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(308, 16);
             // 
             // layoutControlItem10
             // 
@@ -410,7 +410,7 @@
             this.layoutControlItem10.Name = "layoutControlItem10";
             this.layoutControlItem10.Size = new System.Drawing.Size(460, 28);
             this.layoutControlItem10.Text = "Ratio";
-            this.layoutControlItem10.TextSize = new System.Drawing.Size(303, 16);
+            this.layoutControlItem10.TextSize = new System.Drawing.Size(308, 16);
             // 
             // layoutControlItem12
             // 
