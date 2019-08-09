@@ -55,7 +55,7 @@ namespace ComHe_Pilotage {
             pmcMesureEngagmentClient.questionNotee = fiche.engagementClient;
             pmcMesureEcouteClient.questionNotee = fiche.mesureEcoute;
             pmcMesureSelling.questionNotee = fiche.mesureSelling;
-            pmcMesureQualite.questionNotee = fiche.mesureSelling;
+            pmcMesureQualite.questionNotee = fiche.mesureQualite;
         }
 
         private void tabPgIncidenceParService_Enter(object sender, EventArgs e) {

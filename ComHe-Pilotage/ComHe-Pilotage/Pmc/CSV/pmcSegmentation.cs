@@ -14,6 +14,7 @@ namespace ComHe_Pilotage {
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
         public event EventHandler dataChanged;
+        private bool isModeTableauDeBord;
         public pmcSegmentation() {
             InitializeComponent();
             grdSegmentation.DataSource = new List<Segment>();
@@ -22,6 +23,9 @@ namespace ComHe_Pilotage {
         }
         protected override void gererChangementFicheCourante() {
             if (ficheCourante != null) {
+                if (!isModeTableauDeBord) {
+                    ficheCourante.segments.ForEach(x => x.modeExpert = this.chkModeExpert.Checked);
+                }
                 populateGridSegmentation();
                 populateGridSegmentationMoyen();
                 populateChSegmentationCLV();
@@ -43,7 +47,9 @@ namespace ComHe_Pilotage {
             chSegmentation.Refresh();
         }
         private void btAjouterSegment_Click(object sender, EventArgs e) {
-            ficheCourante.segments.Add(new Segment());
+            Segment s = new Segment();
+            s.modeExpert = chkModeExpert.Checked;
+            ficheCourante.segments.Add(s);
             gererChangementFicheCourante();
         }
 
@@ -56,6 +62,7 @@ namespace ComHe_Pilotage {
             else {
                 Segment segCopie = SegmentBO.clonerSegment(segmentCourant);
                 segCopie.nom += "(Copie " + ficheCourante.segments.Where(x => x.nom != null && x.nom.StartsWith(segCopie.nom)).Count().ToString() + ")";
+                segCopie.modeExpert = chkModeExpert.Checked;
                 ficheCourante.segments.Add(segCopie);
                 gererChangementFicheCourante();
             }
@@ -78,6 +85,7 @@ namespace ComHe_Pilotage {
             populateGridSegmentationMoyen();
             dataChanged(sender, e);
             labelConclusion();
+            chSegmentation.Refresh();
         }
 
         private void labelConclusion() {
@@ -116,6 +124,11 @@ namespace ComHe_Pilotage {
             this.rowCaSensibilitePricePremiumMoyen.Visible = this.chkModeExpert.Checked;
             this.rowcoutAcquisition.Visible = this.chkModeExpert.Checked;
             this.rowcoutAcquisitionMoyen.Visible = this.chkModeExpert.Checked;
+            this.rowTotal.Visible = this.chkModeExpert.Checked;
+            this.rowTotalMoyen.Visible = this.chkModeExpert.Checked;
+            ficheCourante.segments.ForEach(x => x.modeExpert = this.chkModeExpert.Checked);
+            chSegmentation.Refresh();
+            labelConclusion();
         }
 
         public void PassageModeTableauDebord() {
@@ -125,6 +138,7 @@ namespace ComHe_Pilotage {
             lciGrSegmentation.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
             splitterItem1.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
             splitterItem2.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+            isModeTableauDeBord = true;
         }
     }
 }

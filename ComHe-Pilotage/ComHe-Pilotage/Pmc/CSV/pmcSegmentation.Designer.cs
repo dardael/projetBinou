@@ -24,14 +24,14 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraCharts.XYDiagram xyDiagram3 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series5 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.ColorObjectColorizer colorObjectColorizer3 = new DevExpress.XtraCharts.ColorObjectColorizer();
-            DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView7 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
-            DevExpress.XtraCharts.Series series6 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView8 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
-            DevExpress.XtraCharts.KeyColorColorizer keyColorColorizer3 = new DevExpress.XtraCharts.KeyColorColorizer();
-            DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView9 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
+            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.ColorObjectColorizer colorObjectColorizer1 = new DevExpress.XtraCharts.ColorObjectColorizer();
+            DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView1 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
+            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView2 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
+            DevExpress.XtraCharts.KeyColorColorizer keyColorColorizer1 = new DevExpress.XtraCharts.KeyColorColorizer();
+            DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView3 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
             this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.editorRow1 = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.editorRow2 = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
@@ -54,6 +54,7 @@
             this.rowcoutAcquisitionMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowTxMultiplicateurMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowMargeMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
+            this.rowTotalMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowClvMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowIdMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowClvSansTxMargeMoyen = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
@@ -73,6 +74,7 @@
             this.rowId = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowtxMultiplicateur = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowmarge = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
+            this.rowTotal = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowclv = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.rowClvSansTxMArge = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.chSegmentation = new DevExpress.XtraCharts.ChartControl();
@@ -94,12 +96,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.grdSegmentation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btGrSegmentationSuppr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chSegmentation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciChSegmentation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciGrSegmentation)).BeginInit();
@@ -215,6 +217,7 @@
             this.rowcoutAcquisitionMoyen,
             this.rowTxMultiplicateurMoyen,
             this.rowMargeMoyen,
+            this.rowTotalMoyen,
             this.rowClvMoyen,
             this.rowIdMoyen,
             this.rowClvSansTxMargeMoyen});
@@ -323,6 +326,13 @@
             this.rowMargeMoyen.Properties.FieldName = "marge";
             this.rowMargeMoyen.Properties.ReadOnly = true;
             // 
+            // rowTotalMoyen
+            // 
+            this.rowTotalMoyen.Name = "rowTotalMoyen";
+            this.rowTotalMoyen.Properties.FieldName = "totalCaModeExpert";
+            this.rowTotalMoyen.Properties.ReadOnly = true;
+            this.rowTotalMoyen.Visible = false;
+            // 
             // rowClvMoyen
             // 
             this.rowClvMoyen.Name = "rowClvMoyen";
@@ -385,6 +395,7 @@
             this.rowId,
             this.rowtxMultiplicateur,
             this.rowmarge,
+            this.rowTotal,
             this.rowclv,
             this.rowClvSansTxMArge});
             this.grdSegmentation.ShowButtonMode = DevExpress.XtraVerticalGrid.ShowButtonModeEnum.ShowAlways;
@@ -496,6 +507,14 @@
             this.rowmarge.Properties.FieldName = "marge";
             this.rowmarge.Properties.ReadOnly = true;
             // 
+            // rowTotal
+            // 
+            this.rowTotal.Name = "rowTotal";
+            this.rowTotal.Properties.Caption = "Total";
+            this.rowTotal.Properties.FieldName = "totalCaModeExpert";
+            this.rowTotal.Properties.ReadOnly = true;
+            this.rowTotal.Visible = false;
+            // 
             // rowclv
             // 
             this.rowclv.Name = "rowclv";
@@ -515,43 +534,43 @@
             this.chSegmentation.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.chSegmentation.AppearanceNameSerializable = "Light";
             this.chSegmentation.DataSource = this.segmentBindingSource;
-            xyDiagram3.AxisX.NumericScaleOptions.ScaleMode = DevExpress.XtraCharts.ScaleMode.Automatic;
-            xyDiagram3.AxisX.Title.Text = "Segments";
-            xyDiagram3.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            xyDiagram3.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram3.AxisY.Title.Text = "CLV";
-            xyDiagram3.AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            xyDiagram3.AxisY.VisibleInPanesSerializable = "-1";
-            this.chSegmentation.Diagram = xyDiagram3;
+            xyDiagram1.AxisX.NumericScaleOptions.ScaleMode = DevExpress.XtraCharts.ScaleMode.Automatic;
+            xyDiagram1.AxisX.Title.Text = "Segments";
+            xyDiagram1.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram1.AxisY.Title.Text = "CLV";
+            xyDiagram1.AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
+            this.chSegmentation.Diagram = xyDiagram1;
             this.chSegmentation.Legend.MarkerVisible = false;
             this.chSegmentation.Legend.TextVisible = false;
             this.chSegmentation.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
             this.chSegmentation.Location = new System.Drawing.Point(16, 233);
             this.chSegmentation.Name = "chSegmentation";
             this.chSegmentation.PaletteName = "Default";
-            series5.ArgumentDataMember = "id";
-            series5.ColorDataMember = "id";
-            series5.Colorizer = colorObjectColorizer3;
-            series5.Name = "CLV";
-            series5.ValueDataMembersSerializable = "clv";
-            sideBySideBarSeriesView7.ColorEach = true;
-            series5.View = sideBySideBarSeriesView7;
-            series6.ArgumentDataMember = "id";
-            series6.ColorDataMember = "id";
-            series6.Name = "CLVChiffreAffaires";
-            series6.ValueDataMembersSerializable = "clvSansTxMarge";
-            sideBySideBarSeriesView8.ColorEach = true;
-            series6.View = sideBySideBarSeriesView8;
+            series1.ArgumentDataMember = "id";
+            series1.ColorDataMember = "id";
+            series1.Colorizer = colorObjectColorizer1;
+            series1.Name = "CLV";
+            series1.ValueDataMembersSerializable = "clv";
+            sideBySideBarSeriesView1.ColorEach = true;
+            series1.View = sideBySideBarSeriesView1;
+            series2.ArgumentDataMember = "id";
+            series2.ColorDataMember = "id";
+            series2.Name = "CLVChiffreAffaires";
+            series2.ValueDataMembersSerializable = "clvSansTxMarge";
+            sideBySideBarSeriesView2.ColorEach = true;
+            series2.View = sideBySideBarSeriesView2;
             this.chSegmentation.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series5,
-        series6};
+        series1,
+        series2};
             this.chSegmentation.SeriesTemplate.ArgumentDataMember = "nom";
             this.chSegmentation.SeriesTemplate.ColorDataMember = "id";
-            keyColorColorizer3.Keys.Add("nom");
-            this.chSegmentation.SeriesTemplate.Colorizer = keyColorColorizer3;
+            keyColorColorizer1.Keys.Add("nom");
+            this.chSegmentation.SeriesTemplate.Colorizer = keyColorColorizer1;
             this.chSegmentation.SeriesTemplate.ValueDataMembersSerializable = "clv";
-            sideBySideBarSeriesView9.ColorEach = true;
-            this.chSegmentation.SeriesTemplate.View = sideBySideBarSeriesView9;
+            sideBySideBarSeriesView3.ColorEach = true;
+            this.chSegmentation.SeriesTemplate.View = sideBySideBarSeriesView3;
             this.chSegmentation.Size = new System.Drawing.Size(791, 294);
             this.chSegmentation.TabIndex = 6;
             this.chSegmentation.CustomDrawCrosshair += new DevExpress.XtraCharts.CustomDrawCrosshairEventHandler(this.chSegmentation_CustomDrawCrosshair);
@@ -668,12 +687,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.segmentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdSegmentation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btGrSegmentationSuppr)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chSegmentation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lciChSegmentation)).EndInit();
@@ -743,5 +762,7 @@
         private DevExpress.XtraLayout.SplitterItem splitterItem2;
         private DevExpress.XtraVerticalGrid.Rows.EditorRow rowcoutAcquisition;
         private DevExpress.XtraVerticalGrid.Rows.EditorRow rowcoutAcquisitionMoyen;
+        private DevExpress.XtraVerticalGrid.Rows.EditorRow rowTotalMoyen;
+        private DevExpress.XtraVerticalGrid.Rows.EditorRow rowTotal;
     }
 }

@@ -18,7 +18,7 @@ namespace ComHe_Objets {
         public double coutAcquisition { get; set; }
         public double totalCaModeExpert {
             get {
-                return caFromLM - coutAcquisition;
+                return caFromLM + (caFromLM * caAchatsCroises) + (caFromLM * caSensibilitePricePremium) + (caFromLM * caRecommendation) - coutAcquisition;
             }
         }
         public String totalQuatreChemins {
@@ -75,8 +75,16 @@ namespace ComHe_Objets {
                 return _clvSansTxMarge;
             }
         }
-        public Boolean modeExpert { get; set; }
-
+        private bool _modeExpert;
+        public bool modeExpert {
+            get {
+                return _modeExpert;
+            }
+            set {
+                _modeExpert = value;
+                calculDonneesPossibles();
+            }
+        }
         public double _caFromLM;
         public double _txMarge;
         public enumTxRetention _txRetention = enumTxRetention.NR;
@@ -146,10 +154,11 @@ namespace ComHe_Objets {
             this.txActualisation = txActualisation;
         }
         public void calculDonneesPossibles() {
-            _marge = _caFromLM * txMarge;
+            double ca = modeExpert ? totalCaModeExpert : caFromLM;
+            _marge = ca * txMarge;
             _txMuliplicateur = enumTxMultiplicateurMethods.getTxMargeFromTxRetentionEtTauxActualisation(_txActualisation, _txRetention);
-            _clv = caFromLM * txMarge * enumTxMultiplicateurMethods.getDoubleFromCode(txMultiplicateur);
-            _clvSansTxMarge = caFromLM * enumTxMultiplicateurMethods.getDoubleFromCode(txMultiplicateur);
+            _clv = ca * txMarge * enumTxMultiplicateurMethods.getDoubleFromCode(txMultiplicateur);
+            _clvSansTxMarge = ca * enumTxMultiplicateurMethods.getDoubleFromCode(txMultiplicateur);
         }
     }
 }

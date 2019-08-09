@@ -60,12 +60,6 @@ namespace ComHe_Pilotage.Pmc.Indicateurs.Apprentissage {
             txtInnovationNb.DataBindings.Add("EditValue", this.fiche.indicateursFormations.innovation, "nbInitiativesCollaborateurs", true);
         }
         private void gererDataSourceTextEditInsatisfaction() {
-            txtInsatisfactionNbDetectes.DataBindings.Clear();
-            txtInsatisfactionNbConserve.DataBindings.Clear();
-            txtInsatisfactionRatio.DataBindings.Clear();
-            txtInsatisfactionNbDetectes.DataBindings.Add("EditValue", this.fiche.indicateursFormations.caInsatisfactionRecuperee, "nbClientsInsatisfaitsDetectes", true);
-            txtInsatisfactionNbConserve.DataBindings.Add("EditValue", this.fiche.indicateursFormations.caInsatisfactionRecuperee, "nbClientsInsatisfaitsConserves", true);
-            txtInsatisfactionRatio.DataBindings.Add("EditValue", this.fiche.indicateursFormations.caInsatisfactionRecuperee, "ratio", true);
         }
         private void gererDataSourceTextEditFormation() {
             txtFormationNb.DataBindings.Clear();
