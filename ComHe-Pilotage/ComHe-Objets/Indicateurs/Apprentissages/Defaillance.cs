@@ -7,5 +7,7 @@ using System.Threading.Tasks;
 namespace ComHe_Objets.Indicateurs.Apprentissages {
     public class Defaillance {
         public int nbReclamationNonRemontees { get; set; }
+        public int nbReclamationNonRemonteesAvant { get; set; }
+        public int nbReclamationNonRemonteesAvantAvant { get; set; }
     }
 }

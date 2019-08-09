@@ -356,7 +356,7 @@
             this.layoutControlItem9.Location = new System.Drawing.Point(0, 28);
             this.layoutControlItem9.Name = "layoutControlItem9";
             this.layoutControlItem9.Size = new System.Drawing.Size(492, 28);
-            this.layoutControlItem9.Text = "Variation";
+            this.layoutControlItem9.Text = "Taux de rétention";
             this.layoutControlItem9.TextSize = new System.Drawing.Size(308, 16);
             // 
             // layoutControlGroup4

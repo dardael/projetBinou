@@ -82,7 +82,7 @@
 		</indicateursInternes>
 		<indicateursFormations>
 			<amarc>
-				<nbNonRepondant>20</nbNonRepondant>
+				<nbNonRepondant>50</nbNonRepondant>
 				<nbMailsSondes>100</nbMailsSondes>
 			</amarc>
 			<caInsatisfactionRecuperee>
@@ -91,6 +91,8 @@
 			</caInsatisfactionRecuperee>
 			<defaillance>
 				<nbReclamationNonRemontees>50</nbReclamationNonRemontees>
+				<nbReclamationNonRemonteesAvant>100</nbReclamationNonRemonteesAvant>
+				<nbReclamationNonRemonteesAvantAvant>200</nbReclamationNonRemonteesAvantAvant>
 			</defaillance>
 			<innovation>
 				<nbInitiativesCollaborateurs>12</nbInitiativesCollaborateurs>
@@ -119,6 +121,7 @@
 				<txMarge>0.17</txMarge>
 				<txRetention>SOIXANTE</txRetention>
 				<txActualisation>DOUZE</txActualisation>
+				<modeExpert>false</modeExpert>
 				<noteBoucheAOreille>3</noteBoucheAOreille>
 				<noteReductionCouts>3</noteReductionCouts>
 				<noteAugmentationDepensesAchatsCroises>4</noteAugmentationDepensesAchatsCroises>
@@ -158,6 +161,7 @@
 				<txMarge>0.18</txMarge>
 				<txRetention>SOIXANTE</txRetention>
 				<txActualisation>QUATORZE</txActualisation>
+				<modeExpert>false</modeExpert>
 				<noteBoucheAOreille>5</noteBoucheAOreille>
 				<noteReductionCouts>4</noteReductionCouts>
 				<noteAugmentationDepensesAchatsCroises>10</noteAugmentationDepensesAchatsCroises>
@@ -197,6 +201,7 @@
 				<txMarge>0.2</txMarge>
 				<txRetention>QUATREVINGT</txRetention>
 				<txActualisation>DOUZE</txActualisation>
+				<modeExpert>false</modeExpert>
 				<noteBoucheAOreille>6</noteBoucheAOreille>
 				<noteReductionCouts>5</noteReductionCouts>
 				<noteAugmentationDepensesAchatsCroises>5</noteAugmentationDepensesAchatsCroises>
@@ -236,6 +241,7 @@
 				<txMarge>0.11</txMarge>
 				<txRetention>SOIXANTE</txRetention>
 				<txActualisation>DIX</txActualisation>
+				<modeExpert>false</modeExpert>
 				<noteBoucheAOreille>8</noteBoucheAOreille>
 				<noteReductionCouts>5</noteReductionCouts>
 				<noteAugmentationDepensesAchatsCroises>5</noteAugmentationDepensesAchatsCroises>
@@ -275,6 +281,7 @@
 				<txMarge>0.11</txMarge>
 				<txRetention>SOIXANTE</txRetention>
 				<txActualisation>DIX</txActualisation>
+				<modeExpert>false</modeExpert>
 				<noteBoucheAOreille>10</noteBoucheAOreille>
 				<noteReductionCouts>5</noteReductionCouts>
 				<noteAugmentationDepensesAchatsCroises>4</noteAugmentationDepensesAchatsCroises>

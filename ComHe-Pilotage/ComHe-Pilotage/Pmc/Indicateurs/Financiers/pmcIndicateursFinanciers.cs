@@ -12,6 +12,7 @@ using DevExpress.XtraCharts;
 
 namespace ComHe_Pilotage {
     public partial class pmcIndicateursFinanciers : pmcParentUtilisantFicheDeTravail {
+        public event EventHandler dataChanged;
         public pmcIndicateursFinanciers() {
             InitializeComponent();
         }
@@ -102,7 +103,9 @@ namespace ComHe_Pilotage {
             this.fiche.indicateursFinanciers.evaluationCabinet.ca = Convert.ToDouble(txtCa.EditValue);
             txtCaReduc.EditValue = this.fiche.indicateursFinanciers.mesureReductionCout.ca;
             txtCaPerf.EditValue = this.fiche.indicateursFinanciers.performanceActivite.ca;
-            this.fiche = fiche;
+            dataChanged(sender, e);
+            populateCaBudgetChart();
+            populateCaChart();
         }
         private void populateMissionChart() {
             chMission.Series.Clear();
@@ -159,11 +162,13 @@ namespace ComHe_Pilotage {
 
         private void txtCaAvant_EditValueChanged(object sender, EventArgs e) {
             this.fiche.indicateursFinanciers.croissanceCA.caAvant = Convert.ToDouble(txtCaAvant.EditValue);
+            dataChanged(sender, e);
             populateCaChart();
         }
 
         private void txtCaAvantAvant_EditValueChanged(object sender, EventArgs e) {
             this.fiche.indicateursFinanciers.croissanceCA.caAvantAvant = Convert.ToDouble(txtCaAvantAvant.EditValue);
+            dataChanged(sender, e);
             populateCaChart();
         }
     }

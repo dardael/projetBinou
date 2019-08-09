@@ -216,6 +216,7 @@
             this.txtCa.Size = new System.Drawing.Size(224, 22);
             this.txtCa.StyleController = this.lcIndicateurs;
             this.txtCa.TabIndex = 5;
+            this.txtCa.EditValueChanged += new System.EventHandler(this.txtCa_EditValueChanged);
             // 
             // txtCaAvant
             // 
@@ -224,6 +225,7 @@
             this.txtCaAvant.Size = new System.Drawing.Size(222, 22);
             this.txtCaAvant.StyleController = this.lcIndicateurs;
             this.txtCaAvant.TabIndex = 6;
+            this.txtCaAvant.EditValueChanged += new System.EventHandler(this.txtCaAvant_EditValueChanged);
             // 
             // txtEcart
             // 
@@ -250,6 +252,7 @@
             this.txtCaAvantAvant.Size = new System.Drawing.Size(224, 22);
             this.txtCaAvantAvant.StyleController = this.lcIndicateurs;
             this.txtCaAvantAvant.TabIndex = 21;
+            this.txtCaAvantAvant.EditValueChanged += new System.EventHandler(this.txtCaAvantAvant_EditValueChanged);
             // 
             // txtCaPerf
             // 

@@ -16,6 +16,7 @@ namespace ComHe_Pilotage {
             pmcGestionFichesDeTravail.ficheTravailCouranteChanged += new EventHandler(pmcGestionFichesDeTravail_ficheTravailCouranteChanged);
             pmcSegmentation1.dataChanged += new EventHandler(pmcSegmentation_dataChanged);
             pmcGestionFichesDeTravail.Load += pmcGestionFichesDeTravail_ficheTravailCouranteChanged;
+            pmcIndicateursFinanciers1.dataChanged += new EventHandler(IndicateursFinanciers_dataChanged);
             this.Refresh();
             pmcTraitementReclamationClient1.switchToVisualisation();
         }
@@ -29,6 +30,9 @@ namespace ComHe_Pilotage {
         private void pmcSegmentation_dataChanged(object sender, EventArgs e) {
             propagerFiche(pmcSegmentation1.fiche);
 
+        }
+        private void IndicateursFinanciers_dataChanged(object sender, EventArgs e) {
+            pmcTableauDeBord1.fiche = fiche;
         }
         private void propagerFiche(FicheTravail fiche) {
             pmcSegmentation1.fiche = fiche;
