@@ -107,14 +107,8 @@ namespace ComHe_Pilotage {
         }
         private void populateGridNotation() {
             gridControl1.BeginUpdate();
-            try {
-                grNotation.Columns.Clear();
-                gridControl1.DataSource = ficheCourante.segments;
-            }
-            finally {
-                gridControl1.EndUpdate();
-            }
-            gererAffichageColonnes();
+            gridControl1.DataSource = ficheCourante.segments;
+            gridControl1.EndUpdate();
         }
         private void populateGauge() {
             double value = 0;
