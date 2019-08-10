@@ -186,6 +186,11 @@
     <Compile Include="Pmc\TableauDeBord\pmcTableauDeBord.Designer.cs">
       <DependentUpon>pmcTableauDeBord.cs</DependentUpon>
     </Compile>
+    <Compile Include="PrintRibbonControllerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Pmc\FicheDeTravail\pmcCreationFicheTravail.cs">
@@ -205,6 +210,12 @@
     </Compile>
     <Compile Include="Pmc\Formation\pmcApprentissage.Designer.cs">
       <DependentUpon>pmcApprentissage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraUserControl1.Designer.cs">
+      <DependentUpon>XtraUserControl1.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmPrincipale.resx">
       <DependentUpon>frmPrincipale.cs</DependentUpon>
@@ -260,6 +271,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pmc\TableauDeBord\pmcTableauDeBord.resx">
       <DependentUpon>pmcTableauDeBord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

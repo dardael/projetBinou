@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using ComHe_Objets;
 
 namespace ComHe_Pilotage {
-    public class pmcParentUtilisantFicheDeTravail : UserControl {
+    public class pmcParentUtilisantFicheDeTravail : DevExpress.XtraEditors.XtraUserControl {
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
         protected FicheTravail ficheCourante;

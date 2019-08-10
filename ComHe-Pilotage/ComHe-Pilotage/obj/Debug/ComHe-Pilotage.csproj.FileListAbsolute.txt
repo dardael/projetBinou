@@ -177,3 +177,4 @@ C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\C
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.Pmc.TableauDeBord.pmcTableauDeBord.resources
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.Pmc.Reclamation.pmcIncidenceService.resources
 C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.Pmc.NotesQuestion.pmcNoteQuestion.resources
+C:\Users\renau\Documents\Visual Studio 2017\Projets\projetBinou\ComHe-Pilotage\ComHe-Pilotage\obj\Debug\ComHe_Pilotage.PrintRibbonControllerResources.resources
