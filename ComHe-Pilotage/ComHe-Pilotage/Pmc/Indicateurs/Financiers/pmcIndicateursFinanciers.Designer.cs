@@ -204,6 +204,7 @@
             this.lcIndicateurs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lcIndicateurs.Location = new System.Drawing.Point(0, 0);
             this.lcIndicateurs.Name = "lcIndicateurs";
+            this.lcIndicateurs.OptionsPrint.OldPrinting = true;
             this.lcIndicateurs.Root = this.lcgIndicateurs;
             this.lcIndicateurs.Size = new System.Drawing.Size(1000, 674);
             this.lcIndicateurs.TabIndex = 0;
@@ -213,6 +214,9 @@
             // 
             this.txtCa.Location = new System.Drawing.Point(274, 54);
             this.txtCa.Name = "txtCa";
+            this.txtCa.Properties.Mask.EditMask = "n2";
+            this.txtCa.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtCa.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtCa.Size = new System.Drawing.Size(224, 22);
             this.txtCa.StyleController = this.lcIndicateurs;
             this.txtCa.TabIndex = 5;
@@ -222,6 +226,9 @@
             // 
             this.txtCaAvant.Location = new System.Drawing.Point(747, 54);
             this.txtCaAvant.Name = "txtCaAvant";
+            this.txtCaAvant.Properties.Mask.EditMask = "n2";
+            this.txtCaAvant.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtCaAvant.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtCaAvant.Size = new System.Drawing.Size(222, 22);
             this.txtCaAvant.StyleController = this.lcIndicateurs;
             this.txtCaAvant.TabIndex = 6;
@@ -231,6 +238,9 @@
             // 
             this.txtEcart.Location = new System.Drawing.Point(274, 110);
             this.txtEcart.Name = "txtEcart";
+            this.txtEcart.Properties.Mask.EditMask = "n2";
+            this.txtEcart.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtEcart.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtEcart.Properties.ReadOnly = true;
             this.txtEcart.Size = new System.Drawing.Size(224, 22);
             this.txtEcart.StyleController = this.lcIndicateurs;
@@ -240,6 +250,9 @@
             // 
             this.txtVariation.Location = new System.Drawing.Point(747, 110);
             this.txtVariation.Name = "txtVariation";
+            this.txtVariation.Properties.Mask.EditMask = "p0";
+            this.txtVariation.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtVariation.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtVariation.Properties.ReadOnly = true;
             this.txtVariation.Size = new System.Drawing.Size(222, 22);
             this.txtVariation.StyleController = this.lcIndicateurs;
@@ -249,6 +262,9 @@
             // 
             this.txtCaAvantAvant.Location = new System.Drawing.Point(274, 82);
             this.txtCaAvantAvant.Name = "txtCaAvantAvant";
+            this.txtCaAvantAvant.Properties.Mask.EditMask = "n2";
+            this.txtCaAvantAvant.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtCaAvantAvant.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtCaAvantAvant.Size = new System.Drawing.Size(224, 22);
             this.txtCaAvantAvant.StyleController = this.lcIndicateurs;
             this.txtCaAvantAvant.TabIndex = 21;
@@ -258,6 +274,9 @@
             // 
             this.txtCaPerf.Location = new System.Drawing.Point(274, 191);
             this.txtCaPerf.Name = "txtCaPerf";
+            this.txtCaPerf.Properties.Mask.EditMask = "n2";
+            this.txtCaPerf.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtCaPerf.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtCaPerf.Properties.ReadOnly = true;
             this.txtCaPerf.Size = new System.Drawing.Size(223, 22);
             this.txtCaPerf.StyleController = this.lcIndicateurs;
@@ -267,6 +286,9 @@
             // 
             this.txtBudget.Location = new System.Drawing.Point(746, 191);
             this.txtBudget.Name = "txtBudget";
+            this.txtBudget.Properties.Mask.EditMask = "n2";
+            this.txtBudget.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtBudget.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtBudget.Size = new System.Drawing.Size(223, 22);
             this.txtBudget.StyleController = this.lcIndicateurs;
             this.txtBudget.TabIndex = 10;
@@ -276,6 +298,9 @@
             // 
             this.txtEcartPerf.Location = new System.Drawing.Point(274, 219);
             this.txtEcartPerf.Name = "txtEcartPerf";
+            this.txtEcartPerf.Properties.Mask.EditMask = "n2";
+            this.txtEcartPerf.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtEcartPerf.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtEcartPerf.Properties.ReadOnly = true;
             this.txtEcartPerf.Size = new System.Drawing.Size(223, 22);
             this.txtEcartPerf.StyleController = this.lcIndicateurs;
@@ -285,6 +310,9 @@
             // 
             this.txtNbHeuresPayes.Location = new System.Drawing.Point(746, 300);
             this.txtNbHeuresPayes.Name = "txtNbHeuresPayes";
+            this.txtNbHeuresPayes.Properties.Mask.EditMask = "n";
+            this.txtNbHeuresPayes.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtNbHeuresPayes.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtNbHeuresPayes.Size = new System.Drawing.Size(223, 22);
             this.txtNbHeuresPayes.StyleController = this.lcIndicateurs;
             this.txtNbHeuresPayes.TabIndex = 15;
@@ -293,6 +321,9 @@
             // 
             this.txtCaReduc.Location = new System.Drawing.Point(274, 300);
             this.txtCaReduc.Name = "txtCaReduc";
+            this.txtCaReduc.Properties.Mask.EditMask = "n2";
+            this.txtCaReduc.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtCaReduc.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtCaReduc.Properties.ReadOnly = true;
             this.txtCaReduc.Size = new System.Drawing.Size(223, 22);
             this.txtCaReduc.StyleController = this.lcIndicateurs;
@@ -302,6 +333,9 @@
             // 
             this.txtSurCa.Location = new System.Drawing.Point(274, 328);
             this.txtSurCa.Name = "txtSurCa";
+            this.txtSurCa.Properties.Mask.EditMask = "p0";
+            this.txtSurCa.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtSurCa.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtSurCa.Properties.ReadOnly = true;
             this.txtSurCa.Size = new System.Drawing.Size(223, 22);
             this.txtSurCa.StyleController = this.lcIndicateurs;
@@ -311,6 +345,9 @@
             // 
             this.txtCaExep.Location = new System.Drawing.Point(274, 409);
             this.txtCaExep.Name = "txtCaExep";
+            this.txtCaExep.Properties.Mask.EditMask = "n2";
+            this.txtCaExep.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtCaExep.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtCaExep.Size = new System.Drawing.Size(223, 22);
             this.txtCaExep.StyleController = this.lcIndicateurs;
             this.txtCaExep.TabIndex = 12;
@@ -320,6 +357,10 @@
             // 
             this.txtCaTrad.Location = new System.Drawing.Point(746, 409);
             this.txtCaTrad.Name = "txtCaTrad";
+            this.txtCaTrad.Properties.Mask.EditMask = "n2";
+            this.txtCaTrad.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtCaTrad.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.txtCaTrad.Properties.ReadOnly = true;
             this.txtCaTrad.Size = new System.Drawing.Size(223, 22);
             this.txtCaTrad.StyleController = this.lcIndicateurs;
             this.txtCaTrad.TabIndex = 13;
@@ -329,6 +370,9 @@
             // 
             this.txtRatio.Location = new System.Drawing.Point(274, 437);
             this.txtRatio.Name = "txtRatio";
+            this.txtRatio.Properties.Mask.EditMask = "p0";
+            this.txtRatio.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtRatio.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtRatio.Properties.ReadOnly = true;
             this.txtRatio.Size = new System.Drawing.Size(223, 22);
             this.txtRatio.StyleController = this.lcIndicateurs;
@@ -338,6 +382,10 @@
             // 
             this.txtPortefeuilleClient.Location = new System.Drawing.Point(274, 518);
             this.txtPortefeuilleClient.Name = "txtPortefeuilleClient";
+            this.txtPortefeuilleClient.Properties.Mask.EditMask = "n2";
+            this.txtPortefeuilleClient.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtPortefeuilleClient.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.txtPortefeuilleClient.Properties.ReadOnly = true;
             this.txtPortefeuilleClient.Size = new System.Drawing.Size(223, 22);
             this.txtPortefeuilleClient.StyleController = this.lcIndicateurs;
             this.txtPortefeuilleClient.TabIndex = 17;
@@ -346,6 +394,9 @@
             // 
             this.txtCoef.Location = new System.Drawing.Point(746, 518);
             this.txtCoef.Name = "txtCoef";
+            this.txtCoef.Properties.Mask.EditMask = "n3";
+            this.txtCoef.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtCoef.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtCoef.Size = new System.Drawing.Size(223, 22);
             this.txtCoef.StyleController = this.lcIndicateurs;
             this.txtCoef.TabIndex = 18;
@@ -354,6 +405,9 @@
             // 
             this.txtCabinetValo.Location = new System.Drawing.Point(274, 546);
             this.txtCabinetValo.Name = "txtCabinetValo";
+            this.txtCabinetValo.Properties.Mask.EditMask = "n2";
+            this.txtCabinetValo.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtCabinetValo.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtCabinetValo.Properties.ReadOnly = true;
             this.txtCabinetValo.Size = new System.Drawing.Size(223, 22);
             this.txtCabinetValo.StyleController = this.lcIndicateurs;

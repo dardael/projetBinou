@@ -97,15 +97,20 @@ namespace ComHe_Pilotage {
         }
 
         private void txtCa_EditValueChanged(object sender, EventArgs e) {
+            this.fiche.indicateursFinanciers.evaluationCabinet.portefeuilleClient = Convert.ToDouble(txtCa.EditValue);
             this.fiche.indicateursFinanciers.croissanceCA.ca = Convert.ToDouble(txtCa.EditValue);
             this.fiche.indicateursFinanciers.performanceActivite.ca = Convert.ToDouble(txtCa.EditValue);
             this.fiche.indicateursFinanciers.mesureReductionCout.ca = Convert.ToDouble(txtCa.EditValue);
             this.fiche.indicateursFinanciers.evaluationCabinet.ca = Convert.ToDouble(txtCa.EditValue);
+            this.fiche.indicateursFinanciers.mesureAchatsCroises.caTrad = Convert.ToDouble(txtCa.EditValue) - this.fiche.indicateursFinanciers.mesureAchatsCroises.caExeptionnel;
             txtCaReduc.EditValue = this.fiche.indicateursFinanciers.mesureReductionCout.ca;
             txtCaPerf.EditValue = this.fiche.indicateursFinanciers.performanceActivite.ca;
+            txtCaTrad.EditValue = this.fiche.indicateursFinanciers.mesureAchatsCroises.caTrad;
+            txtPortefeuilleClient.EditValue = this.fiche.indicateursFinanciers.evaluationCabinet.portefeuilleClient;
             dataChanged(sender, e);
             populateCaBudgetChart();
             populateCaChart();
+            populateMissionChart();
         }
         private void populateMissionChart() {
             chMission.Series.Clear();
@@ -137,6 +142,7 @@ namespace ComHe_Pilotage {
 
         private void txtCaExep_EditValueChanged(object sender, EventArgs e) {
             this.fiche.indicateursFinanciers.mesureAchatsCroises.caExeptionnel = Convert.ToDouble(txtCaExep.EditValue);
+            this.fiche.indicateursFinanciers.mesureAchatsCroises.caTrad = fiche.indicateursFinanciers.croissanceCA.ca - this.fiche.indicateursFinanciers.mesureAchatsCroises.caExeptionnel;
             populateMissionChart();
         }
 

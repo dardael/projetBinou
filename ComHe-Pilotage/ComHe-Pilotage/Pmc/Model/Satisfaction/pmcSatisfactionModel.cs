@@ -43,7 +43,7 @@ namespace ComHe_Pilotage {
             }
         }
         private void populateChSatisfaction() {
-            chSatisfactionModel.DataSource = new List<DimensionSatisfactionModel>(ficheCourante.dimensionsSatisfactionModel.Where(delegate (DimensionSatisfactionModel dim) { return dim.lvl == 1; }));
+            chSatisfactionModel.DataSource = new List<DimensionSatisfactionModel>(ficheCourante.dimensionsSatisfactionModel.Where(delegate (DimensionSatisfactionModel dim) { return dim.lvl == 1 || dim.lvl == 2; }));
             chSatisfactionModel.Refresh();
         }
         private void repoBtAjout_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e) {

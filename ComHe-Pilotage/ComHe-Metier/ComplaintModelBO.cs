@@ -14,9 +14,9 @@ namespace ComHe_Metier {
             ItemComplaintModel lvl1112 = createAddAndReturnItem("lvl1112", lvl111.id, "Cas non réglés", 0, true, arbre);
             ItemComplaintModel lvl11121 = createAddAndReturnItem("lvl11121", lvl1112.id, "Clients perdus", 0, true, arbre);
             ItemComplaintModel lvl11122 = createAddAndReturnItem("lvl11122", lvl1112.id, "Clients récupérés", 0, true, arbre);
-            ItemComplaintModel lvl1121 = createAddAndReturnItem("lvl1121", lvl112.id, "Cas réglés", 0, true, arbre);
-            ItemComplaintModel lvl11211 = createAddAndReturnItem("lvl11211", lvl1121.id, "Clients perdus", 0, true, arbre);
-            ItemComplaintModel lvl11212 = createAddAndReturnItem("lvl11212", lvl1121.id, "Clients récupérés", 0, true, arbre);
+            ItemComplaintModel lvl1111 = createAddAndReturnItem("lvl1111", lvl111.id, "Cas réglés", 0, true, arbre);
+            ItemComplaintModel lvl11111 = createAddAndReturnItem("lvl11111", lvl1111.id, "Clients perdus", 0, true, arbre);
+            ItemComplaintModel lvl11112 = createAddAndReturnItem("lvl11112", lvl1111.id, "Clients récupérés", 0, true, arbre);
             ItemComplaintModel lvl1122 = createAddAndReturnItem("lvl1122", lvl112.id, "Cas non réglés", 0, true, arbre);
             ItemComplaintModel lvl11221 = createAddAndReturnItem("lvl11221", lvl1122.id, "Clients perdus", 0, true, arbre);
             ItemComplaintModel lvl11222 = createAddAndReturnItem("lvl11222", lvl1122.id, "Clients récupérés", 0, true, arbre);
